@@ -19,7 +19,7 @@
 
 - (void) toBe:(long long)other {
   if (self.number != other) {
-    [self reportFailure:[NSString stringWithFormat:@"Want %d, got %d",
+    [self reportFailure:[NSString stringWithFormat:@"Want %qi, got %qi",
                          other,
                          self.number]];
   }

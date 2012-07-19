@@ -41,8 +41,8 @@ SpecKitContext(Sample2) {
   NSString *str = [[[NSString alloc] initWithData:[handle readDataToEndOfFile]
                                          encoding:NSUTF8StringEncoding] autorelease];
   
-  NSString *expected1 = [NSString stringWithFormat:@"%s:%d: error: Expected 5, got 4\n", __FILE__, 16];
-  NSString *expected2 = [NSString stringWithFormat:@"%s:%d: error: Expected 3, got 2\n", __FILE__, 8];
+  NSString *expected1 = [NSString stringWithFormat:@"%s:%d: error: Want 5, got 4\n", __FILE__, 16];
+  NSString *expected2 = [NSString stringWithFormat:@"%s:%d: error: Want 3, got 2\n", __FILE__, 8];
   
   STAssertTrue([str rangeOfString:expected1].location != NSNotFound, nil);
   STAssertTrue([str rangeOfString:expected2].location != NSNotFound, nil);

@@ -25,7 +25,7 @@
 
 - (void) toBe:(id)other {
   if (self.object != other) {
-    NSString *message = [NSString stringWithFormat:@"Expected %@, got %@",
+    NSString *message = [NSString stringWithFormat:@"Want %@, got %@",
                          [other description],
                          [self.object description]];
     
@@ -37,7 +37,7 @@
 
 - (void) toBeEqualTo:(id)other {
   if (![self.object isEqual: other]) {
-    NSString *message = [NSString stringWithFormat:@"Expected %@, got %@",
+    NSString *message = [NSString stringWithFormat:@"Want %@, got %@",
                          [other description],
                          [self.object description]];
     
@@ -49,7 +49,7 @@
 
 - (void) toExist {
   if (self.object == nil) {
-    [self.failureReporter reportFailure:@"Expected nil, but isn't"
+    [self.failureReporter reportFailure:@"Want nil, but isn't"
                                  inFile:self.file
                                  atLine:self.line];
   }
@@ -57,7 +57,7 @@
 
 - (void) toBeNil {
   if (self.object != nil) {
-    NSString *message = [NSString stringWithFormat:@"Expected nil, got %@",
+    NSString *message = [NSString stringWithFormat:@"Want nil, got %@",
                          [self.object description]];
     
     [self.failureReporter reportFailure:message

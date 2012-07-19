@@ -25,7 +25,7 @@
 
 - (void) toBe:(long long)other {
   if (self.number != other) {
-    NSString *message = [NSString stringWithFormat:@"Expected %d, got %d",
+    NSString *message = [NSString stringWithFormat:@"Want %d, got %d",
                          other,
                          self.number];
     
@@ -37,7 +37,7 @@
 
 - (void) toBeTrue {
   if (self.number != YES) {
-    [self.failureReporter reportFailure:@"Expected true, got false"
+    [self.failureReporter reportFailure:@"Want true, got false"
                                  inFile:self.file
                                  atLine:self.line];
   }

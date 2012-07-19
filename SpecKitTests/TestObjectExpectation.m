@@ -27,7 +27,7 @@
 
 - (void) testToBeEqualToFail {
   [[SKObjectExpectation expectationFunctionInFile:"file11" line:22 failureReporter:reporter](@"a") toBeEqualTo: @"b"];
-  SKHelperExpectReport(@"file11", 22, @"Expected b, got a");
+  SKHelperExpectReport(@"file11", 22, @"Want b, got a");
 }
 
 - (void) testToBePass {
@@ -42,7 +42,7 @@
   id b = [NSMutableString stringWithString:@"b"];
   
   [[SKObjectExpectation expectationFunctionInFile:"file11" line:22 failureReporter:reporter](a) toBe: b];
-  SKHelperExpectReport(@"file11", 22, @"Expected b, got a");
+  SKHelperExpectReport(@"file11", 22, @"Want b, got a");
 }
 
 - (void) testToExistPass {
@@ -52,7 +52,7 @@
 
 - (void) testToExistFail {
   [[SKObjectExpectation expectationFunctionInFile:"file11" line:22 failureReporter:reporter](nil) toExist];
-  SKHelperExpectReport(@"file11", 22, @"Expected nil, but isn't");
+  SKHelperExpectReport(@"file11", 22, @"Want nil, but isn't");
 }
 
 - (void) testToBeNilPass {
@@ -62,7 +62,7 @@
 
 - (void) testToBeNilFail {
   [[SKObjectExpectation expectationFunctionInFile:"file11" line:22 failureReporter:reporter](@"a") toBeNil];
-  SKHelperExpectReport(@"file11", 22, @"Expected nil, got a");
+  SKHelperExpectReport(@"file11", 22, @"Want nil, got a");
 }
 
 @end

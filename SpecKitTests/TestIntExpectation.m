@@ -22,12 +22,12 @@
 
 - (void) testToBeFail {
   [[SKIntExpectation expectationFunctionInFile:"file11" line:22 failureReporter:reporter](2) toBe: 3];
-  SKHelperExpectReport(@"file11", 22, @"Expected 3, got 2");
+  SKHelperExpectReport(@"file11", 22, @"Want 3, got 2");
 }
 
 - (void) testToBeNegativeFail {
   [[SKIntExpectation expectationFunctionInFile:"file1" line:2 failureReporter:reporter](-1) toBe: 1];
-  SKHelperExpectReport(@"file1", 2, @"Expected 1, got -1");
+  SKHelperExpectReport(@"file1", 2, @"Want 1, got -1");
 }
 
 - (void) testToBePass {
@@ -38,7 +38,7 @@
 
 - (void) testToBeTrueFail {
   [[SKIntExpectation expectationFunctionInFile:"file11" line:22 failureReporter:reporter](NO) toBeTrue];
-  SKHelperExpectReport(@"file11", 22, @"Expected true, got false");
+  SKHelperExpectReport(@"file11", 22, @"Want true, got false");
 }
 
 - (void) testToBeTruePass {

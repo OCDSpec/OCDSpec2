@@ -1,5 +1,7 @@
 #import <SenTestingKit/SenTestingKit.h>
 
+#import "SenTestCase+ReportingHelper.h"
+
 #import "SKContext.h"
 #import "SKObjectExpectation.h"
 #import "SKFakeFailureReporter.h"
@@ -10,90 +12,55 @@
 
 - (void) testToBeEqualToPass {
   SKFakeFailureReporter *reporter = [[[SKFakeFailureReporter alloc] init] autorelease];
-  
-  SKObjectExpectation *exp = [SKObjectExpectation expectationFunctionInFile:"file1" line:2 failureReporter:reporter](@"a");
-  [exp toBeEqualTo: @"a"];
-  
-  STAssertTrue(reporter.reportCount == 0, nil);
+  [[SKObjectExpectation expectationFunctionInFile:"file1" line:2 failureReporter:reporter](@"a") toBeEqualTo: @"a"];
+  SKHelperExpectNoReport();
 }
 
 - (void) testToBeEqualToFail {
   SKFakeFailureReporter *reporter = [[[SKFakeFailureReporter alloc] init] autorelease];
-  
-  SKObjectExpectation *exp = [SKObjectExpectation expectationFunctionInFile:"file11" line:22 failureReporter:reporter](@"a");
-  [exp toBeEqualTo: @"b"];
-  
-  STAssertTrue(reporter.reportCount == 1, nil);
-  STAssertTrue([reporter.lastReport isEqualToString: @"Expected b, got a"], nil);
-  STAssertTrue([reporter.lastFile isEqualToString: @"file11"], nil);
-  STAssertTrue(reporter.lastLine == 22, nil);
+  [[SKObjectExpectation expectationFunctionInFile:"file11" line:22 failureReporter:reporter](@"a") toBeEqualTo: @"b"];
+  SKHelperExpectReport(@"file11", 22, @"Expected b, got a");
 }
 
 - (void) testToBePass {
-  SKFakeFailureReporter *reporter = [[[SKFakeFailureReporter alloc] init] autorelease];
-  
   id a = [[[NSObject alloc] init] autorelease];
-  SKObjectExpectation *exp = [SKObjectExpectation expectationFunctionInFile:"file1" line:2 failureReporter:reporter](a);
-  [exp toBe: a];
   
-  STAssertTrue(reporter.reportCount == 0, nil);
+  SKFakeFailureReporter *reporter = [[[SKFakeFailureReporter alloc] init] autorelease];
+  [[SKObjectExpectation expectationFunctionInFile:"file1" line:2 failureReporter:reporter](a) toBe: a];
+  SKHelperExpectNoReport();
 }
 
 - (void) testToBeFail {
-  SKFakeFailureReporter *reporter = [[[SKFakeFailureReporter alloc] init] autorelease];
-  
   id a = [NSMutableString stringWithString:@"a"];
   id b = [NSMutableString stringWithString:@"b"];
   
-  SKObjectExpectation *exp = [SKObjectExpectation expectationFunctionInFile:"file11" line:22 failureReporter:reporter](a);
-  [exp toBe: b];
-  
-  STAssertTrue(reporter.reportCount == 1, nil);
-  STAssertTrue([reporter.lastReport isEqualToString: @"Expected b, got a"], nil);
-  STAssertTrue([reporter.lastFile isEqualToString: @"file11"], nil);
-  STAssertTrue(reporter.lastLine == 22, nil);
+  SKFakeFailureReporter *reporter = [[[SKFakeFailureReporter alloc] init] autorelease];
+  [[SKObjectExpectation expectationFunctionInFile:"file11" line:22 failureReporter:reporter](a) toBe: b];
+  SKHelperExpectReport(@"file11", 22, @"Expected b, got a");
 }
 
 - (void) testToExistPass {
   SKFakeFailureReporter *reporter = [[[SKFakeFailureReporter alloc] init] autorelease];
-  
-  SKObjectExpectation *exp = [SKObjectExpectation expectationFunctionInFile:"file11" line:22 failureReporter:reporter](@"a");
-  [exp toExist];
-  
-  STAssertTrue(reporter.reportCount == 0, nil);
+  [[SKObjectExpectation expectationFunctionInFile:"file11" line:22 failureReporter:reporter](@"a") toExist];
+  SKHelperExpectNoReport();
 }
 
 - (void) testToExistFail {
   SKFakeFailureReporter *reporter = [[[SKFakeFailureReporter alloc] init] autorelease];
-  
-  SKObjectExpectation *exp = [SKObjectExpectation expectationFunctionInFile:"file11" line:22 failureReporter:reporter](nil);
-  [exp toExist];
-  
-  STAssertTrue(reporter.reportCount == 1, nil);
-  STAssertTrue([reporter.lastReport isEqualToString: @"Expected nil, but isn't"], nil);
-  STAssertTrue([reporter.lastFile isEqualToString: @"file11"], nil);
-  STAssertTrue(reporter.lastLine == 22, nil);
+  [[SKObjectExpectation expectationFunctionInFile:"file11" line:22 failureReporter:reporter](nil) toExist];
+  SKHelperExpectReport(@"file11", 22, @"Expected nil, but isn't");
 }
 
 - (void) testToBeNilPass {
   SKFakeFailureReporter *reporter = [[[SKFakeFailureReporter alloc] init] autorelease];
-  
-  SKObjectExpectation *exp = [SKObjectExpectation expectationFunctionInFile:"file11" line:22 failureReporter:reporter](nil);
-  [exp toBeNil];
-  
-  STAssertTrue(reporter.reportCount == 0, nil);
+  [[SKObjectExpectation expectationFunctionInFile:"file11" line:22 failureReporter:reporter](nil) toBeNil];
+  SKHelperExpectNoReport();
 }
 
 - (void) testToBeNilFail {
   SKFakeFailureReporter *reporter = [[[SKFakeFailureReporter alloc] init] autorelease];
-  
-  SKObjectExpectation *exp = [SKObjectExpectation expectationFunctionInFile:"file11" line:22 failureReporter:reporter](@"a");
-  [exp toBeNil];
-  
-  STAssertTrue(reporter.reportCount == 1, nil);
-  STAssertTrue([reporter.lastReport isEqualToString: @"Expected nil, got a"], nil);
-  STAssertTrue([reporter.lastFile isEqualToString: @"file11"], nil);
-  STAssertTrue(reporter.lastLine == 22, nil);
+  [[SKObjectExpectation expectationFunctionInFile:"file11" line:22 failureReporter:reporter](@"a") toBeNil];
+  SKHelperExpectReport(@"file11", 22, @"Expected nil, got a");
 }
 
 @end

@@ -43,4 +43,20 @@
   }
 }
 
+- (void) toBeFalse {
+  if (self.number != NO) {
+    [self.failureReporter reportFailure:@"Want false, got true"
+                                 inFile:self.file
+                                 atLine:self.line];
+  }
+}
+
+- (void) toNotBeFalse {
+  if (self.number == NO) {
+    [self.failureReporter reportFailure:@"Want anything but false, got false"
+                                 inFile:self.file
+                                 atLine:self.line];
+  }
+}
+
 @end

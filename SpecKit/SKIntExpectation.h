@@ -15,6 +15,8 @@
 
 - (void) toBe:(long long)other;
 - (void) toBeTrue;
+- (void) toBeFalse;
+- (void) toNotBeFalse;
 
 @end
 

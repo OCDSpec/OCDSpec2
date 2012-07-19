@@ -14,6 +14,7 @@
                                           failureReporter:(id<SKFailureReporter>)reporter;
 
 - (void) toBe:(id)other;
+- (void) toBeEqualTo:(id)other;
 - (void) toExist;
 - (void) toBeNil;
 

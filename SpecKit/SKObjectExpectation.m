@@ -24,6 +24,18 @@
 }
 
 - (void) toBe:(id)other {
+  if (self.object != other) {
+    NSString *message = [NSString stringWithFormat:@"Expected %@, got %@",
+                         [other description],
+                         [self.object description]];
+    
+    [self.failureReporter reportFailure:message
+                                 inFile:self.file
+                                 atLine:self.line];
+  }
+}
+
+- (void) toBeEqualTo:(id)other {
   if (![self.object isEqual: other]) {
     NSString *message = [NSString stringWithFormat:@"Expected %@, got %@",
                          [other description],

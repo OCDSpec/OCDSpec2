@@ -14,7 +14,9 @@
                                               failureReporter:(id<SKFailureReporter>)reporter;
 
 - (void) toBe:(long long)other;
+- (void) toBeTrue;
 
 @end
 
 #define expectInt [SKIntExpectation expectationFunctionInFile:__FILE__ line:__LINE__ failureReporter:self]
+#define expectBool [SKIntExpectation expectationFunctionInFile:__FILE__ line:__LINE__ failureReporter:self]

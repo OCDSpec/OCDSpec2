@@ -35,4 +35,12 @@
   }
 }
 
+- (void) toBeTrue {
+  if (self.number != YES) {
+    [self.failureReporter reportFailure:@"Expected true, got false"
+                                 inFile:self.file
+                                 atLine:self.line];
+  }
+}
+
 @end

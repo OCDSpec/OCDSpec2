@@ -33,7 +33,8 @@ SpecKitContext(Sample2) {
 - (void) testContextRunExecutesContents {
   NSPipe *pipe = [NSPipe pipe];
   
-  [SKContext runAllTestsUsingOutput:[pipe fileHandleForWriting]];
+  int errorCount = [SKContext runAllTestsUsingOutput:[pipe fileHandleForWriting]];
+  STAssertTrue(errorCount == 2, nil);
   
   [[pipe fileHandleForWriting] closeFile];
   

@@ -3,14 +3,15 @@
 #import "SKExample.h"
 #import <objc/runtime.h>
 
-void SpecKitRunAllTests() {
-  [SKContext runAllTestsUsingOutput:[NSFileHandle fileHandleWithStandardError]];
+int SpecKitRunAllTests() {
+  return [SKContext runAllTestsUsingOutput:[NSFileHandle fileHandleWithStandardError]];
 }
 
 @implementation SKContext
 
 @synthesize reportOutputFile;
 @synthesize descriptions;
+@synthesize errorCount;
 
 - (void) dealloc {
   self.reportOutputFile = nil;
@@ -19,14 +20,20 @@ void SpecKitRunAllTests() {
   [super dealloc];
 }
 
-+ (void) runAllTestsUsingOutput:(NSFileHandle*)outputFile {
++ (int) runAllTestsUsingOutput:(NSFileHandle*)outputFile {
+  int errorCount = 0;
+  
   for (Class contextClass in [self contextClasses]) {
     SKContext *ctx = [[[contextClass alloc] init] autorelease];
     ctx.reportOutputFile = outputFile;
     
     [ctx gatherExamples];
     [ctx runAllExamples];
+    
+    errorCount += ctx.errorCount;
   }
+  
+  return errorCount;
 }
 
 + (NSArray*) contextClasses {
@@ -83,6 +90,7 @@ void SpecKitRunAllTests() {
 }
 
 - (void) reportFailure:(NSString*)msg inFile:(NSString*)file atLine:(int)line {
+  self.errorCount++;
   NSString *decoratedMessage = [NSString stringWithFormat:@"%@:%d: error: %@\n", file, line, msg];
   [self.reportOutputFile writeData:[decoratedMessage dataUsingEncoding:NSUTF8StringEncoding]];
 }

@@ -2,14 +2,15 @@
 
 #import "SKFailureReporter.h"
 
-void SpecKitRunAllTests();
+int SpecKitRunAllTests();
 
 @interface SKContext : NSObject <SKFailureReporter>
 
 @property (readwrite, retain) NSFileHandle *reportOutputFile;
 @property (readwrite, retain) NSArray *descriptions;
+@property (readwrite, assign) int errorCount;
 
-+ (void) runAllTestsUsingOutput:(NSFileHandle*)outputFile;
++ (int) runAllTestsUsingOutput:(NSFileHandle*)outputFile;
 + (NSArray*) contextClasses;
 
 - (void(^)(NSString*, void(^)(void))) _functionForDescribeBlock;

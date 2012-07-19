@@ -22,4 +22,19 @@
   STAssertTrue([str isEqualToString: @"file1:73: error: this is\n a test!\n"], nil);
 }
 
+- (void) testKeepingErrorCount {
+  SKContext *ctx = [[[SKContext alloc] init] autorelease];
+  
+  NSPipe *pipe = [NSPipe pipe];
+  ctx.reportOutputFile = [pipe fileHandleForWriting];
+  
+  STAssertTrue(ctx.errorCount == 0, nil);
+  
+  [ctx reportFailure:@"this" inFile:@"that" atLine:23];
+  STAssertTrue(ctx.errorCount == 1, nil);
+  
+  [ctx reportFailure:@"another error" inFile:@"somefile" atLine:45];
+  STAssertTrue(ctx.errorCount == 2, nil);
+}
+
 @end

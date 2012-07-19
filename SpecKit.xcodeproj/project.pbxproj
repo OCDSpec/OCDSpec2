@@ -32,6 +32,9 @@
 		9490BDBE15B679B400512DA8 /* SKDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 9490BDBC15B679B400512DA8 /* SKDescription.m */; };
 		9490BDC115B67B6E00512DA8 /* SKExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 9490BDC015B67B6E00512DA8 /* SKExample.m */; };
 		9490BDC215B67B6E00512DA8 /* SKExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 9490BDC015B67B6E00512DA8 /* SKExample.m */; };
+		94E026FA15B89C8C0039F74E /* TestFloatExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94E026F915B89C8C0039F74E /* TestFloatExpectation.m */; };
+		94E026FE15B89D010039F74E /* SKFloatExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94E026FD15B89D010039F74E /* SKFloatExpectation.m */; };
+		94E026FF15B89D010039F74E /* SKFloatExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94E026FD15B89D010039F74E /* SKFloatExpectation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -84,6 +87,9 @@
 		9490BDBC15B679B400512DA8 /* SKDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKDescription.m; sourceTree = "<group>"; };
 		9490BDBF15B67B6E00512DA8 /* SKExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKExample.h; sourceTree = "<group>"; };
 		9490BDC015B67B6E00512DA8 /* SKExample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKExample.m; sourceTree = "<group>"; };
+		94E026F915B89C8C0039F74E /* TestFloatExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestFloatExpectation.m; sourceTree = "<group>"; };
+		94E026FC15B89D010039F74E /* SKFloatExpectation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKFloatExpectation.h; sourceTree = "<group>"; };
+		94E026FD15B89D010039F74E /* SKFloatExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKFloatExpectation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +162,8 @@
 				946CE75615B76E9F0009D324 /* SKObjectExpectation.m */,
 				946CE76715B78ABC0009D324 /* SKIntExpectation.h */,
 				946CE76815B78ABC0009D324 /* SKIntExpectation.m */,
+				94E026FC15B89D010039F74E /* SKFloatExpectation.h */,
+				94E026FD15B89D010039F74E /* SKFloatExpectation.m */,
 				9490BD8315B6663100512DA8 /* main.m */,
 				9490BD8515B6663100512DA8 /* Supporting Files */,
 			);
@@ -193,6 +201,7 @@
 				946CE79615B79BD20009D324 /* TestReportingErrors.m */,
 				946CE74E15B76B4F0009D324 /* TestObjectExpectation.m */,
 				946CE76515B78A660009D324 /* TestIntExpectation.m */,
+				94E026F915B89C8C0039F74E /* TestFloatExpectation.m */,
 				9490BD9D15B666BB00512DA8 /* Supporting Files */,
 			);
 			path = SpecKitTests;
@@ -312,6 +321,7 @@
 				946CE75715B76E9F0009D324 /* SKObjectExpectation.m in Sources */,
 				946CE76915B78ABC0009D324 /* SKIntExpectation.m in Sources */,
 				9409983D15B840880060126A /* SKExpectation.m in Sources */,
+				94E026FE15B89D010039F74E /* SKFloatExpectation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,6 +343,8 @@
 				946CE79A15B79C430009D324 /* TestRunningSuite.m in Sources */,
 				946CE7BA15B7ACA30009D324 /* SenTestCase+ReportingHelper.m in Sources */,
 				9409983E15B840880060126A /* SKExpectation.m in Sources */,
+				94E026FA15B89C8C0039F74E /* TestFloatExpectation.m in Sources */,
+				94E026FF15B89D010039F74E /* SKFloatExpectation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

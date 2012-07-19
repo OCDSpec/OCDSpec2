@@ -4,5 +4,6 @@
 #import "SKContext.h"
 #import "SKObjectExpectation.h"
 #import "SKIntExpectation.h"
+#import "SKFloatExpectation.h"
 
 #endif

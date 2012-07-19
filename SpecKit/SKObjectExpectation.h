@@ -1,12 +1,9 @@
 #import <Foundation/Foundation.h>
 
-#import "SKFailureReporter.h"
+#import "SKExpectation.h"
 
-@interface SKObjectExpectation : NSObject
+@interface SKObjectExpectation : SKExpectation
 
-@property (readwrite, assign) NSString *file;
-@property (readwrite, assign) int line;
-@property (readwrite, assign) id<SKFailureReporter> failureReporter;
 @property (readwrite, assign) id object;
 
 + (SKObjectExpectation*(^)(id)) expectationFunctionInFile:(char*)file

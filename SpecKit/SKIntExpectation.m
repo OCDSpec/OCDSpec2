@@ -2,9 +2,6 @@
 
 @implementation SKIntExpectation
 
-@synthesize file;
-@synthesize line;
-@synthesize failureReporter;
 @synthesize number;
 
 + (SKIntExpectation*(^)(long long)) expectationFunctionInFile:(char*)file
@@ -12,50 +9,37 @@
                                               failureReporter:(id<SKFailureReporter>)reporter
 {
   return [[^SKIntExpectation*(long long num){
-    SKIntExpectation *expectation = [[[SKIntExpectation alloc] init] autorelease];
-    expectation.file = [NSString stringWithUTF8String:file];
-    expectation.line = line;
-    expectation.failureReporter = reporter;
-    
+    SKIntExpectation *expectation = [[[SKIntExpectation alloc] initWithFile:file
+                                                                       line:line
+                                                            failureReporter:reporter] autorelease];
     expectation.number = num;
-    
     return expectation;
   } copy] autorelease];
 }
 
 - (void) toBe:(long long)other {
   if (self.number != other) {
-    NSString *message = [NSString stringWithFormat:@"Want %d, got %d",
+    [self reportFailure:[NSString stringWithFormat:@"Want %d, got %d",
                          other,
-                         self.number];
-    
-    [self.failureReporter reportFailure:message
-                                 inFile:self.file
-                                 atLine:self.line];
+                         self.number]];
   }
 }
 
 - (void) toBeTrue {
   if (self.number != YES) {
-    [self.failureReporter reportFailure:@"Want true, got false"
-                                 inFile:self.file
-                                 atLine:self.line];
+    [self reportFailure:@"Want true, got false"];
   }
 }
 
 - (void) toBeFalse {
   if (self.number != NO) {
-    [self.failureReporter reportFailure:@"Want false, got true"
-                                 inFile:self.file
-                                 atLine:self.line];
+    [self reportFailure:@"Want false, got true"];
   }
 }
 
 - (void) toNotBeFalse {
   if (self.number == NO) {
-    [self.failureReporter reportFailure:@"Want anything but false, got false"
-                                 inFile:self.file
-                                 atLine:self.line];
+    [self reportFailure:@"Want anything but false, got false"];
   }
 }
 

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9409983D15B840880060126A /* SKExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9409983C15B840880060126A /* SKExpectation.m */; };
+		9409983E15B840880060126A /* SKExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9409983C15B840880060126A /* SKExpectation.m */; };
 		946CE74F15B76B4F0009D324 /* TestObjectExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 946CE74E15B76B4F0009D324 /* TestObjectExpectation.m */; };
 		946CE75715B76E9F0009D324 /* SKObjectExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 946CE75615B76E9F0009D324 /* SKObjectExpectation.m */; };
 		946CE75815B76E9F0009D324 /* SKObjectExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 946CE75615B76E9F0009D324 /* SKObjectExpectation.m */; };
@@ -45,6 +47,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9409983B15B840880060126A /* SKExpectation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKExpectation.h; sourceTree = "<group>"; };
+		9409983C15B840880060126A /* SKExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKExpectation.m; sourceTree = "<group>"; };
 		946CE74E15B76B4F0009D324 /* TestObjectExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestObjectExpectation.m; sourceTree = "<group>"; };
 		946CE75515B76E9F0009D324 /* SKObjectExpectation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKObjectExpectation.h; sourceTree = "<group>"; };
 		946CE75615B76E9F0009D324 /* SKObjectExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKObjectExpectation.m; sourceTree = "<group>"; };
@@ -146,6 +150,8 @@
 				9490BDBC15B679B400512DA8 /* SKDescription.m */,
 				9490BDBF15B67B6E00512DA8 /* SKExample.h */,
 				9490BDC015B67B6E00512DA8 /* SKExample.m */,
+				9409983B15B840880060126A /* SKExpectation.h */,
+				9409983C15B840880060126A /* SKExpectation.m */,
 				946CE75515B76E9F0009D324 /* SKObjectExpectation.h */,
 				946CE75615B76E9F0009D324 /* SKObjectExpectation.m */,
 				946CE76715B78ABC0009D324 /* SKIntExpectation.h */,
@@ -305,6 +311,7 @@
 				9490BDC115B67B6E00512DA8 /* SKExample.m in Sources */,
 				946CE75715B76E9F0009D324 /* SKObjectExpectation.m in Sources */,
 				946CE76915B78ABC0009D324 /* SKIntExpectation.m in Sources */,
+				9409983D15B840880060126A /* SKExpectation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,6 +332,7 @@
 				946CE79715B79BD20009D324 /* TestReportingErrors.m in Sources */,
 				946CE79A15B79C430009D324 /* TestRunningSuite.m in Sources */,
 				946CE7BA15B7ACA30009D324 /* SenTestCase+ReportingHelper.m in Sources */,
+				9409983E15B840880060126A /* SKExpectation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

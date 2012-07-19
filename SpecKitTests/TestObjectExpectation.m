@@ -110,7 +110,7 @@
 }
 
 - (void) testToBeKindOfClassFail {
-  [[SKObjectExpectation expectationFunctionInFile:"file12" line:3 failureReporter:reporter]
+  [[SKObjectExpectation expectationFunctionInFile:"file12" line:23 failureReporter:reporter]
    ([NSNumber numberWithInt:2]) toBeKindOfClass: [NSString self]];
   SKHelperExpectReport(@"file12", 23, @"Want NSString, got __NSCFNumber");
 }

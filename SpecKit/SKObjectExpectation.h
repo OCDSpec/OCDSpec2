@@ -17,6 +17,8 @@
 - (void) toBeEqualTo:(id)other;
 - (void) toExist;
 - (void) toBeNil;
+- (void) toBeMemberOfClass:(Class)cls;
+- (void) toBeKindOfClass:(Class)cls;
 
 @end
 

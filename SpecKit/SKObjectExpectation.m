@@ -66,4 +66,28 @@
   }
 }
 
+- (void) toBeMemberOfClass:(Class)cls {
+  if (![self.object isMemberOfClass: cls]) {
+    NSString *message = [NSString stringWithFormat:@"Want %@, got %@",
+                         cls,
+                         [self.object class]];
+    
+    [self.failureReporter reportFailure:message
+                                 inFile:self.file
+                                 atLine:self.line];
+  }
+}
+
+- (void) toBeKindOfClass:(Class)cls {
+  if (![self.object isKindOfClass: cls]) {
+    NSString *message = [NSString stringWithFormat:@"Want %@, got %@",
+                         cls,
+                         [self.object class]];
+    
+    [self.failureReporter reportFailure:message
+                                 inFile:self.file
+                                 atLine:self.line];
+  }
+}
+
 @end

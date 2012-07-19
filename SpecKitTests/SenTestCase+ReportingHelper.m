@@ -18,7 +18,7 @@
   if (![reporter.lastReport isEqualToString: message]) {
     [self failWithException:[NSException failureInFile:[NSString stringWithUTF8String:inFile]
                                                 atLine:atLine
-                                       withDescription:@"failed with wrong message"]];
+                                       withDescription:@"failed with wrong message: %@", reporter.lastReport]];
   }
   
   if (![reporter.lastFile isEqualToString: file]) {
@@ -41,7 +41,7 @@
   if (reporter.reportCount != 0) {
     [self failWithException:[NSException failureInFile:[NSString stringWithUTF8String:inFile]
                                                 atLine:atLine
-                                       withDescription:@"got a report, didnt expect one"]];
+                                       withDescription:@"got unexpected failure [%@], didnt expect one", reporter.lastReport]];
   }
 }
 

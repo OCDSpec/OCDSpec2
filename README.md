@@ -24,3 +24,11 @@
 
 * Choose the spec scheme
 * Build (Cmd+B)
+
+## Credits
+
+* Inspired by Eric Smith's [OCDSpec](https://github.com/paytonrules/OCDSpec).
+
+## Caveats
+
+* SpecKit is only known to work with Xcode 4.3.3 for now.

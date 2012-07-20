@@ -6,8 +6,8 @@
 ## Use SpecKit in an Xcode Project
 
 * Add a new 'iOS -> Application -> Empty Application' target to your project.
-* Delete OTAppDelegate.h, OTAppDelegate.m, and main.m from it
-* Drag and drop all the files in SpecKit/SpecKit into the new target's Supporting Files group in Xcode
+* Delete `OTAppDelegate.h`, `OTAppDelegate.m`, and `main.m` from it
+* Drag and drop all the files in the `SpecKit` subdirectory into the new target's Supporting Files group in Xcode
   * In the ensuing dialog box, ensure 'Copy items...' is checked
   * Also check the box for the target you just created
   * But don't check the main target
@@ -19,3 +19,8 @@
 
 * Add a new 'SpecKit -> Spec' file to your project
 * Make sure it's only in your spec target, not your main target
+
+## Running specs
+
+* Choose the spec scheme
+* Build (Cmd+B)

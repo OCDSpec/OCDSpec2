@@ -27,6 +27,35 @@
 
 ## Example spec
 
+```objc
+#import "SpecKit.h"
+
+#import "Widget.h"
+
+SpecKitContext(WidgetSpec) {
+
+  __block Widget* widget;
+
+  beforeEach(^{
+    widget = [[[Widget alloc] init] autorelease];
+  });
+
+  describe(@"-gadgets", ^{
+
+    it(@"is a non-empty array", ^{
+      [expect(widget.gadgets) toExist];
+      [expectInt([widget.gadgets count]) toBe: 3];
+    });
+
+    it(@"contains gadget instances", ^{
+      [expect([widget.gadgets objectAtIndex:0]) toBeKindOfClass: [Gadget self]];
+    });
+
+  });
+
+}
+```
+
 ## Matchers
 
 * `expect(id)`

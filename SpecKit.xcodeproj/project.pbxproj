@@ -21,7 +21,6 @@
 		946CE79A15B79C430009D324 /* TestRunningSuite.m in Sources */ = {isa = PBXBuildFile; fileRef = 946CE79915B79C430009D324 /* TestRunningSuite.m */; };
 		946CE7BA15B7ACA30009D324 /* SenTestCase+ReportingHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 946CE7B915B7ACA30009D324 /* SenTestCase+ReportingHelper.m */; };
 		9490BD8115B6663100512DA8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9490BD8015B6663100512DA8 /* Foundation.framework */; };
-		9490BD8415B6663100512DA8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9490BD8315B6663100512DA8 /* main.m */; };
 		9490BD9515B666BB00512DA8 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9490BD9415B666BB00512DA8 /* SenTestingKit.framework */; };
 		9490BD9715B666BB00512DA8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9490BD9615B666BB00512DA8 /* Cocoa.framework */; };
 		9490BDA115B666BB00512DA8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9490BD9F15B666BB00512DA8 /* InfoPlist.strings */; };
@@ -69,7 +68,7 @@
 		946CE7B915B7ACA30009D324 /* SenTestCase+ReportingHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SenTestCase+ReportingHelper.m"; sourceTree = "<group>"; };
 		9490BD7C15B6663100512DA8 /* SpecKit */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SpecKit; sourceTree = BUILT_PRODUCTS_DIR; };
 		9490BD8015B6663100512DA8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		9490BD8315B6663100512DA8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9490BD8315B6663100512DA8 /* unitTestMain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = unitTestMain.m; sourceTree = "<group>"; };
 		9490BD8615B6663100512DA8 /* SpecKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpecKit-Prefix.pch"; sourceTree = "<group>"; };
 		9490BD9315B666BB00512DA8 /* SpecKitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpecKitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9490BD9415B666BB00512DA8 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -164,7 +163,7 @@
 				946CE76815B78ABC0009D324 /* SKIntExpectation.m */,
 				94E026FC15B89D010039F74E /* SKFloatExpectation.h */,
 				94E026FD15B89D010039F74E /* SKFloatExpectation.m */,
-				9490BD8315B6663100512DA8 /* main.m */,
+				9490BD8315B6663100512DA8 /* unitTestMain.m */,
 				9490BD8515B6663100512DA8 /* Supporting Files */,
 			);
 			path = SpecKit;
@@ -314,7 +313,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9490BD8415B6663100512DA8 /* main.m in Sources */,
 				9490BDAB15B667C300512DA8 /* SKContext.m in Sources */,
 				9490BDBD15B679B400512DA8 /* SKDescription.m in Sources */,
 				9490BDC115B67B6E00512DA8 /* SKExample.m in Sources */,

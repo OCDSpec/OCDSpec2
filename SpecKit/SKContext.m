@@ -1,6 +1,7 @@
 #import "SKContext.h"
 #import "SKDescription.h"
 #import "SKExample.h"
+#import "SKRunBeforeAll.h"
 #import <objc/runtime.h>
 
 int SpecKitRunAllTests() {
@@ -22,6 +23,11 @@ int SpecKitRunAllTests() {
 
 + (int) runAllTestsUsingOutput:(NSFileHandle*)outputFile {
   int errorCount = 0;
+  
+  for (Class runnerClass in [self beforeAllRunnerClasses]) {
+    id<SKRunBeforeAll> runner = [[[runnerClass alloc] init] autorelease];
+    [runner run];
+  }
   
   for (Class contextClass in [self contextClasses]) {
     SKContext *ctx = [[[contextClass alloc] init] autorelease];
@@ -47,6 +53,24 @@ int SpecKitRunAllTests() {
     Class class = classes[i];
     
     if (class_getSuperclass(class) == [SKContext self]) {
+      [testClasses addObject:class];
+    }
+  }
+  
+  return testClasses;
+}
+
++ (NSArray*) beforeAllRunnerClasses {
+  int classCount = objc_getClassList(NULL, 0);
+  Class classes[classCount];
+  objc_getClassList(classes, classCount);
+  
+  NSMutableArray *testClasses = [NSMutableArray array];
+  
+  for (int i = 0; i < classCount; i++) {
+    Class class = classes[i];
+    
+    if (class_conformsToProtocol(class, @protocol(SKRunBeforeAll))) {
       [testClasses addObject:class];
     }
   }

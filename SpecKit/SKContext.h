@@ -12,6 +12,7 @@ int SpecKitRunAllTests();
 
 + (int) runAllTestsUsingOutput:(NSFileHandle*)outputFile;
 + (NSArray*) contextClasses;
++ (NSArray*) beforeAllRunnerClasses;
 
 - (void(^)(NSString*, void(^)(void))) _functionForDescribeBlock;
 - (void(^)(NSString*, void(^)(void))) _functionForExampleBlock;

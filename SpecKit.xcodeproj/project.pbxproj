@@ -86,6 +86,7 @@
 		9490BDBC15B679B400512DA8 /* SKDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKDescription.m; sourceTree = "<group>"; };
 		9490BDBF15B67B6E00512DA8 /* SKExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKExample.h; sourceTree = "<group>"; };
 		9490BDC015B67B6E00512DA8 /* SKExample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKExample.m; sourceTree = "<group>"; };
+		94B56E6F15BA2156001BB414 /* SKRunBeforeAll.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKRunBeforeAll.h; sourceTree = "<group>"; };
 		94E026F915B89C8C0039F74E /* TestFloatExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestFloatExpectation.m; sourceTree = "<group>"; };
 		94E026FC15B89D010039F74E /* SKFloatExpectation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKFloatExpectation.h; sourceTree = "<group>"; };
 		94E026FD15B89D010039F74E /* SKFloatExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKFloatExpectation.m; sourceTree = "<group>"; };
@@ -148,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				946CE79B15B79D750009D324 /* SpecKit.h */,
+				94B56E6F15BA2156001BB414 /* SKRunBeforeAll.h */,
 				946CE75915B7758E0009D324 /* SKFailureReporter.h */,
 				9490BDA915B667C300512DA8 /* SKContext.h */,
 				9490BDAA15B667C300512DA8 /* SKContext.m */,

@@ -25,6 +25,25 @@
 * Choose the spec scheme
 * Build (Cmd+B)
 
+## Example spec
+
+## Matchers
+
+* `expect(id)`
+  * `toBe:(id)other`
+  * `toBeEqualTo:(id)other`
+  * `toExist`
+  * `toBeNil`
+  * `toBeMemberOfClass:(Class)cls`
+  * `toBeKindOfClass:(Class)cls`
+* `expectInt(long long)`
+  * `toBe:(long long)other`
+  * `toBeTrue`
+  * `toBeFalse`
+  * `toNotBeFalse`
+* `expectFloat(double)`
+  * `toBe:(double)other withPrecision:(double)precision`
+
 ## Credits
 
 * Inspired by Eric Smith's [OCDSpec](https://github.com/paytonrules/OCDSpec).

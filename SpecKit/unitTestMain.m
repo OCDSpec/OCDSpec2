@@ -1,3 +1,5 @@
+#if TARGET_OS_IPHONE == 1
+
 #import <UIKit/UIApplication.h>
 #import "SpecKit.h"
 
@@ -18,3 +20,16 @@ int main(int argc, char * argv[]) {
   }
   return 0;
 }
+
+#else
+
+#import "SpecKit.h"
+
+int main(int argc, char * argv[]) {
+  @autoreleasepool {
+    exit(SpecKitRunAllTests());
+  }
+  return 0;
+}
+
+#endif

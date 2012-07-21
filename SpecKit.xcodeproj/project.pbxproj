@@ -31,6 +31,9 @@
 		9490BDBE15B679B400512DA8 /* SKDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 9490BDBC15B679B400512DA8 /* SKDescription.m */; };
 		9490BDC115B67B6E00512DA8 /* SKExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 9490BDC015B67B6E00512DA8 /* SKExample.m */; };
 		9490BDC215B67B6E00512DA8 /* SKExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 9490BDC015B67B6E00512DA8 /* SKExample.m */; };
+		94A6B9D315BB0818003F22B6 /* TestStringExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6B9D215BB0818003F22B6 /* TestStringExpectation.m */; };
+		94A6B9D915BB1528003F22B6 /* SKStringExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6B9D815BB1528003F22B6 /* SKStringExpectation.m */; };
+		94A6B9DA15BB1528003F22B6 /* SKStringExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6B9D815BB1528003F22B6 /* SKStringExpectation.m */; };
 		94E026FA15B89C8C0039F74E /* TestFloatExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94E026F915B89C8C0039F74E /* TestFloatExpectation.m */; };
 		94E026FE15B89D010039F74E /* SKFloatExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94E026FD15B89D010039F74E /* SKFloatExpectation.m */; };
 		94E026FF15B89D010039F74E /* SKFloatExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94E026FD15B89D010039F74E /* SKFloatExpectation.m */; };
@@ -86,6 +89,9 @@
 		9490BDBC15B679B400512DA8 /* SKDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKDescription.m; sourceTree = "<group>"; };
 		9490BDBF15B67B6E00512DA8 /* SKExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKExample.h; sourceTree = "<group>"; };
 		9490BDC015B67B6E00512DA8 /* SKExample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKExample.m; sourceTree = "<group>"; };
+		94A6B9D215BB0818003F22B6 /* TestStringExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestStringExpectation.m; sourceTree = "<group>"; };
+		94A6B9D715BB1528003F22B6 /* SKStringExpectation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKStringExpectation.h; sourceTree = "<group>"; };
+		94A6B9D815BB1528003F22B6 /* SKStringExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKStringExpectation.m; sourceTree = "<group>"; };
 		94B56E6F15BA2156001BB414 /* SKRunBeforeAll.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKRunBeforeAll.h; sourceTree = "<group>"; };
 		94E026F915B89C8C0039F74E /* TestFloatExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestFloatExpectation.m; sourceTree = "<group>"; };
 		94E026FC15B89D010039F74E /* SKFloatExpectation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKFloatExpectation.h; sourceTree = "<group>"; };
@@ -165,6 +171,8 @@
 				946CE76815B78ABC0009D324 /* SKIntExpectation.m */,
 				94E026FC15B89D010039F74E /* SKFloatExpectation.h */,
 				94E026FD15B89D010039F74E /* SKFloatExpectation.m */,
+				94A6B9D715BB1528003F22B6 /* SKStringExpectation.h */,
+				94A6B9D815BB1528003F22B6 /* SKStringExpectation.m */,
 				9490BD8315B6663100512DA8 /* unitTestMain.m */,
 				9490BD8515B6663100512DA8 /* Supporting Files */,
 			);
@@ -203,6 +211,7 @@
 				946CE74E15B76B4F0009D324 /* TestObjectExpectation.m */,
 				946CE76515B78A660009D324 /* TestIntExpectation.m */,
 				94E026F915B89C8C0039F74E /* TestFloatExpectation.m */,
+				94A6B9D215BB0818003F22B6 /* TestStringExpectation.m */,
 				9490BD9D15B666BB00512DA8 /* Supporting Files */,
 			);
 			path = SpecKitTests;
@@ -322,6 +331,7 @@
 				946CE76915B78ABC0009D324 /* SKIntExpectation.m in Sources */,
 				9409983D15B840880060126A /* SKExpectation.m in Sources */,
 				94E026FE15B89D010039F74E /* SKFloatExpectation.m in Sources */,
+				94A6B9D915BB1528003F22B6 /* SKStringExpectation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +355,8 @@
 				9409983E15B840880060126A /* SKExpectation.m in Sources */,
 				94E026FA15B89C8C0039F74E /* TestFloatExpectation.m in Sources */,
 				94E026FF15B89D010039F74E /* SKFloatExpectation.m in Sources */,
+				94A6B9D315BB0818003F22B6 /* TestStringExpectation.m in Sources */,
+				94A6B9DA15BB1528003F22B6 /* SKStringExpectation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

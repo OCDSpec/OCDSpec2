@@ -14,7 +14,9 @@ xcuserdata
 profile
 *.moved-aside
 DerivedData
+
 # AppCode
 .idea
+
 # Mac
 .DS_Store

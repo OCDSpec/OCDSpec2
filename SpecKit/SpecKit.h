@@ -5,6 +5,7 @@
 #import <SpecKit/SKObjectExpectation.h>
 #import <SpecKit/SKIntExpectation.h>
 #import <SpecKit/SKFloatExpectation.h>
+#import <SpecKit/SKStringExpectation.h>
 #import <SpecKit/SKRunBeforeAll.h>
 
 #endif

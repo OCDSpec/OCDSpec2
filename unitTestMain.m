@@ -1,7 +1,7 @@
 #if TARGET_OS_IPHONE == 1
 
 #import <UIKit/UIApplication.h>
-#import "SpecKit.h"
+#import <SpecKit/SpecKit.h>
 
 @interface SpecKitEntryPoint : NSObject
 @end
@@ -23,7 +23,7 @@ int main(int argc, char * argv[]) {
 
 #else
 
-#import "SpecKit.h"
+#import <SpecKit/SpecKit.h>
 
 int main(int argc, char * argv[]) {
   @autoreleasepool {

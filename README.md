@@ -5,15 +5,18 @@
 
 ## Use SpecKit in an Xcode Project
 
-* Add a new 'iOS -> Application -> Empty Application' target to your project.
-* Delete `OTAppDelegate.h`, `OTAppDelegate.m`, and `main.m` from it
-* Drag and drop all the files in the `SpecKit` subdirectory into the new target's Supporting Files group in Xcode
-  * In the ensuing dialog box, ensure 'Copy items...' is checked
-  * Also check the box for the target you just created
-  * But don't check the main target
-  * Make sure 'Create groups...' is checked too
-* Add a new 'Run Script' build phase to the spec target, running this single line:
-  * `${SOURCE_ROOT}/${TARGET_NAME}/RunIPhoneUnitTest.sh`
+* In the root dir of your project, run:
+  * `git submodule add https://github.com/sdegutis/SpecKit.git SpecKit`
+* Add a new 'iOS -> Application -> Empty Application' target to your project. This will be your spec target.
+  * Delete `OTAppDelegate.h`, `OTAppDelegate.m`, and `main.m` from the spec target
+  * Drag the file 'unitTestMain.m' into the spec target's group
+    * Make sure 'Copy items...' is unchecked
+    * Make sure it's only added to the spec target, not your main target
+  * Drag the SpecKit Xcode project into your project
+    * Drag the SpecKit subproject's Product `libSpecKit.a` into your spec target's "Link Binary With Libraries" build phase
+    * In your spec target's Build Settings, find "header search paths" and in the column for your spec target, add `SpecKit`
+* Add a new 'Run Script' build phase to your spec target, running this single line:
+  * `${SOURCE_ROOT}/SpecKit/RunIPhoneUnitTest.sh`
 
 ## Adding a spec to the project
 
@@ -28,7 +31,7 @@
 ## Example spec
 
 ```objc
-#import "SpecKit.h"
+#import <SpecKit/SpecKit.h>
 
 #import "Widget.h"
 

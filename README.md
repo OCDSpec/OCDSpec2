@@ -6,17 +6,17 @@
 ## Use SpecKit in an Xcode Project
 
 * In the root dir of your project, run:
-  * `git submodule add https://github.com/sdegutis/SpecKit.git SpecKit`
+    * `git submodule add https://github.com/sdegutis/SpecKit.git SpecKit`
 * Add a new 'iOS -> Application -> Empty Application' target to your project. This will be your spec target.
-  * Delete `OTAppDelegate.h`, `OTAppDelegate.m`, and `main.m` from the spec target
-  * Drag the file 'unitTestMain.m' into the spec target's group
-    * Make sure 'Copy items...' is unchecked
-    * Make sure it's only added to the spec target, not your main target
-  * Drag the SpecKit Xcode project into your project
-    * Drag the SpecKit subproject's Product `libSpecKit.a` into your spec target's "Link Binary With Libraries" build phase
-    * In your spec target's Build Settings, find "header search paths" and in the column for your spec target, add `SpecKit`
-* Add a new 'Run Script' build phase to your spec target, running this single line:
-  * `${SOURCE_ROOT}/SpecKit/RunIPhoneUnitTest.sh`
+    * Delete `OTAppDelegate.h`, `OTAppDelegate.m`, and `main.m` from the spec target
+    * Drag the file 'unitTestMain.m' into the spec target's group
+        * Make sure 'Copy items...' is unchecked
+        * Make sure it's only added to the spec target, not your main target
+    * Drag the SpecKit Xcode project into your project
+        * Drag the SpecKit subproject's Product `libSpecKit.a` into your spec target's "Link Binary With Libraries" build phase
+        * In your spec target's Build Settings, find "header search paths" and in the column for your spec target, add `SpecKit`
+    * Add a new 'Run Script' build phase to your spec target, running this single line:
+        * `${SOURCE_ROOT}/SpecKit/RunIPhoneUnitTest.sh`
 
 ## Adding a spec to the project
 

@@ -7,236 +7,242 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9409983D15B840880060126A /* SKExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9409983C15B840880060126A /* SKExpectation.m */; };
-		9409983E15B840880060126A /* SKExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9409983C15B840880060126A /* SKExpectation.m */; };
-		946CE74F15B76B4F0009D324 /* TestObjectExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 946CE74E15B76B4F0009D324 /* TestObjectExpectation.m */; };
-		946CE75715B76E9F0009D324 /* SKObjectExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 946CE75615B76E9F0009D324 /* SKObjectExpectation.m */; };
-		946CE75815B76E9F0009D324 /* SKObjectExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 946CE75615B76E9F0009D324 /* SKObjectExpectation.m */; };
-		946CE75D15B77EF20009D324 /* SKFakeFailureReporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 946CE75B15B77EF20009D324 /* SKFakeFailureReporter.m */; };
-		946CE76415B787070009D324 /* TestRunningExamples.m in Sources */ = {isa = PBXBuildFile; fileRef = 946CE76315B787070009D324 /* TestRunningExamples.m */; };
-		946CE76615B78A660009D324 /* TestIntExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 946CE76515B78A660009D324 /* TestIntExpectation.m */; };
-		946CE76915B78ABC0009D324 /* SKIntExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 946CE76815B78ABC0009D324 /* SKIntExpectation.m */; };
-		946CE76A15B78D610009D324 /* SKIntExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 946CE76815B78ABC0009D324 /* SKIntExpectation.m */; };
-		946CE79715B79BD20009D324 /* TestReportingErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = 946CE79615B79BD20009D324 /* TestReportingErrors.m */; };
-		946CE79A15B79C430009D324 /* TestRunningSuite.m in Sources */ = {isa = PBXBuildFile; fileRef = 946CE79915B79C430009D324 /* TestRunningSuite.m */; };
-		946CE7BA15B7ACA30009D324 /* SenTestCase+ReportingHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 946CE7B915B7ACA30009D324 /* SenTestCase+ReportingHelper.m */; };
-		9490BD8115B6663100512DA8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9490BD8015B6663100512DA8 /* Foundation.framework */; };
-		9490BD9515B666BB00512DA8 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9490BD9415B666BB00512DA8 /* SenTestingKit.framework */; };
-		9490BD9715B666BB00512DA8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9490BD9615B666BB00512DA8 /* Cocoa.framework */; };
-		9490BDA115B666BB00512DA8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9490BD9F15B666BB00512DA8 /* InfoPlist.strings */; };
-		9490BDA415B666BB00512DA8 /* TestGatheringExamples.m in Sources */ = {isa = PBXBuildFile; fileRef = 9490BDA315B666BB00512DA8 /* TestGatheringExamples.m */; };
-		9490BDAB15B667C300512DA8 /* SKContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 9490BDAA15B667C300512DA8 /* SKContext.m */; };
-		9490BDAC15B667C300512DA8 /* SKContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 9490BDAA15B667C300512DA8 /* SKContext.m */; };
-		9490BDBD15B679B400512DA8 /* SKDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 9490BDBC15B679B400512DA8 /* SKDescription.m */; };
-		9490BDBE15B679B400512DA8 /* SKDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 9490BDBC15B679B400512DA8 /* SKDescription.m */; };
-		9490BDC115B67B6E00512DA8 /* SKExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 9490BDC015B67B6E00512DA8 /* SKExample.m */; };
-		9490BDC215B67B6E00512DA8 /* SKExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 9490BDC015B67B6E00512DA8 /* SKExample.m */; };
-		94A6B9D315BB0818003F22B6 /* TestStringExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6B9D215BB0818003F22B6 /* TestStringExpectation.m */; };
-		94A6B9D915BB1528003F22B6 /* SKStringExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6B9D815BB1528003F22B6 /* SKStringExpectation.m */; };
-		94A6B9DA15BB1528003F22B6 /* SKStringExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6B9D815BB1528003F22B6 /* SKStringExpectation.m */; };
-		94E026FA15B89C8C0039F74E /* TestFloatExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94E026F915B89C8C0039F74E /* TestFloatExpectation.m */; };
-		94E026FE15B89D010039F74E /* SKFloatExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94E026FD15B89D010039F74E /* SKFloatExpectation.m */; };
-		94E026FF15B89D010039F74E /* SKFloatExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94E026FD15B89D010039F74E /* SKFloatExpectation.m */; };
+		94A6BA5E15BB2DE7003F22B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A6BA5D15BB2DE7003F22B6 /* Foundation.framework */; };
+		94A6BA7515BB3093003F22B6 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A6BA7415BB3093003F22B6 /* SenTestingKit.framework */; };
+		94A6BA7715BB3093003F22B6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A6BA7615BB3093003F22B6 /* UIKit.framework */; };
+		94A6BA7815BB3093003F22B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A6BA5D15BB2DE7003F22B6 /* Foundation.framework */; };
+		94A6BA7E15BB3093003F22B6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 94A6BA7C15BB3093003F22B6 /* InfoPlist.strings */; };
+		94A6BA9215BB30AF003F22B6 /* SenTestCase+ReportingHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BA8715BB30AF003F22B6 /* SenTestCase+ReportingHelper.m */; };
+		94A6BA9315BB30AF003F22B6 /* SKFakeFailureReporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BA8915BB30AF003F22B6 /* SKFakeFailureReporter.m */; };
+		94A6BA9415BB30AF003F22B6 /* TestRunningSuite.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BA8A15BB30AF003F22B6 /* TestRunningSuite.m */; };
+		94A6BA9515BB30AF003F22B6 /* TestGatheringExamples.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BA8B15BB30AF003F22B6 /* TestGatheringExamples.m */; };
+		94A6BA9615BB30AF003F22B6 /* TestRunningExamples.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BA8C15BB30AF003F22B6 /* TestRunningExamples.m */; };
+		94A6BA9715BB30AF003F22B6 /* TestReportingErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BA8D15BB30AF003F22B6 /* TestReportingErrors.m */; };
+		94A6BA9815BB30AF003F22B6 /* TestObjectExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BA8E15BB30AF003F22B6 /* TestObjectExpectation.m */; };
+		94A6BA9915BB30AF003F22B6 /* TestIntExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BA8F15BB30AF003F22B6 /* TestIntExpectation.m */; };
+		94A6BA9A15BB30AF003F22B6 /* TestFloatExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BA9015BB30AF003F22B6 /* TestFloatExpectation.m */; };
+		94A6BA9B15BB30AF003F22B6 /* TestStringExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BA9115BB30AF003F22B6 /* TestStringExpectation.m */; };
+		94A6BAB015BB30D0003F22B6 /* SpecKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 94A6BA9C15BB30D0003F22B6 /* SpecKit.h */; };
+		94A6BAB115BB30D0003F22B6 /* SKRunBeforeAll.h in Headers */ = {isa = PBXBuildFile; fileRef = 94A6BA9D15BB30D0003F22B6 /* SKRunBeforeAll.h */; };
+		94A6BAB215BB30D0003F22B6 /* SKFailureReporter.h in Headers */ = {isa = PBXBuildFile; fileRef = 94A6BA9E15BB30D0003F22B6 /* SKFailureReporter.h */; };
+		94A6BAB315BB30D0003F22B6 /* SKContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 94A6BA9F15BB30D0003F22B6 /* SKContext.h */; };
+		94A6BAB415BB30D0003F22B6 /* SKContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA015BB30D0003F22B6 /* SKContext.m */; };
+		94A6BAB515BB30D0003F22B6 /* SKContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA015BB30D0003F22B6 /* SKContext.m */; };
+		94A6BAB615BB30D0003F22B6 /* SKDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = 94A6BAA115BB30D0003F22B6 /* SKDescription.h */; };
+		94A6BAB715BB30D0003F22B6 /* SKDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA215BB30D0003F22B6 /* SKDescription.m */; };
+		94A6BAB815BB30D0003F22B6 /* SKDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA215BB30D0003F22B6 /* SKDescription.m */; };
+		94A6BAB915BB30D0003F22B6 /* SKExample.h in Headers */ = {isa = PBXBuildFile; fileRef = 94A6BAA315BB30D0003F22B6 /* SKExample.h */; };
+		94A6BABA15BB30D0003F22B6 /* SKExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA415BB30D0003F22B6 /* SKExample.m */; };
+		94A6BABB15BB30D0003F22B6 /* SKExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA415BB30D0003F22B6 /* SKExample.m */; };
+		94A6BABC15BB30D0003F22B6 /* SKExpectation.h in Headers */ = {isa = PBXBuildFile; fileRef = 94A6BAA515BB30D0003F22B6 /* SKExpectation.h */; };
+		94A6BABD15BB30D0003F22B6 /* SKExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA615BB30D0003F22B6 /* SKExpectation.m */; };
+		94A6BABE15BB30D0003F22B6 /* SKExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA615BB30D0003F22B6 /* SKExpectation.m */; };
+		94A6BABF15BB30D0003F22B6 /* SKObjectExpectation.h in Headers */ = {isa = PBXBuildFile; fileRef = 94A6BAA715BB30D0003F22B6 /* SKObjectExpectation.h */; };
+		94A6BAC015BB30D0003F22B6 /* SKObjectExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA815BB30D0003F22B6 /* SKObjectExpectation.m */; };
+		94A6BAC115BB30D0003F22B6 /* SKObjectExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA815BB30D0003F22B6 /* SKObjectExpectation.m */; };
+		94A6BAC215BB30D0003F22B6 /* SKIntExpectation.h in Headers */ = {isa = PBXBuildFile; fileRef = 94A6BAA915BB30D0003F22B6 /* SKIntExpectation.h */; };
+		94A6BAC315BB30D0003F22B6 /* SKIntExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAAA15BB30D0003F22B6 /* SKIntExpectation.m */; };
+		94A6BAC415BB30D0003F22B6 /* SKIntExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAAA15BB30D0003F22B6 /* SKIntExpectation.m */; };
+		94A6BAC515BB30D0003F22B6 /* SKFloatExpectation.h in Headers */ = {isa = PBXBuildFile; fileRef = 94A6BAAB15BB30D0003F22B6 /* SKFloatExpectation.h */; };
+		94A6BAC615BB30D0003F22B6 /* SKFloatExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAAC15BB30D0003F22B6 /* SKFloatExpectation.m */; };
+		94A6BAC715BB30D0003F22B6 /* SKFloatExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAAC15BB30D0003F22B6 /* SKFloatExpectation.m */; };
+		94A6BAC815BB30D0003F22B6 /* SKStringExpectation.h in Headers */ = {isa = PBXBuildFile; fileRef = 94A6BAAD15BB30D0003F22B6 /* SKStringExpectation.h */; };
+		94A6BAC915BB30D0003F22B6 /* SKStringExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAAE15BB30D0003F22B6 /* SKStringExpectation.m */; };
+		94A6BACA15BB30D0003F22B6 /* SKStringExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAAE15BB30D0003F22B6 /* SKStringExpectation.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		9490BD7A15B6663100512DA8 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		9409983B15B840880060126A /* SKExpectation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKExpectation.h; sourceTree = "<group>"; };
-		9409983C15B840880060126A /* SKExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKExpectation.m; sourceTree = "<group>"; };
-		946CE74E15B76B4F0009D324 /* TestObjectExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestObjectExpectation.m; sourceTree = "<group>"; };
-		946CE75515B76E9F0009D324 /* SKObjectExpectation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKObjectExpectation.h; sourceTree = "<group>"; };
-		946CE75615B76E9F0009D324 /* SKObjectExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKObjectExpectation.m; sourceTree = "<group>"; };
-		946CE75915B7758E0009D324 /* SKFailureReporter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKFailureReporter.h; sourceTree = "<group>"; };
-		946CE75A15B77EF20009D324 /* SKFakeFailureReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKFakeFailureReporter.h; sourceTree = "<group>"; };
-		946CE75B15B77EF20009D324 /* SKFakeFailureReporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKFakeFailureReporter.m; sourceTree = "<group>"; };
-		946CE76315B787070009D324 /* TestRunningExamples.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestRunningExamples.m; sourceTree = "<group>"; };
-		946CE76515B78A660009D324 /* TestIntExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestIntExpectation.m; sourceTree = "<group>"; };
-		946CE76715B78ABC0009D324 /* SKIntExpectation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKIntExpectation.h; sourceTree = "<group>"; };
-		946CE76815B78ABC0009D324 /* SKIntExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKIntExpectation.m; sourceTree = "<group>"; };
-		946CE79615B79BD20009D324 /* TestReportingErrors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestReportingErrors.m; sourceTree = "<group>"; };
-		946CE79915B79C430009D324 /* TestRunningSuite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestRunningSuite.m; sourceTree = "<group>"; };
-		946CE79B15B79D750009D324 /* SpecKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpecKit.h; sourceTree = "<group>"; };
-		946CE7B815B7ACA30009D324 /* SenTestCase+ReportingHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SenTestCase+ReportingHelper.h"; sourceTree = "<group>"; };
-		946CE7B915B7ACA30009D324 /* SenTestCase+ReportingHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SenTestCase+ReportingHelper.m"; sourceTree = "<group>"; };
-		9490BD7C15B6663100512DA8 /* SpecKit */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SpecKit; sourceTree = BUILT_PRODUCTS_DIR; };
-		9490BD8015B6663100512DA8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		9490BD8315B6663100512DA8 /* unitTestMain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = unitTestMain.m; sourceTree = "<group>"; };
-		9490BD8615B6663100512DA8 /* SpecKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpecKit-Prefix.pch"; sourceTree = "<group>"; };
-		9490BD9315B666BB00512DA8 /* SpecKitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpecKitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9490BD9415B666BB00512DA8 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		9490BD9615B666BB00512DA8 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
-		9490BD9915B666BB00512DA8 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
-		9490BD9A15B666BB00512DA8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		9490BD9B15B666BB00512DA8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		9490BD9E15B666BB00512DA8 /* SpecKitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpecKitTests-Info.plist"; sourceTree = "<group>"; };
-		9490BDA015B666BB00512DA8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		9490BDA315B666BB00512DA8 /* TestGatheringExamples.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestGatheringExamples.m; sourceTree = "<group>"; };
-		9490BDA515B666BB00512DA8 /* SpecKitTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpecKitTests-Prefix.pch"; sourceTree = "<group>"; };
-		9490BDA915B667C300512DA8 /* SKContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKContext.h; sourceTree = "<group>"; };
-		9490BDAA15B667C300512DA8 /* SKContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKContext.m; sourceTree = "<group>"; };
-		9490BDBB15B679B400512DA8 /* SKDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKDescription.h; sourceTree = "<group>"; };
-		9490BDBC15B679B400512DA8 /* SKDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKDescription.m; sourceTree = "<group>"; };
-		9490BDBF15B67B6E00512DA8 /* SKExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKExample.h; sourceTree = "<group>"; };
-		9490BDC015B67B6E00512DA8 /* SKExample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKExample.m; sourceTree = "<group>"; };
-		94A6B9D215BB0818003F22B6 /* TestStringExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestStringExpectation.m; sourceTree = "<group>"; };
-		94A6B9D715BB1528003F22B6 /* SKStringExpectation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKStringExpectation.h; sourceTree = "<group>"; };
-		94A6B9D815BB1528003F22B6 /* SKStringExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKStringExpectation.m; sourceTree = "<group>"; };
-		94B56E6F15BA2156001BB414 /* SKRunBeforeAll.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKRunBeforeAll.h; sourceTree = "<group>"; };
-		94E026F915B89C8C0039F74E /* TestFloatExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestFloatExpectation.m; sourceTree = "<group>"; };
-		94E026FC15B89D010039F74E /* SKFloatExpectation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKFloatExpectation.h; sourceTree = "<group>"; };
-		94E026FD15B89D010039F74E /* SKFloatExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKFloatExpectation.m; sourceTree = "<group>"; };
+		94A6BA5A15BB2DE7003F22B6 /* libSpecKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSpecKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		94A6BA5D15BB2DE7003F22B6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		94A6BA6115BB2DE7003F22B6 /* SpecKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpecKit-Prefix.pch"; sourceTree = "<group>"; };
+		94A6BA7315BB3093003F22B6 /* SpecKitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpecKitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		94A6BA7415BB3093003F22B6 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		94A6BA7615BB3093003F22B6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		94A6BA7B15BB3093003F22B6 /* SpecKitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpecKitTests-Info.plist"; sourceTree = "<group>"; };
+		94A6BA7D15BB3093003F22B6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		94A6BA8215BB3093003F22B6 /* SpecKitTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpecKitTests-Prefix.pch"; sourceTree = "<group>"; };
+		94A6BA8615BB30AF003F22B6 /* SenTestCase+ReportingHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SenTestCase+ReportingHelper.h"; sourceTree = "<group>"; };
+		94A6BA8715BB30AF003F22B6 /* SenTestCase+ReportingHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SenTestCase+ReportingHelper.m"; sourceTree = "<group>"; };
+		94A6BA8815BB30AF003F22B6 /* SKFakeFailureReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKFakeFailureReporter.h; sourceTree = "<group>"; };
+		94A6BA8915BB30AF003F22B6 /* SKFakeFailureReporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKFakeFailureReporter.m; sourceTree = "<group>"; };
+		94A6BA8A15BB30AF003F22B6 /* TestRunningSuite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestRunningSuite.m; sourceTree = "<group>"; };
+		94A6BA8B15BB30AF003F22B6 /* TestGatheringExamples.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestGatheringExamples.m; sourceTree = "<group>"; };
+		94A6BA8C15BB30AF003F22B6 /* TestRunningExamples.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestRunningExamples.m; sourceTree = "<group>"; };
+		94A6BA8D15BB30AF003F22B6 /* TestReportingErrors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestReportingErrors.m; sourceTree = "<group>"; };
+		94A6BA8E15BB30AF003F22B6 /* TestObjectExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestObjectExpectation.m; sourceTree = "<group>"; };
+		94A6BA8F15BB30AF003F22B6 /* TestIntExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestIntExpectation.m; sourceTree = "<group>"; };
+		94A6BA9015BB30AF003F22B6 /* TestFloatExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestFloatExpectation.m; sourceTree = "<group>"; };
+		94A6BA9115BB30AF003F22B6 /* TestStringExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestStringExpectation.m; sourceTree = "<group>"; };
+		94A6BA9C15BB30D0003F22B6 /* SpecKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecKit.h; sourceTree = "<group>"; };
+		94A6BA9D15BB30D0003F22B6 /* SKRunBeforeAll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKRunBeforeAll.h; sourceTree = "<group>"; };
+		94A6BA9E15BB30D0003F22B6 /* SKFailureReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKFailureReporter.h; sourceTree = "<group>"; };
+		94A6BA9F15BB30D0003F22B6 /* SKContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKContext.h; sourceTree = "<group>"; };
+		94A6BAA015BB30D0003F22B6 /* SKContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKContext.m; sourceTree = "<group>"; };
+		94A6BAA115BB30D0003F22B6 /* SKDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKDescription.h; sourceTree = "<group>"; };
+		94A6BAA215BB30D0003F22B6 /* SKDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKDescription.m; sourceTree = "<group>"; };
+		94A6BAA315BB30D0003F22B6 /* SKExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKExample.h; sourceTree = "<group>"; };
+		94A6BAA415BB30D0003F22B6 /* SKExample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKExample.m; sourceTree = "<group>"; };
+		94A6BAA515BB30D0003F22B6 /* SKExpectation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKExpectation.h; sourceTree = "<group>"; };
+		94A6BAA615BB30D0003F22B6 /* SKExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKExpectation.m; sourceTree = "<group>"; };
+		94A6BAA715BB30D0003F22B6 /* SKObjectExpectation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKObjectExpectation.h; sourceTree = "<group>"; };
+		94A6BAA815BB30D0003F22B6 /* SKObjectExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKObjectExpectation.m; sourceTree = "<group>"; };
+		94A6BAA915BB30D0003F22B6 /* SKIntExpectation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKIntExpectation.h; sourceTree = "<group>"; };
+		94A6BAAA15BB30D0003F22B6 /* SKIntExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKIntExpectation.m; sourceTree = "<group>"; };
+		94A6BAAB15BB30D0003F22B6 /* SKFloatExpectation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKFloatExpectation.h; sourceTree = "<group>"; };
+		94A6BAAC15BB30D0003F22B6 /* SKFloatExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKFloatExpectation.m; sourceTree = "<group>"; };
+		94A6BAAD15BB30D0003F22B6 /* SKStringExpectation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKStringExpectation.h; sourceTree = "<group>"; };
+		94A6BAAE15BB30D0003F22B6 /* SKStringExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKStringExpectation.m; sourceTree = "<group>"; };
+		94A6BAAF15BB30D0003F22B6 /* unitTestMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = unitTestMain.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		9490BD7915B6663100512DA8 /* Frameworks */ = {
+		94A6BA5715BB2DE7003F22B6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9490BD8115B6663100512DA8 /* Foundation.framework in Frameworks */,
+				94A6BA5E15BB2DE7003F22B6 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9490BD8F15B666BB00512DA8 /* Frameworks */ = {
+		94A6BA6F15BB3093003F22B6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9490BD9515B666BB00512DA8 /* SenTestingKit.framework in Frameworks */,
-				9490BD9715B666BB00512DA8 /* Cocoa.framework in Frameworks */,
+				94A6BA7515BB3093003F22B6 /* SenTestingKit.framework in Frameworks */,
+				94A6BA7715BB3093003F22B6 /* UIKit.framework in Frameworks */,
+				94A6BA7815BB3093003F22B6 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9490BD7115B6663100512DA8 = {
+		94A6BA4F15BB2DE7003F22B6 = {
 			isa = PBXGroup;
 			children = (
-				9490BD8215B6663100512DA8 /* SpecKit */,
-				9490BD9C15B666BB00512DA8 /* SpecKitTests */,
-				9490BD7F15B6663100512DA8 /* Frameworks */,
-				9490BD7D15B6663100512DA8 /* Products */,
+				94A6BA5F15BB2DE7003F22B6 /* SpecKit */,
+				94A6BA7915BB3093003F22B6 /* SpecKitTests */,
+				94A6BA5C15BB2DE7003F22B6 /* Frameworks */,
+				94A6BA5B15BB2DE7003F22B6 /* Products */,
 			);
-			indentWidth = 2;
 			sourceTree = "<group>";
-			tabWidth = 2;
 		};
-		9490BD7D15B6663100512DA8 /* Products */ = {
+		94A6BA5B15BB2DE7003F22B6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9490BD7C15B6663100512DA8 /* SpecKit */,
-				9490BD9315B666BB00512DA8 /* SpecKitTests.octest */,
+				94A6BA5A15BB2DE7003F22B6 /* libSpecKit.a */,
+				94A6BA7315BB3093003F22B6 /* SpecKitTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9490BD7F15B6663100512DA8 /* Frameworks */ = {
+		94A6BA5C15BB2DE7003F22B6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9490BD8015B6663100512DA8 /* Foundation.framework */,
-				9490BD9415B666BB00512DA8 /* SenTestingKit.framework */,
-				9490BD9615B666BB00512DA8 /* Cocoa.framework */,
-				9490BD9815B666BB00512DA8 /* Other Frameworks */,
+				94A6BA5D15BB2DE7003F22B6 /* Foundation.framework */,
+				94A6BA7415BB3093003F22B6 /* SenTestingKit.framework */,
+				94A6BA7615BB3093003F22B6 /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		9490BD8215B6663100512DA8 /* SpecKit */ = {
+		94A6BA5F15BB2DE7003F22B6 /* SpecKit */ = {
 			isa = PBXGroup;
 			children = (
-				946CE79B15B79D750009D324 /* SpecKit.h */,
-				94B56E6F15BA2156001BB414 /* SKRunBeforeAll.h */,
-				946CE75915B7758E0009D324 /* SKFailureReporter.h */,
-				9490BDA915B667C300512DA8 /* SKContext.h */,
-				9490BDAA15B667C300512DA8 /* SKContext.m */,
-				9490BDBB15B679B400512DA8 /* SKDescription.h */,
-				9490BDBC15B679B400512DA8 /* SKDescription.m */,
-				9490BDBF15B67B6E00512DA8 /* SKExample.h */,
-				9490BDC015B67B6E00512DA8 /* SKExample.m */,
-				9409983B15B840880060126A /* SKExpectation.h */,
-				9409983C15B840880060126A /* SKExpectation.m */,
-				946CE75515B76E9F0009D324 /* SKObjectExpectation.h */,
-				946CE75615B76E9F0009D324 /* SKObjectExpectation.m */,
-				946CE76715B78ABC0009D324 /* SKIntExpectation.h */,
-				946CE76815B78ABC0009D324 /* SKIntExpectation.m */,
-				94E026FC15B89D010039F74E /* SKFloatExpectation.h */,
-				94E026FD15B89D010039F74E /* SKFloatExpectation.m */,
-				94A6B9D715BB1528003F22B6 /* SKStringExpectation.h */,
-				94A6B9D815BB1528003F22B6 /* SKStringExpectation.m */,
-				9490BD8315B6663100512DA8 /* unitTestMain.m */,
-				9490BD8515B6663100512DA8 /* Supporting Files */,
+				94A6BA9C15BB30D0003F22B6 /* SpecKit.h */,
+				94A6BA9D15BB30D0003F22B6 /* SKRunBeforeAll.h */,
+				94A6BA9E15BB30D0003F22B6 /* SKFailureReporter.h */,
+				94A6BA9F15BB30D0003F22B6 /* SKContext.h */,
+				94A6BAA015BB30D0003F22B6 /* SKContext.m */,
+				94A6BAA115BB30D0003F22B6 /* SKDescription.h */,
+				94A6BAA215BB30D0003F22B6 /* SKDescription.m */,
+				94A6BAA315BB30D0003F22B6 /* SKExample.h */,
+				94A6BAA415BB30D0003F22B6 /* SKExample.m */,
+				94A6BAA515BB30D0003F22B6 /* SKExpectation.h */,
+				94A6BAA615BB30D0003F22B6 /* SKExpectation.m */,
+				94A6BAA715BB30D0003F22B6 /* SKObjectExpectation.h */,
+				94A6BAA815BB30D0003F22B6 /* SKObjectExpectation.m */,
+				94A6BAA915BB30D0003F22B6 /* SKIntExpectation.h */,
+				94A6BAAA15BB30D0003F22B6 /* SKIntExpectation.m */,
+				94A6BAAB15BB30D0003F22B6 /* SKFloatExpectation.h */,
+				94A6BAAC15BB30D0003F22B6 /* SKFloatExpectation.m */,
+				94A6BAAD15BB30D0003F22B6 /* SKStringExpectation.h */,
+				94A6BAAE15BB30D0003F22B6 /* SKStringExpectation.m */,
+				94A6BAAF15BB30D0003F22B6 /* unitTestMain.m */,
+				94A6BA6015BB2DE7003F22B6 /* Supporting Files */,
 			);
 			path = SpecKit;
 			sourceTree = "<group>";
 		};
-		9490BD8515B6663100512DA8 /* Supporting Files */ = {
+		94A6BA6015BB2DE7003F22B6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				9490BD8615B6663100512DA8 /* SpecKit-Prefix.pch */,
+				94A6BA6115BB2DE7003F22B6 /* SpecKit-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		9490BD9815B666BB00512DA8 /* Other Frameworks */ = {
+		94A6BA7915BB3093003F22B6 /* SpecKitTests */ = {
 			isa = PBXGroup;
 			children = (
-				9490BD9915B666BB00512DA8 /* AppKit.framework */,
-				9490BD9A15B666BB00512DA8 /* CoreData.framework */,
-				9490BD9B15B666BB00512DA8 /* Foundation.framework */,
-			);
-			name = "Other Frameworks";
-			sourceTree = "<group>";
-		};
-		9490BD9C15B666BB00512DA8 /* SpecKitTests */ = {
-			isa = PBXGroup;
-			children = (
-				946CE7B815B7ACA30009D324 /* SenTestCase+ReportingHelper.h */,
-				946CE7B915B7ACA30009D324 /* SenTestCase+ReportingHelper.m */,
-				946CE75A15B77EF20009D324 /* SKFakeFailureReporter.h */,
-				946CE75B15B77EF20009D324 /* SKFakeFailureReporter.m */,
-				946CE79915B79C430009D324 /* TestRunningSuite.m */,
-				9490BDA315B666BB00512DA8 /* TestGatheringExamples.m */,
-				946CE76315B787070009D324 /* TestRunningExamples.m */,
-				946CE79615B79BD20009D324 /* TestReportingErrors.m */,
-				946CE74E15B76B4F0009D324 /* TestObjectExpectation.m */,
-				946CE76515B78A660009D324 /* TestIntExpectation.m */,
-				94E026F915B89C8C0039F74E /* TestFloatExpectation.m */,
-				94A6B9D215BB0818003F22B6 /* TestStringExpectation.m */,
-				9490BD9D15B666BB00512DA8 /* Supporting Files */,
+				94A6BA8615BB30AF003F22B6 /* SenTestCase+ReportingHelper.h */,
+				94A6BA8715BB30AF003F22B6 /* SenTestCase+ReportingHelper.m */,
+				94A6BA8815BB30AF003F22B6 /* SKFakeFailureReporter.h */,
+				94A6BA8915BB30AF003F22B6 /* SKFakeFailureReporter.m */,
+				94A6BA8A15BB30AF003F22B6 /* TestRunningSuite.m */,
+				94A6BA8B15BB30AF003F22B6 /* TestGatheringExamples.m */,
+				94A6BA8C15BB30AF003F22B6 /* TestRunningExamples.m */,
+				94A6BA8D15BB30AF003F22B6 /* TestReportingErrors.m */,
+				94A6BA8E15BB30AF003F22B6 /* TestObjectExpectation.m */,
+				94A6BA8F15BB30AF003F22B6 /* TestIntExpectation.m */,
+				94A6BA9015BB30AF003F22B6 /* TestFloatExpectation.m */,
+				94A6BA9115BB30AF003F22B6 /* TestStringExpectation.m */,
+				94A6BA7A15BB3093003F22B6 /* Supporting Files */,
 			);
 			path = SpecKitTests;
 			sourceTree = "<group>";
 		};
-		9490BD9D15B666BB00512DA8 /* Supporting Files */ = {
+		94A6BA7A15BB3093003F22B6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				9490BD9E15B666BB00512DA8 /* SpecKitTests-Info.plist */,
-				9490BD9F15B666BB00512DA8 /* InfoPlist.strings */,
-				9490BDA515B666BB00512DA8 /* SpecKitTests-Prefix.pch */,
+				94A6BA7B15BB3093003F22B6 /* SpecKitTests-Info.plist */,
+				94A6BA7C15BB3093003F22B6 /* InfoPlist.strings */,
+				94A6BA8215BB3093003F22B6 /* SpecKitTests-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		94A6BA5815BB2DE7003F22B6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94A6BAB015BB30D0003F22B6 /* SpecKit.h in Headers */,
+				94A6BAB115BB30D0003F22B6 /* SKRunBeforeAll.h in Headers */,
+				94A6BAB215BB30D0003F22B6 /* SKFailureReporter.h in Headers */,
+				94A6BAB315BB30D0003F22B6 /* SKContext.h in Headers */,
+				94A6BAB615BB30D0003F22B6 /* SKDescription.h in Headers */,
+				94A6BAB915BB30D0003F22B6 /* SKExample.h in Headers */,
+				94A6BABC15BB30D0003F22B6 /* SKExpectation.h in Headers */,
+				94A6BABF15BB30D0003F22B6 /* SKObjectExpectation.h in Headers */,
+				94A6BAC215BB30D0003F22B6 /* SKIntExpectation.h in Headers */,
+				94A6BAC515BB30D0003F22B6 /* SKFloatExpectation.h in Headers */,
+				94A6BAC815BB30D0003F22B6 /* SKStringExpectation.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		9490BD7B15B6663100512DA8 /* SpecKit */ = {
+		94A6BA5915BB2DE7003F22B6 /* SpecKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9490BD8B15B6663100512DA8 /* Build configuration list for PBXNativeTarget "SpecKit" */;
+			buildConfigurationList = 94A6BA6715BB2DE7003F22B6 /* Build configuration list for PBXNativeTarget "SpecKit" */;
 			buildPhases = (
-				9490BD7815B6663100512DA8 /* Sources */,
-				9490BD7915B6663100512DA8 /* Frameworks */,
-				9490BD7A15B6663100512DA8 /* CopyFiles */,
+				94A6BA5615BB2DE7003F22B6 /* Sources */,
+				94A6BA5715BB2DE7003F22B6 /* Frameworks */,
+				94A6BA5815BB2DE7003F22B6 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -244,17 +250,17 @@
 			);
 			name = SpecKit;
 			productName = SpecKit;
-			productReference = 9490BD7C15B6663100512DA8 /* SpecKit */;
-			productType = "com.apple.product-type.tool";
+			productReference = 94A6BA5A15BB2DE7003F22B6 /* libSpecKit.a */;
+			productType = "com.apple.product-type.library.static";
 		};
-		9490BD9215B666BB00512DA8 /* SpecKitTests */ = {
+		94A6BA7215BB3093003F22B6 /* SpecKitTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9490BDA615B666BB00512DA8 /* Build configuration list for PBXNativeTarget "SpecKitTests" */;
+			buildConfigurationList = 94A6BA8315BB3093003F22B6 /* Build configuration list for PBXNativeTarget "SpecKitTests" */;
 			buildPhases = (
-				9490BD8E15B666BB00512DA8 /* Sources */,
-				9490BD8F15B666BB00512DA8 /* Frameworks */,
-				9490BD9015B666BB00512DA8 /* Resources */,
-				9490BD9115B666BB00512DA8 /* ShellScript */,
+				94A6BA6E15BB3093003F22B6 /* Sources */,
+				94A6BA6F15BB3093003F22B6 /* Frameworks */,
+				94A6BA7015BB3093003F22B6 /* Resources */,
+				94A6BA7115BB3093003F22B6 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -262,49 +268,49 @@
 			);
 			name = SpecKitTests;
 			productName = SpecKitTests;
-			productReference = 9490BD9315B666BB00512DA8 /* SpecKitTests.octest */;
+			productReference = 94A6BA7315BB3093003F22B6 /* SpecKitTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		9490BD7315B6663100512DA8 /* Project object */ = {
+		94A6BA5115BB2DE7003F22B6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0430;
 				ORGANIZATIONNAME = "8th Light";
 			};
-			buildConfigurationList = 9490BD7615B6663100512DA8 /* Build configuration list for PBXProject "SpecKit" */;
+			buildConfigurationList = 94A6BA5415BB2DE7003F22B6 /* Build configuration list for PBXProject "SpecKit" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 9490BD7115B6663100512DA8;
-			productRefGroup = 9490BD7D15B6663100512DA8 /* Products */;
+			mainGroup = 94A6BA4F15BB2DE7003F22B6;
+			productRefGroup = 94A6BA5B15BB2DE7003F22B6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9490BD7B15B6663100512DA8 /* SpecKit */,
-				9490BD9215B666BB00512DA8 /* SpecKitTests */,
+				94A6BA5915BB2DE7003F22B6 /* SpecKit */,
+				94A6BA7215BB3093003F22B6 /* SpecKitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		9490BD9015B666BB00512DA8 /* Resources */ = {
+		94A6BA7015BB3093003F22B6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9490BDA115B666BB00512DA8 /* InfoPlist.strings in Resources */,
+				94A6BA7E15BB3093003F22B6 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		9490BD9115B666BB00512DA8 /* ShellScript */ = {
+		94A6BA7115BB3093003F22B6 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -320,53 +326,53 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		9490BD7815B6663100512DA8 /* Sources */ = {
+		94A6BA5615BB2DE7003F22B6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9490BDAB15B667C300512DA8 /* SKContext.m in Sources */,
-				9490BDBD15B679B400512DA8 /* SKDescription.m in Sources */,
-				9490BDC115B67B6E00512DA8 /* SKExample.m in Sources */,
-				946CE75715B76E9F0009D324 /* SKObjectExpectation.m in Sources */,
-				946CE76915B78ABC0009D324 /* SKIntExpectation.m in Sources */,
-				9409983D15B840880060126A /* SKExpectation.m in Sources */,
-				94E026FE15B89D010039F74E /* SKFloatExpectation.m in Sources */,
-				94A6B9D915BB1528003F22B6 /* SKStringExpectation.m in Sources */,
+				94A6BAB415BB30D0003F22B6 /* SKContext.m in Sources */,
+				94A6BAB715BB30D0003F22B6 /* SKDescription.m in Sources */,
+				94A6BABA15BB30D0003F22B6 /* SKExample.m in Sources */,
+				94A6BABD15BB30D0003F22B6 /* SKExpectation.m in Sources */,
+				94A6BAC015BB30D0003F22B6 /* SKObjectExpectation.m in Sources */,
+				94A6BAC315BB30D0003F22B6 /* SKIntExpectation.m in Sources */,
+				94A6BAC615BB30D0003F22B6 /* SKFloatExpectation.m in Sources */,
+				94A6BAC915BB30D0003F22B6 /* SKStringExpectation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9490BD8E15B666BB00512DA8 /* Sources */ = {
+		94A6BA6E15BB3093003F22B6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9490BDA415B666BB00512DA8 /* TestGatheringExamples.m in Sources */,
-				9490BDAC15B667C300512DA8 /* SKContext.m in Sources */,
-				9490BDBE15B679B400512DA8 /* SKDescription.m in Sources */,
-				9490BDC215B67B6E00512DA8 /* SKExample.m in Sources */,
-				946CE74F15B76B4F0009D324 /* TestObjectExpectation.m in Sources */,
-				946CE75815B76E9F0009D324 /* SKObjectExpectation.m in Sources */,
-				946CE75D15B77EF20009D324 /* SKFakeFailureReporter.m in Sources */,
-				946CE76415B787070009D324 /* TestRunningExamples.m in Sources */,
-				946CE76615B78A660009D324 /* TestIntExpectation.m in Sources */,
-				946CE76A15B78D610009D324 /* SKIntExpectation.m in Sources */,
-				946CE79715B79BD20009D324 /* TestReportingErrors.m in Sources */,
-				946CE79A15B79C430009D324 /* TestRunningSuite.m in Sources */,
-				946CE7BA15B7ACA30009D324 /* SenTestCase+ReportingHelper.m in Sources */,
-				9409983E15B840880060126A /* SKExpectation.m in Sources */,
-				94E026FA15B89C8C0039F74E /* TestFloatExpectation.m in Sources */,
-				94E026FF15B89D010039F74E /* SKFloatExpectation.m in Sources */,
-				94A6B9D315BB0818003F22B6 /* TestStringExpectation.m in Sources */,
-				94A6B9DA15BB1528003F22B6 /* SKStringExpectation.m in Sources */,
+				94A6BA9215BB30AF003F22B6 /* SenTestCase+ReportingHelper.m in Sources */,
+				94A6BA9315BB30AF003F22B6 /* SKFakeFailureReporter.m in Sources */,
+				94A6BA9415BB30AF003F22B6 /* TestRunningSuite.m in Sources */,
+				94A6BA9515BB30AF003F22B6 /* TestGatheringExamples.m in Sources */,
+				94A6BA9615BB30AF003F22B6 /* TestRunningExamples.m in Sources */,
+				94A6BA9715BB30AF003F22B6 /* TestReportingErrors.m in Sources */,
+				94A6BA9815BB30AF003F22B6 /* TestObjectExpectation.m in Sources */,
+				94A6BA9915BB30AF003F22B6 /* TestIntExpectation.m in Sources */,
+				94A6BA9A15BB30AF003F22B6 /* TestFloatExpectation.m in Sources */,
+				94A6BA9B15BB30AF003F22B6 /* TestStringExpectation.m in Sources */,
+				94A6BAB515BB30D0003F22B6 /* SKContext.m in Sources */,
+				94A6BAB815BB30D0003F22B6 /* SKDescription.m in Sources */,
+				94A6BABB15BB30D0003F22B6 /* SKExample.m in Sources */,
+				94A6BABE15BB30D0003F22B6 /* SKExpectation.m in Sources */,
+				94A6BAC115BB30D0003F22B6 /* SKObjectExpectation.m in Sources */,
+				94A6BAC415BB30D0003F22B6 /* SKIntExpectation.m in Sources */,
+				94A6BAC715BB30D0003F22B6 /* SKFloatExpectation.m in Sources */,
+				94A6BACA15BB30D0003F22B6 /* SKStringExpectation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9490BD9F15B666BB00512DA8 /* InfoPlist.strings */ = {
+		94A6BA7C15BB3093003F22B6 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				9490BDA015B666BB00512DA8 /* en */,
+				94A6BA7D15BB3093003F22B6 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -374,15 +380,14 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		9490BD8915B6663100512DA8 /* Debug */ = {
+		94A6BA6515BB2DE7003F22B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -390,57 +395,64 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
+				HEADER_SEARCH_PATHS = .;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
-		9490BD8A15B6663100512DA8 /* Release */ = {
+		94A6BA6615BB2DE7003F22B6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				SDKROOT = macosx;
+				HEADER_SEARCH_PATHS = .;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		9490BD8C15B6663100512DA8 /* Debug */ = {
+		94A6BA6815BB2DE7003F22B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DSTROOT = /tmp/SpecKit.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SpecKit/SpecKit-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
-		9490BD8D15B6663100512DA8 /* Release */ = {
+		94A6BA6915BB2DE7003F22B6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DSTROOT = /tmp/SpecKit.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SpecKit/SpecKit-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
-		9490BDA715B666BB00512DA8 /* Debug */ = {
+		94A6BA8415BB3093003F22B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SpecKitTests/SpecKitTests-Prefix.pch";
 				INFOPLIST_FILE = "SpecKitTests/SpecKitTests-Info.plist";
@@ -449,10 +461,13 @@
 			};
 			name = Debug;
 		};
-		9490BDA815B666BB00512DA8 /* Release */ = {
+		94A6BA8515BB3093003F22B6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SpecKitTests/SpecKitTests-Prefix.pch";
 				INFOPLIST_FILE = "SpecKitTests/SpecKitTests-Info.plist";
@@ -464,34 +479,32 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9490BD7615B6663100512DA8 /* Build configuration list for PBXProject "SpecKit" */ = {
+		94A6BA5415BB2DE7003F22B6 /* Build configuration list for PBXProject "SpecKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9490BD8915B6663100512DA8 /* Debug */,
-				9490BD8A15B6663100512DA8 /* Release */,
+				94A6BA6515BB2DE7003F22B6 /* Debug */,
+				94A6BA6615BB2DE7003F22B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9490BD8B15B6663100512DA8 /* Build configuration list for PBXNativeTarget "SpecKit" */ = {
+		94A6BA6715BB2DE7003F22B6 /* Build configuration list for PBXNativeTarget "SpecKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9490BD8C15B6663100512DA8 /* Debug */,
-				9490BD8D15B6663100512DA8 /* Release */,
+				94A6BA6815BB2DE7003F22B6 /* Debug */,
+				94A6BA6915BB2DE7003F22B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
-		9490BDA615B666BB00512DA8 /* Build configuration list for PBXNativeTarget "SpecKitTests" */ = {
+		94A6BA8315BB3093003F22B6 /* Build configuration list for PBXNativeTarget "SpecKitTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9490BDA715B666BB00512DA8 /* Debug */,
-				9490BDA815B666BB00512DA8 /* Release */,
+				94A6BA8415BB3093003F22B6 /* Debug */,
+				94A6BA8515BB3093003F22B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 9490BD7315B6663100512DA8 /* Project object */;
+	rootObject = 94A6BA5115BB2DE7003F22B6 /* Project object */;
 }

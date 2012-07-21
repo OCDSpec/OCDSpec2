@@ -1,6 +1,6 @@
 #import <Foundation/Foundation.h>
 
-#import "SKFailureReporter.h"
+#import <SpecKit/SKFailureReporter.h>
 
 @interface SKExpectation : NSObject
 

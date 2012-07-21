@@ -1,6 +1,6 @@
 #import <Foundation/Foundation.h>
 
-#import "SKExpectation.h"
+#import <SpecKit/SKExpectation.h>
 
 @interface SKStringExpectation : SKExpectation
 

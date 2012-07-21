@@ -11,6 +11,7 @@
                                                  failureReporter:(id<SKFailureReporter>)reporter;
 
 - (void) toContain:(NSString*)substring;
+- (void) toStartWith:(NSString*)substring;
 
 @end
 

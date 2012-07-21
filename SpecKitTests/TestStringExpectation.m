@@ -32,4 +32,16 @@
   SKHelperExpectReport(@"file1", 2, @"Want \"*jello*\", got \"hello\"");
 }
 
+- (void) testToStartWithPass {
+    [[SKStringExpectation expectationFunctionInFile:"file1" line:2 failureReporter:reporter]
+     (@"hello") toStartWith: @"hell"];
+    SKHelperExpectNoReport();
+}
+
+- (void) testToStartWithFail {
+    [[SKStringExpectation expectationFunctionInFile:"file1" line:2 failureReporter:reporter]
+     (@"hello") toStartWith: @"ell"];
+    SKHelperExpectReport(@"file1", 2, @"Want \"ell*\", got \"hello\"");
+}
+
 @end

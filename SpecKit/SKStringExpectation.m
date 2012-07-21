@@ -25,4 +25,12 @@
   }
 }
 
+- (void) toStartWith:(NSString*)substring {
+    if ([self.string rangeOfString:substring].location != 0) {
+        [self reportFailure:[NSString stringWithFormat:@"Want \"%@*\", got \"%@\"",
+                             substring,
+                             self.string]];
+    }
+}
+
 @end

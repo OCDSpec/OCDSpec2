@@ -4,16 +4,10 @@
 
 @synthesize string;
 
-+ (SKStringExpectation*(^)(NSString*)) expectationFunctionInFile:(char*)file
-                                                            line:(int)line
-                                                 failureReporter:(id<SKFailureReporter>)reporter
-{
+- (SKStringExpectation*(^)(NSString*)) withString {
   return [[^SKStringExpectation*(NSString *str){
-    SKStringExpectation *expectation = [[[SKStringExpectation alloc] initWithFile:file
-                                                                             line:line
-                                                                  failureReporter:reporter] autorelease];
-    expectation.string = str;
-    return expectation;
+    self.string = str;
+    return self;
   } copy] autorelease];
 }
 

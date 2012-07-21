@@ -125,7 +125,9 @@
 				94A6BA5C15BB2DE7003F22B6 /* Frameworks */,
 				94A6BA5B15BB2DE7003F22B6 /* Products */,
 			);
+			indentWidth = 2;
 			sourceTree = "<group>";
+			tabWidth = 2;
 		};
 		94A6BA5B15BB2DE7003F22B6 /* Products */ = {
 			isa = PBXGroup;

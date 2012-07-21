@@ -4,16 +4,10 @@
 
 @synthesize number;
 
-+ (SKIntExpectation*(^)(long long)) expectationFunctionInFile:(char*)file
-                                                         line:(int)line
-                                              failureReporter:(id<SKFailureReporter>)reporter
-{
+- (SKIntExpectation*(^)(long long)) withInt {
   return [[^SKIntExpectation*(long long num){
-    SKIntExpectation *expectation = [[[SKIntExpectation alloc] initWithFile:file
-                                                                       line:line
-                                                            failureReporter:reporter] autorelease];
-    expectation.number = num;
-    return expectation;
+    self.number = num;
+    return self;
   } copy] autorelease];
 }
 

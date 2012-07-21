@@ -4,16 +4,10 @@
 
 @synthesize object;
 
-+ (SKObjectExpectation*(^)(id)) expectationFunctionInFile:(char*)file
-                                                     line:(int)line
-                                          failureReporter:(id<SKFailureReporter>)reporter
-{
+- (SKObjectExpectation*(^)(id)) withObject {
   return [[^SKObjectExpectation*(id obj){
-    SKObjectExpectation *expectation = [[[SKObjectExpectation alloc] initWithFile:file
-                                                                             line:line
-                                                                  failureReporter:reporter] autorelease];
-    expectation.object = obj;
-    return expectation;
+    self.object = obj;
+    return self;
   } copy] autorelease];
 }
 

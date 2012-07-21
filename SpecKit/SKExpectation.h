@@ -8,9 +8,9 @@
 @property (readwrite, assign) int line;
 @property (readwrite, assign) id<SKFailureReporter> failureReporter;
 
-- (id) initWithFile:(char*)file
-               line:(int)line
-    failureReporter:(id<SKFailureReporter>)reporter;
++ (id) expectationInFile:(char*)someFile
+                    line:(int)someLine
+         failureReporter:(id<SKFailureReporter>)reporter;
 
 - (void) reportFailure:(NSString*)message;
 

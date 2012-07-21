@@ -17,18 +17,25 @@ int SampleBeforeAllCount;
 
 SpecKitContext(Sample1) {
   describe(@"this", ^{
-    it(@"is an example", ^{
+    it(@"contains erroneous examples", ^{
       SampleBeforeAllCount *= 2;
       [expectInt(2) toBe: 3];
+      [expectInt(4) toBe: 5];
     });
   });
 }
 
 SpecKitContext(Sample2) {
   describe(@"another example", ^{
-    it(@"is easy to write", ^{
+    it(@"contains correct examples", ^{
       SampleBeforeAllCount *= 3;
-      [expectInt(4) toBe: 5];
+      
+      [expectStr(@"good morning") toContain: @"go"];
+      [expectStr(@"good morning") toStartWith: @"go"];
+      
+      [expectBool(YES) toBeTrue];
+      [expectFloat(1.23) toBe:1.23 withPrecision:0.00001];
+      [expect(@"hi") toBe: @"hi"];
     });
   });
 }
@@ -49,6 +56,7 @@ SpecKitContext(Sample2) {
   NSPipe *pipe = [NSPipe pipe];
   
   int errorCount = [SKContext runAllTestsUsingOutput:[pipe fileHandleForWriting]];
+  STAssertEquals(errorCount, 2, nil);
   STAssertTrue(errorCount == 2, nil);
   
   [[pipe fileHandleForWriting] closeFile];
@@ -57,7 +65,7 @@ SpecKitContext(Sample2) {
   NSString *str = [[[NSString alloc] initWithData:[handle readDataToEndOfFile]
                                          encoding:NSUTF8StringEncoding] autorelease];
   
-  NSString *expected1 = [NSString stringWithFormat:@"%s:%d: error: Want 5, got 4\n", __FILE__, 31];
+  NSString *expected1 = [NSString stringWithFormat:@"%s:%d: error: Want 5, got 4\n", __FILE__, 23];
   NSString *expected2 = [NSString stringWithFormat:@"%s:%d: error: Want 3, got 2\n", __FILE__, 22];
   
   STAssertTrue([str rangeOfString:expected1].location != NSNotFound, nil);

@@ -6,12 +6,10 @@
 
 @property (readwrite, assign) double number;
 
-+ (SKFloatExpectation*(^)(double)) expectationFunctionInFile:(char*)file
-                                                        line:(int)line
-                                             failureReporter:(id<SKFailureReporter>)reporter;
+- (SKFloatExpectation*(^)(double)) withFloat;
 
 - (void) toBe:(double)other withPrecision:(double)precision;
 
 @end
 
-#define expectFloat [SKFloatExpectation expectationFunctionInFile:__FILE__ line:__LINE__ failureReporter:self]
+#define expectFloat [[SKFloatExpectation expectationInFile:__FILE__ line:__LINE__ failureReporter:self] withFloat]

@@ -21,67 +21,67 @@
 }
 
 - (void) testToBeFail {
-  [[SKIntExpectation expectationFunctionInFile:"file11" line:22 failureReporter:reporter]
+  [[[SKIntExpectation expectationInFile:"file11" line:22 failureReporter:reporter] withInt]
    (2) toBe: 3];
   SKHelperExpectReport(@"file11", 22, @"Want 3, got 2");
 }
 
 - (void) testToBeNegativeFail {
-  [[SKIntExpectation expectationFunctionInFile:"file1" line:2 failureReporter:reporter]
+  [[[SKIntExpectation expectationInFile:"file1" line:2 failureReporter:reporter] withInt]
    (-1) toBe: 1];
   SKHelperExpectReport(@"file1", 2, @"Want 1, got -1");
 }
 
 - (void) testToBePass {
-  [[SKIntExpectation expectationFunctionInFile:"file1" line:2 failureReporter:reporter]
+  [[[SKIntExpectation expectationInFile:"file1" line:2 failureReporter:reporter] withInt]
    (1) toBe: 1];
   SKHelperExpectNoReport();
 }
 
 - (void) testToBeTrueFail {
-  [[SKIntExpectation expectationFunctionInFile:"file11" line:22 failureReporter:reporter]
+  [[[SKIntExpectation expectationInFile:"file11" line:22 failureReporter:reporter] withInt]
    (NO) toBeTrue];
   SKHelperExpectReport(@"file11", 22, @"Want true, got false");
 }
 
 - (void) testToBeTruePass {
-  [[SKIntExpectation expectationFunctionInFile:"file1" line:2 failureReporter:reporter]
+  [[[SKIntExpectation expectationInFile:"file1" line:2 failureReporter:reporter] withInt]
    (YES) toBeTrue];
   SKHelperExpectNoReport();
 }
 
 - (void) testToBeFalseFail {
-  [[SKIntExpectation expectationFunctionInFile:"file11" line:22 failureReporter:reporter]
+  [[[SKIntExpectation expectationInFile:"file11" line:22 failureReporter:reporter] withInt]
    (YES) toBeFalse];
   SKHelperExpectReport(@"file11", 22, @"Want false, got true");
 }
 
 - (void) testToBeFalsePass {
-  [[SKIntExpectation expectationFunctionInFile:"file1" line:2 failureReporter:reporter]
+  [[[SKIntExpectation expectationInFile:"file1" line:2 failureReporter:reporter] withInt]
    (NO) toBeFalse];
   SKHelperExpectNoReport();
 }
 
 - (void) testToBeNotFalseFail {
-  [[SKIntExpectation expectationFunctionInFile:"file11" line:22 failureReporter:reporter]
+  [[[SKIntExpectation expectationInFile:"file11" line:22 failureReporter:reporter] withInt]
    (NO) toNotBeFalse];
   SKHelperExpectReport(@"file11", 22, @"Want anything but false, got false");
 }
 
 - (void) testToBeNotFalsePass {
-  [[SKIntExpectation expectationFunctionInFile:"file1" line:2 failureReporter:reporter]
+  [[[SKIntExpectation expectationInFile:"file1" line:2 failureReporter:reporter] withInt]
    (YES) toNotBeFalse];
   SKHelperExpectNoReport();
 }
 
 - (void) testToBeNotFalsePassAlternative {
-  [[SKIntExpectation expectationFunctionInFile:"file1" line:2 failureReporter:reporter]
+  [[[SKIntExpectation expectationInFile:"file1" line:2 failureReporter:reporter] withInt]
    (3) toNotBeFalse];
   SKHelperExpectNoReport();
 }
 
 - (void) testToBeNotFalsePassNegative {
-  [[SKIntExpectation expectationFunctionInFile:"file1" line:2 failureReporter:reporter]
+  [[[SKIntExpectation expectationInFile:"file1" line:2 failureReporter:reporter] withInt]
    (-3) toNotBeFalse];
   SKHelperExpectNoReport();
 }

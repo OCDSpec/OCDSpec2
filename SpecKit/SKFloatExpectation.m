@@ -4,16 +4,10 @@
 
 @synthesize number;
 
-+ (SKFloatExpectation*(^)(double)) expectationFunctionInFile:(char*)file
-                                                        line:(int)line
-                                             failureReporter:(id<SKFailureReporter>)reporter
-{
+- (SKFloatExpectation*(^)(double)) withFloat {
   return [[^SKFloatExpectation*(double num){
-    SKFloatExpectation *expectation = [[[SKFloatExpectation alloc] initWithFile:file
-                                                                           line:line
-                                                                failureReporter:reporter] autorelease];
-    expectation.number = num;
-    return expectation;
+    self.number = num;
+    return self;
   } copy] autorelease];
 }
 

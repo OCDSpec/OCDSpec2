@@ -6,9 +6,7 @@
 
 @property (readwrite, assign) long long number;
 
-+ (SKIntExpectation*(^)(long long)) expectationFunctionInFile:(char*)file
-                                                         line:(int)line
-                                              failureReporter:(id<SKFailureReporter>)reporter;
+- (SKIntExpectation*(^)(long long)) withInt;
 
 - (void) toBe:(long long)other;
 - (void) toBeTrue;
@@ -17,5 +15,5 @@
 
 @end
 
-#define expectInt [SKIntExpectation expectationFunctionInFile:__FILE__ line:__LINE__ failureReporter:self]
-#define expectBool [SKIntExpectation expectationFunctionInFile:__FILE__ line:__LINE__ failureReporter:self]
+#define expectInt [[SKIntExpectation expectationInFile:__FILE__ line:__LINE__ failureReporter:self] withInt]
+#define expectBool [[SKIntExpectation expectationInFile:__FILE__ line:__LINE__ failureReporter:self] withInt]

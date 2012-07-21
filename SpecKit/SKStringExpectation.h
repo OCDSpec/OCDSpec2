@@ -6,13 +6,11 @@
 
 @property (readwrite, assign) NSString* string;
 
-+ (SKStringExpectation*(^)(NSString*)) expectationFunctionInFile:(char*)file
-                                                            line:(int)line
-                                                 failureReporter:(id<SKFailureReporter>)reporter;
+- (SKStringExpectation*(^)(NSString*)) withString;
 
 - (void) toContain:(NSString*)substring;
 - (void) toStartWith:(NSString*)substring;
 
 @end
 
-#define expectStr [SKStringExpectation expectationFunctionInFile:__FILE__ line:__LINE__ failureReporter:self]
+#define expectStr [[SKStringExpectation expectationInFile:__FILE__ line:__LINE__ failureReporter:self] withString]

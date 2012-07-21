@@ -21,27 +21,27 @@
 }
 
 - (void) testToContainPass {
-  [[SKStringExpectation expectationFunctionInFile:"file1" line:2 failureReporter:reporter]
+  [[[SKStringExpectation expectationInFile:"file1" line:2 failureReporter:reporter] withString]
    (@"hello") toContain: @"hell"];
   SKHelperExpectNoReport();
 }
 
 - (void) testToContainFail {
-  [[SKStringExpectation expectationFunctionInFile:"file1" line:2 failureReporter:reporter]
+  [[[SKStringExpectation expectationInFile:"file1" line:2 failureReporter:reporter] withString]
    (@"hello") toContain: @"jello"];
   SKHelperExpectReport(@"file1", 2, @"Want \"*jello*\", got \"hello\"");
 }
 
 - (void) testToStartWithPass {
-    [[SKStringExpectation expectationFunctionInFile:"file1" line:2 failureReporter:reporter]
-     (@"hello") toStartWith: @"hell"];
-    SKHelperExpectNoReport();
+  [[[SKStringExpectation expectationInFile:"file1" line:2 failureReporter:reporter] withString]
+   (@"hello") toStartWith: @"hell"];
+  SKHelperExpectNoReport();
 }
 
 - (void) testToStartWithFail {
-    [[SKStringExpectation expectationFunctionInFile:"file1" line:2 failureReporter:reporter]
-     (@"hello") toStartWith: @"ell"];
-    SKHelperExpectReport(@"file1", 2, @"Want \"ell*\", got \"hello\"");
+  [[[SKStringExpectation expectationInFile:"file1" line:2 failureReporter:reporter] withString]
+   (@"hello") toStartWith: @"ell"];
+  SKHelperExpectReport(@"file1", 2, @"Want \"ell*\", got \"hello\"");
 }
 
 @end

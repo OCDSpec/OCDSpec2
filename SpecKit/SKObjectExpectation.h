@@ -6,9 +6,7 @@
 
 @property (readwrite, assign) id object;
 
-+ (SKObjectExpectation*(^)(id)) expectationFunctionInFile:(char*)file
-                                                     line:(int)line
-                                          failureReporter:(id<SKFailureReporter>)reporter;
+- (SKObjectExpectation*(^)(id)) withObject;
 
 - (void) toBe:(id)other;
 - (void) toBeEqualTo:(id)other;
@@ -19,4 +17,4 @@
 
 @end
 
-#define expect [SKObjectExpectation expectationFunctionInFile:__FILE__ line:__LINE__ failureReporter:self]
+#define expect [[SKObjectExpectation expectationInFile:__FILE__ line:__LINE__ failureReporter:self] withObject]

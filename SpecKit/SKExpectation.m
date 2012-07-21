@@ -6,16 +6,15 @@
 @synthesize line;
 @synthesize failureReporter;
 
-- (id) initWithFile:(char*)someFile
-               line:(int)someLine
-    failureReporter:(id<SKFailureReporter>)reporter
++ (id) expectationInFile:(char*)someFile
+                    line:(int)someLine
+         failureReporter:(id<SKFailureReporter>)reporter
 {
-  if ((self = [super init])) {
-    self.file = [NSString stringWithUTF8String:someFile];
-    self.line = someLine;
-    self.failureReporter = reporter;
-  }
-  return self;
+  SKExpectation *expectation = [[[self alloc] init] autorelease];
+  expectation.file = [NSString stringWithUTF8String:someFile];
+  expectation.line = someLine;
+  expectation.failureReporter = reporter;
+  return expectation;
 }
 
 - (void) reportFailure:(NSString*)message {

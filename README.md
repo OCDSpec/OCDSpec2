@@ -75,6 +75,9 @@ SpecKitContext(WidgetSpec) {
   * `toNotBeFalse`
 * `expectFloat(double)`
   * `toBe:(double)other withPrecision:(double)precision`
+* `expectStr(NSString*)`
+  * `toContain:(NSString*)substring`
+  * `toStartWith:(NSString*)substring`
 
 ## Credits
 

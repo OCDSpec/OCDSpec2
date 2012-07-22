@@ -10,7 +10,7 @@ A testing library for Mac or iOS projects
 ## Use SpecKit in an iOS project
 
 * In the root dir of your project, run:
-    * `git submodule add https://github.com/sdegutis/SpecKit.git SpecKit`
+    * `git submodule add https://github.com/sdegutis/SpecKit.git`
 * Add a new target to your project of type 'SpecKit -> iOS Spec Runner'. This is your spec target.
     * Drag the SpecKit project file, found in the submodule you just cloned, into your project in Xcode.
     * Drag the SpecKit subproject's Product `libSpecKit.a` into your spec target's "Link Binary With Libraries" build phase.

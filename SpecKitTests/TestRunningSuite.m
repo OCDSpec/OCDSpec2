@@ -36,6 +36,7 @@ SpecKitContext(Sample2) {
       [expectBool(YES) toBeTrue];
       [expectFloat(1.23) toBe:1.23 withPrecision:0.00001];
       [expect(@"hi") toBe: @"hi"];
+      [expectArray([NSArray arrayWithObject:@"hi"]) toContain: @"hi"];
     });
   });
 }

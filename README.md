@@ -1,4 +1,4 @@
-# SpecKit
+# SpecKit 1.0
 
 A testing library for Mac or iOS projects
 
@@ -83,6 +83,8 @@ SpecKitContext(WidgetSpec) {
 * `expectStr(NSString*)`
   * `toContain:(NSString*)substring`
   * `toStartWith:(NSString*)substring`
+* `expectArray(NSArray*)`
+  * `toContain:(id)obj`
 
 ## Running code before tests
 

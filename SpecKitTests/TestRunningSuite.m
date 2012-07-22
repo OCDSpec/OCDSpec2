@@ -4,7 +4,7 @@
 
 int SampleBeforeAllCount;
 
-@interface SampleBeforeAll : NSObject<SKRunBeforeAll>
+@interface SampleBeforeAll : NSObject<SKPrelude>
 @end
 
 @implementation SampleBeforeAll
@@ -73,7 +73,7 @@ SpecKitContext(Sample2) {
 }
 
 - (void) testGetBeforeAllRunnerClasses {
-  NSArray *runnerClasses = [SKContext beforeAllRunnerClasses];
+  NSArray *runnerClasses = [SKContext preludeClasses];
   
   STAssertTrue([runnerClasses count] == 1, nil);
   STAssertTrue([runnerClasses containsObject: [SampleBeforeAll self]], nil);

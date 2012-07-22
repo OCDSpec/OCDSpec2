@@ -32,7 +32,7 @@
 		94A6BA9A15BB30AF003F22B6 /* TestFloatExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BA9015BB30AF003F22B6 /* TestFloatExpectation.m */; };
 		94A6BA9B15BB30AF003F22B6 /* TestStringExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BA9115BB30AF003F22B6 /* TestStringExpectation.m */; };
 		94A6BAB015BB30D0003F22B6 /* SpecKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 94A6BA9C15BB30D0003F22B6 /* SpecKit.h */; };
-		94A6BAB115BB30D0003F22B6 /* SKRunBeforeAll.h in Headers */ = {isa = PBXBuildFile; fileRef = 94A6BA9D15BB30D0003F22B6 /* SKRunBeforeAll.h */; };
+		94A6BAB115BB30D0003F22B6 /* SKPrelude.h in Headers */ = {isa = PBXBuildFile; fileRef = 94A6BA9D15BB30D0003F22B6 /* SKPrelude.h */; };
 		94A6BAB215BB30D0003F22B6 /* SKFailureReporter.h in Headers */ = {isa = PBXBuildFile; fileRef = 94A6BA9E15BB30D0003F22B6 /* SKFailureReporter.h */; };
 		94A6BAB315BB30D0003F22B6 /* SKContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 94A6BA9F15BB30D0003F22B6 /* SKContext.h */; };
 		94A6BAB415BB30D0003F22B6 /* SKContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA015BB30D0003F22B6 /* SKContext.m */; };
@@ -89,7 +89,7 @@
 		94A6BA9015BB30AF003F22B6 /* TestFloatExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestFloatExpectation.m; sourceTree = "<group>"; };
 		94A6BA9115BB30AF003F22B6 /* TestStringExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestStringExpectation.m; sourceTree = "<group>"; };
 		94A6BA9C15BB30D0003F22B6 /* SpecKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecKit.h; sourceTree = "<group>"; };
-		94A6BA9D15BB30D0003F22B6 /* SKRunBeforeAll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKRunBeforeAll.h; sourceTree = "<group>"; };
+		94A6BA9D15BB30D0003F22B6 /* SKPrelude.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKPrelude.h; sourceTree = "<group>"; };
 		94A6BA9E15BB30D0003F22B6 /* SKFailureReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKFailureReporter.h; sourceTree = "<group>"; };
 		94A6BA9F15BB30D0003F22B6 /* SKContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKContext.h; sourceTree = "<group>"; };
 		94A6BAA015BB30D0003F22B6 /* SKContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKContext.m; sourceTree = "<group>"; };
@@ -187,7 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				94A6BA9C15BB30D0003F22B6 /* SpecKit.h */,
-				94A6BA9D15BB30D0003F22B6 /* SKRunBeforeAll.h */,
+				94A6BA9D15BB30D0003F22B6 /* SKPrelude.h */,
 				94A6BA9E15BB30D0003F22B6 /* SKFailureReporter.h */,
 				94A6BA9F15BB30D0003F22B6 /* SKContext.h */,
 				94A6BAA015BB30D0003F22B6 /* SKContext.m */,
@@ -264,7 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				94A6BAB015BB30D0003F22B6 /* SpecKit.h in Headers */,
-				94A6BAB115BB30D0003F22B6 /* SKRunBeforeAll.h in Headers */,
+				94A6BAB115BB30D0003F22B6 /* SKPrelude.h in Headers */,
 				94A6BAB215BB30D0003F22B6 /* SKFailureReporter.h in Headers */,
 				94A6BAB315BB30D0003F22B6 /* SKContext.h in Headers */,
 				94A6BAB615BB30D0003F22B6 /* SKDescription.h in Headers */,

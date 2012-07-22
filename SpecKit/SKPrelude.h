@@ -1,6 +1,6 @@
 #import <Foundation/Foundation.h>
 
-@protocol SKRunBeforeAll <NSObject>
+@protocol SKPrelude <NSObject>
 
 - (void) run;
 

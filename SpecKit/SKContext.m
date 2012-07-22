@@ -1,7 +1,7 @@
 #import "SKContext.h"
 #import "SKDescription.h"
 #import "SKExample.h"
-#import "SKRunBeforeAll.h"
+#import "SKPrelude.h"
 #import <objc/runtime.h>
 
 int SpecKitRunAllTests() {
@@ -24,8 +24,8 @@ int SpecKitRunAllTests() {
 + (int) runAllTestsUsingOutput:(NSFileHandle*)outputFile {
   int errorCount = 0;
   
-  for (Class runnerClass in [self beforeAllRunnerClasses]) {
-    id<SKRunBeforeAll> runner = [[[runnerClass alloc] init] autorelease];
+  for (Class runnerClass in [self preludeClasses]) {
+    id<SKPrelude> runner = [[[runnerClass alloc] init] autorelease];
     [runner run];
   }
   
@@ -60,7 +60,7 @@ int SpecKitRunAllTests() {
   return testClasses;
 }
 
-+ (NSArray*) beforeAllRunnerClasses {
++ (NSArray*) preludeClasses {
   int classCount = objc_getClassList(NULL, 0);
   Class classes[classCount];
   objc_getClassList(classes, classCount);
@@ -70,7 +70,7 @@ int SpecKitRunAllTests() {
   for (int i = 0; i < classCount; i++) {
     Class class = classes[i];
     
-    if (class_conformsToProtocol(class, @protocol(SKRunBeforeAll))) {
+    if (class_conformsToProtocol(class, @protocol(SKPrelude))) {
       [testClasses addObject:class];
     }
   }

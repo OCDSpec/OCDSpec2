@@ -6,6 +6,6 @@
 #import <SpecKit/SKIntExpectation.h>
 #import <SpecKit/SKFloatExpectation.h>
 #import <SpecKit/SKStringExpectation.h>
-#import <SpecKit/SKRunBeforeAll.h>
+#import <SpecKit/SKPrelude.h>
 
 #endif

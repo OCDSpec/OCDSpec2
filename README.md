@@ -84,6 +84,37 @@ SpecKitContext(WidgetSpec) {
   * `toContain:(NSString*)substring`
   * `toStartWith:(NSString*)substring`
 
+## Running code before tests
+
+Just conform to the SKPrelude protocol, which just requires a `-(void)run` method. Here's an example:
+
+```objc
+#import <UIKit/UIKit.h>
+#import <objc/runtime.h>
+
+#import <SpecKit/SpecKit.h>
+
+NSString* StubbedNibName(void) {
+  return nil;
+}
+
+@interface ViewPrelude : NSObject<SKPrelude>
+@end
+
+@implementation ViewPrelude
+
+- (void) swizzleBundleNibNames {
+  method_setImplementation(class_getInstanceMethod([UIViewController self], @selector(nibName)),
+                           (IMP)StubbedNibName);
+}
+
+- (void) run {
+  [self swizzleBundleNibNames];
+}
+
+@end
+```
+
 ## Credits
 
 * Inspired by Eric Smith's [OCDSpec](https://github.com/paytonrules/OCDSpec).

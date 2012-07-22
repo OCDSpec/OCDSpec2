@@ -11,7 +11,7 @@
 	<key>Concrete</key>
 	<true/>
 	<key>Description</key>
-	<string>This template builds a command-line tool.</string>
+	<string>This template adds a SpecKit runner to your Mac project.</string>
 	<key>Ancestors</key>
 	<array>
 		<string>com.apple.dt.unit.base</string>

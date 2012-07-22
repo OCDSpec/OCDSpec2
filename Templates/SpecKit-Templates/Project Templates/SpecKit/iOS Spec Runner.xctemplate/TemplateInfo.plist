@@ -51,6 +51,8 @@
 	</dict>
 	<key>Identifier</key>
 	<string>com.apple.dt.unit.cocoaTouchApplication</string>
+	<key>Description</key>
+	<string>This template adds a SpecKit runner to your iOS project.</string>
 	<key>Kind</key>
 	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
 	<key>Nodes</key>

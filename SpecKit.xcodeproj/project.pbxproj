@@ -107,7 +107,6 @@
 		94A6BAAC15BB30D0003F22B6 /* SKFloatExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKFloatExpectation.m; sourceTree = "<group>"; };
 		94A6BAAD15BB30D0003F22B6 /* SKStringExpectation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKStringExpectation.h; sourceTree = "<group>"; };
 		94A6BAAE15BB30D0003F22B6 /* SKStringExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKStringExpectation.m; sourceTree = "<group>"; };
-		94A6BAAF15BB30D0003F22B6 /* unitTestMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = unitTestMain.m; path = ../unitTestMain.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,7 +205,6 @@
 				94A6BAAC15BB30D0003F22B6 /* SKFloatExpectation.m */,
 				94A6BAAD15BB30D0003F22B6 /* SKStringExpectation.h */,
 				94A6BAAE15BB30D0003F22B6 /* SKStringExpectation.m */,
-				94A6BAAF15BB30D0003F22B6 /* unitTestMain.m */,
 				94A6BA6015BB2DE7003F22B6 /* Supporting Files */,
 			);
 			path = SpecKit;
@@ -603,6 +601,7 @@
 				942AAEFA15BBB3760006C241 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		94A6BA5415BB2DE7003F22B6 /* Build configuration list for PBXProject "SpecKit" */ = {
 			isa = XCConfigurationList;

@@ -80,7 +80,7 @@
 							</dict>
 							<key>Frameworks</key>
 							<array>
-								<string>Foundation</string>
+								<string>Cocoa</string>
 							</array>
 						</dict>
 					</array>

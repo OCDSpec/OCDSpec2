@@ -11,26 +11,17 @@ A testing library for Mac or iOS projects
 
 * In the root dir of your project, run:
     * `git submodule add https://github.com/sdegutis/SpecKit.git SpecKit`
-* Add a new 'iOS -> Application -> Empty Application' target to your project. This will be your spec target.
-    * Delete `AppDelegate.h`, `AppDelegate.m`, and `main.m` from the spec target
-    * Drag the file 'unitTestMain.m' into the spec target's group
-        * Make sure 'Copy items...' is unchecked
-        * Make sure it's only added to the spec target, not your main target
-    * Drag the SpecKit Xcode project into your project
-        * Drag the SpecKit subproject's Product `libSpecKit.a` into your spec target's "Link Binary With Libraries" build phase
-        * In your spec target's Build Settings, find "header search paths" and in the column for your spec target, add `SpecKit`
-    * Add a new 'Run Script' build phase to your spec target, running this single line:
-        * `${SOURCE_ROOT}/SpecKit/RunIPhoneUnitTest.sh`
+* Add a new target to your project of type 'SpecKit -> iOS Spec Runner'. This is your spec target.
+    * Drag the SpecKit project file, found in the submodule you just cloned, into your project in Xcode.
+    * Drag the SpecKit subproject's Product `libSpecKit.a` into your spec target's "Link Binary With Libraries" build phase.
 
 ## Use SpecKit in a Mac project
 
-* Use the same instructions listed above for an iOS project, with a few differences:
-    * Create the spec target via the 'Mac OS X -> Application -> Command Line Tool'
-        * Choose the 'Foundation' type
-        * Make sure to link against Cocoa if your app uses it
-            * Feel free to remove Foundation if it's redundant
-    * Drag `libSpecKitMac.a` into the spec target's link build phase
-    * The Run Script build phase should execute `$TARGET_BUILD_DIR/$EXECUTABLE_PATH`
+* In the root dir of your project, run:
+    * `git submodule add https://github.com/sdegutis/SpecKit.git SpecKit`
+* Add a new target to your project of type 'SpecKit -> Mac Spec Runner'. This is your spec target.
+    * Drag the SpecKit project file, found in the submodule you just cloned, into your project in Xcode.
+    * Drag the SpecKit subproject's Product `libSpecKitMac.a` into your spec target's "Link Binary With Libraries" build phase.
 
 ## Adding a spec to the project
 

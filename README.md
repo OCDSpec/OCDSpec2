@@ -8,7 +8,7 @@
 * In the root dir of your project, run:
     * `git submodule add https://github.com/sdegutis/SpecKit.git SpecKit`
 * Add a new 'iOS -> Application -> Empty Application' target to your project. This will be your spec target.
-    * Delete `OTAppDelegate.h`, `OTAppDelegate.m`, and `main.m` from the spec target
+    * Delete `AppDelegate.h`, `AppDelegate.m`, and `main.m` from the spec target
     * Drag the file 'unitTestMain.m' into the spec target's group
         * Make sure 'Copy items...' is unchecked
         * Make sure it's only added to the spec target, not your main target

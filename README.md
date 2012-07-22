@@ -105,13 +105,9 @@ NSString* StubbedNibName(void) {
 
 @implementation ViewPrelude
 
-- (void) swizzleBundleNibNames {
+- (void) run {
   method_setImplementation(class_getInstanceMethod([UIViewController self], @selector(nibName)),
                            (IMP)StubbedNibName);
-}
-
-- (void) run {
-  [self swizzleBundleNibNames];
 }
 
 @end

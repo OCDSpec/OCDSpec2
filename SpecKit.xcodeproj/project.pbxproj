@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		942AAEEE15BBB3760006C241 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 942AAEED15BBB3760006C241 /* Cocoa.framework */; };
+		942AAEFD15BBB3E60006C241 /* SKContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA015BB30D0003F22B6 /* SKContext.m */; };
+		942AAEFE15BBB3E90006C241 /* SKDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA215BB30D0003F22B6 /* SKDescription.m */; };
+		942AAEFF15BBB3EB0006C241 /* SKExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA415BB30D0003F22B6 /* SKExample.m */; };
+		942AAF0015BBB3EE0006C241 /* SKExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA615BB30D0003F22B6 /* SKExpectation.m */; };
+		942AAF0115BBB3F00006C241 /* SKObjectExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA815BB30D0003F22B6 /* SKObjectExpectation.m */; };
+		942AAF0215BBB3F30006C241 /* SKIntExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAAA15BB30D0003F22B6 /* SKIntExpectation.m */; };
+		942AAF0315BBB3F50006C241 /* SKFloatExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAAC15BB30D0003F22B6 /* SKFloatExpectation.m */; };
+		942AAF0415BBB3F80006C241 /* SKStringExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAAE15BB30D0003F22B6 /* SKStringExpectation.m */; };
 		94A6BA5E15BB2DE7003F22B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A6BA5D15BB2DE7003F22B6 /* Foundation.framework */; };
 		94A6BA7515BB3093003F22B6 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A6BA7415BB3093003F22B6 /* SenTestingKit.framework */; };
 		94A6BA7715BB3093003F22B6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A6BA7615BB3093003F22B6 /* UIKit.framework */; };
@@ -52,6 +61,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		942AAEEC15BBB3760006C241 /* libSpecKitMac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSpecKitMac.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		942AAEED15BBB3760006C241 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		942AAEF015BBB3760006C241 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		942AAEF115BBB3760006C241 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		942AAEF215BBB3760006C241 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		942AAEF515BBB3760006C241 /* SpecKitMac-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "SpecKitMac-Prefix.pch"; path = "SpecKit/SpecKitMac-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		94A6BA5A15BB2DE7003F22B6 /* libSpecKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSpecKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		94A6BA5D15BB2DE7003F22B6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		94A6BA6115BB2DE7003F22B6 /* SpecKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpecKit-Prefix.pch"; sourceTree = "<group>"; };
@@ -96,6 +111,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		942AAEE915BBB3760006C241 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				942AAEEE15BBB3760006C241 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		94A6BA5715BB2DE7003F22B6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -117,6 +140,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		942AAEEF15BBB3760006C241 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				942AAEF015BBB3760006C241 /* AppKit.framework */,
+				942AAEF115BBB3760006C241 /* CoreData.framework */,
+				942AAEF215BBB3760006C241 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
 		94A6BA4F15BB2DE7003F22B6 = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +167,7 @@
 			children = (
 				94A6BA5A15BB2DE7003F22B6 /* libSpecKit.a */,
 				94A6BA7315BB3093003F22B6 /* SpecKitTests.octest */,
+				942AAEEC15BBB3760006C241 /* libSpecKitMac.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -144,6 +178,8 @@
 				94A6BA5D15BB2DE7003F22B6 /* Foundation.framework */,
 				94A6BA7415BB3093003F22B6 /* SenTestingKit.framework */,
 				94A6BA7615BB3093003F22B6 /* UIKit.framework */,
+				942AAEED15BBB3760006C241 /* Cocoa.framework */,
+				942AAEEF15BBB3760006C241 /* Other Frameworks */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -180,6 +216,7 @@
 			isa = PBXGroup;
 			children = (
 				94A6BA6115BB2DE7003F22B6 /* SpecKit-Prefix.pch */,
+				942AAEF515BBB3760006C241 /* SpecKitMac-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -217,6 +254,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		942AAEEA15BBB3760006C241 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		94A6BA5815BB2DE7003F22B6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -238,6 +282,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		942AAEEB15BBB3760006C241 /* SpecKitMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 942AAEFB15BBB3760006C241 /* Build configuration list for PBXNativeTarget "SpecKitMac" */;
+			buildPhases = (
+				942AAEE815BBB3760006C241 /* Sources */,
+				942AAEE915BBB3760006C241 /* Frameworks */,
+				942AAEEA15BBB3760006C241 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpecKitMac;
+			productName = SpecKitMac;
+			productReference = 942AAEEC15BBB3760006C241 /* libSpecKitMac.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		94A6BA5915BB2DE7003F22B6 /* SpecKit */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 94A6BA6715BB2DE7003F22B6 /* Build configuration list for PBXNativeTarget "SpecKit" */;
@@ -296,6 +357,7 @@
 			targets = (
 				94A6BA5915BB2DE7003F22B6 /* SpecKit */,
 				94A6BA7215BB3093003F22B6 /* SpecKitTests */,
+				942AAEEB15BBB3760006C241 /* SpecKitMac */,
 			);
 		};
 /* End PBXProject section */
@@ -328,6 +390,21 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		942AAEE815BBB3760006C241 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				942AAEFD15BBB3E60006C241 /* SKContext.m in Sources */,
+				942AAEFE15BBB3E90006C241 /* SKDescription.m in Sources */,
+				942AAEFF15BBB3EB0006C241 /* SKExample.m in Sources */,
+				942AAF0015BBB3EE0006C241 /* SKExpectation.m in Sources */,
+				942AAF0115BBB3F00006C241 /* SKObjectExpectation.m in Sources */,
+				942AAF0215BBB3F30006C241 /* SKIntExpectation.m in Sources */,
+				942AAF0315BBB3F50006C241 /* SKFloatExpectation.m in Sources */,
+				942AAF0415BBB3F80006C241 /* SKStringExpectation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		94A6BA5615BB2DE7003F22B6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -382,6 +459,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		942AAEF915BBB3760006C241 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpecKit/SpecKitMac-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		942AAEFA15BBB3760006C241 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpecKit/SpecKitMac-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 		94A6BA6515BB2DE7003F22B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -481,6 +596,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		942AAEFB15BBB3760006C241 /* Build configuration list for PBXNativeTarget "SpecKitMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				942AAEF915BBB3760006C241 /* Debug */,
+				942AAEFA15BBB3760006C241 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		94A6BA5415BB2DE7003F22B6 /* Build configuration list for PBXProject "SpecKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

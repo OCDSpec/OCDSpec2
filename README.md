@@ -1,9 +1,13 @@
+# SpecKit
+
+A testing library for Mac or iOS projects
+
 ## Install Xcode Templates
 
 * Run `install_templates.sh` from inside this project's root directory
 * Note: this only needs to be done once
 
-## Use SpecKit in an Xcode Project
+## Use SpecKit in an iOS project
 
 * In the root dir of your project, run:
     * `git submodule add https://github.com/sdegutis/SpecKit.git SpecKit`
@@ -17,6 +21,16 @@
         * In your spec target's Build Settings, find "header search paths" and in the column for your spec target, add `SpecKit`
     * Add a new 'Run Script' build phase to your spec target, running this single line:
         * `${SOURCE_ROOT}/SpecKit/RunIPhoneUnitTest.sh`
+
+## Use SpecKit in a Mac project
+
+* Use the same instructions listed above for an iOS project, with a few differences:
+    * Create the spec target via the 'Mac OS X -> Application -> Command Line Tool'
+        * Choose the 'Foundation' type
+        * Make sure to link against Cocoa if your app uses it
+            * Feel free to remove Foundation if it's redundant
+    * Drag `libSpecKitMac.a` into the spec target's link build phase
+    * The Run Script build phase should execute `$TARGET_BUILD_DIR/$EXECUTABLE_PATH`
 
 ## Adding a spec to the project
 

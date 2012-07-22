@@ -4,9 +4,6 @@
 
 @interface SKFakeFailureReporter : NSObject <SKFailureReporter>
 
-@property int reportCount;
-@property (retain) NSString* lastReport;
-@property (retain) NSString* lastFile;
-@property int lastLine;
+@property (assign) NSArray* reports;
 
 @end

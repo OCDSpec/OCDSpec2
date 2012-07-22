@@ -1,4 +1,5 @@
 #import "SenTestCase+ReportingHelper.h"
+#import "SKFakeFailure.h"
 
 @implementation SenTestCase (ReportingHelper)
 
@@ -9,25 +10,27 @@
                atLine:(int)atLine
           forReporter:(SKFakeFailureReporter*)reporter
 {
-  if (reporter.reportCount != 1) {
+  SKFakeFailure *failure = [reporter.reports lastObject];
+  
+  if ([reporter.reports count] != 1) {
     [self failWithException:[NSException failureInFile:[NSString stringWithUTF8String:inFile]
                                                 atLine:atLine
                                        withDescription:@"too many reports sent"]];
   }
   
-  if (![reporter.lastReport isEqualToString: message]) {
+  if (![failure.report isEqualToString: message]) {
     [self failWithException:[NSException failureInFile:[NSString stringWithUTF8String:inFile]
                                                 atLine:atLine
-                                       withDescription:@"failed with wrong message: %@", reporter.lastReport]];
+                                       withDescription:@"failed with wrong message: %@", failure.report]];
   }
   
-  if (![reporter.lastFile isEqualToString: file]) {
+  if (![failure.inFile isEqualToString: file]) {
     [self failWithException:[NSException failureInFile:[NSString stringWithUTF8String:inFile]
                                                 atLine:atLine
                                        withDescription:@"failed in wrong file"]];
   }
   
-  if (reporter.lastLine != line) {
+  if (failure.atLine != line) {
     [self failWithException:[NSException failureInFile:[NSString stringWithUTF8String:inFile]
                                                 atLine:atLine
                                        withDescription:@"failed at wrong line"]];
@@ -38,10 +41,10 @@
                        atLine:(int)atLine
                   forReporter:(SKFakeFailureReporter*)reporter
 {
-  if (reporter.reportCount != 0) {
+  if ([reporter.reports count] != 0) {
     [self failWithException:[NSException failureInFile:[NSString stringWithUTF8String:inFile]
                                                 atLine:atLine
-                                       withDescription:@"got unexpected failure [%@], didnt expect one", reporter.lastReport]];
+                                       withDescription:@"got unexpected failure [%@], didnt expect one", [[reporter.reports lastObject] report]]];
   }
 }
 

@@ -128,7 +128,7 @@ To get the latest matchers, upgrade to the latest version:
 
 * 1.0
     * Did all the stuff
-    * Wrote all the codes
+    * Wrote all the codez
 
 ## Credits
 

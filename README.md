@@ -2,13 +2,11 @@
 
 A testing library for Mac or iOS projects
 
-## Install Xcode Templates
-
-* Run `install_templates.sh` from inside this project's root directory
-* Note: this only needs to be done once
-
 ## Use SpecKit in an iOS project
 
+* Run `install_templates.sh` from inside this project's root directory
+    * This installs the Xcode target and file templates you will be using
+    * Note: this only needs to be done once
 * In the root dir of your project, run:
     * `git submodule add https://github.com/sdegutis/SpecKit.git`
 * Add a new target to your project of type 'SpecKit -> iOS Spec Runner'. This is your spec target.
@@ -17,6 +15,9 @@ A testing library for Mac or iOS projects
 
 ## Use SpecKit in a Mac project
 
+* Run `install_templates.sh` from inside this project's root directory
+    * This installs the Xcode target and file templates you will be using
+    * Note: this only needs to be done once
 * In the root dir of your project, run:
     * `git submodule add https://github.com/sdegutis/SpecKit.git`
 * Add a new target to your project of type 'SpecKit -> Mac Spec Runner'. This is your spec target.
@@ -112,6 +113,22 @@ NSString* StubbedNibName(void) {
 
 @end
 ```
+
+## Upgrading
+
+To get the latest matchers, upgrade to the latest version:
+
+* Update the SpecKit submodule in your project
+    * `cd SpecKit` from your main project directory
+    * `git checkout master`
+    * `git pull`
+    * Be sure to check this into git
+
+## Change log
+
+* 1.0
+    * Did all the stuff
+    * Wrote all the codes
 
 ## Credits
 

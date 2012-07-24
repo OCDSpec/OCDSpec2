@@ -2,14 +2,15 @@
 
 A testing library for Mac or iOS projects
 
-## Use SpecKit in an iOS project
+## One-time setup before using SpecKit in any project
 
 * Run `install_templates.sh` from inside this project's root directory
     * This installs the Xcode target and file templates you will be using
-    * Note: this only needs to be done once
 * Run `install_codesnippets.sh` from inside this project's root directory
-    * This installs the Xcode target and file templates you will be using
-    * Note: this only needs to be done once
+    * This installs the Xcode code snippets that make life so nice
+
+## Use SpecKit in an iOS project
+
 * In the root dir of your project, run:
     * `git submodule add https://github.com/sdegutis/SpecKit.git`
 * Add a new target to your project of type 'SpecKit -> iOS Spec Runner'. This is your spec target.
@@ -18,12 +19,6 @@ A testing library for Mac or iOS projects
 
 ## Use SpecKit in a Mac project
 
-* Run `install_templates.sh` from inside this project's root directory
-    * This installs the Xcode target and file templates you will be using
-    * Note: this only needs to be done once
-* Run `install_codesnippets.sh` from inside this project's root directory
-    * This installs the Xcode target and file templates you will be using
-    * Note: this only needs to be done once
 * In the root dir of your project, run:
     * `git submodule add https://github.com/sdegutis/SpecKit.git`
 * Add a new target to your project of type 'SpecKit -> Mac Spec Runner'. This is your spec target.

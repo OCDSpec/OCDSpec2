@@ -1,4 +1,4 @@
-# SpecKit 1.1
+# SpecKit 1.1.1
 
 A testing library for Mac or iOS projects
 
@@ -8,7 +8,7 @@ Inside the SpecKit directory, run:
 
 ```bash
 install_templates.sh    # installs the Xcode target and file templates you will be using
-install_codesnippets.sh # installs the Xcode code snippets that make life so nice
+install_codesnippets.sh # installs the Xcode code snippets (for autocompletion) that make life so nice
 ```
 
 ## Use SpecKit in an iOS project
@@ -129,6 +129,8 @@ To get the latest matchers, upgrade to the latest version:
 
 ## Change log
 
+* 1.1.1
+    * Added boolean code snippet too
 * 1.1
     * Added code snippets
 * 1.0

@@ -1,10 +1,13 @@
-# SpecKit 1.0
+# SpecKit 1.1
 
 A testing library for Mac or iOS projects
 
 ## Use SpecKit in an iOS project
 
 * Run `install_templates.sh` from inside this project's root directory
+    * This installs the Xcode target and file templates you will be using
+    * Note: this only needs to be done once
+* Run `install_codesnippets.sh` from inside this project's root directory
     * This installs the Xcode target and file templates you will be using
     * Note: this only needs to be done once
 * In the root dir of your project, run:
@@ -16,6 +19,9 @@ A testing library for Mac or iOS projects
 ## Use SpecKit in a Mac project
 
 * Run `install_templates.sh` from inside this project's root directory
+    * This installs the Xcode target and file templates you will be using
+    * Note: this only needs to be done once
+* Run `install_codesnippets.sh` from inside this project's root directory
     * This installs the Xcode target and file templates you will be using
     * Note: this only needs to be done once
 * In the root dir of your project, run:
@@ -126,6 +132,8 @@ To get the latest matchers, upgrade to the latest version:
 
 ## Change log
 
+* 1.1
+    * Added code snippets
 * 1.0
     * Did all the stuff
     * Wrote all the codez

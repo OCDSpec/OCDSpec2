@@ -4,10 +4,12 @@ A testing library for Mac or iOS projects
 
 ## One-time setup before using SpecKit in any project
 
-* Run `install_templates.sh` from inside this project's root directory
-    * This installs the Xcode target and file templates you will be using
-* Run `install_codesnippets.sh` from inside this project's root directory
-    * This installs the Xcode code snippets that make life so nice
+Inside the SpecKit directory, run:
+
+```bash
+install_templates.sh    # installs the Xcode target and file templates you will be using
+install_codesnippets.sh # installs the Xcode code snippets that make life so nice
+```
 
 ## Use SpecKit in an iOS project
 

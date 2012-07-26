@@ -2,8 +2,6 @@
 
 @implementation SKIntExpectation
 
-@synthesize number;
-
 - (SKIntExpectation*(^)(long long)) withInt {
   return [[^SKIntExpectation*(long long num){
     self.number = num;

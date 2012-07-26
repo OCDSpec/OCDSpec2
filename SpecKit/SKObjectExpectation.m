@@ -2,8 +2,6 @@
 
 @implementation SKObjectExpectation
 
-@synthesize object;
-
 - (SKObjectExpectation*(^)(id)) withObject {
   return [[^SKObjectExpectation*(id obj){
     self.object = obj;

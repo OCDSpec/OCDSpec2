@@ -2,12 +2,6 @@
 
 @implementation SKDescription
 
-@synthesize name;
-@synthesize examples;
-
-@synthesize beforeEachBlock;
-@synthesize afterEachBlock;
-
 - (void) dealloc {
   self.name = nil;
   self.examples = nil;

@@ -2,8 +2,6 @@
 
 @implementation SKFloatExpectation
 
-@synthesize number;
-
 - (SKFloatExpectation*(^)(double)) withFloat {
   return [[^SKFloatExpectation*(double num){
     self.number = num;

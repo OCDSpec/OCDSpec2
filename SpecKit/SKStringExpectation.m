@@ -2,8 +2,6 @@
 
 @implementation SKStringExpectation
 
-@synthesize string;
-
 - (SKStringExpectation*(^)(NSString*)) withString {
   return [[^SKStringExpectation*(NSString *str){
     self.string = str;

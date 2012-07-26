@@ -10,10 +10,6 @@ int SpecKitRunAllTests() {
 
 @implementation SKContext
 
-@synthesize reportOutputFile;
-@synthesize descriptions;
-@synthesize errorCount;
-
 - (void) dealloc {
   self.reportOutputFile = nil;
   self.descriptions = nil;

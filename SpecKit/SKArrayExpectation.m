@@ -2,8 +2,6 @@
 
 @implementation SKArrayExpectation
 
-@synthesize array;
-
 - (SKArrayExpectation*(^)(NSArray*)) withArray {
   return [[^SKArrayExpectation*(NSArray *a){
     self.array = a;

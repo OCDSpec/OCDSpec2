@@ -2,10 +2,6 @@
 
 @implementation SKExpectation
 
-@synthesize file;
-@synthesize line;
-@synthesize failureReporter;
-
 + (id) expectationInFile:(char*)someFile
                     line:(int)someLine
          failureReporter:(id<SKFailureReporter>)reporter

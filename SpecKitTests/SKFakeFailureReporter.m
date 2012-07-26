@@ -3,8 +3,6 @@
 
 @implementation SKFakeFailureReporter
 
-@synthesize reports;
-
 - (void) reportFailure:(NSString*)msg inFile:(NSString*)file atLine:(int)line {
   SKFakeFailure *failure = [[[SKFakeFailure alloc] init] autorelease];
   

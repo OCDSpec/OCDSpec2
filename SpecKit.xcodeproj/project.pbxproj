@@ -231,10 +231,10 @@
 				947F6C3F15BC3A2300C7CF3B /* TestGatheringExamples.m */,
 				947F6C4015BC3A2300C7CF3B /* TestIntExpectation.m */,
 				947F6C4115BC3A2300C7CF3B /* TestObjectExpectation.m */,
+				947F6C4515BC3A2300C7CF3B /* TestStringExpectation.m */,
 				947F6C4215BC3A2300C7CF3B /* TestReportingErrors.m */,
 				947F6C4315BC3A2300C7CF3B /* TestRunningExamples.m */,
 				947F6C4415BC3A2300C7CF3B /* TestContextMethods.m */,
-				947F6C4515BC3A2300C7CF3B /* TestStringExpectation.m */,
 				947F6C2915BC39A200C7CF3B /* Supporting Files */,
 			);
 			path = SpecKitTests;

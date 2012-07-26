@@ -46,7 +46,7 @@
 		947F6C4C15BC3A2300C7CF3B /* TestObjectExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 947F6C4115BC3A2300C7CF3B /* TestObjectExpectation.m */; };
 		947F6C4D15BC3A2300C7CF3B /* TestReportingErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = 947F6C4215BC3A2300C7CF3B /* TestReportingErrors.m */; };
 		947F6C4E15BC3A2300C7CF3B /* TestRunningExamples.m in Sources */ = {isa = PBXBuildFile; fileRef = 947F6C4315BC3A2300C7CF3B /* TestRunningExamples.m */; };
-		947F6C4F15BC3A2300C7CF3B /* TestRunningSuite.m in Sources */ = {isa = PBXBuildFile; fileRef = 947F6C4415BC3A2300C7CF3B /* TestRunningSuite.m */; };
+		947F6C4F15BC3A2300C7CF3B /* TestContextMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 947F6C4415BC3A2300C7CF3B /* TestContextMethods.m */; };
 		947F6C5015BC3A2300C7CF3B /* TestStringExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 947F6C4515BC3A2300C7CF3B /* TestStringExpectation.m */; };
 		947F6C5115BC3A3E00C7CF3B /* SKContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA015BB30D0003F22B6 /* SKContext.m */; };
 		947F6C5215BC3A4000C7CF3B /* SKDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA215BB30D0003F22B6 /* SKDescription.m */; };
@@ -120,7 +120,7 @@
 		947F6C4115BC3A2300C7CF3B /* TestObjectExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestObjectExpectation.m; sourceTree = "<group>"; };
 		947F6C4215BC3A2300C7CF3B /* TestReportingErrors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestReportingErrors.m; sourceTree = "<group>"; };
 		947F6C4315BC3A2300C7CF3B /* TestRunningExamples.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestRunningExamples.m; sourceTree = "<group>"; };
-		947F6C4415BC3A2300C7CF3B /* TestRunningSuite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestRunningSuite.m; sourceTree = "<group>"; };
+		947F6C4415BC3A2300C7CF3B /* TestContextMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestContextMethods.m; sourceTree = "<group>"; };
 		947F6C4515BC3A2300C7CF3B /* TestStringExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestStringExpectation.m; sourceTree = "<group>"; };
 		947F6C5A15BC3D4600C7CF3B /* SKFakeFailure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKFakeFailure.h; sourceTree = "<group>"; };
 		947F6C5B15BC3D4600C7CF3B /* SKFakeFailure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKFakeFailure.m; sourceTree = "<group>"; };
@@ -233,7 +233,7 @@
 				947F6C4115BC3A2300C7CF3B /* TestObjectExpectation.m */,
 				947F6C4215BC3A2300C7CF3B /* TestReportingErrors.m */,
 				947F6C4315BC3A2300C7CF3B /* TestRunningExamples.m */,
-				947F6C4415BC3A2300C7CF3B /* TestRunningSuite.m */,
+				947F6C4415BC3A2300C7CF3B /* TestContextMethods.m */,
 				947F6C4515BC3A2300C7CF3B /* TestStringExpectation.m */,
 				947F6C2915BC39A200C7CF3B /* Supporting Files */,
 			);
@@ -552,7 +552,7 @@
 				947F6C4C15BC3A2300C7CF3B /* TestObjectExpectation.m in Sources */,
 				947F6C4D15BC3A2300C7CF3B /* TestReportingErrors.m in Sources */,
 				947F6C4E15BC3A2300C7CF3B /* TestRunningExamples.m in Sources */,
-				947F6C4F15BC3A2300C7CF3B /* TestRunningSuite.m in Sources */,
+				947F6C4F15BC3A2300C7CF3B /* TestContextMethods.m in Sources */,
 				947F6C5015BC3A2300C7CF3B /* TestStringExpectation.m in Sources */,
 				947F6C5115BC3A3E00C7CF3B /* SKContext.m in Sources */,
 				947F6C5215BC3A4000C7CF3B /* SKDescription.m in Sources */,

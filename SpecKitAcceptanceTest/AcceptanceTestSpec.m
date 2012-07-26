@@ -1,10 +1,14 @@
 #import <SpecKit/SpecKit.h>
 
+int SamplePreludeRunCount;
+
 SpecKitContext(AcceptanceTest1) {
   
   describe(@"failures", ^{
     
     it(@"is so very cool", ^{
+      [expectInt(SamplePreludeRunCount) toBe: 1];
+      
       [expect(@"a") toBeEqualTo: @"A"];
       [expect(@"b") toBe: @"B"];
       
@@ -24,6 +28,8 @@ SpecKitContext(AcceptanceTest1) {
   describe(@"successes", ^{
     
     it(@"doesnt show up as errors", ^{
+      [expectInt(SamplePreludeRunCount) toBe: 1];
+      
       [expect(@"a") toBeEqualTo: @"a"];
       [expect(@"b") toBe: @"b"];
       
@@ -46,6 +52,8 @@ SpecKitContext(AcceptanceTest2) {
   describe(@"multiple contexts", ^{
     
     it(@"sees them all", ^{
+      [expectInt(SamplePreludeRunCount) toBe: 1];
+      
       [expectBool(YES) toBeFalse];
     });
     
@@ -64,6 +72,8 @@ SpecKitContext(AcceptanceTest3) {
   describe(@"failures", ^{
     
     it(@"does before-each before each example", ^{
+      [expectInt(SamplePreludeRunCount) toBe: 1];
+      
       [mutableString appendString:@"test"];
 //      [expect(mutableString) toBeEqualTo: @"beforetest"];
     });
@@ -77,13 +87,28 @@ SpecKitContext(AcceptanceTest3) {
     });
     
     it(@"does before-each before each example", ^{
+      [expectInt(SamplePreludeRunCount) toBe: 1];
+      
       [mutableString appendString:@"test"];
 //      [expect(mutableString) toBeEqualTo: @"wrongvalue"];
     });
 
     it(@"does before-each before each example", ^{
+      [expectInt(SamplePreludeRunCount) toBe: 1];
+      
 //      [expect(mutableString) toBeEqualTo: @"wrongvalue"];
     });
     
   });
 }
+
+@interface SamplePrelude : NSObject <SKPrelude>
+@end
+
+@implementation SamplePrelude
+
+- (void) run {
+  SamplePreludeRunCount++;
+}
+
+@end

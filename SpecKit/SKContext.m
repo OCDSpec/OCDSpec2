@@ -57,6 +57,10 @@ int SpecKitRunAllTests() {
     }
   }
   
+  [testClasses sortUsingComparator:^NSComparisonResult(Class c1, Class c2) {
+    return [NSStringFromClass(c1) compare: NSStringFromClass(c2)];
+  }];
+  
   return testClasses;
 }
 
@@ -65,17 +69,21 @@ int SpecKitRunAllTests() {
   Class classes[classCount];
   objc_getClassList(classes, classCount);
   
-  NSMutableArray *testClasses = [NSMutableArray array];
+  NSMutableArray *preludeClasses = [NSMutableArray array];
   
   for (int i = 0; i < classCount; i++) {
     Class class = classes[i];
     
     if (class_conformsToProtocol(class, @protocol(SKPrelude))) {
-      [testClasses addObject:class];
+      [preludeClasses addObject:class];
     }
   }
   
-  return testClasses;
+  [preludeClasses sortUsingComparator:^NSComparisonResult(Class c1, Class c2) {
+    return [NSStringFromClass(c1) compare: NSStringFromClass(c2)];
+  }];
+  
+  return preludeClasses;
 }
 
 - (void(^)(NSString*, void(^)(void))) _functionForDescribeBlock {

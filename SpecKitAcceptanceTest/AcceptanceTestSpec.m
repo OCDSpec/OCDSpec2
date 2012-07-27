@@ -102,6 +102,14 @@ SpecKitContext(AcceptanceTest3) {
   });
 }
 
+SpecKitContext(AcceptanceTest4) {
+  
+  it(@"allows top-level examples", ^{
+    [expectBool(YES) toBeFalse];
+  });
+  
+}
+
 @interface SamplePrelude : NSObject <SKPrelude>
 @end
 

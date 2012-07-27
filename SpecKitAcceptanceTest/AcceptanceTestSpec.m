@@ -57,6 +57,14 @@ SpecKitContext(AcceptanceTest2) {
       [expectBool(YES) toBeFalse];
     });
     
+    describe(@"nested describes", ^{
+      
+      it(@"knows what you mean", ^{
+        [expectFloat(3.0) toBe: 3.14 withPrecision:0.0001];
+      });
+      
+    });
+    
   });
   
 }

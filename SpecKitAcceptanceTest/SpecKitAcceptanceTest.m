@@ -36,9 +36,9 @@ extern int SamplePreludeRunCount;
   
   [expectedOutput appendFormat:@"%@:57: error: Want false, got true\n", file];
   
-//  [expectedOutput appendFormat:@"%@:78: error: Want beforetest, got test\n", file];
-//  [expectedOutput appendFormat:@"%@:93: error: Want wrongvalue, got beforetest\n", file];
-//  [expectedOutput appendFormat:@"%@:99: error: Want wrongvalue, got before\n", file];
+  [expectedOutput appendFormat:@"%@:78: error: Want beforetest, got test\n", file];
+  [expectedOutput appendFormat:@"%@:93: error: Want wrongvalue, got beforetest\n", file];
+  [expectedOutput appendFormat:@"%@:99: error: Want wrongvalue, got before\n", file];
   
   STAssertEquals(SamplePreludeRunCount, 1, nil);
   STAssertEqualObjects(expectedOutput, stderrOutput, nil);

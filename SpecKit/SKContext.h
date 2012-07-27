@@ -1,13 +1,16 @@
 #import <Foundation/Foundation.h>
 
 #import <SpecKit/SKFailureReporter.h>
+#import <SpecKit/SKDescription.h>
 
 int SpecKitRunAllTests();
 
 @interface SKContext : NSObject <SKFailureReporter>
 
+@property (readwrite, retain) SKDescription *topLevelDescription;
+@property (readwrite, assign) SKDescription *currentDescription;
+
 @property (readwrite, retain) NSFileHandle *reportOutputFile;
-@property (readwrite, retain) NSArray *descriptions;
 @property (readwrite, assign) int errorCount;
 
 + (int) runAllTestsUsingOutput:(NSFileHandle*)outputFile;

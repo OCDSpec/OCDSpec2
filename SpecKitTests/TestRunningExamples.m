@@ -40,7 +40,7 @@
   desc1.examples = [NSArray arrayWithObjects: example1, example2, nil];
   desc2.examples = [NSArray arrayWithObjects: example3, example4, nil];
   
-  ctx.descriptions = [NSArray arrayWithObjects: desc1, desc2, nil];
+  ctx.topLevelDescription.subDescriptions = [NSArray arrayWithObjects: desc1, desc2, nil];
   
   [ctx runAllExamples];
   
@@ -83,7 +83,7 @@
   desc1.examples = [NSArray arrayWithObjects: example1, example2, nil];
   desc2.examples = [NSArray arrayWithObjects: example3, example4, nil];
   
-  ctx.descriptions = [NSArray arrayWithObjects: desc1, desc2, nil];
+  ctx.topLevelDescription.subDescriptions = [NSArray arrayWithObjects: desc1, desc2, nil];
   
   [ctx runAllExamples];
   
@@ -126,7 +126,7 @@
   desc1.examples = [NSArray arrayWithObjects: example1, example2, nil];
   desc2.examples = [NSArray arrayWithObjects: example3, example4, nil];
   
-  ctx.descriptions = [NSArray arrayWithObjects: desc1, desc2, nil];
+  ctx.topLevelDescription.subDescriptions = [NSArray arrayWithObjects: desc1, desc2, nil];
   
   [ctx runAllExamples];
   
@@ -173,7 +173,7 @@
   desc1.examples = [NSArray arrayWithObjects: example1, example2, nil];
   desc2.examples = [NSArray arrayWithObjects: example3, example4, nil];
   
-  ctx.descriptions = [NSArray arrayWithObjects: desc1, desc2, nil];
+  ctx.topLevelDescription.subDescriptions = [NSArray arrayWithObjects: desc1, desc2, nil];
   
   [ctx runAllExamples];
   

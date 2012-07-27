@@ -75,7 +75,7 @@ SpecKitContext(AcceptanceTest3) {
       [expectInt(SamplePreludeRunCount) toBe: 1];
       
       [mutableString appendString:@"test"];
-//      [expect(mutableString) toBeEqualTo: @"beforetest"];
+      [expect(mutableString) toBeEqualTo: @"beforetest"];
     });
     
   });
@@ -90,13 +90,13 @@ SpecKitContext(AcceptanceTest3) {
       [expectInt(SamplePreludeRunCount) toBe: 1];
       
       [mutableString appendString:@"test"];
-//      [expect(mutableString) toBeEqualTo: @"wrongvalue"];
+      [expect(mutableString) toBeEqualTo: @"wrongvalue"];
     });
 
     it(@"does before-each before each example", ^{
       [expectInt(SamplePreludeRunCount) toBe: 1];
       
-//      [expect(mutableString) toBeEqualTo: @"wrongvalue"];
+      [expect(mutableString) toBeEqualTo: @"wrongvalue"];
     });
     
   });

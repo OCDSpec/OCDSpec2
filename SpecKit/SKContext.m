@@ -12,7 +12,7 @@ int SpecKitRunAllTests() {
 
 - (void) dealloc {
   self.reportOutputFile = nil;
-  self.descriptions = nil;
+  self.topLevelDescription = nil;
   
   [super dealloc];
 }
@@ -82,11 +82,23 @@ int SpecKitRunAllTests() {
   return preludeClasses;
 }
 
+- (id) init {
+  if ((self = [super init])) {
+    self.topLevelDescription = [[[SKDescription alloc] init] autorelease];
+    self.topLevelDescription.name = @"Top level";
+    
+    self.currentDescription = self.topLevelDescription;
+  }
+  return self;
+}
+
 - (void(^)(NSString*, void(^)(void))) _functionForDescribeBlock {
   return [[^(NSString* name, void(^blk)(void)) {
     SKDescription *desc = [[[SKDescription alloc] init] autorelease];
     desc.name = name;
-    self.descriptions = [[NSArray arrayWithArray:self.descriptions] arrayByAddingObject:desc];
+    self.currentDescription.subDescriptions = [[NSArray arrayWithArray:self.currentDescription.subDescriptions] arrayByAddingObject:desc];
+    
+    self.currentDescription = desc;
     
     blk();
   } copy] autorelease];
@@ -94,26 +106,22 @@ int SpecKitRunAllTests() {
 
 - (void(^)(NSString*, void(^)(void))) _functionForExampleBlock {
   return [[^(NSString* name, void(^blk)(void)) {
-    SKDescription *desc = [self.descriptions lastObject];
-    
     SKExample *ex = [[[SKExample alloc] init] autorelease];
     ex.name = name;
     ex.block = blk;
-    desc.examples = [[NSArray arrayWithArray:desc.examples] arrayByAddingObject:ex];
+    self.currentDescription.examples = [[NSArray arrayWithArray:self.currentDescription.examples] arrayByAddingObject:ex];
   } copy] autorelease];
 }
 
 - (void(^)(void(^)(void))) _functionForBeforeEachBlock {
   return [[^(void(^blk)(void)) {
-    SKDescription *desc = [self.descriptions lastObject];
-    desc.beforeEachBlock = blk;
+    self.currentDescription.beforeEachBlock = blk;
   } copy] autorelease];
 }
 
 - (void(^)(void(^)(void))) _functionForAfterEachBlock {
   return [[^(void(^blk)(void)) {
-    SKDescription *desc = [self.descriptions lastObject];
-    desc.afterEachBlock = blk;
+    self.currentDescription.afterEachBlock = blk;
   } copy] autorelease];
 }
 
@@ -128,17 +136,7 @@ int SpecKitRunAllTests() {
 }
 
 - (void) runAllExamples {
-  for (SKDescription *desc in self.descriptions) {
-    for (SKExample *example in desc.examples) {
-      if (desc.beforeEachBlock)
-        desc.beforeEachBlock();
-      
-      example.block();
-      
-      if (desc.afterEachBlock)
-        desc.afterEachBlock();
-    }
-  }
+  [self.topLevelDescription runAllExamplesWithBeforeBlocks:@[] afterBlocks:@[]];
 }
 
 @end

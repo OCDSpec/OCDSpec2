@@ -16,9 +16,9 @@
     [ctx _functionForExampleBlock](@"sup", itBlock);
   });
   
-  STAssertTrue([ctx.descriptions count] == 1, nil);
+  STAssertTrue([ctx.topLevelDescription.subDescriptions count] == 1, nil);
   
-  SKDescription *desc = [ctx.descriptions objectAtIndex:0];
+  SKDescription *desc = [ctx.topLevelDescription.subDescriptions objectAtIndex:0];
   STAssertTrue([desc.name isEqualToString: @"hi"], nil);
   
   SKExample *example = [desc.examples objectAtIndex:0];
@@ -33,7 +33,7 @@
   
   [ctx _functionForDescribeBlock](@"hi", ^{});
   
-  SKDescription *desc = [ctx.descriptions objectAtIndex:0];
+  SKDescription *desc = [ctx.topLevelDescription.subDescriptions objectAtIndex:0];
   
   STAssertTrue(desc.beforeEachBlock == nil, nil);
   STAssertTrue(desc.afterEachBlock == nil, nil);
@@ -52,7 +52,7 @@
     
   });
   
-  SKDescription *desc = [ctx.descriptions objectAtIndex:0];
+  SKDescription *desc = [ctx.topLevelDescription.subDescriptions objectAtIndex:0];
   
   STAssertTrue((id)desc.beforeEachBlock == beforeEachBlock, nil);
   STAssertTrue((id)desc.afterEachBlock == afterEachBlock, nil);

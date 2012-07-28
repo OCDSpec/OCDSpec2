@@ -137,6 +137,7 @@ To get the latest matchers, upgrade to the latest version:
     * `git checkout master`
     * `git pull`
     * Be sure to check this into git
+    * Make sure you actually understand how git submodules work, or you will totally mess things up and get very confused
 
 ## Change log
 

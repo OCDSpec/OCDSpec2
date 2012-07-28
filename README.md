@@ -1,4 +1,4 @@
-# SpecKit 1.1.1
+# SpecKit 1.2
 
 A testing library for Mac or iOS projects
 
@@ -37,6 +37,17 @@ install_codesnippets.sh # installs the Xcode code snippets (for autocompletion) 
 * Choose the spec scheme
 * Build (Cmd+B)
 
+## Features
+
+* Describe and example blocks
+    * Describe blocks can be nested
+    * Any describe block can have a before-each and after-each block
+    * A context created with SpecKitContext is a top-level describe block
+* Xcode integration
+    * Auto-completion, just type "desc", "it", "expect", "expectInt", etc.
+    * Templates for easy creation of testing targets and spec files
+    * Highlights any lines with failed expectations
+
 ## Example spec
 
 ```objc
@@ -68,7 +79,7 @@ SpecKitContext(WidgetSpec) {
 }
 ```
 
-## Matchers
+## Assertion/expectation methods
 
 * `expect(id)`
   * `toBe:(id)other`
@@ -129,6 +140,10 @@ To get the latest matchers, upgrade to the latest version:
 
 ## Change log
 
+* 1.2
+    * beforeEach, afterEach, and example blocks (it) are now allowed at the top level of a Context without a describe
+    * Describe blocks can be nested now
+    * beforeEach and afterEach are executed intuitively when nested (in order of depth)
 * 1.1.1
     * Added boolean code snippet too
 * 1.1

@@ -14,9 +14,13 @@
 }
 
 - (void) reportFailure:(NSString*)message {
-  [self.failureReporter reportFailure:message
-                               inFile:self.file
-                               atLine:self.line];
+  int i = 0;
+  for (NSString *rawStringLine in [message componentsSeparatedByString:@"\n"]) {
+    [self.failureReporter reportFailure:rawStringLine
+                                 inFile:self.file
+                                 atLine:self.line + i];
+    i++;
+  }
 }
 
 @end

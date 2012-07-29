@@ -118,6 +118,13 @@ SpecKitContext(AcceptanceTest4) {
   
 }
 
+SpecKitContext(AcceptanceTest5) {
+  
+  it(@"shows multi-line errors on multiple lines", ^{
+    [expect([NSArray arrayWithObject:@"a"]) toBeEqualTo: [NSArray arrayWithObject:@"b"]];
+  });
+}
+
 @interface SamplePrelude : NSObject <SKPrelude>
 @end
 

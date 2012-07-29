@@ -44,6 +44,12 @@ extern int SamplePreludeRunCount;
   
   [expectedOutput appendFormat:@"%@:116: error: Want false, got true\n", file];
   
+  [expectedOutput appendFormat:@"%@:124: error: Want (\n", file];
+  [expectedOutput appendFormat:@"%@:125: error:     b\n", file];
+  [expectedOutput appendFormat:@"%@:126: error: ), got (\n", file];
+  [expectedOutput appendFormat:@"%@:127: error:     a\n", file];
+  [expectedOutput appendFormat:@"%@:128: error: )\n", file];
+  
   STAssertEquals(SamplePreludeRunCount, 1, nil);
   STAssertEqualObjects(expectedOutput, stderrOutput, nil);
 }

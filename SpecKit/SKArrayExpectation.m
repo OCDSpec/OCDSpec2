@@ -11,17 +11,9 @@
 
 - (void) toContain:(id)obj {
   if (![self.array containsObject: obj]) {
-    NSString *rawLine = [NSString stringWithFormat:@"Want array %@ to contain %@",
+    [self reportFailure:[NSString stringWithFormat:@"Want array %@ to contain %@",
                          self.array,
-                         obj];
-    
-    int i = 0;
-    for (NSString *rawStringLine in [rawLine componentsSeparatedByString:@"\n"]) {
-      [self.failureReporter reportFailure:rawStringLine
-                                   inFile:self.file
-                                   atLine:self.line + i];
-      i++;
-    }
+                         obj]];
   }
 }
 

@@ -1,4 +1,4 @@
-# SpecKit 1.2
+# SpecKit 1.3
 
 A testing library for Mac or iOS projects
 
@@ -100,6 +100,8 @@ SpecKitContext(WidgetSpec) {
   * `toStartWith:(NSString*)substring`
 * `expectArray(NSArray*)`
   * `toContain:(id)obj`
+* `expectBlock(void(^)(void))`
+  * `toNotRaiseException`
 
 ## Running code before tests
 
@@ -141,6 +143,8 @@ To get the latest matchers, upgrade to the latest version:
 
 ## Change log
 
+* 1.3
+    * Added block expectations for noticing exceptions
 * 1.2
     * beforeEach, afterEach, and example blocks (it) are now allowed at the top level of a Context without a describe
     * Describe blocks can be nested now
@@ -152,6 +156,14 @@ To get the latest matchers, upgrade to the latest version:
 * 1.0
     * Did all the stuff
     * Wrote all the codez
+
+## To Do
+
+* Figure out how to version a library
+* Start versioning SpecKit properly
+* Tell people about SpecKit
+    * Or maybe not?
+        * Secret lib! Yeah, this sounds exciting! Some James Bond stuff goin on here.
 
 ## Credits
 

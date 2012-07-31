@@ -28,6 +28,7 @@
       beforeBlock();
     }
     
+    NSLog(@"Running example \"%@\"", example.name);
     example.block();
     
     for (void(^afterBlock)(void) in afterBlocks) {

@@ -123,6 +123,17 @@ SpecKitContext(AcceptanceTest5) {
   it(@"shows multi-line errors on multiple lines", ^{
     [expect([NSArray arrayWithObject:@"a"]) toBeEqualTo: [NSArray arrayWithObject:@"b"]];
   });
+  
+}
+
+SpecKitContext(AcceptanceTest6) {
+  
+  it(@"catches exceptions and reports that they do in fact suck", ^{
+    [expectBlock(^{
+      [NSException raise:NSInternalInconsistencyException format:@"aww"];
+    }) toNotRaiseException];
+  });
+  
 }
 
 @interface SamplePrelude : NSObject <SKPrelude>

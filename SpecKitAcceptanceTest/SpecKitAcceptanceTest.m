@@ -50,6 +50,8 @@ extern int SamplePreludeRunCount;
   [expectedOutput appendFormat:@"%@:127: error:     a\n", file];
   [expectedOutput appendFormat:@"%@:128: error: )\n", file];
   
+  [expectedOutput appendFormat:@"%@:132: error: Want no exception, but got one anyway\n", file];
+  
   STAssertEquals(SamplePreludeRunCount, 1, nil);
   STAssertEqualObjects(expectedOutput, stderrOutput, nil);
 }

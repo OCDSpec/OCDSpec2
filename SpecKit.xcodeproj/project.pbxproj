@@ -29,6 +29,13 @@
 		944FBF7315C170C200BF85FC /* SKStringExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAAE15BB30D0003F22B6 /* SKStringExpectation.m */; };
 		944FBF7415C170C200BF85FC /* SKArrayExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 947F6BDC15BC358F00C7CF3B /* SKArrayExpectation.m */; };
 		944FBF7615C171BE00BF85FC /* AcceptanceTestSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 944FBF7515C171BE00BF85FC /* AcceptanceTestSpec.m */; };
+		9454C3E015C87C4800417FA7 /* TestBlockExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9454C3DF15C87C4800417FA7 /* TestBlockExpectation.m */; };
+		9454C3E415C87C6500417FA7 /* SKBlockExpectation.h in Headers */ = {isa = PBXBuildFile; fileRef = 9454C3E215C87C6500417FA7 /* SKBlockExpectation.h */; };
+		9454C3E515C87C6500417FA7 /* SKBlockExpectation.h in Headers */ = {isa = PBXBuildFile; fileRef = 9454C3E215C87C6500417FA7 /* SKBlockExpectation.h */; };
+		9454C3E615C87C6500417FA7 /* SKBlockExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9454C3E315C87C6500417FA7 /* SKBlockExpectation.m */; };
+		9454C3E715C87C6500417FA7 /* SKBlockExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9454C3E315C87C6500417FA7 /* SKBlockExpectation.m */; };
+		9454C3E815C87C6500417FA7 /* SKBlockExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9454C3E315C87C6500417FA7 /* SKBlockExpectation.m */; };
+		9454C3E915C87C6500417FA7 /* SKBlockExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9454C3E315C87C6500417FA7 /* SKBlockExpectation.m */; };
 		947F6BDD15BC358F00C7CF3B /* SKArrayExpectation.h in Headers */ = {isa = PBXBuildFile; fileRef = 947F6BDB15BC358F00C7CF3B /* SKArrayExpectation.h */; };
 		947F6BDE15BC358F00C7CF3B /* SKArrayExpectation.h in Headers */ = {isa = PBXBuildFile; fileRef = 947F6BDB15BC358F00C7CF3B /* SKArrayExpectation.h */; };
 		947F6BDF15BC358F00C7CF3B /* SKArrayExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 947F6BDC15BC358F00C7CF3B /* SKArrayExpectation.m */; };
@@ -103,6 +110,9 @@
 		944FBF5D15C168C100BF85FC /* SpecKitAcceptanceTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpecKitAcceptanceTest.m; sourceTree = "<group>"; };
 		944FBF5F15C168C100BF85FC /* SpecKitAcceptanceTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpecKitAcceptanceTest-Prefix.pch"; sourceTree = "<group>"; };
 		944FBF7515C171BE00BF85FC /* AcceptanceTestSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AcceptanceTestSpec.m; sourceTree = "<group>"; };
+		9454C3DF15C87C4800417FA7 /* TestBlockExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestBlockExpectation.m; sourceTree = "<group>"; };
+		9454C3E215C87C6500417FA7 /* SKBlockExpectation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKBlockExpectation.h; sourceTree = "<group>"; };
+		9454C3E315C87C6500417FA7 /* SKBlockExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKBlockExpectation.m; sourceTree = "<group>"; };
 		947F6BDB15BC358F00C7CF3B /* SKArrayExpectation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKArrayExpectation.h; sourceTree = "<group>"; };
 		947F6BDC15BC358F00C7CF3B /* SKArrayExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKArrayExpectation.m; sourceTree = "<group>"; };
 		947F6C2515BC39A200C7CF3B /* SpecKitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpecKitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -232,6 +242,7 @@
 				947F6C4015BC3A2300C7CF3B /* TestIntExpectation.m */,
 				947F6C4115BC3A2300C7CF3B /* TestObjectExpectation.m */,
 				947F6C4515BC3A2300C7CF3B /* TestStringExpectation.m */,
+				9454C3DF15C87C4800417FA7 /* TestBlockExpectation.m */,
 				947F6C4215BC3A2300C7CF3B /* TestReportingErrors.m */,
 				947F6C4315BC3A2300C7CF3B /* TestRunningExamples.m */,
 				947F6C4415BC3A2300C7CF3B /* TestContextMethods.m */,
@@ -309,6 +320,8 @@
 				94A6BAAE15BB30D0003F22B6 /* SKStringExpectation.m */,
 				947F6BDB15BC358F00C7CF3B /* SKArrayExpectation.h */,
 				947F6BDC15BC358F00C7CF3B /* SKArrayExpectation.m */,
+				9454C3E215C87C6500417FA7 /* SKBlockExpectation.h */,
+				9454C3E315C87C6500417FA7 /* SKBlockExpectation.m */,
 				94A6BA6015BB2DE7003F22B6 /* Supporting Files */,
 			);
 			path = SpecKit;
@@ -331,6 +344,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				947F6BDE15BC358F00C7CF3B /* SKArrayExpectation.h in Headers */,
+				9454C3E515C87C6500417FA7 /* SKBlockExpectation.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +364,7 @@
 				94A6BAC515BB30D0003F22B6 /* SKFloatExpectation.h in Headers */,
 				94A6BAC815BB30D0003F22B6 /* SKStringExpectation.h in Headers */,
 				947F6BDD15BC358F00C7CF3B /* SKArrayExpectation.h in Headers */,
+				9454C3E415C87C6500417FA7 /* SKBlockExpectation.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,6 +533,7 @@
 				942AAF0315BBB3F50006C241 /* SKFloatExpectation.m in Sources */,
 				942AAF0415BBB3F80006C241 /* SKStringExpectation.m in Sources */,
 				947F6BE115BC358F00C7CF3B /* SKArrayExpectation.m in Sources */,
+				9454C3E715C87C6500417FA7 /* SKBlockExpectation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -536,6 +552,7 @@
 				944FBF7315C170C200BF85FC /* SKStringExpectation.m in Sources */,
 				944FBF7415C170C200BF85FC /* SKArrayExpectation.m in Sources */,
 				944FBF7615C171BE00BF85FC /* AcceptanceTestSpec.m in Sources */,
+				9454C3E915C87C6500417FA7 /* SKBlockExpectation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -564,6 +581,8 @@
 				947F6C5815BC3A5200C7CF3B /* SKStringExpectation.m in Sources */,
 				947F6C5915BC3A5500C7CF3B /* SKArrayExpectation.m in Sources */,
 				947F6C5C15BC3D4600C7CF3B /* SKFakeFailure.m in Sources */,
+				9454C3E015C87C4800417FA7 /* TestBlockExpectation.m in Sources */,
+				9454C3E815C87C6500417FA7 /* SKBlockExpectation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -580,6 +599,7 @@
 				94A6BAC615BB30D0003F22B6 /* SKFloatExpectation.m in Sources */,
 				94A6BAC915BB30D0003F22B6 /* SKStringExpectation.m in Sources */,
 				947F6BDF15BC358F00C7CF3B /* SKArrayExpectation.m in Sources */,
+				9454C3E615C87C6500417FA7 /* SKBlockExpectation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -822,6 +842,7 @@
 				944FBF6115C168C100BF85FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		947F6C3215BC39A200C7CF3B /* Build configuration list for PBXNativeTarget "SpecKitTests" */ = {
 			isa = XCConfigurationList;

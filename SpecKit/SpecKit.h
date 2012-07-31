@@ -8,5 +8,6 @@
 #import <SpecKit/SKFloatExpectation.h>
 #import <SpecKit/SKStringExpectation.h>
 #import <SpecKit/SKArrayExpectation.h>
+#import <SpecKit/SKBlockExpectation.h>
 
 #endif

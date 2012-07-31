@@ -1,0 +1,21 @@
+#import "SKBlockExpectation.h"
+
+@implementation SKBlockExpectation
+
+- (SKBlockExpectation*(^)(void(^)(void))) withBlock {
+  return [[^SKBlockExpectation*(void(^b)(void)){
+    self.block = b;
+    return self;
+  } copy] autorelease];
+}
+
+- (void) toNotRaiseException {
+  @try {
+    self.block();
+  }
+  @catch (NSException *exception) {
+    [self reportFailure:@"Want no exception, but got one anyway"];
+  }
+}
+
+@end

@@ -47,6 +47,8 @@ install_codesnippets.sh # installs the Xcode code snippets (for autocompletion) 
     * Auto-completion, just type "desc", "it", "expect", "expectInt", etc.
     * Templates for easy creation of testing targets and spec files
     * Highlights any lines with failed expectations
+* Catches exceptions
+    * This means it's probably compatible with OCMock now
 
 ## Example spec
 
@@ -145,6 +147,7 @@ To get the latest matchers, upgrade to the latest version:
 
 * 1.3
     * Added block expectations for noticing exceptions
+    * Examples now catch exceptions and report them automatically
 * 1.2
     * beforeEach, afterEach, and example blocks (it) are now allowed at the top level of a Context without a describe
     * Describe blocks can be nested now

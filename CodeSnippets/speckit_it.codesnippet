@@ -6,7 +6,7 @@
 	<string>it</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>it(@&quot;&lt;#does something#&gt;&quot;, ^{

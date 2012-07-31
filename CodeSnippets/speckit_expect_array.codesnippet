@@ -6,7 +6,7 @@
 	<string>expectArray</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>[expectArray(&lt;#array#&gt;) &lt;#matcher#&gt;];</string>

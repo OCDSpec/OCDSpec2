@@ -6,7 +6,7 @@
 	<string>expectFloat</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>[expectFloat(&lt;#float#&gt;) &lt;#matcher#&gt;];</string>

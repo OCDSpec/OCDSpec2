@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>ExpectStr</string>
+	<string>ExpectBlock</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>[ExpectStr(&lt;#string#&gt;) &lt;#matcher#&gt;];</string>
+	<string>[ExpectBlock(&lt;#block#&gt;) &lt;#matcher#&gt;];</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>126E408D-81B1-4D97-B6DF-3121C28FDED6</string>
+	<string>566805C7-290D-4A1B-846C-B39AA0201C79</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>SpecKit string expectation</string>
+	<string>SpecKit block expectation</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>SpecKit string expectation</string>
+	<string>SpecKit block expectation</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

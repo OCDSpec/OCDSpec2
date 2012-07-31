@@ -15,5 +15,5 @@
 
 @end
 
-#define expectInt [[SKIntExpectation expectationInFile:__FILE__ line:__LINE__ failureReporter:self] withInt]
-#define expectBool [[SKIntExpectation expectationInFile:__FILE__ line:__LINE__ failureReporter:self] withInt]
+#define ExpectInt [[SKIntExpectation expectationInFile:__FILE__ line:__LINE__ failureReporter:self] withInt]
+#define ExpectBool [[SKIntExpectation expectationInFile:__FILE__ line:__LINE__ failureReporter:self] withInt]

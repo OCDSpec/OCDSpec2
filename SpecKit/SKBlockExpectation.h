@@ -12,4 +12,4 @@
 
 @end
 
-#define expectBlock [[SKBlockExpectation expectationInFile:__FILE__ line:__LINE__ failureReporter:self] withBlock]
+#define ExpectBlock [[SKBlockExpectation expectationInFile:__FILE__ line:__LINE__ failureReporter:self] withBlock]

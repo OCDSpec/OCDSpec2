@@ -13,4 +13,4 @@
 
 @end
 
-#define expectStr [[SKStringExpectation expectationInFile:__FILE__ line:__LINE__ failureReporter:self] withString]
+#define ExpectStr [[SKStringExpectation expectationInFile:__FILE__ line:__LINE__ failureReporter:self] withString]

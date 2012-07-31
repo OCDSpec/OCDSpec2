@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>afterEach</string>
+	<string>AfterEach</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>afterEach(^{
+	<string>AfterEach(^{
     &lt;#content#&gt;
 });</string>
 	<key>IDECodeSnippetIdentifier</key>

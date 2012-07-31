@@ -4,44 +4,44 @@ int SamplePreludeRunCount;
 
 SpecKitContext(AcceptanceTest1) {
   
-  describe(@"failures", ^{
+  Describe(@"failures", ^{
     
-    it(@"is so very cool", ^{
-      [expectInt(SamplePreludeRunCount) toBe: 1];
+    It(@"is so very cool", ^{
+      [ExpectInt(SamplePreludeRunCount) toBe: 1];
       
-      [expect(@"a") toBeEqualTo: @"A"];
-      [expect(@"b") toBe: @"B"];
+      [ExpectObj(@"a") toBeEqualTo: @"A"];
+      [ExpectObj(@"b") toBe: @"B"];
       
-      [expectBool(YES) toBeFalse];
-      [expectInt(3) toBe: 4];
+      [ExpectBool(YES) toBeFalse];
+      [ExpectInt(3) toBe: 4];
       
-      [expectFloat(1.23) toBe:2 withPrecision:0.00001];
+      [ExpectFloat(1.23) toBe:2 withPrecision:0.00001];
       
-      [expectStr(@"good morning") toContain: @"stop"];
-      [expectStr(@"good morning") toStartWith: @"stop"];
+      [ExpectStr(@"good morning") toContain: @"stop"];
+      [ExpectStr(@"good morning") toStartWith: @"stop"];
       
-      [expectArray([NSArray arrayWithObject:@"hi"]) toContain: @"hello"];
+      [ExpectArray([NSArray arrayWithObject:@"hi"]) toContain: @"hello"];
     });
     
   });
   
-  describe(@"successes", ^{
+  Describe(@"successes", ^{
     
-    it(@"doesnt show up as errors", ^{
-      [expectInt(SamplePreludeRunCount) toBe: 1];
+    It(@"doesnt show up as errors", ^{
+      [ExpectInt(SamplePreludeRunCount) toBe: 1];
       
-      [expect(@"a") toBeEqualTo: @"a"];
-      [expect(@"b") toBe: @"b"];
+      [ExpectObj(@"a") toBeEqualTo: @"a"];
+      [ExpectObj(@"b") toBe: @"b"];
       
-      [expectBool(YES) toBeTrue];
-      [expectInt(3) toBe: 3];
+      [ExpectBool(YES) toBeTrue];
+      [ExpectInt(3) toBe: 3];
       
-      [expectFloat(1.23) toBe:1.23 withPrecision:0.00001];
+      [ExpectFloat(1.23) toBe:1.23 withPrecision:0.00001];
       
-      [expectStr(@"good morning") toContain: @"go"];
-      [expectStr(@"good morning") toStartWith: @"go"];
+      [ExpectStr(@"good morning") toContain: @"go"];
+      [ExpectStr(@"good morning") toStartWith: @"go"];
       
-      [expectArray([NSArray arrayWithObject:@"hi"]) toContain: @"hi"];
+      [ExpectArray([NSArray arrayWithObject:@"hi"]) toContain: @"hi"];
     });
     
   });
@@ -49,18 +49,18 @@ SpecKitContext(AcceptanceTest1) {
 
 SpecKitContext(AcceptanceTest2) {
   
-  describe(@"multiple contexts", ^{
+  Describe(@"multiple contexts", ^{
     
-    it(@"sees them all", ^{
-      [expectInt(SamplePreludeRunCount) toBe: 1];
+    It(@"sees them all", ^{
+      [ExpectInt(SamplePreludeRunCount) toBe: 1];
       
-      [expectBool(YES) toBeFalse];
+      [ExpectBool(YES) toBeFalse];
     });
     
-    describe(@"nested describes", ^{
+    Describe(@"nested describes", ^{
       
-      it(@"knows what you mean", ^{
-        [expectFloat(3.0) toBe: 3.14 withPrecision:0.0001];
+      It(@"knows what you mean", ^{
+        [ExpectFloat(3.0) toBe: 3.14 withPrecision:0.0001];
       });
       
     });
@@ -73,38 +73,38 @@ SpecKitContext(AcceptanceTest3) {
   
   __block NSMutableString* mutableString;
   
-  beforeEach(^{
+  BeforeEach(^{
     mutableString = [NSMutableString string];
   });
   
-  describe(@"failures", ^{
+  Describe(@"failures", ^{
     
-    it(@"does before-each before each example", ^{
-      [expectInt(SamplePreludeRunCount) toBe: 1];
+    It(@"does before-each before each example", ^{
+      [ExpectInt(SamplePreludeRunCount) toBe: 1];
       
       [mutableString appendString:@"test"];
-      [expect(mutableString) toBeEqualTo: @"beforetest"];
+      [ExpectObj(mutableString) toBeEqualTo: @"beforetest"];
     });
     
   });
   
-  describe(@"successes", ^{
+  Describe(@"successes", ^{
     
-    beforeEach(^{
+    BeforeEach(^{
       [mutableString appendString:@"before"];
     });
     
-    it(@"does before-each before each example", ^{
-      [expectInt(SamplePreludeRunCount) toBe: 1];
+    It(@"does before-each before each example", ^{
+      [ExpectInt(SamplePreludeRunCount) toBe: 1];
       
       [mutableString appendString:@"test"];
-      [expect(mutableString) toBeEqualTo: @"wrongvalue"];
+      [ExpectObj(mutableString) toBeEqualTo: @"wrongvalue"];
     });
 
-    it(@"does before-each before each example", ^{
-      [expectInt(SamplePreludeRunCount) toBe: 1];
+    It(@"does before-each before each example", ^{
+      [ExpectInt(SamplePreludeRunCount) toBe: 1];
       
-      [expect(mutableString) toBeEqualTo: @"wrongvalue"];
+      [ExpectObj(mutableString) toBeEqualTo: @"wrongvalue"];
     });
     
   });
@@ -112,24 +112,24 @@ SpecKitContext(AcceptanceTest3) {
 
 SpecKitContext(AcceptanceTest4) {
   
-  it(@"allows top-level examples", ^{
-    [expectBool(YES) toBeFalse];
+  It(@"allows top-level examples", ^{
+    [ExpectBool(YES) toBeFalse];
   });
   
 }
 
 SpecKitContext(AcceptanceTest5) {
   
-  it(@"shows multi-line errors on multiple lines", ^{
-    [expect([NSArray arrayWithObject:@"a"]) toBeEqualTo: [NSArray arrayWithObject:@"b"]];
+  It(@"shows multi-line errors on multiple lines", ^{
+    [ExpectObj([NSArray arrayWithObject:@"a"]) toBeEqualTo: [NSArray arrayWithObject:@"b"]];
   });
   
 }
 
 SpecKitContext(AcceptanceTest6) {
   
-  it(@"catches exceptions and reports that they do in fact suck", ^{
-    [expectBlock(^{
+  It(@"catches exceptions and reports that they do in fact suck", ^{
+    [ExpectBlock(^{
       [NSException raise:NSInternalInconsistencyException format:@"aww"];
     }) toNotRaiseException];
   });
@@ -138,7 +138,7 @@ SpecKitContext(AcceptanceTest6) {
 
 SpecKitContext(AcceptanceTest7) {
   
-  it(@"catches exceptions implicitly and reports that they do in fact suck", ^{
+  It(@"catches exceptions implicitly and reports that they do in fact suck", ^{
     [NSException raise:NSInternalInconsistencyException format:@"AWW!"];
   });
   

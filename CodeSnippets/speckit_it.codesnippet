@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>it</string>
+	<string>It</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>it(@&quot;&lt;#does something#&gt;&quot;, ^{
+	<string>It(@&quot;&lt;#does something#&gt;&quot;, ^{
     &lt;#content#&gt;
 });</string>
 	<key>IDECodeSnippetIdentifier</key>

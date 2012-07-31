@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>desc</string>
+	<string>Desc</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>describe(@&quot;&lt;#method or something#&gt;&quot;, ^{
+	<string>Describe(@&quot;&lt;#method or something#&gt;&quot;, ^{
 
     &lt;#content#&gt;
 

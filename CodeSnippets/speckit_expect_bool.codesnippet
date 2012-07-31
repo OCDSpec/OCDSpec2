@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>expectBool</string>
+	<string>ExpectBool</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>[expectBool(&lt;#bool#&gt;) &lt;#matcher#&gt;];</string>
+	<string>[ExpectBool(&lt;#bool#&gt;) &lt;#matcher#&gt;];</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>367E9365-272D-41CA-BBFF-8C0EFEC4E5F3</string>
 	<key>IDECodeSnippetLanguage</key>

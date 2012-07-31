@@ -30,8 +30,8 @@ int SpecKitRunAllTests();
 
 #define SpecKitContext(classname) void SKContextRunFor##classname(SKContext* self); @interface SKContext##classname : SKContext; @end; @implementation SKContext##classname; - (void) gatherExamples { SKContextRunFor##classname(self); }; @end; void SKContextRunFor##classname(SKContext* self)
 
-#define describe [self _functionForDescribeBlock]
-#define it [self _functionForExampleBlockInFile:__FILE__ atLine:__LINE__]
+#define Describe [self _functionForDescribeBlock]
+#define It [self _functionForExampleBlockInFile:__FILE__ atLine:__LINE__]
 
-#define beforeEach [self _functionForBeforeEachBlock]
-#define afterEach [self _functionForAfterEachBlock]
+#define BeforeEach [self _functionForBeforeEachBlock]
+#define AfterEach [self _functionForAfterEachBlock]

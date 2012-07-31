@@ -17,4 +17,4 @@
 
 @end
 
-#define expect [[SKObjectExpectation expectationInFile:__FILE__ line:__LINE__ failureReporter:self] withObject]
+#define ExpectObj [[SKObjectExpectation expectationInFile:__FILE__ line:__LINE__ failureReporter:self] withObject]

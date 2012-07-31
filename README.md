@@ -44,7 +44,7 @@ install_codesnippets.sh # installs the Xcode code snippets (for autocompletion) 
     * Any describe block can have a before-each and after-each block
     * A context created with SpecKitContext is a top-level describe block
 * Xcode integration
-    * Auto-completion, just type "desc", "it", "expect", "expectInt", etc.
+    * Auto-completion, just type "Desc", "It", "ExpectObj", "ExpectInt", etc.
     * Templates for easy creation of testing targets and spec files
     * Highlights any lines with failed expectations
 * Catches exceptions
@@ -61,19 +61,19 @@ SpecKitContext(WidgetSpec) {
 
   __block Widget* widget;
 
-  beforeEach(^{
+  BeforeEach(^{
     widget = [[[Widget alloc] init] autorelease];
   });
 
-  describe(@"-gadgets", ^{
+  Describe(@"-gadgets", ^{
 
-    it(@"is a non-empty array", ^{
-      [expect(widget.gadgets) toExist];
-      [expectInt([widget.gadgets count]) toBe: 3];
+    It(@"is a non-empty array", ^{
+      [ExpectObj(widget.gadgets) toExist];
+      [ExpectInt([widget.gadgets count]) toBe: 3];
     });
 
-    it(@"contains gadget instances", ^{
-      [expect([widget.gadgets objectAtIndex:0]) toBeKindOfClass: [Gadget self]];
+    It(@"contains gadget instances", ^{
+      [ExpectObj([widget.gadgets objectAtIndex:0]) toBeKindOfClass: [Gadget self]];
     });
 
   });
@@ -83,26 +83,26 @@ SpecKitContext(WidgetSpec) {
 
 ## Assertion/expectation methods
 
-* `expect(id)`
+* `ExpectObj(id)`
   * `toBe:(id)other`
   * `toBeEqualTo:(id)other`
   * `toExist`
   * `toBeNil`
   * `toBeMemberOfClass:(Class)cls`
   * `toBeKindOfClass:(Class)cls`
-* `expectInt(long long)`
+* `ExpectInt(long long)`
   * `toBe:(long long)other`
   * `toBeTrue`
   * `toBeFalse`
   * `toNotBeFalse`
-* `expectFloat(double)`
+* `ExpectFloat(double)`
   * `toBe:(double)other withPrecision:(double)precision`
-* `expectStr(NSString*)`
+* `ExpectStr(NSString*)`
   * `toContain:(NSString*)substring`
   * `toStartWith:(NSString*)substring`
-* `expectArray(NSArray*)`
+* `ExpectArray(NSArray*)`
   * `toContain:(id)obj`
-* `expectBlock(void(^)(void))`
+* `ExpectBlock(void(^)(void))`
   * `toNotRaiseException`
 
 ## Running code before tests
@@ -148,10 +148,11 @@ To get the latest matchers, upgrade to the latest version:
 * 1.3
     * Added block expectations for noticing exceptions
     * Examples now catch exceptions and report them automatically
+    * Changed syntax so it wouldn't clash with OCMock, but it's not backwards compatible
 * 1.2
-    * beforeEach, afterEach, and example blocks (it) are now allowed at the top level of a Context without a describe
+    * BeforeEach, AfterEach, and example blocks (it) are now allowed at the top level of a Context without a describe
     * Describe blocks can be nested now
-    * beforeEach and afterEach are executed intuitively when nested (in order of depth)
+    * BeforeEach and AfterEach are executed intuitively when nested (in order of depth)
 * 1.1.1
     * Added boolean code snippet too
 * 1.1

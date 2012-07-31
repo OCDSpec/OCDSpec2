@@ -12,4 +12,4 @@
 
 @end
 
-#define expectArray [[SKArrayExpectation expectationInFile:__FILE__ line:__LINE__ failureReporter:self] withArray]
+#define ExpectArray [[SKArrayExpectation expectationInFile:__FILE__ line:__LINE__ failureReporter:self] withArray]

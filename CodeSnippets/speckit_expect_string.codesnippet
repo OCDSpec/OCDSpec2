@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>expectString</string>
+	<string>ExpectString</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>[expectStr(&lt;#string#&gt;) &lt;#matcher#&gt;];</string>
+	<string>[ExpectStr(&lt;#string#&gt;) &lt;#matcher#&gt;];</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>126E408D-81B1-4D97-B6DF-3121C28FDED6</string>
 	<key>IDECodeSnippetLanguage</key>

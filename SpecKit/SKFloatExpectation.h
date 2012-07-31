@@ -12,4 +12,4 @@
 
 @end
 
-#define expectFloat [[SKFloatExpectation expectationInFile:__FILE__ line:__LINE__ failureReporter:self] withFloat]
+#define ExpectFloat [[SKFloatExpectation expectationInFile:__FILE__ line:__LINE__ failureReporter:self] withFloat]

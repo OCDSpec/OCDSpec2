@@ -136,6 +136,14 @@ SpecKitContext(AcceptanceTest6) {
   
 }
 
+SpecKitContext(AcceptanceTest7) {
+  
+  it(@"catches exceptions implicitly and reports that they do in fact suck", ^{
+    [NSException raise:NSInternalInconsistencyException format:@"AWW!"];
+  });
+  
+}
+
 @interface SamplePrelude : NSObject <SKPrelude>
 @end
 

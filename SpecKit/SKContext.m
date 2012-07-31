@@ -4,6 +4,8 @@
 #import "SKPrelude.h"
 #import <objc/runtime.h>
 
+#import "SKBlockExpectation.h"
+
 int SpecKitRunAllTests() {
   return [SKContext runAllTestsUsingOutput:[NSFileHandle fileHandleWithStandardError]];
 }
@@ -104,11 +106,15 @@ int SpecKitRunAllTests() {
   } copy] autorelease];
 }
 
-- (void(^)(NSString*, void(^)(void))) _functionForExampleBlock {
+- (void(^)(NSString*, void(^)(void))) _functionForExampleBlockInFile:(char*)inFile atLine:(int)atLine {
   return [[^(NSString* name, void(^blk)(void)) {
     SKExample *ex = [[[SKExample alloc] init] autorelease];
     ex.name = name;
-    ex.block = blk;
+    ex.block = ^{
+      [[[SKBlockExpectation expectationInFile:inFile
+                                         line:atLine
+                              failureReporter:self] withBlock](blk) toNotRaiseException];
+    };
     self.currentDescription.examples = [[NSArray arrayWithArray:self.currentDescription.examples] arrayByAddingObject:ex];
   } copy] autorelease];
 }

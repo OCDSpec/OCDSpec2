@@ -18,7 +18,7 @@ int SpecKitRunAllTests();
 + (NSArray*) preludeClasses;
 
 - (void(^)(NSString*, void(^)(void))) _functionForDescribeBlock;
-- (void(^)(NSString*, void(^)(void))) _functionForExampleBlock;
+- (void(^)(NSString*, void(^)(void))) _functionForExampleBlockInFile:(char*)inFile atLine:(int)atLine;
 
 - (void(^)(void(^)(void))) _functionForBeforeEachBlock;
 - (void(^)(void(^)(void))) _functionForAfterEachBlock;
@@ -31,7 +31,7 @@ int SpecKitRunAllTests();
 #define SpecKitContext(classname) void SKContextRunFor##classname(SKContext* self); @interface SKContext##classname : SKContext; @end; @implementation SKContext##classname; - (void) gatherExamples { SKContextRunFor##classname(self); }; @end; void SKContextRunFor##classname(SKContext* self)
 
 #define describe [self _functionForDescribeBlock]
-#define it [self _functionForExampleBlock]
+#define it [self _functionForExampleBlockInFile:__FILE__ atLine:__LINE__]
 
 #define beforeEach [self _functionForBeforeEachBlock]
 #define afterEach [self _functionForAfterEachBlock]

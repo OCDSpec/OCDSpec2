@@ -11,9 +11,14 @@
 - (void) testContextGatherExamples {
   SKContext *ctx = [[[SKContext alloc] init] autorelease];
   
-  id itBlock = ^{};
+  __block int proofBlockGetsCalled = 0;
+  
+  id itBlock = ^{
+    proofBlockGetsCalled += 42;
+  };
+  
   [ctx _functionForDescribeBlock](@"hi", ^{
-    [ctx _functionForExampleBlock](@"sup", itBlock);
+    [ctx _functionForExampleBlockInFile:__FILE__ atLine:__LINE__](@"sup", itBlock);
   });
   
   STAssertTrue([ctx.topLevelDescription.subDescriptions count] == 1, nil);
@@ -25,7 +30,10 @@
   STAssertTrue([desc.examples count] == 1, nil);
   
   STAssertTrue([example.name isEqual: @"sup"], nil);
-  STAssertTrue([example.block isEqual: itBlock], nil);
+  
+  STAssertTrue(proofBlockGetsCalled == 0, nil);
+  example.block();
+  STAssertTrue(proofBlockGetsCalled == 42, nil);
 }
 
 - (void) testDefaultBeforeAfterEachBlocks {

@@ -9,7 +9,7 @@
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>PendingStr("&lt;#explanation#&gt;");</string>
+	<string>PendingStr(@"&lt;#explanation#&gt;");</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>6EF60070-5C8F-41A9-ABF0-1E557639456A</string>
 	<key>IDECodeSnippetLanguage</key>

@@ -37,6 +37,15 @@ int SpecKitRunAllTests() {
     errorCount += ctx.errorCount;
   }
   
+  if (errorCount == 0) {
+    NSString *decoratedMessage = [NSString stringWithFormat:@"PASS\n"];
+    [outputFile writeData:[decoratedMessage dataUsingEncoding:NSUTF8StringEncoding]];
+  }
+  else {
+    NSString *decoratedMessage = [NSString stringWithFormat:@"FAIL: %d errors\n", errorCount];
+    [outputFile writeData:[decoratedMessage dataUsingEncoding:NSUTF8StringEncoding]];
+  }
+  
   return errorCount;
 }
 

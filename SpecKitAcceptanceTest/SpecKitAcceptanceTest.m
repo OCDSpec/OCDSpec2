@@ -50,8 +50,8 @@ extern int SamplePreludeRunCount;
   [expectedOutput appendFormat:@"%@:127: error:     a\n", file];
   [expectedOutput appendFormat:@"%@:128: error: )\n", file];
   
-  [expectedOutput appendFormat:@"%@:132: error: Want no exception, but got one anyway\n", file];
-  [expectedOutput appendFormat:@"%@:141: error: Want no exception, but got one anyway\n", file];
+  [expectedOutput appendFormat:@"%@:132: error: Want no exception, but got one anyway: NSInternalInconsistencyException: aww\n", file];
+  [expectedOutput appendFormat:@"%@:141: error: Want no exception, but got one anyway: NSInternalInconsistencyException: AWW!\n", file];
   
   [expectedOutput appendFormat:@"FAIL: 23 errors\n"];
   

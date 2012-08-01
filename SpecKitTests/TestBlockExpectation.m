@@ -29,7 +29,7 @@
 - (void) testToNotRaiseExceptionFail {
   [[[SKBlockExpectation expectationInFile:"file1" line:2 failureReporter:reporter] withBlock]
    (^{ [NSException raise:NSInternalInconsistencyException format:@"aww"];}) toNotRaiseException];
-  SKHelperExpectReport(@"file1", 2, @"Want no exception, but got one anyway");
+  SKHelperExpectReport(@"file1", 2, @"Want no exception, but got one anyway: NSInternalInconsistencyException: aww");
 }
 
 @end

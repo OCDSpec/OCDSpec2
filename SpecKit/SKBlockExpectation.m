@@ -14,7 +14,9 @@
     self.block();
   }
   @catch (NSException *exception) {
-    [self reportFailure:@"Want no exception, but got one anyway"];
+    [self reportFailure:[NSString stringWithFormat:@"Want no exception, but got one anyway: %@: %@",
+                         exception.name,
+                         exception.reason]];
   }
 }
 

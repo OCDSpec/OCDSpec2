@@ -23,4 +23,14 @@
   }
 }
 
+- (void) reportWarning:(NSString*)message {
+  int i = 0;
+  for (NSString *rawStringLine in [message componentsSeparatedByString:@"\n"]) {
+    [self.failureReporter reportWarning:rawStringLine
+                                 inFile:self.file
+                                 atLine:self.line + i];
+    i++;
+  }
+}
+
 @end

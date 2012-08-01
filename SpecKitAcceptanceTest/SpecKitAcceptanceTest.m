@@ -53,6 +53,9 @@ extern int SamplePreludeRunCount;
   [expectedOutput appendFormat:@"%@:132: error: Want no exception, but got one anyway: NSInternalInconsistencyException: aww\n", file];
   [expectedOutput appendFormat:@"%@:141: error: Want no exception, but got one anyway: NSInternalInconsistencyException: AWW!\n", file];
   
+  [expectedOutput appendFormat:@"%@:150: warning: Pending\n", file];
+  [expectedOutput appendFormat:@"%@:151: warning: Pending: dunno\n", file];
+  
   [expectedOutput appendFormat:@"FAIL: 23 errors\n"];
   
   STAssertEquals(SamplePreludeRunCount, 1, nil);

@@ -9,6 +9,16 @@
   } copy] autorelease];
 }
 
+- (void) pending {
+  [self reportWarning:@"Pending"];
+}
+
+- (void(^)(NSString*))pendingWithString {
+  return [[^(NSString* msg){
+    [self reportWarning:[NSString stringWithFormat:@"Pending: %@", msg]];
+  } copy] autorelease];
+}
+
 - (void) toBe:(id)other {
   if (self.object != other) {
     [self reportFailure:[NSString stringWithFormat:@"Want %@, got %@",

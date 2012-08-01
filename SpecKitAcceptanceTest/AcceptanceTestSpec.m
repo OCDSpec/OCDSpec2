@@ -144,6 +144,15 @@ SpecKitContext(AcceptanceTest7) {
   
 }
 
+SpecKitContext(AcceptanceTest8) {
+  
+  It(@"eoes pending", ^{
+    Pending();
+    PendingStr(@"dunno");
+  });
+  
+}
+
 @interface SamplePrelude : NSObject <SKPrelude>
 @end
 

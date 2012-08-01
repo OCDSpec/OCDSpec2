@@ -146,6 +146,11 @@ int SpecKitRunAllTests() {
   [self.reportOutputFile writeData:[decoratedMessage dataUsingEncoding:NSUTF8StringEncoding]];
 }
 
+- (void) reportWarning:(NSString*)msg inFile:(NSString*)file atLine:(int)line {
+  NSString *decoratedMessage = [NSString stringWithFormat:@"%@:%d: warning: %@\n", file, line, msg];
+  [self.reportOutputFile writeData:[decoratedMessage dataUsingEncoding:NSUTF8StringEncoding]];
+}
+
 - (void) gatherExamples {
   // overridden
 }

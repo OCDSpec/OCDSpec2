@@ -13,5 +13,6 @@
          failureReporter:(id<SKFailureReporter>)reporter;
 
 - (void) reportFailure:(NSString*)message;
+- (void) reportWarning:(NSString*)message;
 
 @end

@@ -115,4 +115,14 @@
   SKHelperExpectReport(@"file12", 23, @"Want NSString, got __NSCFNumber");
 }
 
+- (void) testPendingWithoutString {
+  [[SKObjectExpectation expectationInFile:"file11" line:22 failureReporter:reporter] pending];
+  SKHelperExpectWarning(@"file11", 22, @"Pending");
+}
+
+- (void) testPendingWithString {
+  [[SKObjectExpectation expectationInFile:"file12" line:23 failureReporter:reporter] pendingWithString](@"todo = test me");
+  SKHelperExpectWarning(@"file12", 23, @"Pending: todo = test me");
+}
+
 @end

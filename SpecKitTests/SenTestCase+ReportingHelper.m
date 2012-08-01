@@ -9,10 +9,14 @@
         failingInFile:(char*)inFile
                atLine:(int)atLine
           forReporter:(SKFakeFailureReporter*)reporter
+            asFailure:(BOOL)isFailure
 {
-  SKFakeFailure *failure = [reporter.reports lastObject];
+  NSArray *reports = isFailure ? reporter.failureReports : reporter.warningReports;
+  NSArray *unReports = isFailure ? reporter.warningReports : reporter.failureReports;
   
-  if ([reporter.reports count] != 1) {
+  SKFakeFailure *failure = [reports lastObject];
+  
+  if ([reports count] != 1 || [unReports count] != 0) {
     [self failWithException:[NSException failureInFile:[NSString stringWithUTF8String:inFile]
                                                 atLine:atLine
                                        withDescription:@"too many reports sent"]];
@@ -40,11 +44,15 @@
 - (void) expectNoReportInFile:(char*)inFile
                        atLine:(int)atLine
                   forReporter:(SKFakeFailureReporter*)reporter
+                    asFailure:(BOOL)isFailure
 {
-  if ([reporter.reports count] != 0) {
+  NSArray *reports = isFailure ? reporter.failureReports : reporter.warningReports;
+  NSArray *unReports = isFailure ? reporter.warningReports : reporter.failureReports;
+  
+  if ([reports count] != 0 || [unReports count] != 0) {
     [self failWithException:[NSException failureInFile:[NSString stringWithUTF8String:inFile]
                                                 atLine:atLine
-                                       withDescription:@"got unexpected failure [%@], didnt expect one", [[reporter.reports lastObject] report]]];
+                                       withDescription:@"got unexpected failure [%@], didnt expect one", [[reports lastObject] report]]];
   }
 }
 

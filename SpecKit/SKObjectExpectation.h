@@ -8,6 +8,9 @@
 
 - (SKObjectExpectation*(^)(id)) withObject;
 
+- (void) pending;
+- (void(^)(NSString*))pendingWithString;
+
 - (void) toBe:(id)other;
 - (void) toBeEqualTo:(id)other;
 - (void) toExist;
@@ -18,3 +21,6 @@
 @end
 
 #define ExpectObj [[SKObjectExpectation expectationInFile:__FILE__ line:__LINE__ failureReporter:self] withObject]
+
+#define Pending() [[SKObjectExpectation expectationInFile:__FILE__ line:__LINE__ failureReporter:self] pending]
+#define PendingStr [[SKObjectExpectation expectationInFile:__FILE__ line:__LINE__ failureReporter:self] pendingWithString]

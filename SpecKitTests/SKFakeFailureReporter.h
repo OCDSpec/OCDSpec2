@@ -4,6 +4,7 @@
 
 @interface SKFakeFailureReporter : NSObject <SKFailureReporter>
 
-@property (assign) NSArray* reports;
+@property (assign) NSArray* failureReports;
+@property (assign) NSArray* warningReports;
 
 @end

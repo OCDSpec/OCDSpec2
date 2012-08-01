@@ -1,4 +1,4 @@
-# SpecKit 1.3
+# SpecKit 1.4
 
 A testing library for Mac or iOS projects
 
@@ -49,6 +49,7 @@ install_codesnippets.sh # installs the Xcode code snippets (for autocompletion) 
     * Highlights any lines with failed expectations
 * Catches exceptions
     * This means it's probably compatible with OCMock now
+* Pending
 
 ## Example spec
 
@@ -74,6 +75,10 @@ SpecKitContext(WidgetSpec) {
 
     It(@"contains gadget instances", ^{
       [ExpectObj([widget.gadgets objectAtIndex:0]) toBeKindOfClass: [Gadget self]];
+    });
+
+    It(@"makes lots of money", ^{
+      Pending();
     });
 
   });
@@ -145,6 +150,8 @@ To get the latest matchers, upgrade to the latest version:
 
 ## Change log
 
+* 1.4
+    * Added Pending() and PendingStr() which produce warnings instead of errors
 * 1.3
     * Added block expectations for noticing exceptions
     * Examples now catch exceptions and report them automatically

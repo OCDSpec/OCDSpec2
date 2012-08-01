@@ -109,6 +109,8 @@ SpecKitContext(WidgetSpec) {
   * `toContain:(id)obj`
 * `ExpectBlock(void(^)(void))`
   * `toNotRaiseException`
+* `Pending()`
+* `PendingStr(NSString*)`
 
 ## Running code before tests
 

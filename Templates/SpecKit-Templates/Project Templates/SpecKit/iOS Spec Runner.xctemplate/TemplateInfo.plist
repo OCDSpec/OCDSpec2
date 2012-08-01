@@ -306,10 +306,10 @@ if [ &quot;$PLATFORM_NAME&quot; == &quot;iphonesimulator&quot; ]; then
   # See http://developer.apple.com/technotes/tn2004/tn2124.html for an
   # explanation of these environment variables.
 
-  export MallocScribble=YES
+  #export MallocScribble=YES
   export MallocPreScribble=YES
-  export MallocGuardEdges=YES
-  export MallocStackLogging=YES
+  #export MallocGuardEdges=YES
+  #export MallocStackLogging=YES
   export NSAutoreleaseFreedObjectCheckEnabled=YES
 
   # Turn on the mostly undocumented OBJC_DEBUG stuff.
@@ -318,7 +318,7 @@ if [ &quot;$PLATFORM_NAME&quot; == &quot;iphonesimulator&quot; ]; then
   # Turned off due to the amount of false positives from NS classes.
   # export OBJC_DEBUG_FINALIZERS=YES
   export OBJC_DEBUG_NIL_SYNC=YES
-  export OBJC_PRINT_REPLACED_METHODS=YES
+  export OBJC_PRINT_REPLACED_METHODS=NO
 
   if [ $GTM_DISABLE_ZOMBIES -eq 0 ]; then
     GTMXcodeNote ${LINENO} &quot;Enabling zombies&quot;

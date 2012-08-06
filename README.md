@@ -18,6 +18,7 @@ install_codesnippets.sh # installs the Xcode code snippets (for autocompletion) 
 * Add a new target to your project of type 'SpecKit -> iOS Spec Runner'. This is your spec target.
     * Drag the SpecKit project file, found in the submodule you just cloned, into your project in Xcode.
     * Drag the SpecKit subproject's Product `libSpecKit.a` into your spec target's "Link Binary With Libraries" build phase.
+* Note: you can choose "Manage Schemes..." from the target dropdown and from there toggle the SpecKit targets to not be shown
 
 ## Use SpecKit in a Mac project
 
@@ -26,6 +27,7 @@ install_codesnippets.sh # installs the Xcode code snippets (for autocompletion) 
 * Add a new target to your project of type 'SpecKit -> Mac Spec Runner'. This is your spec target.
     * Drag the SpecKit project file, found in the submodule you just cloned, into your project in Xcode.
     * Drag the SpecKit subproject's Product `libSpecKitMac.a` into your spec target's "Link Binary With Libraries" build phase.
+* Note: you can choose "Manage Schemes..." from the target dropdown and from there toggle the SpecKit targets to not be shown
 
 ## Adding a spec to the project
 

@@ -37,7 +37,7 @@
 
 - (void) toExist {
   if (self.object == nil) {
-    [self reportFailure:@"Want nil, but isn't"];
+    [self reportFailure:@"Want real object, got nil"];
   }
 }
 

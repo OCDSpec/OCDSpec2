@@ -58,7 +58,7 @@
 - (void) testToExistFail {
   [[[SKObjectExpectation expectationInFile:"file11" line:22 failureReporter:reporter] withObject]
    (nil) toExist];
-  SKHelperExpectReport(@"file11", 22, @"Want nil, but isn't");
+  SKHelperExpectReport(@"file11", 22, @"Want real object, got nil");
 }
 
 - (void) testToBeNilPass {

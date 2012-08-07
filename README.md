@@ -7,8 +7,8 @@ A testing library for Mac or iOS projects
 Inside the SpecKit directory, run:
 
 ```bash
-install_templates.sh    # installs the Xcode target and file templates you will be using
-install_codesnippets.sh # installs the Xcode code snippets (for autocompletion) that make life so nice
+install_templates.sh       # installs the Xcode target and file templates you will be using
+install_autocompletions.sh # installs the Xcode autocompletion files that make life so nice
 ```
 
 ## Use SpecKit in an iOS project

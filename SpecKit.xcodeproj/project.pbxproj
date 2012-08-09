@@ -87,16 +87,6 @@
 		94A6BAC915BB30D0003F22B6 /* SKStringExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAAE15BB30D0003F22B6 /* SKStringExpectation.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		944FBF7715C18B8500BF85FC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 94A6BA5115BB2DE7003F22B6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 947F6C2415BC39A200C7CF3B;
-			remoteInfo = SpecKitTests;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		942AAEEC15BBB3760006C241 /* libSpecKitMac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSpecKitMac.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		942AAEF515BBB3760006C241 /* SpecKitMac-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "SpecKitMac-Prefix.pch"; path = "SpecKit/SpecKitMac-Prefix.pch"; sourceTree = SOURCE_ROOT; };
@@ -400,7 +390,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				944FBF7815C18B8500BF85FC /* PBXTargetDependency */,
 			);
 			name = SpecKitAcceptanceTest;
 			productName = SpecKitAcceptanceTest;
@@ -604,14 +593,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		944FBF7815C18B8500BF85FC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 947F6C2415BC39A200C7CF3B /* SpecKitTests */;
-			targetProxy = 944FBF7715C18B8500BF85FC /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		944FBF5915C168C100BF85FC /* InfoPlist.strings */ = {

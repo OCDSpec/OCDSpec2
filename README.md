@@ -18,7 +18,7 @@ install_autocompletions.sh # installs the Xcode autocompletion files that make l
 * Add a new target to your project of type 'SpecKit -> iOS Spec Runner'. This is your spec target.
     * Drag the SpecKit project file, found in the submodule you just cloned, into your project in Xcode.
     * Drag the SpecKit subproject's Product `libSpecKit.a` into your spec target's "Link Binary With Libraries" build phase.
-* Note: you can choose "Manage Schemes..." from the target dropdown and from there toggle the SpecKit targets to not be shown
+* Note: you can choose "Manage Schemes..." from the scheme dropdown and from there toggle the SpecKit scheme to not be shown
 
 ## Use SpecKit in a Mac project
 
@@ -27,7 +27,7 @@ install_autocompletions.sh # installs the Xcode autocompletion files that make l
 * Add a new target to your project of type 'SpecKit -> Mac Spec Runner'. This is your spec target.
     * Drag the SpecKit project file, found in the submodule you just cloned, into your project in Xcode.
     * Drag the SpecKit subproject's Product `libSpecKitMac.a` into your spec target's "Link Binary With Libraries" build phase.
-* Note: you can choose "Manage Schemes..." from the target dropdown and from there toggle the SpecKit targets to not be shown
+* Note: you can choose "Manage Schemes..." from the scheme dropdown and from there toggle the SpecKit scheme to not be shown
 
 ## Adding a spec to the project
 
@@ -179,6 +179,12 @@ To get the latest matchers, upgrade to the latest version:
 * Tell people about SpecKit
     * Or maybe not?
         * Secret lib! Yeah, this sounds exciting! Some James Bond stuff goin on here.
+
+## Working on SpecKit itself
+
+* Building the SpecKit scheme will run all the unit and acceptance tests
+* Make sure you test everything you add
+* Make your tests better than my tests
 
 ## Credits
 

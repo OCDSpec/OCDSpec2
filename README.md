@@ -174,8 +174,11 @@ To get the latest matchers, upgrade to the latest version:
 
 ## To Do
 
-* Figure out how to version a library
+* Add ExpectUInt and ExpectUFloat matchers
+    * Maybe rename ExpectInt and ExpectFloat to ExpectSInt and ExpectSFloat
+        * Or not, cuz that's way ugly
 * Start versioning SpecKit properly
+    * Figure out how to version a library first
 * Tell people about SpecKit
     * Or maybe not?
         * Secret lib! Yeah, this sounds exciting! Some James Bond stuff goin on here.

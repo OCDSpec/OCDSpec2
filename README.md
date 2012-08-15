@@ -188,7 +188,6 @@ To get the latest matchers, upgrade to the latest version:
 * Building the SpecKit scheme will run all the unit and acceptance tests
 * Make sure you test everything you add
 * Make your tests better than my tests
-* **DO NOT over-complicate or over-engineer or over-design anything** or I will not only not accept your pull request but I will also follow you on twitter just so I can unfollow you and friend you on Facebook just so I can unfriend you and I will probably link you to some link about how over-engineering is bad and stuff
 
 ## Credits
 

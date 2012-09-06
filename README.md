@@ -1,37 +1,37 @@
-# SpecKit 1.4
+# OCDSpec2 1.4
 
 A testing library for Mac or iOS projects
 
-## One-time setup before using SpecKit in any project
+## One-time setup before using OCDSpec2 in any project
 
-Inside the SpecKit directory, run:
+Inside the OCDSpec2 directory, run:
 
 ```bash
 install_templates.sh       # installs the Xcode target and file templates you will be using
 install_autocompletions.sh # installs the Xcode autocompletion files that make life so nice
 ```
 
-## Use SpecKit in an iOS project
+## Use OCDSpec2 in an iOS project
 
 * In the root dir of your project, run:
-    * `git submodule add https://github.com/sdegutis/SpecKit.git`
-* Add a new target to your project of type 'SpecKit -> iOS Spec Runner'. This is your spec target.
-    * Drag the SpecKit project file, found in the submodule you just cloned, into your project in Xcode.
-    * Drag the SpecKit subproject's Product `libSpecKit.a` into your spec target's "Link Binary With Libraries" build phase.
-* Note: you can choose "Manage Schemes..." from the scheme dropdown and from there toggle the SpecKit scheme to not be shown
+    * `git submodule add https://github.com/sdegutis/OCDSpec2.git`
+* Add a new target to your project of type 'OCDSpec2 -> iOS Spec Runner'. This is your spec target.
+    * Drag the OCDSpec2 project file, found in the submodule you just cloned, into your project in Xcode.
+    * Drag the OCDSpec2 subproject's Product `libOCDSpec2.a` into your spec target's "Link Binary With Libraries" build phase.
+* Note: you can choose "Manage Schemes..." from the scheme dropdown and from there toggle the OCDSpec2 scheme to not be shown
 
-## Use SpecKit in a Mac project
+## Use OCDSpec2 in a Mac project
 
 * In the root dir of your project, run:
-    * `git submodule add https://github.com/sdegutis/SpecKit.git`
-* Add a new target to your project of type 'SpecKit -> Mac Spec Runner'. This is your spec target.
-    * Drag the SpecKit project file, found in the submodule you just cloned, into your project in Xcode.
-    * Drag the SpecKit subproject's Product `libSpecKitMac.a` into your spec target's "Link Binary With Libraries" build phase.
-* Note: you can choose "Manage Schemes..." from the scheme dropdown and from there toggle the SpecKit scheme to not be shown
+    * `git submodule add https://github.com/sdegutis/OCDSpec2.git`
+* Add a new target to your project of type 'OCDSpec2 -> Mac Spec Runner'. This is your spec target.
+    * Drag the OCDSpec2 project file, found in the submodule you just cloned, into your project in Xcode.
+    * Drag the OCDSpec2 subproject's Product `libOCDSpec2Mac.a` into your spec target's "Link Binary With Libraries" build phase.
+* Note: you can choose "Manage Schemes..." from the scheme dropdown and from there toggle the OCDSpec2 scheme to not be shown
 
 ## Adding a spec to the project
 
-* Add a new 'SpecKit -> Spec' file to your project
+* Add a new 'OCDSpec2 -> Spec' file to your project
 * Make sure it's only in your spec target, not your main target
 
 ## Running specs
@@ -44,7 +44,7 @@ install_autocompletions.sh # installs the Xcode autocompletion files that make l
 * Describe and example blocks
     * Describe blocks can be nested
     * Any describe block can have a before-each and after-each block
-    * A context created with SpecKitContext is a top-level describe block
+    * A context created with OCDSpec2Context is a top-level describe block
 * Xcode integration
     * Auto-completion, just type "Desc", "It", "ExpectObj", "ExpectInt", etc.
     * Templates for easy creation of testing targets and spec files
@@ -56,11 +56,11 @@ install_autocompletions.sh # installs the Xcode autocompletion files that make l
 ## Example spec
 
 ```objc
-#import <SpecKit/SpecKit.h>
+#import <OCDSpec2/OCDSpec2.h>
 
 #import "Widget.h"
 
-SpecKitContext(WidgetSpec) {
+OCDSpec2Context(WidgetSpec) {
 
   __block Widget* widget;
 
@@ -122,7 +122,7 @@ To run some code once just before the entire test suite, create a class that con
 #import <UIKit/UIKit.h>
 #import <objc/runtime.h>
 
-#import <SpecKit/SpecKit.h>
+#import <OCDSpec2/OCDSpec2.h>
 
 NSString* StubbedNibName(void) {
   return nil;
@@ -145,8 +145,8 @@ NSString* StubbedNibName(void) {
 
 To get the latest matchers, upgrade to the latest version:
 
-* Update the SpecKit submodule in your project
-    * `cd SpecKit` from your main project directory
+* Update the OCDSpec2 submodule in your project
+    * `cd OCDSpec2` from your main project directory
     * `git checkout master`
     * `git pull`
     * Be sure to check this into git
@@ -177,15 +177,15 @@ To get the latest matchers, upgrade to the latest version:
 * Add ExpectUInt and ExpectUFloat matchers
     * Maybe rename ExpectInt and ExpectFloat to ExpectSInt and ExpectSFloat
         * Or not, cuz that's way ugly
-* Start versioning SpecKit properly
+* Start versioning OCDSpec2 properly
     * Figure out how to version a library first
-* Tell people about SpecKit
+* Tell people about OCDSpec2
     * Or maybe not?
         * Secret lib! Yeah, this sounds exciting! Some James Bond stuff goin on here.
 
-## Working on SpecKit itself
+## Working on OCDSpec2 itself
 
-* Building the SpecKit scheme will run all the unit and acceptance tests
+* Building the OCDSpec2 scheme will run all the unit and acceptance tests
 * Make sure you test everything you add
 * Make your tests better than my tests
 
@@ -195,4 +195,4 @@ To get the latest matchers, upgrade to the latest version:
 
 ## Caveats
 
-* SpecKit is only known to work with Xcode 4.3.3 for now.
+* OCDSpec2 is only known to work with Xcode 4.3.3 for now.

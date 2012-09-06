@@ -1,7 +1,0 @@
-//
-// Prefix header for all source files of the 'SpecKitTests' target in the 'SpecKitTests' project
-//
-
-#ifdef __OBJC__
-    #import <Foundation/Foundation.h>
-#endif

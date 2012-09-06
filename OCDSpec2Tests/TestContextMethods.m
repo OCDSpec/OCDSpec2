@@ -2,7 +2,7 @@
 
 #import "OCDSpec2.h"
 
-@interface SampleBeforeAll : NSObject<SKPrelude>
+@interface SampleBeforeAll : NSObject<OCDSPrelude>
 @end
 
 @implementation SampleBeforeAll
@@ -23,15 +23,15 @@ OCDSpec2Context(Sample2) {
 @implementation TestRunningSuite
 
 - (void) testGetContextClasses {
-  NSArray *contextClasses = [SKContext contextClasses];
+  NSArray *contextClasses = [OCDSContext contextClasses];
   
   STAssertTrue([contextClasses count] == 2, nil);
-  STAssertTrue([contextClasses containsObject: [SKContextSample1 self]], nil);
-  STAssertTrue([contextClasses containsObject: [SKContextSample2 self]], nil);
+  STAssertTrue([contextClasses containsObject: [OCDSContextSample1 self]], nil);
+  STAssertTrue([contextClasses containsObject: [OCDSContextSample2 self]], nil);
 }
 
 - (void) testGetBeforeAllRunnerClasses {
-  NSArray *runnerClasses = [SKContext preludeClasses];
+  NSArray *runnerClasses = [OCDSContext preludeClasses];
   
   STAssertTrue([runnerClasses count] == 1, nil);
   STAssertTrue([runnerClasses containsObject: [SampleBeforeAll self]], nil);

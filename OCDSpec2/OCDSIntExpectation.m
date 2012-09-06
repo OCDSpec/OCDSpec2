@@ -1,9 +1,9 @@
-#import "SKIntExpectation.h"
+#import "OCDSIntExpectation.h"
 
-@implementation SKIntExpectation
+@implementation OCDSIntExpectation
 
-- (SKIntExpectation*(^)(long long)) withInt {
-  return [[^SKIntExpectation*(long long num){
+- (OCDSIntExpectation*(^)(long long)) withInt {
+  return [[^OCDSIntExpectation*(long long num){
     self.number = num;
     return self;
   } copy] autorelease];

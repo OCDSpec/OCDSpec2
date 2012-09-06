@@ -1,19 +1,19 @@
 #import <SenTestingKit/SenTestingKit.h>
 
-#import "SKContext.h"
-#import "SKStringExpectation.h"
-#import "SKFakeFailureReporter.h"
+#import "OCDSContext.h"
+#import "OCDSStringExpectation.h"
+#import "OCDSFakeFailureReporter.h"
 
 #import "SenTestCase+ReportingHelper.h"
 
 @interface TestStringExpectation : SenTestCase {
-  SKFakeFailureReporter *reporter;
+  OCDSFakeFailureReporter *reporter;
 }
 @end
 @implementation TestStringExpectation
 
 - (void) setUp {
-  reporter = [[SKFakeFailureReporter alloc] init];
+  reporter = [[OCDSFakeFailureReporter alloc] init];
 }
 
 - (void) tearDown {
@@ -21,27 +21,27 @@
 }
 
 - (void) testToContainPass {
-  [[[SKStringExpectation expectationInFile:"file1" line:2 failureReporter:reporter] withString]
+  [[[OCDSStringExpectation expectationInFile:"file1" line:2 failureReporter:reporter] withString]
    (@"hello") toContain: @"hell"];
-  SKHelperExpectNoReport();
+  OCDSHelperExpectNoReport();
 }
 
 - (void) testToContainFail {
-  [[[SKStringExpectation expectationInFile:"file1" line:2 failureReporter:reporter] withString]
+  [[[OCDSStringExpectation expectationInFile:"file1" line:2 failureReporter:reporter] withString]
    (@"hello") toContain: @"jello"];
-  SKHelperExpectReport(@"file1", 2, @"Want \"*jello*\", got \"hello\"");
+  OCDSHelperExpectReport(@"file1", 2, @"Want \"*jello*\", got \"hello\"");
 }
 
 - (void) testToStartWithPass {
-  [[[SKStringExpectation expectationInFile:"file1" line:2 failureReporter:reporter] withString]
+  [[[OCDSStringExpectation expectationInFile:"file1" line:2 failureReporter:reporter] withString]
    (@"hello") toStartWith: @"hell"];
-  SKHelperExpectNoReport();
+  OCDSHelperExpectNoReport();
 }
 
 - (void) testToStartWithFail {
-  [[[SKStringExpectation expectationInFile:"file1" line:2 failureReporter:reporter] withString]
+  [[[OCDSStringExpectation expectationInFile:"file1" line:2 failureReporter:reporter] withString]
    (@"hello") toStartWith: @"ell"];
-  SKHelperExpectReport(@"file1", 2, @"Want \"ell*\", got \"hello\"");
+  OCDSHelperExpectReport(@"file1", 2, @"Want \"ell*\", got \"hello\"");
 }
 
 @end

@@ -1,25 +1,25 @@
 #import <SenTestingKit/SenTestingKit.h>
 
-#import "SKContext.h"
-#import "SKDescription.h"
-#import "SKExample.h"
+#import "OCDSContext.h"
+#import "OCDSDescription.h"
+#import "OCDSExample.h"
 
 @interface TestRunningExamples : SenTestCase
 @end
 @implementation TestRunningExamples
 
 - (void) testRunningExamples {
-  SKContext *ctx = [[[SKContext alloc] init] autorelease];
+  OCDSContext *ctx = [[[OCDSContext alloc] init] autorelease];
   
-  SKDescription *desc1 = [[[SKDescription alloc] init] autorelease];
-  SKDescription *desc2 = [[[SKDescription alloc] init] autorelease];
+  OCDSDescription *desc1 = [[[OCDSDescription alloc] init] autorelease];
+  OCDSDescription *desc2 = [[[OCDSDescription alloc] init] autorelease];
   
   NSMutableString *counter = [NSMutableString string];
   
-  SKExample *example1 = [[[SKExample alloc] init] autorelease];
-  SKExample *example2 = [[[SKExample alloc] init] autorelease];
-  SKExample *example3 = [[[SKExample alloc] init] autorelease];
-  SKExample *example4 = [[[SKExample alloc] init] autorelease];
+  OCDSExample *example1 = [[[OCDSExample alloc] init] autorelease];
+  OCDSExample *example2 = [[[OCDSExample alloc] init] autorelease];
+  OCDSExample *example3 = [[[OCDSExample alloc] init] autorelease];
+  OCDSExample *example4 = [[[OCDSExample alloc] init] autorelease];
   
   example1.block = ^{
     [counter appendString:@"1"];
@@ -48,10 +48,10 @@
 }
 
 - (void) testRunningBeforeEach {
-  SKContext *ctx = [[[SKContext alloc] init] autorelease];
+  OCDSContext *ctx = [[[OCDSContext alloc] init] autorelease];
   
-  SKDescription *desc1 = [[[SKDescription alloc] init] autorelease];
-  SKDescription *desc2 = [[[SKDescription alloc] init] autorelease];
+  OCDSDescription *desc1 = [[[OCDSDescription alloc] init] autorelease];
+  OCDSDescription *desc2 = [[[OCDSDescription alloc] init] autorelease];
   
   NSMutableString *counter = [NSMutableString string];
   
@@ -59,10 +59,10 @@
     [counter appendString:@"["];
   };
   
-  SKExample *example1 = [[[SKExample alloc] init] autorelease];
-  SKExample *example2 = [[[SKExample alloc] init] autorelease];
-  SKExample *example3 = [[[SKExample alloc] init] autorelease];
-  SKExample *example4 = [[[SKExample alloc] init] autorelease];
+  OCDSExample *example1 = [[[OCDSExample alloc] init] autorelease];
+  OCDSExample *example2 = [[[OCDSExample alloc] init] autorelease];
+  OCDSExample *example3 = [[[OCDSExample alloc] init] autorelease];
+  OCDSExample *example4 = [[[OCDSExample alloc] init] autorelease];
   
   example1.block = ^{
     [counter appendString:@"1"];
@@ -91,10 +91,10 @@
 }
 
 - (void) testRunningAfterEach {
-  SKContext *ctx = [[[SKContext alloc] init] autorelease];
+  OCDSContext *ctx = [[[OCDSContext alloc] init] autorelease];
   
-  SKDescription *desc1 = [[[SKDescription alloc] init] autorelease];
-  SKDescription *desc2 = [[[SKDescription alloc] init] autorelease];
+  OCDSDescription *desc1 = [[[OCDSDescription alloc] init] autorelease];
+  OCDSDescription *desc2 = [[[OCDSDescription alloc] init] autorelease];
   
   NSMutableString *counter = [NSMutableString string];
   
@@ -102,10 +102,10 @@
     [counter appendString:@"]"];
   };
   
-  SKExample *example1 = [[[SKExample alloc] init] autorelease];
-  SKExample *example2 = [[[SKExample alloc] init] autorelease];
-  SKExample *example3 = [[[SKExample alloc] init] autorelease];
-  SKExample *example4 = [[[SKExample alloc] init] autorelease];
+  OCDSExample *example1 = [[[OCDSExample alloc] init] autorelease];
+  OCDSExample *example2 = [[[OCDSExample alloc] init] autorelease];
+  OCDSExample *example3 = [[[OCDSExample alloc] init] autorelease];
+  OCDSExample *example4 = [[[OCDSExample alloc] init] autorelease];
   
   example1.block = ^{
     [counter appendString:@"1"];
@@ -134,10 +134,10 @@
 }
 
 - (void) testRunningBeforeAndAfterEach {
-  SKContext *ctx = [[[SKContext alloc] init] autorelease];
+  OCDSContext *ctx = [[[OCDSContext alloc] init] autorelease];
   
-  SKDescription *desc1 = [[[SKDescription alloc] init] autorelease];
-  SKDescription *desc2 = [[[SKDescription alloc] init] autorelease];
+  OCDSDescription *desc1 = [[[OCDSDescription alloc] init] autorelease];
+  OCDSDescription *desc2 = [[[OCDSDescription alloc] init] autorelease];
   
   NSMutableString *counter = [NSMutableString string];
   
@@ -149,10 +149,10 @@
     [counter appendString:@"]"];
   };
   
-  SKExample *example1 = [[[SKExample alloc] init] autorelease];
-  SKExample *example2 = [[[SKExample alloc] init] autorelease];
-  SKExample *example3 = [[[SKExample alloc] init] autorelease];
-  SKExample *example4 = [[[SKExample alloc] init] autorelease];
+  OCDSExample *example1 = [[[OCDSExample alloc] init] autorelease];
+  OCDSExample *example2 = [[[OCDSExample alloc] init] autorelease];
+  OCDSExample *example3 = [[[OCDSExample alloc] init] autorelease];
+  OCDSExample *example4 = [[[OCDSExample alloc] init] autorelease];
   
   example1.block = ^{
     [counter appendString:@"1"];

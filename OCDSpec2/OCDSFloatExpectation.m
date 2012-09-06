@@ -1,9 +1,9 @@
-#import "SKFloatExpectation.h"
+#import "OCDSFloatExpectation.h"
 
-@implementation SKFloatExpectation
+@implementation OCDSFloatExpectation
 
-- (SKFloatExpectation*(^)(double)) withFloat {
-  return [[^SKFloatExpectation*(double num){
+- (OCDSFloatExpectation*(^)(double)) withFloat {
+  return [[^OCDSFloatExpectation*(double num){
     self.number = num;
     return self;
   } copy] autorelease];

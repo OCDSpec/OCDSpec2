@@ -13,7 +13,7 @@ extern int SamplePreludeRunCount;
 - (void)testExample {
   NSPipe *pipe = [NSPipe pipe];
   
-  [SKContext runAllTestsUsingOutput:[pipe fileHandleForWriting]];
+  [OCDSContext runAllTestsUsingOutput:[pipe fileHandleForWriting]];
   [[pipe fileHandleForWriting] closeFile];
   
   NSData *stderrData = [[pipe fileHandleForReading] readDataToEndOfFile];

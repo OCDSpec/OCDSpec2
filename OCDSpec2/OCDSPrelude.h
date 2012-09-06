@@ -1,6 +1,6 @@
 #import <Foundation/Foundation.h>
 
-@protocol SKPrelude <NSObject>
+@protocol OCDSPrelude <NSObject>
 
 - (void) run;
 

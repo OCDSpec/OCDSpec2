@@ -1,9 +1,9 @@
-#import "SKBlockExpectation.h"
+#import "OCDSBlockExpectation.h"
 
-@implementation SKBlockExpectation
+@implementation OCDSBlockExpectation
 
-- (SKBlockExpectation*(^)(void(^)(void))) withBlock {
-  return [[^SKBlockExpectation*(void(^b)(void)){
+- (OCDSBlockExpectation*(^)(void(^)(void))) withBlock {
+  return [[^OCDSBlockExpectation*(void(^b)(void)){
     self.block = b;
     return self;
   } copy] autorelease];

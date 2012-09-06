@@ -1,8 +1,8 @@
-#import "SKDescription.h"
+#import "OCDSDescription.h"
 
-#import "SKExample.h"
+#import "OCDSExample.h"
 
-@implementation SKDescription
+@implementation OCDSDescription
 
 - (void) dealloc {
   self.subDescriptions = nil;
@@ -23,7 +23,7 @@
   if (self.afterEachBlock)
     afterBlocks = [afterBlocks arrayByAddingObject:self.afterEachBlock];
   
-  for (SKExample* example in self.examples) {
+  for (OCDSExample* example in self.examples) {
     for (void(^beforeBlock)(void) in beforeBlocks) {
       beforeBlock();
     }
@@ -36,7 +36,7 @@
     }
   }
   
-  for (SKDescription* desc in self.subDescriptions) {
+  for (OCDSDescription* desc in self.subDescriptions) {
     [desc runAllExamplesWithBeforeBlocks:beforeBlocks afterBlocks:afterBlocks];
   }
 }

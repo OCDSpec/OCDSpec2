@@ -1,6 +1,6 @@
 #import <Foundation/Foundation.h>
 
-@interface SKFakeFailure : NSObject
+@interface OCDSFakeFailure : NSObject
 
 @property (assign) NSString* report;
 @property (assign) NSString* inFile;

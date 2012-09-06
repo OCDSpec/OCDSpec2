@@ -1,20 +1,20 @@
 #import <SenTestingKit/SenTestingKit.h>
 
-#import "SKFakeFailure.h"
-#import "SKContext.h"
-#import "SKArrayExpectation.h"
-#import "SKFakeFailureReporter.h"
+#import "OCDSFakeFailure.h"
+#import "OCDSContext.h"
+#import "OCDSArrayExpectation.h"
+#import "OCDSFakeFailureReporter.h"
 
 #import "SenTestCase+ReportingHelper.h"
 
 @interface TestArrayExpectation : SenTestCase {
-  SKFakeFailureReporter *reporter;
+  OCDSFakeFailureReporter *reporter;
 }
 @end
 @implementation TestArrayExpectation
 
 - (void) setUp {
-  reporter = [[SKFakeFailureReporter alloc] init];
+  reporter = [[OCDSFakeFailureReporter alloc] init];
 }
 
 - (void) tearDown {
@@ -22,13 +22,13 @@
 }
 
 - (void) testToContainPass {
-  [[[SKArrayExpectation expectationInFile:"file1" line:2 failureReporter:reporter] withArray]
+  [[[OCDSArrayExpectation expectationInFile:"file1" line:2 failureReporter:reporter] withArray]
    ([NSArray arrayWithObject:@"a"]) toContain: @"a"];
-  SKHelperExpectNoReport();
+  OCDSHelperExpectNoReport();
 }
 
 - (void) testToContainFail {
-  [[[SKArrayExpectation expectationInFile:"file11" line:22 failureReporter:reporter] withArray]
+  [[[OCDSArrayExpectation expectationInFile:"file11" line:22 failureReporter:reporter] withArray]
    ([NSArray arrayWithObject:@"a"]) toContain: @"b"];
   
   STAssertTrue([reporter.failureReports count] == 3, nil);

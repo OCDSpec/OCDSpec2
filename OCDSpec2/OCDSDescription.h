@@ -1,6 +1,6 @@
 #import <Foundation/Foundation.h>
 
-@interface SKDescription : NSObject
+@interface OCDSDescription : NSObject
 
 @property (readwrite, retain) NSArray *subDescriptions;
 @property (readwrite, retain) NSString* name;

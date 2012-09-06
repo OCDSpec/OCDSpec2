@@ -1,16 +1,16 @@
-#import "SKContext.h"
-#import "SKDescription.h"
-#import "SKExample.h"
-#import "SKPrelude.h"
+#import "OCDSContext.h"
+#import "OCDSDescription.h"
+#import "OCDSExample.h"
+#import "OCDSPrelude.h"
 #import <objc/runtime.h>
 
-#import "SKBlockExpectation.h"
+#import "OCDSBlockExpectation.h"
 
 int OCDSpec2RunAllTests() {
-  return [SKContext runAllTestsUsingOutput:[NSFileHandle fileHandleWithStandardError]];
+  return [OCDSContext runAllTestsUsingOutput:[NSFileHandle fileHandleWithStandardError]];
 }
 
-@implementation SKContext
+@implementation OCDSContext
 
 - (void) dealloc {
   self.reportOutputFile = nil;
@@ -23,12 +23,12 @@ int OCDSpec2RunAllTests() {
   int errorCount = 0;
   
   for (Class runnerClass in [self preludeClasses]) {
-    id<SKPrelude> runner = [[[runnerClass alloc] init] autorelease];
+    id<OCDSPrelude> runner = [[[runnerClass alloc] init] autorelease];
     [runner run];
   }
   
   for (Class contextClass in [self contextClasses]) {
-    SKContext *ctx = [[[contextClass alloc] init] autorelease];
+    OCDSContext *ctx = [[[contextClass alloc] init] autorelease];
     ctx.reportOutputFile = outputFile;
     
     [ctx gatherExamples];
@@ -59,7 +59,7 @@ int OCDSpec2RunAllTests() {
   for (int i = 0; i < classCount; i++) {
     Class class = classes[i];
     
-    if (class_getSuperclass(class) == [SKContext self]) {
+    if (class_getSuperclass(class) == [OCDSContext self]) {
       [testClasses addObject:class];
     }
   }
@@ -81,7 +81,7 @@ int OCDSpec2RunAllTests() {
   for (int i = 0; i < classCount; i++) {
     Class class = classes[i];
     
-    if (class_conformsToProtocol(class, @protocol(SKPrelude))) {
+    if (class_conformsToProtocol(class, @protocol(OCDSPrelude))) {
       [preludeClasses addObject:class];
     }
   }
@@ -95,7 +95,7 @@ int OCDSpec2RunAllTests() {
 
 - (id) init {
   if ((self = [super init])) {
-    self.topLevelDescription = [[[SKDescription alloc] init] autorelease];
+    self.topLevelDescription = [[[OCDSDescription alloc] init] autorelease];
     self.topLevelDescription.name = @"Top level";
     
     self.currentDescription = self.topLevelDescription;
@@ -105,7 +105,7 @@ int OCDSpec2RunAllTests() {
 
 - (void(^)(NSString*, void(^)(void))) _functionForDescribeBlock {
   return [[^(NSString* name, void(^blk)(void)) {
-    SKDescription *desc = [[[SKDescription alloc] init] autorelease];
+    OCDSDescription *desc = [[[OCDSDescription alloc] init] autorelease];
     desc.name = name;
     self.currentDescription.subDescriptions = [[NSArray arrayWithArray:self.currentDescription.subDescriptions] arrayByAddingObject:desc];
     
@@ -117,10 +117,10 @@ int OCDSpec2RunAllTests() {
 
 - (void(^)(NSString*, void(^)(void))) _functionForExampleBlockInFile:(char*)inFile atLine:(int)atLine {
   return [[^(NSString* name, void(^blk)(void)) {
-    SKExample *ex = [[[SKExample alloc] init] autorelease];
+    OCDSExample *ex = [[[OCDSExample alloc] init] autorelease];
     ex.name = name;
     ex.block = ^{
-      [[[SKBlockExpectation expectationInFile:inFile
+      [[[OCDSBlockExpectation expectationInFile:inFile
                                          line:atLine
                               failureReporter:self] withBlock](blk) toNotRaiseException];
     };

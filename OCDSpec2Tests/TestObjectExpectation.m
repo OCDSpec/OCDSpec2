@@ -2,18 +2,18 @@
 
 #import "SenTestCase+ReportingHelper.h"
 
-#import "SKContext.h"
-#import "SKObjectExpectation.h"
-#import "SKFakeFailureReporter.h"
+#import "OCDSContext.h"
+#import "OCDSObjectExpectation.h"
+#import "OCDSFakeFailureReporter.h"
 
 @interface TestObjectExpectation : SenTestCase {
-  SKFakeFailureReporter *reporter;
+  OCDSFakeFailureReporter *reporter;
 }
 @end
 @implementation TestObjectExpectation
 
 - (void) setUp {
-  reporter = [[SKFakeFailureReporter alloc] init];
+  reporter = [[OCDSFakeFailureReporter alloc] init];
 }
 
 - (void) tearDown {
@@ -21,108 +21,108 @@
 }
 
 - (void) testToBeEqualToPass {
-  [[[SKObjectExpectation expectationInFile:"file1" line:2 failureReporter:reporter] withObject]
+  [[[OCDSObjectExpectation expectationInFile:"file1" line:2 failureReporter:reporter] withObject]
    (@"a") toBeEqualTo: @"a"];
-  SKHelperExpectNoReport();
+  OCDSHelperExpectNoReport();
 }
 
 - (void) testToBeEqualToFail {
-  [[[SKObjectExpectation expectationInFile:"file11" line:22 failureReporter:reporter] withObject]
+  [[[OCDSObjectExpectation expectationInFile:"file11" line:22 failureReporter:reporter] withObject]
    (@"a") toBeEqualTo: @"b"];
-  SKHelperExpectReport(@"file11", 22, @"Want b, got a");
+  OCDSHelperExpectReport(@"file11", 22, @"Want b, got a");
 }
 
 - (void) testToBePass {
   id a = [[[NSObject alloc] init] autorelease];
   
-  [[[SKObjectExpectation expectationInFile:"file1" line:2 failureReporter:reporter] withObject]
+  [[[OCDSObjectExpectation expectationInFile:"file1" line:2 failureReporter:reporter] withObject]
    (a) toBe: a];
-  SKHelperExpectNoReport();
+  OCDSHelperExpectNoReport();
 }
 
 - (void) testToBeFail {
   id a = [NSMutableString stringWithString:@"a"];
   id b = [NSMutableString stringWithString:@"b"];
   
-  [[[SKObjectExpectation expectationInFile:"file11" line:22 failureReporter:reporter] withObject]
+  [[[OCDSObjectExpectation expectationInFile:"file11" line:22 failureReporter:reporter] withObject]
    (a) toBe: b];
-  SKHelperExpectReport(@"file11", 22, @"Want b, got a");
+  OCDSHelperExpectReport(@"file11", 22, @"Want b, got a");
 }
 
 - (void) testToExistPass {
-  [[[SKObjectExpectation expectationInFile:"file11" line:22 failureReporter:reporter] withObject]
+  [[[OCDSObjectExpectation expectationInFile:"file11" line:22 failureReporter:reporter] withObject]
    (@"a") toExist];
-  SKHelperExpectNoReport();
+  OCDSHelperExpectNoReport();
 }
 
 - (void) testToExistFail {
-  [[[SKObjectExpectation expectationInFile:"file11" line:22 failureReporter:reporter] withObject]
+  [[[OCDSObjectExpectation expectationInFile:"file11" line:22 failureReporter:reporter] withObject]
    (nil) toExist];
-  SKHelperExpectReport(@"file11", 22, @"Want real object, got nil");
+  OCDSHelperExpectReport(@"file11", 22, @"Want real object, got nil");
 }
 
 - (void) testToBeNilPass {
-  [[[SKObjectExpectation expectationInFile:"file11" line:22 failureReporter:reporter] withObject]
+  [[[OCDSObjectExpectation expectationInFile:"file11" line:22 failureReporter:reporter] withObject]
    (nil) toBeNil];
-  SKHelperExpectNoReport();
+  OCDSHelperExpectNoReport();
 }
 
 - (void) testToBeNilFail {
-  [[[SKObjectExpectation expectationInFile:"file11" line:22 failureReporter:reporter] withObject]
+  [[[OCDSObjectExpectation expectationInFile:"file11" line:22 failureReporter:reporter] withObject]
    (@"a") toBeNil];
-  SKHelperExpectReport(@"file11", 22, @"Want nil, got a");
+  OCDSHelperExpectReport(@"file11", 22, @"Want nil, got a");
 }
 
 - (void) testToBeMemberOfClassPass {
-  [[[SKObjectExpectation expectationInFile:"file11" line:22 failureReporter:reporter] withObject]
+  [[[OCDSObjectExpectation expectationInFile:"file11" line:22 failureReporter:reporter] withObject]
    ([NSNull null]) toBeMemberOfClass: [NSNull self]];
-  SKHelperExpectNoReport();
+  OCDSHelperExpectNoReport();
 }
 
 - (void) testToBeMemberOfClassFail {
-  [[[SKObjectExpectation expectationInFile:"file12" line:23 failureReporter:reporter] withObject]
+  [[[OCDSObjectExpectation expectationInFile:"file12" line:23 failureReporter:reporter] withObject]
    ([NSNumber numberWithInt:2]) toBeMemberOfClass: [NSString self]];
-  SKHelperExpectReport(@"file12", 23, @"Want NSString, got __NSCFNumber");
+  OCDSHelperExpectReport(@"file12", 23, @"Want NSString, got __NSCFNumber");
 }
 
 - (void) testToBeMemberOfClassFailDueToSubclass {
-  [[[SKObjectExpectation expectationInFile:"file14" line:25 failureReporter:reporter] withObject]
+  [[[OCDSObjectExpectation expectationInFile:"file14" line:25 failureReporter:reporter] withObject]
    (@"hi") toBeMemberOfClass: [NSString self]];
-  SKHelperExpectReport(@"file14", 25, @"Want NSString, got __NSCFConstantString");
+  OCDSHelperExpectReport(@"file14", 25, @"Want NSString, got __NSCFConstantString");
 }
 
 - (void) testToBeKindOfClassPass {
-  [[[SKObjectExpectation expectationInFile:"file11" line:22 failureReporter:reporter] withObject]
+  [[[OCDSObjectExpectation expectationInFile:"file11" line:22 failureReporter:reporter] withObject]
    ([NSNull null]) toBeKindOfClass: [NSNull self]];
-  SKHelperExpectNoReport();
+  OCDSHelperExpectNoReport();
 }
 
 - (void) testToBeKindOfClassObviousSubclassPass {
-  [[[SKObjectExpectation expectationInFile:"file12" line:23 failureReporter:reporter] withObject]
+  [[[OCDSObjectExpectation expectationInFile:"file12" line:23 failureReporter:reporter] withObject]
    ([NSMutableString stringWithString:@"hello"]) toBeKindOfClass: [NSString self]];
-  SKHelperExpectNoReport();
+  OCDSHelperExpectNoReport();
 }
 
 - (void) testToBeKindOfClassLessObviousSubclassPass {
-  [[[SKObjectExpectation expectationInFile:"file11" line:22 failureReporter:reporter] withObject]
+  [[[OCDSObjectExpectation expectationInFile:"file11" line:22 failureReporter:reporter] withObject]
    (@"hi") toBeKindOfClass: [NSString self]];
-  SKHelperExpectNoReport();
+  OCDSHelperExpectNoReport();
 }
 
 - (void) testToBeKindOfClassFail {
-  [[[SKObjectExpectation expectationInFile:"file12" line:23 failureReporter:reporter] withObject]
+  [[[OCDSObjectExpectation expectationInFile:"file12" line:23 failureReporter:reporter] withObject]
    ([NSNumber numberWithInt:2]) toBeKindOfClass: [NSString self]];
-  SKHelperExpectReport(@"file12", 23, @"Want NSString, got __NSCFNumber");
+  OCDSHelperExpectReport(@"file12", 23, @"Want NSString, got __NSCFNumber");
 }
 
 - (void) testPendingWithoutString {
-  [[SKObjectExpectation expectationInFile:"file11" line:22 failureReporter:reporter] pending];
-  SKHelperExpectWarning(@"file11", 22, @"Pending");
+  [[OCDSObjectExpectation expectationInFile:"file11" line:22 failureReporter:reporter] pending];
+  OCDSHelperExpectWarning(@"file11", 22, @"Pending");
 }
 
 - (void) testPendingWithString {
-  [[SKObjectExpectation expectationInFile:"file12" line:23 failureReporter:reporter] pendingWithString](@"todo = test me");
-  SKHelperExpectWarning(@"file12", 23, @"Pending: todo = test me");
+  [[OCDSObjectExpectation expectationInFile:"file12" line:23 failureReporter:reporter] pendingWithString](@"todo = test me");
+  OCDSHelperExpectWarning(@"file12", 23, @"Pending: todo = test me");
 }
 
 @end

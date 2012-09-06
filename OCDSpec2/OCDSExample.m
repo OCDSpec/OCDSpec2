@@ -1,6 +1,6 @@
-#import "SKExample.h"
+#import "OCDSExample.h"
 
-@implementation SKExample
+@implementation OCDSExample
 
 - (void) dealloc {
   self.name = nil;

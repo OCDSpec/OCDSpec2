@@ -1,8 +1,8 @@
 #import <Foundation/Foundation.h>
 
-#import "SKFailureReporter.h"
+#import "OCDSFailureReporter.h"
 
-@interface SKFakeFailureReporter : NSObject <SKFailureReporter>
+@interface OCDSFakeFailureReporter : NSObject <OCDSFailureReporter>
 
 @property (assign) NSArray* failureReports;
 @property (assign) NSArray* warningReports;

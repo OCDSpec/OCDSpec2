@@ -7,45 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		942AAEFD15BBB3E60006C241 /* SKContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA015BB30D0003F22B6 /* SKContext.m */; };
-		942AAEFE15BBB3E90006C241 /* SKDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA215BB30D0003F22B6 /* SKDescription.m */; };
-		942AAEFF15BBB3EB0006C241 /* SKExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA415BB30D0003F22B6 /* SKExample.m */; };
-		942AAF0015BBB3EE0006C241 /* SKExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA615BB30D0003F22B6 /* SKExpectation.m */; };
-		942AAF0115BBB3F00006C241 /* SKObjectExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA815BB30D0003F22B6 /* SKObjectExpectation.m */; };
-		942AAF0215BBB3F30006C241 /* SKIntExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAAA15BB30D0003F22B6 /* SKIntExpectation.m */; };
-		942AAF0315BBB3F50006C241 /* SKFloatExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAAC15BB30D0003F22B6 /* SKFloatExpectation.m */; };
-		942AAF0415BBB3F80006C241 /* SKStringExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAAE15BB30D0003F22B6 /* SKStringExpectation.m */; };
+		942AAEFD15BBB3E60006C241 /* OCDSContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA015BB30D0003F22B6 /* OCDSContext.m */; };
+		942AAEFE15BBB3E90006C241 /* OCDSDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA215BB30D0003F22B6 /* OCDSDescription.m */; };
+		942AAEFF15BBB3EB0006C241 /* OCDSExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA415BB30D0003F22B6 /* OCDSExample.m */; };
+		942AAF0015BBB3EE0006C241 /* OCDSExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA615BB30D0003F22B6 /* OCDSExpectation.m */; };
+		942AAF0115BBB3F00006C241 /* OCDSObjectExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA815BB30D0003F22B6 /* OCDSObjectExpectation.m */; };
+		942AAF0215BBB3F30006C241 /* OCDSIntExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAAA15BB30D0003F22B6 /* OCDSIntExpectation.m */; };
+		942AAF0315BBB3F50006C241 /* OCDSFloatExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAAC15BB30D0003F22B6 /* OCDSFloatExpectation.m */; };
+		942AAF0415BBB3F80006C241 /* OCDSStringExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAAE15BB30D0003F22B6 /* OCDSStringExpectation.m */; };
 		944FBF4F15C168C100BF85FC /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A6BA7415BB3093003F22B6 /* SenTestingKit.framework */; };
 		944FBF5115C168C100BF85FC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 944FBF5015C168C100BF85FC /* Cocoa.framework */; };
 		944FBF5B15C168C100BF85FC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 944FBF5915C168C100BF85FC /* InfoPlist.strings */; };
 		944FBF5E15C168C100BF85FC /* OCDSpec2AcceptanceTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 944FBF5D15C168C100BF85FC /* OCDSpec2AcceptanceTest.m */; };
-		944FBF6C15C170C200BF85FC /* SKContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA015BB30D0003F22B6 /* SKContext.m */; };
-		944FBF6D15C170C200BF85FC /* SKDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA215BB30D0003F22B6 /* SKDescription.m */; };
-		944FBF6E15C170C200BF85FC /* SKExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA415BB30D0003F22B6 /* SKExample.m */; };
-		944FBF6F15C170C200BF85FC /* SKExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA615BB30D0003F22B6 /* SKExpectation.m */; };
-		944FBF7015C170C200BF85FC /* SKObjectExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA815BB30D0003F22B6 /* SKObjectExpectation.m */; };
-		944FBF7115C170C200BF85FC /* SKIntExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAAA15BB30D0003F22B6 /* SKIntExpectation.m */; };
-		944FBF7215C170C200BF85FC /* SKFloatExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAAC15BB30D0003F22B6 /* SKFloatExpectation.m */; };
-		944FBF7315C170C200BF85FC /* SKStringExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAAE15BB30D0003F22B6 /* SKStringExpectation.m */; };
-		944FBF7415C170C200BF85FC /* SKArrayExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 947F6BDC15BC358F00C7CF3B /* SKArrayExpectation.m */; };
+		944FBF6C15C170C200BF85FC /* OCDSContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA015BB30D0003F22B6 /* OCDSContext.m */; };
+		944FBF6D15C170C200BF85FC /* OCDSDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA215BB30D0003F22B6 /* OCDSDescription.m */; };
+		944FBF6E15C170C200BF85FC /* OCDSExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA415BB30D0003F22B6 /* OCDSExample.m */; };
+		944FBF6F15C170C200BF85FC /* OCDSExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA615BB30D0003F22B6 /* OCDSExpectation.m */; };
+		944FBF7015C170C200BF85FC /* OCDSObjectExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA815BB30D0003F22B6 /* OCDSObjectExpectation.m */; };
+		944FBF7115C170C200BF85FC /* OCDSIntExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAAA15BB30D0003F22B6 /* OCDSIntExpectation.m */; };
+		944FBF7215C170C200BF85FC /* OCDSFloatExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAAC15BB30D0003F22B6 /* OCDSFloatExpectation.m */; };
+		944FBF7315C170C200BF85FC /* OCDSStringExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAAE15BB30D0003F22B6 /* OCDSStringExpectation.m */; };
+		944FBF7415C170C200BF85FC /* OCDSArrayExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 947F6BDC15BC358F00C7CF3B /* OCDSArrayExpectation.m */; };
 		944FBF7615C171BE00BF85FC /* AcceptanceTestSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 944FBF7515C171BE00BF85FC /* AcceptanceTestSpec.m */; };
 		9454C3E015C87C4800417FA7 /* TestBlockExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9454C3DF15C87C4800417FA7 /* TestBlockExpectation.m */; };
-		9454C3E415C87C6500417FA7 /* SKBlockExpectation.h in Headers */ = {isa = PBXBuildFile; fileRef = 9454C3E215C87C6500417FA7 /* SKBlockExpectation.h */; };
-		9454C3E515C87C6500417FA7 /* SKBlockExpectation.h in Headers */ = {isa = PBXBuildFile; fileRef = 9454C3E215C87C6500417FA7 /* SKBlockExpectation.h */; };
-		9454C3E615C87C6500417FA7 /* SKBlockExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9454C3E315C87C6500417FA7 /* SKBlockExpectation.m */; };
-		9454C3E715C87C6500417FA7 /* SKBlockExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9454C3E315C87C6500417FA7 /* SKBlockExpectation.m */; };
-		9454C3E815C87C6500417FA7 /* SKBlockExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9454C3E315C87C6500417FA7 /* SKBlockExpectation.m */; };
-		9454C3E915C87C6500417FA7 /* SKBlockExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9454C3E315C87C6500417FA7 /* SKBlockExpectation.m */; };
-		947F6BDD15BC358F00C7CF3B /* SKArrayExpectation.h in Headers */ = {isa = PBXBuildFile; fileRef = 947F6BDB15BC358F00C7CF3B /* SKArrayExpectation.h */; };
-		947F6BDE15BC358F00C7CF3B /* SKArrayExpectation.h in Headers */ = {isa = PBXBuildFile; fileRef = 947F6BDB15BC358F00C7CF3B /* SKArrayExpectation.h */; };
-		947F6BDF15BC358F00C7CF3B /* SKArrayExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 947F6BDC15BC358F00C7CF3B /* SKArrayExpectation.m */; };
-		947F6BE115BC358F00C7CF3B /* SKArrayExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 947F6BDC15BC358F00C7CF3B /* SKArrayExpectation.m */; };
+		9454C3E415C87C6500417FA7 /* OCDSBlockExpectation.h in Headers */ = {isa = PBXBuildFile; fileRef = 9454C3E215C87C6500417FA7 /* OCDSBlockExpectation.h */; };
+		9454C3E515C87C6500417FA7 /* OCDSBlockExpectation.h in Headers */ = {isa = PBXBuildFile; fileRef = 9454C3E215C87C6500417FA7 /* OCDSBlockExpectation.h */; };
+		9454C3E615C87C6500417FA7 /* OCDSBlockExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9454C3E315C87C6500417FA7 /* OCDSBlockExpectation.m */; };
+		9454C3E715C87C6500417FA7 /* OCDSBlockExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9454C3E315C87C6500417FA7 /* OCDSBlockExpectation.m */; };
+		9454C3E815C87C6500417FA7 /* OCDSBlockExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9454C3E315C87C6500417FA7 /* OCDSBlockExpectation.m */; };
+		9454C3E915C87C6500417FA7 /* OCDSBlockExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9454C3E315C87C6500417FA7 /* OCDSBlockExpectation.m */; };
+		947F6BDD15BC358F00C7CF3B /* OCDSArrayExpectation.h in Headers */ = {isa = PBXBuildFile; fileRef = 947F6BDB15BC358F00C7CF3B /* OCDSArrayExpectation.h */; };
+		947F6BDE15BC358F00C7CF3B /* OCDSArrayExpectation.h in Headers */ = {isa = PBXBuildFile; fileRef = 947F6BDB15BC358F00C7CF3B /* OCDSArrayExpectation.h */; };
+		947F6BDF15BC358F00C7CF3B /* OCDSArrayExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 947F6BDC15BC358F00C7CF3B /* OCDSArrayExpectation.m */; };
+		947F6BE115BC358F00C7CF3B /* OCDSArrayExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 947F6BDC15BC358F00C7CF3B /* OCDSArrayExpectation.m */; };
 		947F6C2615BC39A200C7CF3B /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A6BA7415BB3093003F22B6 /* SenTestingKit.framework */; };
 		947F6C2D15BC39A200C7CF3B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 947F6C2B15BC39A200C7CF3B /* InfoPlist.strings */; };
 		947F6C3715BC39B800C7CF3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A6BA5D15BB2DE7003F22B6 /* Foundation.framework */; };
 		947F6C3815BC39D000C7CF3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A6BA5D15BB2DE7003F22B6 /* Foundation.framework */; };
 		947F6C4615BC3A2300C7CF3B /* SenTestCase+ReportingHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 947F6C3A15BC3A2300C7CF3B /* SenTestCase+ReportingHelper.m */; };
-		947F6C4715BC3A2300C7CF3B /* SKFakeFailureReporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 947F6C3C15BC3A2300C7CF3B /* SKFakeFailureReporter.m */; };
+		947F6C4715BC3A2300C7CF3B /* OCDSFakeFailureReporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 947F6C3C15BC3A2300C7CF3B /* OCDSFakeFailureReporter.m */; };
 		947F6C4815BC3A2300C7CF3B /* TestArrayExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 947F6C3D15BC3A2300C7CF3B /* TestArrayExpectation.m */; };
 		947F6C4915BC3A2300C7CF3B /* TestFloatExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 947F6C3E15BC3A2300C7CF3B /* TestFloatExpectation.m */; };
 		947F6C4A15BC3A2300C7CF3B /* TestGatheringExamples.m in Sources */ = {isa = PBXBuildFile; fileRef = 947F6C3F15BC3A2300C7CF3B /* TestGatheringExamples.m */; };
@@ -55,36 +55,36 @@
 		947F6C4E15BC3A2300C7CF3B /* TestRunningExamples.m in Sources */ = {isa = PBXBuildFile; fileRef = 947F6C4315BC3A2300C7CF3B /* TestRunningExamples.m */; };
 		947F6C4F15BC3A2300C7CF3B /* TestContextMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 947F6C4415BC3A2300C7CF3B /* TestContextMethods.m */; };
 		947F6C5015BC3A2300C7CF3B /* TestStringExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 947F6C4515BC3A2300C7CF3B /* TestStringExpectation.m */; };
-		947F6C5115BC3A3E00C7CF3B /* SKContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA015BB30D0003F22B6 /* SKContext.m */; };
-		947F6C5215BC3A4000C7CF3B /* SKDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA215BB30D0003F22B6 /* SKDescription.m */; };
-		947F6C5315BC3A4200C7CF3B /* SKExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA415BB30D0003F22B6 /* SKExample.m */; };
-		947F6C5415BC3A4500C7CF3B /* SKExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA615BB30D0003F22B6 /* SKExpectation.m */; };
-		947F6C5515BC3A4B00C7CF3B /* SKObjectExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA815BB30D0003F22B6 /* SKObjectExpectation.m */; };
-		947F6C5615BC3A4E00C7CF3B /* SKIntExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAAA15BB30D0003F22B6 /* SKIntExpectation.m */; };
-		947F6C5715BC3A5000C7CF3B /* SKFloatExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAAC15BB30D0003F22B6 /* SKFloatExpectation.m */; };
-		947F6C5815BC3A5200C7CF3B /* SKStringExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAAE15BB30D0003F22B6 /* SKStringExpectation.m */; };
-		947F6C5915BC3A5500C7CF3B /* SKArrayExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 947F6BDC15BC358F00C7CF3B /* SKArrayExpectation.m */; };
-		947F6C5C15BC3D4600C7CF3B /* SKFakeFailure.m in Sources */ = {isa = PBXBuildFile; fileRef = 947F6C5B15BC3D4600C7CF3B /* SKFakeFailure.m */; };
+		947F6C5115BC3A3E00C7CF3B /* OCDSContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA015BB30D0003F22B6 /* OCDSContext.m */; };
+		947F6C5215BC3A4000C7CF3B /* OCDSDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA215BB30D0003F22B6 /* OCDSDescription.m */; };
+		947F6C5315BC3A4200C7CF3B /* OCDSExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA415BB30D0003F22B6 /* OCDSExample.m */; };
+		947F6C5415BC3A4500C7CF3B /* OCDSExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA615BB30D0003F22B6 /* OCDSExpectation.m */; };
+		947F6C5515BC3A4B00C7CF3B /* OCDSObjectExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA815BB30D0003F22B6 /* OCDSObjectExpectation.m */; };
+		947F6C5615BC3A4E00C7CF3B /* OCDSIntExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAAA15BB30D0003F22B6 /* OCDSIntExpectation.m */; };
+		947F6C5715BC3A5000C7CF3B /* OCDSFloatExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAAC15BB30D0003F22B6 /* OCDSFloatExpectation.m */; };
+		947F6C5815BC3A5200C7CF3B /* OCDSStringExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAAE15BB30D0003F22B6 /* OCDSStringExpectation.m */; };
+		947F6C5915BC3A5500C7CF3B /* OCDSArrayExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 947F6BDC15BC358F00C7CF3B /* OCDSArrayExpectation.m */; };
+		947F6C5C15BC3D4600C7CF3B /* OCDSFakeFailure.m in Sources */ = {isa = PBXBuildFile; fileRef = 947F6C5B15BC3D4600C7CF3B /* OCDSFakeFailure.m */; };
 		94A6BA5E15BB2DE7003F22B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A6BA5D15BB2DE7003F22B6 /* Foundation.framework */; };
 		94A6BAB015BB30D0003F22B6 /* OCDSpec2.h in Headers */ = {isa = PBXBuildFile; fileRef = 94A6BA9C15BB30D0003F22B6 /* OCDSpec2.h */; };
-		94A6BAB115BB30D0003F22B6 /* SKPrelude.h in Headers */ = {isa = PBXBuildFile; fileRef = 94A6BA9D15BB30D0003F22B6 /* SKPrelude.h */; };
-		94A6BAB215BB30D0003F22B6 /* SKFailureReporter.h in Headers */ = {isa = PBXBuildFile; fileRef = 94A6BA9E15BB30D0003F22B6 /* SKFailureReporter.h */; };
-		94A6BAB315BB30D0003F22B6 /* SKContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 94A6BA9F15BB30D0003F22B6 /* SKContext.h */; };
-		94A6BAB415BB30D0003F22B6 /* SKContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA015BB30D0003F22B6 /* SKContext.m */; };
-		94A6BAB615BB30D0003F22B6 /* SKDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = 94A6BAA115BB30D0003F22B6 /* SKDescription.h */; };
-		94A6BAB715BB30D0003F22B6 /* SKDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA215BB30D0003F22B6 /* SKDescription.m */; };
-		94A6BAB915BB30D0003F22B6 /* SKExample.h in Headers */ = {isa = PBXBuildFile; fileRef = 94A6BAA315BB30D0003F22B6 /* SKExample.h */; };
-		94A6BABA15BB30D0003F22B6 /* SKExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA415BB30D0003F22B6 /* SKExample.m */; };
-		94A6BABC15BB30D0003F22B6 /* SKExpectation.h in Headers */ = {isa = PBXBuildFile; fileRef = 94A6BAA515BB30D0003F22B6 /* SKExpectation.h */; };
-		94A6BABD15BB30D0003F22B6 /* SKExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA615BB30D0003F22B6 /* SKExpectation.m */; };
-		94A6BABF15BB30D0003F22B6 /* SKObjectExpectation.h in Headers */ = {isa = PBXBuildFile; fileRef = 94A6BAA715BB30D0003F22B6 /* SKObjectExpectation.h */; };
-		94A6BAC015BB30D0003F22B6 /* SKObjectExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA815BB30D0003F22B6 /* SKObjectExpectation.m */; };
-		94A6BAC215BB30D0003F22B6 /* SKIntExpectation.h in Headers */ = {isa = PBXBuildFile; fileRef = 94A6BAA915BB30D0003F22B6 /* SKIntExpectation.h */; };
-		94A6BAC315BB30D0003F22B6 /* SKIntExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAAA15BB30D0003F22B6 /* SKIntExpectation.m */; };
-		94A6BAC515BB30D0003F22B6 /* SKFloatExpectation.h in Headers */ = {isa = PBXBuildFile; fileRef = 94A6BAAB15BB30D0003F22B6 /* SKFloatExpectation.h */; };
-		94A6BAC615BB30D0003F22B6 /* SKFloatExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAAC15BB30D0003F22B6 /* SKFloatExpectation.m */; };
-		94A6BAC815BB30D0003F22B6 /* SKStringExpectation.h in Headers */ = {isa = PBXBuildFile; fileRef = 94A6BAAD15BB30D0003F22B6 /* SKStringExpectation.h */; };
-		94A6BAC915BB30D0003F22B6 /* SKStringExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAAE15BB30D0003F22B6 /* SKStringExpectation.m */; };
+		94A6BAB115BB30D0003F22B6 /* OCDSPrelude.h in Headers */ = {isa = PBXBuildFile; fileRef = 94A6BA9D15BB30D0003F22B6 /* OCDSPrelude.h */; };
+		94A6BAB215BB30D0003F22B6 /* OCDSFailureReporter.h in Headers */ = {isa = PBXBuildFile; fileRef = 94A6BA9E15BB30D0003F22B6 /* OCDSFailureReporter.h */; };
+		94A6BAB315BB30D0003F22B6 /* OCDSContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 94A6BA9F15BB30D0003F22B6 /* OCDSContext.h */; };
+		94A6BAB415BB30D0003F22B6 /* OCDSContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA015BB30D0003F22B6 /* OCDSContext.m */; };
+		94A6BAB615BB30D0003F22B6 /* OCDSDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = 94A6BAA115BB30D0003F22B6 /* OCDSDescription.h */; };
+		94A6BAB715BB30D0003F22B6 /* OCDSDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA215BB30D0003F22B6 /* OCDSDescription.m */; };
+		94A6BAB915BB30D0003F22B6 /* OCDSExample.h in Headers */ = {isa = PBXBuildFile; fileRef = 94A6BAA315BB30D0003F22B6 /* OCDSExample.h */; };
+		94A6BABA15BB30D0003F22B6 /* OCDSExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA415BB30D0003F22B6 /* OCDSExample.m */; };
+		94A6BABC15BB30D0003F22B6 /* OCDSExpectation.h in Headers */ = {isa = PBXBuildFile; fileRef = 94A6BAA515BB30D0003F22B6 /* OCDSExpectation.h */; };
+		94A6BABD15BB30D0003F22B6 /* OCDSExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA615BB30D0003F22B6 /* OCDSExpectation.m */; };
+		94A6BABF15BB30D0003F22B6 /* OCDSObjectExpectation.h in Headers */ = {isa = PBXBuildFile; fileRef = 94A6BAA715BB30D0003F22B6 /* OCDSObjectExpectation.h */; };
+		94A6BAC015BB30D0003F22B6 /* OCDSObjectExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA815BB30D0003F22B6 /* OCDSObjectExpectation.m */; };
+		94A6BAC215BB30D0003F22B6 /* OCDSIntExpectation.h in Headers */ = {isa = PBXBuildFile; fileRef = 94A6BAA915BB30D0003F22B6 /* OCDSIntExpectation.h */; };
+		94A6BAC315BB30D0003F22B6 /* OCDSIntExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAAA15BB30D0003F22B6 /* OCDSIntExpectation.m */; };
+		94A6BAC515BB30D0003F22B6 /* OCDSFloatExpectation.h in Headers */ = {isa = PBXBuildFile; fileRef = 94A6BAAB15BB30D0003F22B6 /* OCDSFloatExpectation.h */; };
+		94A6BAC615BB30D0003F22B6 /* OCDSFloatExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAAC15BB30D0003F22B6 /* OCDSFloatExpectation.m */; };
+		94A6BAC815BB30D0003F22B6 /* OCDSStringExpectation.h in Headers */ = {isa = PBXBuildFile; fileRef = 94A6BAAD15BB30D0003F22B6 /* OCDSStringExpectation.h */; };
+		94A6BAC915BB30D0003F22B6 /* OCDSStringExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAAE15BB30D0003F22B6 /* OCDSStringExpectation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -101,18 +101,18 @@
 		944FBF5F15C168C100BF85FC /* OCDSpec2AcceptanceTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OCDSpec2AcceptanceTest-Prefix.pch"; sourceTree = "<group>"; };
 		944FBF7515C171BE00BF85FC /* AcceptanceTestSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AcceptanceTestSpec.m; sourceTree = "<group>"; };
 		9454C3DF15C87C4800417FA7 /* TestBlockExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestBlockExpectation.m; sourceTree = "<group>"; };
-		9454C3E215C87C6500417FA7 /* SKBlockExpectation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKBlockExpectation.h; sourceTree = "<group>"; };
-		9454C3E315C87C6500417FA7 /* SKBlockExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKBlockExpectation.m; sourceTree = "<group>"; };
-		947F6BDB15BC358F00C7CF3B /* SKArrayExpectation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKArrayExpectation.h; sourceTree = "<group>"; };
-		947F6BDC15BC358F00C7CF3B /* SKArrayExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKArrayExpectation.m; sourceTree = "<group>"; };
+		9454C3E215C87C6500417FA7 /* OCDSBlockExpectation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCDSBlockExpectation.h; sourceTree = "<group>"; };
+		9454C3E315C87C6500417FA7 /* OCDSBlockExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCDSBlockExpectation.m; sourceTree = "<group>"; };
+		947F6BDB15BC358F00C7CF3B /* OCDSArrayExpectation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCDSArrayExpectation.h; sourceTree = "<group>"; };
+		947F6BDC15BC358F00C7CF3B /* OCDSArrayExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCDSArrayExpectation.m; sourceTree = "<group>"; };
 		947F6C2515BC39A200C7CF3B /* OCDSpec2Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OCDSpec2Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		947F6C2A15BC39A200C7CF3B /* OCDSpec2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OCDSpec2Tests-Info.plist"; sourceTree = "<group>"; };
 		947F6C2C15BC39A200C7CF3B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		947F6C3115BC39A200C7CF3B /* OCDSpec2Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OCDSpec2Tests-Prefix.pch"; sourceTree = "<group>"; };
 		947F6C3915BC3A2300C7CF3B /* SenTestCase+ReportingHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SenTestCase+ReportingHelper.h"; sourceTree = "<group>"; };
 		947F6C3A15BC3A2300C7CF3B /* SenTestCase+ReportingHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SenTestCase+ReportingHelper.m"; sourceTree = "<group>"; };
-		947F6C3B15BC3A2300C7CF3B /* SKFakeFailureReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKFakeFailureReporter.h; sourceTree = "<group>"; };
-		947F6C3C15BC3A2300C7CF3B /* SKFakeFailureReporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKFakeFailureReporter.m; sourceTree = "<group>"; };
+		947F6C3B15BC3A2300C7CF3B /* OCDSFakeFailureReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCDSFakeFailureReporter.h; sourceTree = "<group>"; };
+		947F6C3C15BC3A2300C7CF3B /* OCDSFakeFailureReporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCDSFakeFailureReporter.m; sourceTree = "<group>"; };
 		947F6C3D15BC3A2300C7CF3B /* TestArrayExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestArrayExpectation.m; sourceTree = "<group>"; };
 		947F6C3E15BC3A2300C7CF3B /* TestFloatExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestFloatExpectation.m; sourceTree = "<group>"; };
 		947F6C3F15BC3A2300C7CF3B /* TestGatheringExamples.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestGatheringExamples.m; sourceTree = "<group>"; };
@@ -122,31 +122,31 @@
 		947F6C4315BC3A2300C7CF3B /* TestRunningExamples.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestRunningExamples.m; sourceTree = "<group>"; };
 		947F6C4415BC3A2300C7CF3B /* TestContextMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestContextMethods.m; sourceTree = "<group>"; };
 		947F6C4515BC3A2300C7CF3B /* TestStringExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestStringExpectation.m; sourceTree = "<group>"; };
-		947F6C5A15BC3D4600C7CF3B /* SKFakeFailure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKFakeFailure.h; sourceTree = "<group>"; };
-		947F6C5B15BC3D4600C7CF3B /* SKFakeFailure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKFakeFailure.m; sourceTree = "<group>"; };
+		947F6C5A15BC3D4600C7CF3B /* OCDSFakeFailure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCDSFakeFailure.h; sourceTree = "<group>"; };
+		947F6C5B15BC3D4600C7CF3B /* OCDSFakeFailure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCDSFakeFailure.m; sourceTree = "<group>"; };
 		94A6BA5A15BB2DE7003F22B6 /* libOCDSpec2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOCDSpec2.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		94A6BA5D15BB2DE7003F22B6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		94A6BA6115BB2DE7003F22B6 /* OCDSpec2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OCDSpec2-Prefix.pch"; sourceTree = "<group>"; };
 		94A6BA7415BB3093003F22B6 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		94A6BA9C15BB30D0003F22B6 /* OCDSpec2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCDSpec2.h; sourceTree = "<group>"; };
-		94A6BA9D15BB30D0003F22B6 /* SKPrelude.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKPrelude.h; sourceTree = "<group>"; };
-		94A6BA9E15BB30D0003F22B6 /* SKFailureReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKFailureReporter.h; sourceTree = "<group>"; };
-		94A6BA9F15BB30D0003F22B6 /* SKContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKContext.h; sourceTree = "<group>"; };
-		94A6BAA015BB30D0003F22B6 /* SKContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKContext.m; sourceTree = "<group>"; };
-		94A6BAA115BB30D0003F22B6 /* SKDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKDescription.h; sourceTree = "<group>"; };
-		94A6BAA215BB30D0003F22B6 /* SKDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKDescription.m; sourceTree = "<group>"; };
-		94A6BAA315BB30D0003F22B6 /* SKExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKExample.h; sourceTree = "<group>"; };
-		94A6BAA415BB30D0003F22B6 /* SKExample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKExample.m; sourceTree = "<group>"; };
-		94A6BAA515BB30D0003F22B6 /* SKExpectation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKExpectation.h; sourceTree = "<group>"; };
-		94A6BAA615BB30D0003F22B6 /* SKExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKExpectation.m; sourceTree = "<group>"; };
-		94A6BAA715BB30D0003F22B6 /* SKObjectExpectation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKObjectExpectation.h; sourceTree = "<group>"; };
-		94A6BAA815BB30D0003F22B6 /* SKObjectExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKObjectExpectation.m; sourceTree = "<group>"; };
-		94A6BAA915BB30D0003F22B6 /* SKIntExpectation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKIntExpectation.h; sourceTree = "<group>"; };
-		94A6BAAA15BB30D0003F22B6 /* SKIntExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKIntExpectation.m; sourceTree = "<group>"; };
-		94A6BAAB15BB30D0003F22B6 /* SKFloatExpectation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKFloatExpectation.h; sourceTree = "<group>"; };
-		94A6BAAC15BB30D0003F22B6 /* SKFloatExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKFloatExpectation.m; sourceTree = "<group>"; };
-		94A6BAAD15BB30D0003F22B6 /* SKStringExpectation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKStringExpectation.h; sourceTree = "<group>"; };
-		94A6BAAE15BB30D0003F22B6 /* SKStringExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKStringExpectation.m; sourceTree = "<group>"; };
+		94A6BA9D15BB30D0003F22B6 /* OCDSPrelude.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCDSPrelude.h; sourceTree = "<group>"; };
+		94A6BA9E15BB30D0003F22B6 /* OCDSFailureReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCDSFailureReporter.h; sourceTree = "<group>"; };
+		94A6BA9F15BB30D0003F22B6 /* OCDSContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCDSContext.h; sourceTree = "<group>"; };
+		94A6BAA015BB30D0003F22B6 /* OCDSContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCDSContext.m; sourceTree = "<group>"; };
+		94A6BAA115BB30D0003F22B6 /* OCDSDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCDSDescription.h; sourceTree = "<group>"; };
+		94A6BAA215BB30D0003F22B6 /* OCDSDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCDSDescription.m; sourceTree = "<group>"; };
+		94A6BAA315BB30D0003F22B6 /* OCDSExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCDSExample.h; sourceTree = "<group>"; };
+		94A6BAA415BB30D0003F22B6 /* OCDSExample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCDSExample.m; sourceTree = "<group>"; };
+		94A6BAA515BB30D0003F22B6 /* OCDSExpectation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCDSExpectation.h; sourceTree = "<group>"; };
+		94A6BAA615BB30D0003F22B6 /* OCDSExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCDSExpectation.m; sourceTree = "<group>"; };
+		94A6BAA715BB30D0003F22B6 /* OCDSObjectExpectation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCDSObjectExpectation.h; sourceTree = "<group>"; };
+		94A6BAA815BB30D0003F22B6 /* OCDSObjectExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCDSObjectExpectation.m; sourceTree = "<group>"; };
+		94A6BAA915BB30D0003F22B6 /* OCDSIntExpectation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCDSIntExpectation.h; sourceTree = "<group>"; };
+		94A6BAAA15BB30D0003F22B6 /* OCDSIntExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCDSIntExpectation.m; sourceTree = "<group>"; };
+		94A6BAAB15BB30D0003F22B6 /* OCDSFloatExpectation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCDSFloatExpectation.h; sourceTree = "<group>"; };
+		94A6BAAC15BB30D0003F22B6 /* OCDSFloatExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCDSFloatExpectation.m; sourceTree = "<group>"; };
+		94A6BAAD15BB30D0003F22B6 /* OCDSStringExpectation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCDSStringExpectation.h; sourceTree = "<group>"; };
+		94A6BAAE15BB30D0003F22B6 /* OCDSStringExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCDSStringExpectation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,10 +222,10 @@
 			children = (
 				947F6C3915BC3A2300C7CF3B /* SenTestCase+ReportingHelper.h */,
 				947F6C3A15BC3A2300C7CF3B /* SenTestCase+ReportingHelper.m */,
-				947F6C3B15BC3A2300C7CF3B /* SKFakeFailureReporter.h */,
-				947F6C3C15BC3A2300C7CF3B /* SKFakeFailureReporter.m */,
-				947F6C5A15BC3D4600C7CF3B /* SKFakeFailure.h */,
-				947F6C5B15BC3D4600C7CF3B /* SKFakeFailure.m */,
+				947F6C3B15BC3A2300C7CF3B /* OCDSFakeFailureReporter.h */,
+				947F6C3C15BC3A2300C7CF3B /* OCDSFakeFailureReporter.m */,
+				947F6C5A15BC3D4600C7CF3B /* OCDSFakeFailure.h */,
+				947F6C5B15BC3D4600C7CF3B /* OCDSFakeFailure.m */,
 				947F6C3D15BC3A2300C7CF3B /* TestArrayExpectation.m */,
 				947F6C3E15BC3A2300C7CF3B /* TestFloatExpectation.m */,
 				947F6C3F15BC3A2300C7CF3B /* TestGatheringExamples.m */,
@@ -290,28 +290,28 @@
 			isa = PBXGroup;
 			children = (
 				94A6BA9C15BB30D0003F22B6 /* OCDSpec2.h */,
-				94A6BA9D15BB30D0003F22B6 /* SKPrelude.h */,
-				94A6BA9E15BB30D0003F22B6 /* SKFailureReporter.h */,
-				94A6BA9F15BB30D0003F22B6 /* SKContext.h */,
-				94A6BAA015BB30D0003F22B6 /* SKContext.m */,
-				94A6BAA115BB30D0003F22B6 /* SKDescription.h */,
-				94A6BAA215BB30D0003F22B6 /* SKDescription.m */,
-				94A6BAA315BB30D0003F22B6 /* SKExample.h */,
-				94A6BAA415BB30D0003F22B6 /* SKExample.m */,
-				94A6BAA515BB30D0003F22B6 /* SKExpectation.h */,
-				94A6BAA615BB30D0003F22B6 /* SKExpectation.m */,
-				94A6BAA715BB30D0003F22B6 /* SKObjectExpectation.h */,
-				94A6BAA815BB30D0003F22B6 /* SKObjectExpectation.m */,
-				94A6BAA915BB30D0003F22B6 /* SKIntExpectation.h */,
-				94A6BAAA15BB30D0003F22B6 /* SKIntExpectation.m */,
-				94A6BAAB15BB30D0003F22B6 /* SKFloatExpectation.h */,
-				94A6BAAC15BB30D0003F22B6 /* SKFloatExpectation.m */,
-				94A6BAAD15BB30D0003F22B6 /* SKStringExpectation.h */,
-				94A6BAAE15BB30D0003F22B6 /* SKStringExpectation.m */,
-				947F6BDB15BC358F00C7CF3B /* SKArrayExpectation.h */,
-				947F6BDC15BC358F00C7CF3B /* SKArrayExpectation.m */,
-				9454C3E215C87C6500417FA7 /* SKBlockExpectation.h */,
-				9454C3E315C87C6500417FA7 /* SKBlockExpectation.m */,
+				94A6BA9D15BB30D0003F22B6 /* OCDSPrelude.h */,
+				94A6BA9E15BB30D0003F22B6 /* OCDSFailureReporter.h */,
+				94A6BA9F15BB30D0003F22B6 /* OCDSContext.h */,
+				94A6BAA015BB30D0003F22B6 /* OCDSContext.m */,
+				94A6BAA115BB30D0003F22B6 /* OCDSDescription.h */,
+				94A6BAA215BB30D0003F22B6 /* OCDSDescription.m */,
+				94A6BAA315BB30D0003F22B6 /* OCDSExample.h */,
+				94A6BAA415BB30D0003F22B6 /* OCDSExample.m */,
+				94A6BAA515BB30D0003F22B6 /* OCDSExpectation.h */,
+				94A6BAA615BB30D0003F22B6 /* OCDSExpectation.m */,
+				94A6BAA715BB30D0003F22B6 /* OCDSObjectExpectation.h */,
+				94A6BAA815BB30D0003F22B6 /* OCDSObjectExpectation.m */,
+				94A6BAA915BB30D0003F22B6 /* OCDSIntExpectation.h */,
+				94A6BAAA15BB30D0003F22B6 /* OCDSIntExpectation.m */,
+				94A6BAAB15BB30D0003F22B6 /* OCDSFloatExpectation.h */,
+				94A6BAAC15BB30D0003F22B6 /* OCDSFloatExpectation.m */,
+				94A6BAAD15BB30D0003F22B6 /* OCDSStringExpectation.h */,
+				94A6BAAE15BB30D0003F22B6 /* OCDSStringExpectation.m */,
+				947F6BDB15BC358F00C7CF3B /* OCDSArrayExpectation.h */,
+				947F6BDC15BC358F00C7CF3B /* OCDSArrayExpectation.m */,
+				9454C3E215C87C6500417FA7 /* OCDSBlockExpectation.h */,
+				9454C3E315C87C6500417FA7 /* OCDSBlockExpectation.m */,
 				94A6BA6015BB2DE7003F22B6 /* Supporting Files */,
 			);
 			path = OCDSpec2;
@@ -333,8 +333,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				947F6BDE15BC358F00C7CF3B /* SKArrayExpectation.h in Headers */,
-				9454C3E515C87C6500417FA7 /* SKBlockExpectation.h in Headers */,
+				947F6BDE15BC358F00C7CF3B /* OCDSArrayExpectation.h in Headers */,
+				9454C3E515C87C6500417FA7 /* OCDSBlockExpectation.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,18 +343,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				94A6BAB015BB30D0003F22B6 /* OCDSpec2.h in Headers */,
-				94A6BAB115BB30D0003F22B6 /* SKPrelude.h in Headers */,
-				94A6BAB215BB30D0003F22B6 /* SKFailureReporter.h in Headers */,
-				94A6BAB315BB30D0003F22B6 /* SKContext.h in Headers */,
-				94A6BAB615BB30D0003F22B6 /* SKDescription.h in Headers */,
-				94A6BAB915BB30D0003F22B6 /* SKExample.h in Headers */,
-				94A6BABC15BB30D0003F22B6 /* SKExpectation.h in Headers */,
-				94A6BABF15BB30D0003F22B6 /* SKObjectExpectation.h in Headers */,
-				94A6BAC215BB30D0003F22B6 /* SKIntExpectation.h in Headers */,
-				94A6BAC515BB30D0003F22B6 /* SKFloatExpectation.h in Headers */,
-				94A6BAC815BB30D0003F22B6 /* SKStringExpectation.h in Headers */,
-				947F6BDD15BC358F00C7CF3B /* SKArrayExpectation.h in Headers */,
-				9454C3E415C87C6500417FA7 /* SKBlockExpectation.h in Headers */,
+				94A6BAB115BB30D0003F22B6 /* OCDSPrelude.h in Headers */,
+				94A6BAB215BB30D0003F22B6 /* OCDSFailureReporter.h in Headers */,
+				94A6BAB315BB30D0003F22B6 /* OCDSContext.h in Headers */,
+				94A6BAB615BB30D0003F22B6 /* OCDSDescription.h in Headers */,
+				94A6BAB915BB30D0003F22B6 /* OCDSExample.h in Headers */,
+				94A6BABC15BB30D0003F22B6 /* OCDSExpectation.h in Headers */,
+				94A6BABF15BB30D0003F22B6 /* OCDSObjectExpectation.h in Headers */,
+				94A6BAC215BB30D0003F22B6 /* OCDSIntExpectation.h in Headers */,
+				94A6BAC515BB30D0003F22B6 /* OCDSFloatExpectation.h in Headers */,
+				94A6BAC815BB30D0003F22B6 /* OCDSStringExpectation.h in Headers */,
+				947F6BDD15BC358F00C7CF3B /* OCDSArrayExpectation.h in Headers */,
+				9454C3E415C87C6500417FA7 /* OCDSBlockExpectation.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,16 +513,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				942AAEFD15BBB3E60006C241 /* SKContext.m in Sources */,
-				942AAEFE15BBB3E90006C241 /* SKDescription.m in Sources */,
-				942AAEFF15BBB3EB0006C241 /* SKExample.m in Sources */,
-				942AAF0015BBB3EE0006C241 /* SKExpectation.m in Sources */,
-				942AAF0115BBB3F00006C241 /* SKObjectExpectation.m in Sources */,
-				942AAF0215BBB3F30006C241 /* SKIntExpectation.m in Sources */,
-				942AAF0315BBB3F50006C241 /* SKFloatExpectation.m in Sources */,
-				942AAF0415BBB3F80006C241 /* SKStringExpectation.m in Sources */,
-				947F6BE115BC358F00C7CF3B /* SKArrayExpectation.m in Sources */,
-				9454C3E715C87C6500417FA7 /* SKBlockExpectation.m in Sources */,
+				942AAEFD15BBB3E60006C241 /* OCDSContext.m in Sources */,
+				942AAEFE15BBB3E90006C241 /* OCDSDescription.m in Sources */,
+				942AAEFF15BBB3EB0006C241 /* OCDSExample.m in Sources */,
+				942AAF0015BBB3EE0006C241 /* OCDSExpectation.m in Sources */,
+				942AAF0115BBB3F00006C241 /* OCDSObjectExpectation.m in Sources */,
+				942AAF0215BBB3F30006C241 /* OCDSIntExpectation.m in Sources */,
+				942AAF0315BBB3F50006C241 /* OCDSFloatExpectation.m in Sources */,
+				942AAF0415BBB3F80006C241 /* OCDSStringExpectation.m in Sources */,
+				947F6BE115BC358F00C7CF3B /* OCDSArrayExpectation.m in Sources */,
+				9454C3E715C87C6500417FA7 /* OCDSBlockExpectation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -531,17 +531,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				944FBF5E15C168C100BF85FC /* OCDSpec2AcceptanceTest.m in Sources */,
-				944FBF6C15C170C200BF85FC /* SKContext.m in Sources */,
-				944FBF6D15C170C200BF85FC /* SKDescription.m in Sources */,
-				944FBF6E15C170C200BF85FC /* SKExample.m in Sources */,
-				944FBF6F15C170C200BF85FC /* SKExpectation.m in Sources */,
-				944FBF7015C170C200BF85FC /* SKObjectExpectation.m in Sources */,
-				944FBF7115C170C200BF85FC /* SKIntExpectation.m in Sources */,
-				944FBF7215C170C200BF85FC /* SKFloatExpectation.m in Sources */,
-				944FBF7315C170C200BF85FC /* SKStringExpectation.m in Sources */,
-				944FBF7415C170C200BF85FC /* SKArrayExpectation.m in Sources */,
+				944FBF6C15C170C200BF85FC /* OCDSContext.m in Sources */,
+				944FBF6D15C170C200BF85FC /* OCDSDescription.m in Sources */,
+				944FBF6E15C170C200BF85FC /* OCDSExample.m in Sources */,
+				944FBF6F15C170C200BF85FC /* OCDSExpectation.m in Sources */,
+				944FBF7015C170C200BF85FC /* OCDSObjectExpectation.m in Sources */,
+				944FBF7115C170C200BF85FC /* OCDSIntExpectation.m in Sources */,
+				944FBF7215C170C200BF85FC /* OCDSFloatExpectation.m in Sources */,
+				944FBF7315C170C200BF85FC /* OCDSStringExpectation.m in Sources */,
+				944FBF7415C170C200BF85FC /* OCDSArrayExpectation.m in Sources */,
 				944FBF7615C171BE00BF85FC /* AcceptanceTestSpec.m in Sources */,
-				9454C3E915C87C6500417FA7 /* SKBlockExpectation.m in Sources */,
+				9454C3E915C87C6500417FA7 /* OCDSBlockExpectation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -550,7 +550,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				947F6C4615BC3A2300C7CF3B /* SenTestCase+ReportingHelper.m in Sources */,
-				947F6C4715BC3A2300C7CF3B /* SKFakeFailureReporter.m in Sources */,
+				947F6C4715BC3A2300C7CF3B /* OCDSFakeFailureReporter.m in Sources */,
 				947F6C4815BC3A2300C7CF3B /* TestArrayExpectation.m in Sources */,
 				947F6C4915BC3A2300C7CF3B /* TestFloatExpectation.m in Sources */,
 				947F6C4A15BC3A2300C7CF3B /* TestGatheringExamples.m in Sources */,
@@ -560,18 +560,18 @@
 				947F6C4E15BC3A2300C7CF3B /* TestRunningExamples.m in Sources */,
 				947F6C4F15BC3A2300C7CF3B /* TestContextMethods.m in Sources */,
 				947F6C5015BC3A2300C7CF3B /* TestStringExpectation.m in Sources */,
-				947F6C5115BC3A3E00C7CF3B /* SKContext.m in Sources */,
-				947F6C5215BC3A4000C7CF3B /* SKDescription.m in Sources */,
-				947F6C5315BC3A4200C7CF3B /* SKExample.m in Sources */,
-				947F6C5415BC3A4500C7CF3B /* SKExpectation.m in Sources */,
-				947F6C5515BC3A4B00C7CF3B /* SKObjectExpectation.m in Sources */,
-				947F6C5615BC3A4E00C7CF3B /* SKIntExpectation.m in Sources */,
-				947F6C5715BC3A5000C7CF3B /* SKFloatExpectation.m in Sources */,
-				947F6C5815BC3A5200C7CF3B /* SKStringExpectation.m in Sources */,
-				947F6C5915BC3A5500C7CF3B /* SKArrayExpectation.m in Sources */,
-				947F6C5C15BC3D4600C7CF3B /* SKFakeFailure.m in Sources */,
+				947F6C5115BC3A3E00C7CF3B /* OCDSContext.m in Sources */,
+				947F6C5215BC3A4000C7CF3B /* OCDSDescription.m in Sources */,
+				947F6C5315BC3A4200C7CF3B /* OCDSExample.m in Sources */,
+				947F6C5415BC3A4500C7CF3B /* OCDSExpectation.m in Sources */,
+				947F6C5515BC3A4B00C7CF3B /* OCDSObjectExpectation.m in Sources */,
+				947F6C5615BC3A4E00C7CF3B /* OCDSIntExpectation.m in Sources */,
+				947F6C5715BC3A5000C7CF3B /* OCDSFloatExpectation.m in Sources */,
+				947F6C5815BC3A5200C7CF3B /* OCDSStringExpectation.m in Sources */,
+				947F6C5915BC3A5500C7CF3B /* OCDSArrayExpectation.m in Sources */,
+				947F6C5C15BC3D4600C7CF3B /* OCDSFakeFailure.m in Sources */,
 				9454C3E015C87C4800417FA7 /* TestBlockExpectation.m in Sources */,
-				9454C3E815C87C6500417FA7 /* SKBlockExpectation.m in Sources */,
+				9454C3E815C87C6500417FA7 /* OCDSBlockExpectation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -579,16 +579,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94A6BAB415BB30D0003F22B6 /* SKContext.m in Sources */,
-				94A6BAB715BB30D0003F22B6 /* SKDescription.m in Sources */,
-				94A6BABA15BB30D0003F22B6 /* SKExample.m in Sources */,
-				94A6BABD15BB30D0003F22B6 /* SKExpectation.m in Sources */,
-				94A6BAC015BB30D0003F22B6 /* SKObjectExpectation.m in Sources */,
-				94A6BAC315BB30D0003F22B6 /* SKIntExpectation.m in Sources */,
-				94A6BAC615BB30D0003F22B6 /* SKFloatExpectation.m in Sources */,
-				94A6BAC915BB30D0003F22B6 /* SKStringExpectation.m in Sources */,
-				947F6BDF15BC358F00C7CF3B /* SKArrayExpectation.m in Sources */,
-				9454C3E615C87C6500417FA7 /* SKBlockExpectation.m in Sources */,
+				94A6BAB415BB30D0003F22B6 /* OCDSContext.m in Sources */,
+				94A6BAB715BB30D0003F22B6 /* OCDSDescription.m in Sources */,
+				94A6BABA15BB30D0003F22B6 /* OCDSExample.m in Sources */,
+				94A6BABD15BB30D0003F22B6 /* OCDSExpectation.m in Sources */,
+				94A6BAC015BB30D0003F22B6 /* OCDSObjectExpectation.m in Sources */,
+				94A6BAC315BB30D0003F22B6 /* OCDSIntExpectation.m in Sources */,
+				94A6BAC615BB30D0003F22B6 /* OCDSFloatExpectation.m in Sources */,
+				94A6BAC915BB30D0003F22B6 /* OCDSStringExpectation.m in Sources */,
+				947F6BDF15BC358F00C7CF3B /* OCDSArrayExpectation.m in Sources */,
+				9454C3E615C87C6500417FA7 /* OCDSBlockExpectation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -788,7 +788,7 @@
 				GCC_PREFIX_HEADER = "OCDSpec2/OCDSpec2-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+				OCDSIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
@@ -800,7 +800,7 @@
 				GCC_PREFIX_HEADER = "OCDSpec2/OCDSpec2-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+				OCDSIP_INSTALL = YES;
 			};
 			name = Release;
 		};

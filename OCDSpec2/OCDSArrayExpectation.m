@@ -1,9 +1,9 @@
-#import "SKArrayExpectation.h"
+#import "OCDSArrayExpectation.h"
 
-@implementation SKArrayExpectation
+@implementation OCDSArrayExpectation
 
-- (SKArrayExpectation*(^)(NSArray*)) withArray {
-  return [[^SKArrayExpectation*(NSArray *a){
+- (OCDSArrayExpectation*(^)(NSArray*)) withArray {
+  return [[^OCDSArrayExpectation*(NSArray *a){
     self.array = a;
     return self;
   } copy] autorelease];

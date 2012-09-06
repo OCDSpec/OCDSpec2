@@ -1,9 +1,9 @@
-#import "SKObjectExpectation.h"
+#import "OCDSObjectExpectation.h"
 
-@implementation SKObjectExpectation
+@implementation OCDSObjectExpectation
 
-- (SKObjectExpectation*(^)(id)) withObject {
-  return [[^SKObjectExpectation*(id obj){
+- (OCDSObjectExpectation*(^)(id)) withObject {
+  return [[^OCDSObjectExpectation*(id obj){
     self.object = obj;
     return self;
   } copy] autorelease];

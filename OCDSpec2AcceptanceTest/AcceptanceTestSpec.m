@@ -153,7 +153,7 @@ OCDSpec2Context(AcceptanceTest8) {
   
 }
 
-@interface SamplePrelude : NSObject <SKPrelude>
+@interface SamplePrelude : NSObject <OCDSPrelude>
 @end
 
 @implementation SamplePrelude

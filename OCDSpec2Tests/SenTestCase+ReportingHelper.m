@@ -1,5 +1,5 @@
 #import "SenTestCase+ReportingHelper.h"
-#import "SKFakeFailure.h"
+#import "OCDSFakeFailure.h"
 
 @implementation SenTestCase (ReportingHelper)
 
@@ -8,13 +8,13 @@
                  line:(int)line
         failingInFile:(char*)inFile
                atLine:(int)atLine
-          forReporter:(SKFakeFailureReporter*)reporter
+          forReporter:(OCDSFakeFailureReporter*)reporter
             asFailure:(BOOL)isFailure
 {
   NSArray *reports = isFailure ? reporter.failureReports : reporter.warningReports;
   NSArray *unReports = isFailure ? reporter.warningReports : reporter.failureReports;
   
-  SKFakeFailure *failure = [reports lastObject];
+  OCDSFakeFailure *failure = [reports lastObject];
   
   if ([reports count] != 1 || [unReports count] != 0) {
     [self failWithException:[NSException failureInFile:[NSString stringWithUTF8String:inFile]
@@ -43,7 +43,7 @@
 
 - (void) expectNoReportInFile:(char*)inFile
                        atLine:(int)atLine
-                  forReporter:(SKFakeFailureReporter*)reporter
+                  forReporter:(OCDSFakeFailureReporter*)reporter
                     asFailure:(BOOL)isFailure
 {
   NSArray *reports = isFailure ? reporter.failureReports : reporter.warningReports;

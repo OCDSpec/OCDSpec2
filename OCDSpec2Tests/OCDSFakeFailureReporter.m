@@ -1,10 +1,10 @@
-#import "SKFakeFailureReporter.h"
-#import "SKFakeFailure.h"
+#import "OCDSFakeFailureReporter.h"
+#import "OCDSFakeFailure.h"
 
-@implementation SKFakeFailureReporter
+@implementation OCDSFakeFailureReporter
 
 - (void) reportFailure:(NSString*)msg inFile:(NSString*)file atLine:(int)line {
-  SKFakeFailure *failure = [[[SKFakeFailure alloc] init] autorelease];
+  OCDSFakeFailure *failure = [[[OCDSFakeFailure alloc] init] autorelease];
   
   failure.report = msg;
   failure.inFile = file;
@@ -14,7 +14,7 @@
 }
 
 - (void) reportWarning:(NSString*)msg inFile:(NSString*)file atLine:(int)line {
-  SKFakeFailure *failure = [[[SKFakeFailure alloc] init] autorelease];
+  OCDSFakeFailure *failure = [[[OCDSFakeFailure alloc] init] autorelease];
   
   failure.report = msg;
   failure.inFile = file;

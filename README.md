@@ -116,7 +116,7 @@ OCDSpec2Context(WidgetSpec) {
 
 ## Running code before tests
 
-To run some code once just before the entire test suite, create a class that conforms to the SKPrelude protocol, which just requires a `-(void)run` method. Here's an example:
+To run some code once just before the entire test suite, create a class that conforms to the OCDSPrelude protocol, which just requires a `-(void)run` method. Here's an example:
 
 ```objc
 #import <UIKit/UIKit.h>
@@ -128,7 +128,7 @@ NSString* StubbedNibName(void) {
   return nil;
 }
 
-@interface ViewPrelude : NSObject<SKPrelude>
+@interface ViewPrelude : NSObject<OCDSPrelude>
 @end
 
 @implementation ViewPrelude

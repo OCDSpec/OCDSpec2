@@ -1,6 +1,6 @@
 #import <Foundation/Foundation.h>
 
-@interface SKExample : NSObject
+@interface OCDSExample : NSObject
 
 @property (readwrite, retain) NSString* name;
 @property (readwrite, copy) void(^block)(void);

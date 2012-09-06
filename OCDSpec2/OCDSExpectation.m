@@ -1,12 +1,12 @@
-#import "SKExpectation.h"
+#import "OCDSExpectation.h"
 
-@implementation SKExpectation
+@implementation OCDSExpectation
 
 + (id) expectationInFile:(char*)someFile
                     line:(int)someLine
-         failureReporter:(id<SKFailureReporter>)reporter
+         failureReporter:(id<OCDSFailureReporter>)reporter
 {
-  SKExpectation *expectation = [[[self alloc] init] autorelease];
+  OCDSExpectation *expectation = [[[self alloc] init] autorelease];
   expectation.file = [NSString stringWithUTF8String:someFile];
   expectation.line = someLine;
   expectation.failureReporter = reporter;

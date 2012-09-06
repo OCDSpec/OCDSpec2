@@ -1,9 +1,9 @@
-#import "SKStringExpectation.h"
+#import "OCDSStringExpectation.h"
 
-@implementation SKStringExpectation
+@implementation OCDSStringExpectation
 
-- (SKStringExpectation*(^)(NSString*)) withString {
-  return [[^SKStringExpectation*(NSString *str){
+- (OCDSStringExpectation*(^)(NSString*)) withString {
+  return [[^OCDSStringExpectation*(NSString *str){
     self.string = str;
     return self;
   } copy] autorelease];

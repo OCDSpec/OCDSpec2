@@ -1,6 +1,6 @@
 #import <SenTestingKit/SenTestingKit.h>
 
-#import "SKContext.h"
+#import "OCDSContext.h"
 
 @interface TestReportingErrors : SenTestCase
 @end
@@ -9,7 +9,7 @@
 - (void) testReportingToOutputFile {
   NSPipe *pipe = [NSPipe pipe];
   
-  SKContext *ctx = [[[SKContext alloc] init] autorelease];
+  OCDSContext *ctx = [[[OCDSContext alloc] init] autorelease];
   ctx.reportOutputFile = [pipe fileHandleForWriting];
   [ctx reportFailure:@"this is\n a test!" inFile:@"file1" atLine:73];
   
@@ -23,7 +23,7 @@
 }
 
 - (void) testKeepingErrorCount {
-  SKContext *ctx = [[[SKContext alloc] init] autorelease];
+  OCDSContext *ctx = [[[OCDSContext alloc] init] autorelease];
   
   NSPipe *pipe = [NSPipe pipe];
   ctx.reportOutputFile = [pipe fileHandleForWriting];

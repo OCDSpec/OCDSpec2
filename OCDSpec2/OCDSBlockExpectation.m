@@ -17,6 +17,7 @@
     [self reportFailure:[NSString stringWithFormat:@"Want no exception, but got one anyway: %@: %@",
                          exception.name,
                          exception.reason]];
+    NSLog(@"%@", exception.callStackSymbols);
   }
 }
 

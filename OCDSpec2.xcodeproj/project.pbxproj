@@ -786,9 +786,9 @@
 				DSTROOT = /tmp/OCDSpec2.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OCDSpec2/OCDSpec2-Prefix.pch";
+				OCDSIP_INSTALL = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				OCDSIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
@@ -798,9 +798,9 @@
 				DSTROOT = /tmp/OCDSpec2.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OCDSpec2/OCDSpec2-Prefix.pch";
+				OCDSIP_INSTALL = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				OCDSIP_INSTALL = YES;
 			};
 			name = Release;
 		};

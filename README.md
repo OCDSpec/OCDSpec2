@@ -14,7 +14,7 @@ Inside the OCDSpec2 directory, run:
 ## Use OCDSpec2 in an iOS project
 
 * In the root dir of your project, run:
-    * `git submodule add https://github.com/sdegutis/OCDSpec2.git`
+    * `git submodule add https://github.com/ericmeyer/OCDSpec2.git`
 * Add a new target to your project of type 'OCDSpec2 -> iOS Spec Runner'. This is your spec target.
     * Drag the OCDSpec2 project file, found in the submodule you just cloned, into your project in Xcode.
     * Drag the OCDSpec2 subproject's Product `libOCDSpec2.a` into your spec target's "Link Binary With Libraries" build phase.
@@ -23,7 +23,7 @@ Inside the OCDSpec2 directory, run:
 ## Use OCDSpec2 in a Mac project
 
 * In the root dir of your project, run:
-    * `git submodule add https://github.com/sdegutis/OCDSpec2.git`
+    * `git submodule add https://github.com/ericmeyer/OCDSpec2.git`
 * Add a new target to your project of type 'OCDSpec2 -> Mac Spec Runner'. This is your spec target.
     * Drag the OCDSpec2 project file, found in the submodule you just cloned, into your project in Xcode.
     * Drag the OCDSpec2 subproject's Product `libOCDSpec2Mac.a` into your spec target's "Link Binary With Libraries" build phase.

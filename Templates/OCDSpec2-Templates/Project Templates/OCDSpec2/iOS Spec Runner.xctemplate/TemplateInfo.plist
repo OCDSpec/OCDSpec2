@@ -32,22 +32,11 @@
 </string>
 		<key>main.m:main:UIApplicationMain</key>
 		<string>@autoreleasepool {
-    return UIApplicationMain(argc, argv, nil, NSStringFromClass([OCDSpec2EntryPoint self]));
+    return OCDSpec2RunAllTests();
 }
 </string>
 		<key>main.m:specrunner</key>
-		<string>#import &lt;OCDSpec2/OCDSpec2.h&gt;
-
-@interface OCDSpec2EntryPoint : NSObject
-@end
-
-@implementation OCDSpec2EntryPoint
-
-- (void) applicationDidFinishLaunching:(UIApplication*)app {
-  exit(OCDSpec2RunAllTests());
-}
-
-@end</string>
+		<string>#import &lt;OCDSpec2/OCDSpec2.h&gt;</string>
 	</dict>
 	<key>Identifier</key>
 	<string>com.apple.dt.unit.cocoaTouchApplication</string>

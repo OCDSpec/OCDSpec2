@@ -4,6 +4,8 @@ A testing library for Mac or iOS projects
 
 ## One-time setup before using OCDSpec2 in any project
 
+Clone the repo to the directory of your choice.
+
 Inside the OCDSpec2 directory, run:
 
 ```bash

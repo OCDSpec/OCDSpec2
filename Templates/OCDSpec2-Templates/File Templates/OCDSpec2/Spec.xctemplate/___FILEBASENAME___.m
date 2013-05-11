@@ -2,7 +2,7 @@
 
 OCDSpec2Context(___FILEBASENAMEASIDENTIFIER___) {
   
-  Describe(@"-someMethod", ^{
+  Describe(@"-someBehavior", ^{
     
     It(@"fails", ^{
       [ExpectBool(NO) toBeTrue];

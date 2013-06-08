@@ -1,5 +1,4 @@
 #import "OCDSFakeFailureReporter.h"
-#import "OCDSFakeFailure.h"
 
 @implementation OCDSFakeFailureReporter
 
@@ -21,6 +20,24 @@
   failure.atLine = line;
   
   self.warningReports = [[NSArray arrayWithArray:self.warningReports] arrayByAddingObject:failure];
+}
+
+- (int) numberOfFailures {
+  if (self.failureReports == NULL) {
+    return 0;
+  }
+  
+  return [self.failureReports count];
+}
+
+- (NSString *)findFailureMessageInFile:(NSString *)file onLine:(int)line {
+  for (OCDSFakeFailure *failure in self.failureReports) {
+    if ([failure.inFile isEqualToString:file] && failure.atLine == line) {
+      return failure.report;
+    }
+  }
+  
+  return @"";
 }
 
 @end

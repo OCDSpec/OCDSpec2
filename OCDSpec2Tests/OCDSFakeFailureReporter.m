@@ -40,4 +40,14 @@
   return @"";
 }
 
+- (NSString *)findWarningMessageInFile:(NSString *)file onLine:(int)line {
+  for (OCDSFakeFailure *failure in self.warningReports) {
+    if ([failure.inFile isEqualToString:file] && failure.atLine == line) {
+      return failure.report;
+    }
+  }
+  
+  return @"";
+}
+
 @end

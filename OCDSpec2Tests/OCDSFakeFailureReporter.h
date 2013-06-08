@@ -10,5 +10,6 @@
 
 - (int) numberOfFailures;
 - (NSString *) findFailureMessageInFile:(NSString *)file onLine:(int)line;
+- (NSString *) findWarningMessageInFile:(NSString *)file onLine:(int)line;
 
 @end

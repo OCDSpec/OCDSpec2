@@ -1,6 +1,5 @@
 #import <OCDSpec2/OCDSpec2.h>
 
-#import "OCDSStringExpectation.h"
 #import "OCDSFakeFailureReporter.h"
 
 OCDSpec2Context(StringExpectationSpec) {

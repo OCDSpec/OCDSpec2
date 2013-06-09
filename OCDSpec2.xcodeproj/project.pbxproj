@@ -20,6 +20,7 @@
 		149894F4176398D00036608B /* ObjectExpectationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 149894F3176398D00036608B /* ObjectExpectationSpec.m */; };
 		149894F61763F82B0036608B /* IntExpectationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 149894F51763F82B0036608B /* IntExpectationSpec.m */; };
 		149894F81763FDE60036608B /* BlockExpectationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 149894F71763FDE60036608B /* BlockExpectationSpec.m */; };
+		149894FA1763FED70036608B /* ArrayExpectationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 149894F91763FED70036608B /* ArrayExpectationSpec.m */; };
 		942AAEFD15BBB3E60006C241 /* OCDSContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA015BB30D0003F22B6 /* OCDSContext.m */; };
 		942AAEFE15BBB3E90006C241 /* OCDSDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA215BB30D0003F22B6 /* OCDSDescription.m */; };
 		942AAEFF15BBB3EB0006C241 /* OCDSExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA415BB30D0003F22B6 /* OCDSExample.m */; };
@@ -113,6 +114,7 @@
 		149894F3176398D00036608B /* ObjectExpectationSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectExpectationSpec.m; sourceTree = "<group>"; };
 		149894F51763F82B0036608B /* IntExpectationSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntExpectationSpec.m; sourceTree = "<group>"; };
 		149894F71763FDE60036608B /* BlockExpectationSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockExpectationSpec.m; sourceTree = "<group>"; };
+		149894F91763FED70036608B /* ArrayExpectationSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayExpectationSpec.m; sourceTree = "<group>"; };
 		942AAEEC15BBB3760006C241 /* libOCDSpec2Mac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOCDSpec2Mac.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		942AAEF515BBB3760006C241 /* OCDSpec2Mac-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "OCDSpec2Mac-Prefix.pch"; path = "OCDSpec2/OCDSpec2Mac-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		944FBF4E15C168C100BF85FC /* OCDSpec2AcceptanceTest.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OCDSpec2AcceptanceTest.octest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -232,6 +234,7 @@
 				149894F3176398D00036608B /* ObjectExpectationSpec.m */,
 				149894F51763F82B0036608B /* IntExpectationSpec.m */,
 				149894F71763FDE60036608B /* BlockExpectationSpec.m */,
+				149894F91763FED70036608B /* ArrayExpectationSpec.m */,
 			);
 			path = OCDSpec2Specs;
 			sourceTree = "<group>";
@@ -625,6 +628,7 @@
 				149894F4176398D00036608B /* ObjectExpectationSpec.m in Sources */,
 				149894F61763F82B0036608B /* IntExpectationSpec.m in Sources */,
 				149894F81763FDE60036608B /* BlockExpectationSpec.m in Sources */,
+				149894FA1763FED70036608B /* ArrayExpectationSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

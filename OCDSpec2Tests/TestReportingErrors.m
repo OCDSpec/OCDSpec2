@@ -9,9 +9,9 @@
 - (void) testReportingToOutputFile {
   NSPipe *pipe = [NSPipe pipe];
   
-  OCDSContext *ctx = [[[OCDSContext alloc] init] autorelease];
-  ctx.reportOutputFile = [pipe fileHandleForWriting];
-  [ctx reportFailure:@"this is\n a test!" inFile:@"file1" atLine:73];
+  OCDSContext *context = [[[OCDSContext alloc] init] autorelease];
+  context.reportOutputFile = [pipe fileHandleForWriting];
+  [context reportFailure:@"this is\n a test!" inFile:@"file1" atLine:73];
   
   [[pipe fileHandleForWriting] closeFile];
   
@@ -23,18 +23,18 @@
 }
 
 - (void) testKeepingErrorCount {
-  OCDSContext *ctx = [[[OCDSContext alloc] init] autorelease];
+  OCDSContext *context = [[[OCDSContext alloc] init] autorelease];
   
   NSPipe *pipe = [NSPipe pipe];
-  ctx.reportOutputFile = [pipe fileHandleForWriting];
+  context.reportOutputFile = [pipe fileHandleForWriting];
   
-  STAssertTrue(ctx.errorCount == 0, nil);
+  STAssertTrue(context.errorCount == 0, nil);
   
-  [ctx reportFailure:@"this" inFile:@"that" atLine:23];
-  STAssertTrue(ctx.errorCount == 1, nil);
+  [context reportFailure:@"this" inFile:@"that" atLine:23];
+  STAssertTrue(context.errorCount == 1, nil);
   
-  [ctx reportFailure:@"another error" inFile:@"somefile" atLine:45];
-  STAssertTrue(ctx.errorCount == 2, nil);
+  [context reportFailure:@"another error" inFile:@"somefile" atLine:45];
+  STAssertTrue(context.errorCount == 2, nil);
 }
 
 @end

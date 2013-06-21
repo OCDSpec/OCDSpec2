@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14614E6F1774D9C0000AF471 /* ErrorReportingSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 14614E6E1774D9C0000AF471 /* ErrorReportingSpec.m */; };
+		14614E711774DAF0000AF471 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14614E701774DAF0000AF471 /* Default-568h@2x.png */; };
+		14614E731774DBFD000AF471 /* GatheringExamplesSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 14614E721774DBFD000AF471 /* GatheringExamplesSpec.m */; };
+		14614E751774E0C6000AF471 /* ContextMethodsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 14614E741774E0C6000AF471 /* ContextMethodsSpec.m */; };
+		14614E771774E2AD000AF471 /* RunningExamplesSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 14614E761774E2AD000AF471 /* RunningExamplesSpec.m */; };
+		14614E7E1774F5D0000AF471 /* OCDSFakeFailure.m in Sources */ = {isa = PBXBuildFile; fileRef = 14614E7B1774F5D0000AF471 /* OCDSFakeFailure.m */; };
+		14614E7F1774F5D0000AF471 /* OCDSFakeFailureReporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 14614E7D1774F5D0000AF471 /* OCDSFakeFailureReporter.m */; };
 		149894DC1762D39E0036608B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 149894DB1762D39E0036608B /* UIKit.framework */; };
 		149894DD1762D39E0036608B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A6BA5D15BB2DE7003F22B6 /* Foundation.framework */; };
 		149894DF1762D39E0036608B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 149894DE1762D39E0036608B /* CoreGraphics.framework */; };
 		149894E51762D39E0036608B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 149894E31762D39E0036608B /* InfoPlist.strings */; };
 		149894E71762D39E0036608B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 149894E61762D39E0036608B /* main.m */; };
 		149894ED1762D3EA0036608B /* StringExpectationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 149894EC1762D3EA0036608B /* StringExpectationSpec.m */; };
-		149894EE1762D3F00036608B /* OCDSFakeFailureReporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 947F6C3C15BC3A2300C7CF3B /* OCDSFakeFailureReporter.m */; };
-		149894EF1762D3F30036608B /* OCDSFakeFailure.m in Sources */ = {isa = PBXBuildFile; fileRef = 947F6C5B15BC3D4600C7CF3B /* OCDSFakeFailure.m */; };
 		149894F01762D4890036608B /* libOCDSpec2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A6BA5A15BB2DE7003F22B6 /* libOCDSpec2.a */; };
 		149894F21762DF6E0036608B /* FloatExpectationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 149894F11762DF6E0036608B /* FloatExpectationSpec.m */; };
 		149894F4176398D00036608B /* ObjectExpectationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 149894F3176398D00036608B /* ObjectExpectationSpec.m */; };
@@ -102,6 +107,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		14614E6E1774D9C0000AF471 /* ErrorReportingSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErrorReportingSpec.m; sourceTree = "<group>"; };
+		14614E701774DAF0000AF471 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		14614E721774DBFD000AF471 /* GatheringExamplesSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GatheringExamplesSpec.m; sourceTree = "<group>"; };
+		14614E741774E0C6000AF471 /* ContextMethodsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContextMethodsSpec.m; sourceTree = "<group>"; };
+		14614E761774E2AD000AF471 /* RunningExamplesSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunningExamplesSpec.m; sourceTree = "<group>"; };
+		14614E7A1774F5D0000AF471 /* OCDSFakeFailure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCDSFakeFailure.h; sourceTree = "<group>"; };
+		14614E7B1774F5D0000AF471 /* OCDSFakeFailure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCDSFakeFailure.m; sourceTree = "<group>"; };
+		14614E7C1774F5D0000AF471 /* OCDSFakeFailureReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCDSFakeFailureReporter.h; sourceTree = "<group>"; };
+		14614E7D1774F5D0000AF471 /* OCDSFakeFailureReporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCDSFakeFailureReporter.m; sourceTree = "<group>"; };
 		149894DA1762D39E0036608B /* OCDSpec2Specs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCDSpec2Specs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		149894DB1762D39E0036608B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		149894DE1762D39E0036608B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -225,9 +239,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14614E791774E592000AF471 /* Fakes */ = {
+			isa = PBXGroup;
+			children = (
+				14614E7A1774F5D0000AF471 /* OCDSFakeFailure.h */,
+				14614E7B1774F5D0000AF471 /* OCDSFakeFailure.m */,
+				14614E7C1774F5D0000AF471 /* OCDSFakeFailureReporter.h */,
+				14614E7D1774F5D0000AF471 /* OCDSFakeFailureReporter.m */,
+			);
+			name = Fakes;
+			sourceTree = "<group>";
+		};
 		149894E01762D39E0036608B /* OCDSpec2Specs */ = {
 			isa = PBXGroup;
 			children = (
+				14614E791774E592000AF471 /* Fakes */,
 				149894E11762D39E0036608B /* Supporting Files */,
 				149894EC1762D3EA0036608B /* StringExpectationSpec.m */,
 				149894F11762DF6E0036608B /* FloatExpectationSpec.m */,
@@ -235,6 +261,10 @@
 				149894F51763F82B0036608B /* IntExpectationSpec.m */,
 				149894F71763FDE60036608B /* BlockExpectationSpec.m */,
 				149894F91763FED70036608B /* ArrayExpectationSpec.m */,
+				14614E6E1774D9C0000AF471 /* ErrorReportingSpec.m */,
+				14614E721774DBFD000AF471 /* GatheringExamplesSpec.m */,
+				14614E741774E0C6000AF471 /* ContextMethodsSpec.m */,
+				14614E761774E2AD000AF471 /* RunningExamplesSpec.m */,
 			);
 			path = OCDSpec2Specs;
 			sourceTree = "<group>";
@@ -283,12 +313,12 @@
 		947F6C2815BC39A200C7CF3B /* OCDSpec2Tests */ = {
 			isa = PBXGroup;
 			children = (
-				947F6C3915BC3A2300C7CF3B /* SenTestCase+ReportingHelper.h */,
-				947F6C3A15BC3A2300C7CF3B /* SenTestCase+ReportingHelper.m */,
 				947F6C3B15BC3A2300C7CF3B /* OCDSFakeFailureReporter.h */,
 				947F6C3C15BC3A2300C7CF3B /* OCDSFakeFailureReporter.m */,
 				947F6C5A15BC3D4600C7CF3B /* OCDSFakeFailure.h */,
 				947F6C5B15BC3D4600C7CF3B /* OCDSFakeFailure.m */,
+				947F6C3915BC3A2300C7CF3B /* SenTestCase+ReportingHelper.h */,
+				947F6C3A15BC3A2300C7CF3B /* SenTestCase+ReportingHelper.m */,
 				947F6C3D15BC3A2300C7CF3B /* TestArrayExpectation.m */,
 				947F6C3E15BC3A2300C7CF3B /* TestFloatExpectation.m */,
 				947F6C3F15BC3A2300C7CF3B /* TestGatheringExamples.m */,
@@ -317,6 +347,7 @@
 		94A6BA4F15BB2DE7003F22B6 = {
 			isa = PBXGroup;
 			children = (
+				14614E701774DAF0000AF471 /* Default-568h@2x.png */,
 				94A6BA5F15BB2DE7003F22B6 /* OCDSpec2 */,
 				947F6C2815BC39A200C7CF3B /* OCDSpec2Tests */,
 				944FBF5615C168C100BF85FC /* OCDSpec2AcceptanceTest */,
@@ -552,6 +583,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				149894E51762D39E0036608B /* InfoPlist.strings in Resources */,
+				14614E711774DAF0000AF471 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -622,13 +654,17 @@
 			files = (
 				149894E71762D39E0036608B /* main.m in Sources */,
 				149894ED1762D3EA0036608B /* StringExpectationSpec.m in Sources */,
-				149894EE1762D3F00036608B /* OCDSFakeFailureReporter.m in Sources */,
-				149894EF1762D3F30036608B /* OCDSFakeFailure.m in Sources */,
 				149894F21762DF6E0036608B /* FloatExpectationSpec.m in Sources */,
 				149894F4176398D00036608B /* ObjectExpectationSpec.m in Sources */,
 				149894F61763F82B0036608B /* IntExpectationSpec.m in Sources */,
 				149894F81763FDE60036608B /* BlockExpectationSpec.m in Sources */,
 				149894FA1763FED70036608B /* ArrayExpectationSpec.m in Sources */,
+				14614E6F1774D9C0000AF471 /* ErrorReportingSpec.m in Sources */,
+				14614E731774DBFD000AF471 /* GatheringExamplesSpec.m in Sources */,
+				14614E751774E0C6000AF471 /* ContextMethodsSpec.m in Sources */,
+				14614E771774E2AD000AF471 /* RunningExamplesSpec.m in Sources */,
+				14614E7E1774F5D0000AF471 /* OCDSFakeFailure.m in Sources */,
+				14614E7F1774F5D0000AF471 /* OCDSFakeFailureReporter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -991,6 +1027,7 @@
 				149894EA1762D39E0036608B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		942AAEFB15BBB3760006C241 /* Build configuration list for PBXNativeTarget "OCDSpec2Mac" */ = {
 			isa = XCConfigurationList;

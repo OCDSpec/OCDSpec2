@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name         = "OCDSpec"
+  s.name         = "OCDSpec2"
   s.version      = "1.5.1"
   s.summary      = "Unit Testing for the obsessive compulsive."
 
@@ -43,7 +43,7 @@ Pod::Spec.new do |s|
                      "marosluuce" => "nathan@8thlight.com", 
                      "sdegutis" => "sbdegutis@gmail.com" }
 
-  s.source       = { :git => "http://github.com/paytonrules/OCDSpec.git", :tag => "1.5.1" }
-  s.source_files  = 'Classes', 'Classes/**/*.{h,m}'
-  s.exclude_files = 'Classes/Exclude'
+  s.source       = { :git => "https://github.com/paytonrules/OCDSpec2.git", :tag => "1.5.1" }
+  s.source_files  = 'OCDSpec2', 'OCDSpec2/**/*.{h,m}'
+  s.exclude_files = 'OCDSpec2/Exclude'
 end

@@ -27,7 +27,7 @@
     return 0;
   }
   
-  return (int)[self.failureReports count];
+  return [self.failureReports count];
 }
 
 - (NSString *)findFailureMessageInFile:(NSString *)file onLine:(int)line {

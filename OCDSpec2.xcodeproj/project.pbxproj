@@ -7,6 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14614E6F1774D9C0000AF471 /* ErrorReportingSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 14614E6E1774D9C0000AF471 /* ErrorReportingSpec.m */; };
+		14614E711774DAF0000AF471 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14614E701774DAF0000AF471 /* Default-568h@2x.png */; };
+		14614E731774DBFD000AF471 /* GatheringExamplesSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 14614E721774DBFD000AF471 /* GatheringExamplesSpec.m */; };
+		14614E751774E0C6000AF471 /* ContextMethodsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 14614E741774E0C6000AF471 /* ContextMethodsSpec.m */; };
+		14614E771774E2AD000AF471 /* RunningExamplesSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 14614E761774E2AD000AF471 /* RunningExamplesSpec.m */; };
+		14614E7E1774F5D0000AF471 /* OCDSFakeFailure.m in Sources */ = {isa = PBXBuildFile; fileRef = 14614E7B1774F5D0000AF471 /* OCDSFakeFailure.m */; };
+		14614E7F1774F5D0000AF471 /* OCDSFakeFailureReporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 14614E7D1774F5D0000AF471 /* OCDSFakeFailureReporter.m */; };
+		149894DC1762D39E0036608B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 149894DB1762D39E0036608B /* UIKit.framework */; };
+		149894DD1762D39E0036608B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A6BA5D15BB2DE7003F22B6 /* Foundation.framework */; };
+		149894DF1762D39E0036608B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 149894DE1762D39E0036608B /* CoreGraphics.framework */; };
+		149894E51762D39E0036608B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 149894E31762D39E0036608B /* InfoPlist.strings */; };
+		149894E71762D39E0036608B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 149894E61762D39E0036608B /* main.m */; };
+		149894ED1762D3EA0036608B /* StringExpectationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 149894EC1762D3EA0036608B /* StringExpectationSpec.m */; };
+		149894F01762D4890036608B /* libOCDSpec2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A6BA5A15BB2DE7003F22B6 /* libOCDSpec2.a */; };
+		149894F21762DF6E0036608B /* FloatExpectationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 149894F11762DF6E0036608B /* FloatExpectationSpec.m */; };
+		149894F4176398D00036608B /* ObjectExpectationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 149894F3176398D00036608B /* ObjectExpectationSpec.m */; };
+		149894F61763F82B0036608B /* IntExpectationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 149894F51763F82B0036608B /* IntExpectationSpec.m */; };
+		149894F81763FDE60036608B /* BlockExpectationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 149894F71763FDE60036608B /* BlockExpectationSpec.m */; };
+		149894FA1763FED70036608B /* ArrayExpectationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 149894F91763FED70036608B /* ArrayExpectationSpec.m */; };
 		942AAEFD15BBB3E60006C241 /* OCDSContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA015BB30D0003F22B6 /* OCDSContext.m */; };
 		942AAEFE15BBB3E90006C241 /* OCDSDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA215BB30D0003F22B6 /* OCDSDescription.m */; };
 		942AAEFF15BBB3EB0006C241 /* OCDSExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA415BB30D0003F22B6 /* OCDSExample.m */; };
@@ -88,6 +107,28 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		14614E6E1774D9C0000AF471 /* ErrorReportingSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErrorReportingSpec.m; sourceTree = "<group>"; };
+		14614E701774DAF0000AF471 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		14614E721774DBFD000AF471 /* GatheringExamplesSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GatheringExamplesSpec.m; sourceTree = "<group>"; };
+		14614E741774E0C6000AF471 /* ContextMethodsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContextMethodsSpec.m; sourceTree = "<group>"; };
+		14614E761774E2AD000AF471 /* RunningExamplesSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunningExamplesSpec.m; sourceTree = "<group>"; };
+		14614E7A1774F5D0000AF471 /* OCDSFakeFailure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCDSFakeFailure.h; sourceTree = "<group>"; };
+		14614E7B1774F5D0000AF471 /* OCDSFakeFailure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCDSFakeFailure.m; sourceTree = "<group>"; };
+		14614E7C1774F5D0000AF471 /* OCDSFakeFailureReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCDSFakeFailureReporter.h; sourceTree = "<group>"; };
+		14614E7D1774F5D0000AF471 /* OCDSFakeFailureReporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCDSFakeFailureReporter.m; sourceTree = "<group>"; };
+		149894DA1762D39E0036608B /* OCDSpec2Specs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCDSpec2Specs.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		149894DB1762D39E0036608B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		149894DE1762D39E0036608B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		149894E21762D39E0036608B /* OCDSpec2Specs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OCDSpec2Specs-Info.plist"; sourceTree = "<group>"; };
+		149894E41762D39E0036608B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		149894E61762D39E0036608B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		149894E81762D39E0036608B /* OCDSpec2Specs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OCDSpec2Specs-Prefix.pch"; sourceTree = "<group>"; };
+		149894EC1762D3EA0036608B /* StringExpectationSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringExpectationSpec.m; sourceTree = "<group>"; };
+		149894F11762DF6E0036608B /* FloatExpectationSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloatExpectationSpec.m; sourceTree = "<group>"; };
+		149894F3176398D00036608B /* ObjectExpectationSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectExpectationSpec.m; sourceTree = "<group>"; };
+		149894F51763F82B0036608B /* IntExpectationSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntExpectationSpec.m; sourceTree = "<group>"; };
+		149894F71763FDE60036608B /* BlockExpectationSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockExpectationSpec.m; sourceTree = "<group>"; };
+		149894F91763FED70036608B /* ArrayExpectationSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayExpectationSpec.m; sourceTree = "<group>"; };
 		942AAEEC15BBB3760006C241 /* libOCDSpec2Mac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOCDSpec2Mac.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		942AAEF515BBB3760006C241 /* OCDSpec2Mac-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "OCDSpec2Mac-Prefix.pch"; path = "OCDSpec2/OCDSpec2Mac-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		944FBF4E15C168C100BF85FC /* OCDSpec2AcceptanceTest.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OCDSpec2AcceptanceTest.octest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -150,6 +191,17 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		149894D61762D39E0036608B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				149894DC1762D39E0036608B /* UIKit.framework in Frameworks */,
+				149894DD1762D39E0036608B /* Foundation.framework in Frameworks */,
+				149894DF1762D39E0036608B /* CoreGraphics.framework in Frameworks */,
+				149894F01762D4890036608B /* libOCDSpec2.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		942AAEE915BBB3760006C241 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -187,6 +239,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14614E791774E592000AF471 /* Fakes */ = {
+			isa = PBXGroup;
+			children = (
+				14614E7A1774F5D0000AF471 /* OCDSFakeFailure.h */,
+				14614E7B1774F5D0000AF471 /* OCDSFakeFailure.m */,
+				14614E7C1774F5D0000AF471 /* OCDSFakeFailureReporter.h */,
+				14614E7D1774F5D0000AF471 /* OCDSFakeFailureReporter.m */,
+			);
+			name = Fakes;
+			sourceTree = "<group>";
+		};
+		149894E01762D39E0036608B /* OCDSpec2Specs */ = {
+			isa = PBXGroup;
+			children = (
+				14614E791774E592000AF471 /* Fakes */,
+				149894E11762D39E0036608B /* Supporting Files */,
+				149894EC1762D3EA0036608B /* StringExpectationSpec.m */,
+				149894F11762DF6E0036608B /* FloatExpectationSpec.m */,
+				149894F3176398D00036608B /* ObjectExpectationSpec.m */,
+				149894F51763F82B0036608B /* IntExpectationSpec.m */,
+				149894F71763FDE60036608B /* BlockExpectationSpec.m */,
+				149894F91763FED70036608B /* ArrayExpectationSpec.m */,
+				14614E6E1774D9C0000AF471 /* ErrorReportingSpec.m */,
+				14614E721774DBFD000AF471 /* GatheringExamplesSpec.m */,
+				14614E741774E0C6000AF471 /* ContextMethodsSpec.m */,
+				14614E761774E2AD000AF471 /* RunningExamplesSpec.m */,
+			);
+			path = OCDSpec2Specs;
+			sourceTree = "<group>";
+		};
+		149894E11762D39E0036608B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				149894E21762D39E0036608B /* OCDSpec2Specs-Info.plist */,
+				149894E31762D39E0036608B /* InfoPlist.strings */,
+				149894E61762D39E0036608B /* main.m */,
+				149894E81762D39E0036608B /* OCDSpec2Specs-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		944FBF5215C168C100BF85FC /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -220,12 +313,12 @@
 		947F6C2815BC39A200C7CF3B /* OCDSpec2Tests */ = {
 			isa = PBXGroup;
 			children = (
-				947F6C3915BC3A2300C7CF3B /* SenTestCase+ReportingHelper.h */,
-				947F6C3A15BC3A2300C7CF3B /* SenTestCase+ReportingHelper.m */,
 				947F6C3B15BC3A2300C7CF3B /* OCDSFakeFailureReporter.h */,
 				947F6C3C15BC3A2300C7CF3B /* OCDSFakeFailureReporter.m */,
 				947F6C5A15BC3D4600C7CF3B /* OCDSFakeFailure.h */,
 				947F6C5B15BC3D4600C7CF3B /* OCDSFakeFailure.m */,
+				947F6C3915BC3A2300C7CF3B /* SenTestCase+ReportingHelper.h */,
+				947F6C3A15BC3A2300C7CF3B /* SenTestCase+ReportingHelper.m */,
 				947F6C3D15BC3A2300C7CF3B /* TestArrayExpectation.m */,
 				947F6C3E15BC3A2300C7CF3B /* TestFloatExpectation.m */,
 				947F6C3F15BC3A2300C7CF3B /* TestGatheringExamples.m */,
@@ -254,9 +347,11 @@
 		94A6BA4F15BB2DE7003F22B6 = {
 			isa = PBXGroup;
 			children = (
+				14614E701774DAF0000AF471 /* Default-568h@2x.png */,
 				94A6BA5F15BB2DE7003F22B6 /* OCDSpec2 */,
 				947F6C2815BC39A200C7CF3B /* OCDSpec2Tests */,
 				944FBF5615C168C100BF85FC /* OCDSpec2AcceptanceTest */,
+				149894E01762D39E0036608B /* OCDSpec2Specs */,
 				94A6BA5C15BB2DE7003F22B6 /* Frameworks */,
 				94A6BA5B15BB2DE7003F22B6 /* Products */,
 			);
@@ -271,6 +366,7 @@
 				942AAEEC15BBB3760006C241 /* libOCDSpec2Mac.a */,
 				947F6C2515BC39A200C7CF3B /* OCDSpec2Tests.octest */,
 				944FBF4E15C168C100BF85FC /* OCDSpec2AcceptanceTest.octest */,
+				149894DA1762D39E0036608B /* OCDSpec2Specs.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -281,6 +377,8 @@
 				94A6BA5D15BB2DE7003F22B6 /* Foundation.framework */,
 				94A6BA7415BB3093003F22B6 /* SenTestingKit.framework */,
 				944FBF5015C168C100BF85FC /* Cocoa.framework */,
+				149894DB1762D39E0036608B /* UIKit.framework */,
+				149894DE1762D39E0036608B /* CoreGraphics.framework */,
 				944FBF5215C168C100BF85FC /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -361,6 +459,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		149894D91762D39E0036608B /* OCDSpec2Specs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 149894EB1762D39E0036608B /* Build configuration list for PBXNativeTarget "OCDSpec2Specs" */;
+			buildPhases = (
+				149894D51762D39E0036608B /* Sources */,
+				149894D61762D39E0036608B /* Frameworks */,
+				149894D71762D39E0036608B /* Resources */,
+				149894D81762D39E0036608B /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OCDSpec2Specs;
+			productName = OCDSpec2Specs;
+			productReference = 149894DA1762D39E0036608B /* OCDSpec2Specs.app */;
+			productType = "com.apple.product-type.application";
+		};
 		942AAEEB15BBB3760006C241 /* OCDSpec2Mac */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 942AAEFB15BBB3760006C241 /* Build configuration list for PBXNativeTarget "OCDSpec2Mac" */;
@@ -437,7 +553,7 @@
 		94A6BA5115BB2DE7003F22B6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0440;
+				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "8th Light";
 			};
 			buildConfigurationList = 94A6BA5415BB2DE7003F22B6 /* Build configuration list for PBXProject "OCDSpec2" */;
@@ -456,11 +572,21 @@
 				942AAEEB15BBB3760006C241 /* OCDSpec2Mac */,
 				947F6C2415BC39A200C7CF3B /* OCDSpec2Tests */,
 				944FBF4D15C168C100BF85FC /* OCDSpec2AcceptanceTest */,
+				149894D91762D39E0036608B /* OCDSpec2Specs */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		149894D71762D39E0036608B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				149894E51762D39E0036608B /* InfoPlist.strings in Resources */,
+				14614E711774DAF0000AF471 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		944FBF4B15C168C100BF85FC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -480,6 +606,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		149894D81762D39E0036608B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/bash\n#  RunIPhoneUnitTest.sh\n#  Copyright 2008 Google Inc.\n#\n#  Licensed under the Apache License, Version 2.0 (the \"License\"); you may not\n#  use this file except in compliance with the License.  You may obtain a copy\n#  of the License at\n#\n#  http://www.apache.org/licenses/LICENSE-2.0\n#\n#  Unless required by applicable law or agreed to in writing, software\n#  distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT\n#  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  See the\n#  License for the specific language governing permissions and limitations under\n#  the License.\n#\n#  Runs all unittests through the iPhone simulator. We don't handle running them\n#  on the device. To run on the device just choose \"run\".\n\nset -o errexit\nset -o nounset\nset -o verbose\n\n#  Controlling environment variables:\n# GTM_DISABLE_ZOMBIES -\n#   Set to a non-zero value to turn on zombie checks. You will probably\n#   want to turn this off if you enable leaks.\nGTM_DISABLE_ZOMBIES=${GTM_DISABLE_ZOMBIES:=1}\n\n# GTM_ENABLE_LEAKS -\n#   Set to a non-zero value to turn on the leaks check. You will probably want\n#   to disable zombies, otherwise you will get a lot of false positives.\n\n# GTM_DISABLE_TERMINATION\n#   Set to a non-zero value so that the app doesn't terminate when it's finished\n#   running tests. This is useful when using it with external tools such\n#   as Instruments.\n\n# GTM_LEAKS_SYMBOLS_TO_IGNORE\n#   List of comma separated symbols that leaks should ignore. Mainly to control\n#   leaks in frameworks you don't have control over.\n#   Search this file for GTM_LEAKS_SYMBOLS_TO_IGNORE to see examples.\n#   Please feel free to add other symbols as you find them but make sure to\n#   reference Radars or other bug systems so we can track them.\n\n# GTM_REMOVE_GCOV_DATA\n#   Before starting the test, remove any *.gcda files for the current run so\n#   you won't get failures when the source file has changed and the data can't\n#   be merged.\n#\nGTM_REMOVE_GCOV_DATA=${GTM_REMOVE_GCOV_DATA:=0}\n\n# GTM_DISABLE_USERDIR_SETUP\n#   Controls whether or not CFFIXED_USER_HOME is erased and set up from scratch\n#   for you each time the script is run. In some cases you may have a wrapper\n#   script calling this one that takes care of that for us so you can set up\n#   a certain user configuration.\nGTM_DISABLE_USERDIR_SETUP=${GTM_DISABLE_USERDIR_SETUP:=0}\n\n# GTM_DISABLE_IPHONE_LAUNCH_DAEMONS\n#   Controls whether or not we launch up the iPhone Launch Daemons before\n#   we start testing. You need Launch Daemons to test anything that interacts\n#   with security.\nGTM_DISABLE_IPHONE_LAUNCH_DAEMONS=1 #${GTM_DISABLE_IPHONE_LAUNCH_DAEMONS:=0}\n\nScriptDir=$(dirname \"$(echo $0 | sed -e \"s,^\\([^/]\\),$(pwd)/\\1,\")\")\nScriptName=$(basename \"$0\")\nThisScript=\"${ScriptDir}/${ScriptName}\"\n\nGTMXcodeNote() {\n    echo ${ThisScript}:${1}: note: GTM ${2}\n}\n\nif [ \"$PLATFORM_NAME\" == \"iphonesimulator\" ]; then\n  # We kill the iPhone simulator because otherwise we run into issues where\n  # the unittests fail becuase the simulator is currently running, and\n  # at this time the iPhone SDK won't allow two simulators running at the same\n  # time.\n  set +e\n  /usr/bin/killall \"iPhone Simulator\"\n  set -e\n\n  if [ $GTM_REMOVE_GCOV_DATA -ne 0 ]; then\n    if [ \"${OBJECT_FILE_DIR}-${CURRENT_VARIANT}\" != \"-\" ]; then\n      if [ -d \"${OBJECT_FILE_DIR}-${CURRENT_VARIANT}\" ]; then\n        GTMXcodeNote ${LINENO} \"Removing any .gcda files\"\n        (cd \"${OBJECT_FILE_DIR}-${CURRENT_VARIANT}\" && \\\n            find . -type f -name \"*.gcda\" -print0 | xargs -0 rm -f )\n      fi\n    fi\n  fi\n\n  export DYLD_ROOT_PATH=\"$SDKROOT\"\n  export DYLD_FRAMEWORK_PATH=\"$CONFIGURATION_BUILD_DIR\"\n  export IPHONE_SIMULATOR_ROOT=\"$SDKROOT\"\n  export CFFIXED_USER_HOME=\"$TEMP_FILES_DIR/iPhone Simulator User Dir\"\n\n  # See http://developer.apple.com/technotes/tn2004/tn2124.html for an\n  # explanation of these environment variables.\n\n  #export MallocScribble=YES\n  export MallocPreScribble=YES\n  #export MallocGuardEdges=YES\n  #export MallocStackLogging=YES\n  export NSAutoreleaseFreedObjectCheckEnabled=YES\n\n  # Turn on the mostly undocumented OBJC_DEBUG stuff.\n  export OBJC_DEBUG_FRAGILE_SUPERCLASSES=YES\n  export OBJC_DEBUG_UNLOAD=YES\n  # Turned off due to the amount of false positives from NS classes.\n  # export OBJC_DEBUG_FINALIZERS=YES\n  export OBJC_DEBUG_NIL_SYNC=YES\n  export OBJC_PRINT_REPLACED_METHODS=NO\n\n  if [ $GTM_DISABLE_ZOMBIES -eq 0 ]; then\n    GTMXcodeNote ${LINENO} \"Enabling zombies\"\n    export CFZombieLevel=3\n    export NSZombieEnabled=YES\n  fi\n\n  if [ $GTM_DISABLE_USERDIR_SETUP -eq 0 ]; then\n    # Cleanup user home directory\n    if [ -d \"$CFFIXED_USER_HOME\" ]; then\n      rm -rf \"$CFFIXED_USER_HOME\"\n    fi\n    mkdir \"$CFFIXED_USER_HOME\"\n    mkdir \"$CFFIXED_USER_HOME/Documents\"\n    mkdir -p \"$CFFIXED_USER_HOME/Library/Caches\"\n  fi\n\n  # 6251475 iPhone simulator leaks @ CFHTTPCookieStore shutdown if\n  #         CFFIXED_USER_HOME empty\n  GTM_LEAKS_SYMBOLS_TO_IGNORE=\"CFHTTPCookieStore\"\n\n  if [ $GTM_DISABLE_IPHONE_LAUNCH_DAEMONS -eq 0 ]; then\n    # If we want to test anything that interacts with the keychain, we need\n    # securityd up and running. See RunIPhoneLaunchDaemons.sh for details.\n    launchctl submit -l RunIPhoneLaunchDaemons -- \"${ScriptDir}/RunIPhoneLaunchDaemons.sh\" $IPHONE_SIMULATOR_ROOT $CFFIXED_USER_HOME\n    # No matter how we exit, we want to shut down our launchctl job.\n    trap \"launchctl remove RunIPhoneLaunchDaemons\" INT TERM EXIT\n  fi\n\n  # Start our app.\n  \"$TARGET_BUILD_DIR/$EXECUTABLE_PATH\" -RegisterForSystemEvents\n\nelse\n  GTMXcodeNote ${LINENO} \"Skipping running of unittests for device build.\"\nfi\nexit 0";
+		};
 		944FBF4C15C168C100BF85FC /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -509,6 +648,26 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		149894D51762D39E0036608B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				149894E71762D39E0036608B /* main.m in Sources */,
+				149894ED1762D3EA0036608B /* StringExpectationSpec.m in Sources */,
+				149894F21762DF6E0036608B /* FloatExpectationSpec.m in Sources */,
+				149894F4176398D00036608B /* ObjectExpectationSpec.m in Sources */,
+				149894F61763F82B0036608B /* IntExpectationSpec.m in Sources */,
+				149894F81763FDE60036608B /* BlockExpectationSpec.m in Sources */,
+				149894FA1763FED70036608B /* ArrayExpectationSpec.m in Sources */,
+				14614E6F1774D9C0000AF471 /* ErrorReportingSpec.m in Sources */,
+				14614E731774DBFD000AF471 /* GatheringExamplesSpec.m in Sources */,
+				14614E751774E0C6000AF471 /* ContextMethodsSpec.m in Sources */,
+				14614E771774E2AD000AF471 /* RunningExamplesSpec.m in Sources */,
+				14614E7E1774F5D0000AF471 /* OCDSFakeFailure.m in Sources */,
+				14614E7F1774F5D0000AF471 /* OCDSFakeFailureReporter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		942AAEE815BBB3760006C241 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -595,6 +754,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		149894E31762D39E0036608B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				149894E41762D39E0036608B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		944FBF5915C168C100BF85FC /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -614,6 +781,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		149894E91762D39E0036608B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_EMPTY_BODY = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OCDSpec2Specs/OCDSpec2Specs-Prefix.pch";
+				HEADER_SEARCH_PATHS = ../OCDSpec2;
+				INFOPLIST_FILE = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		149894EA1762D39E0036608B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_EMPTY_BODY = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OCDSpec2Specs/OCDSpec2Specs-Prefix.pch";
+				HEADER_SEARCH_PATHS = ../OCDSpec2;
+				INFOPLIST_FILE = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 		942AAEF915BBB3760006C241 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -743,6 +948,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -767,6 +976,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -807,6 +1020,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		149894EB1762D39E0036608B /* Build configuration list for PBXNativeTarget "OCDSpec2Specs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				149894E91762D39E0036608B /* Debug */,
+				149894EA1762D39E0036608B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		942AAEFB15BBB3760006C241 /* Build configuration list for PBXNativeTarget "OCDSpec2Mac" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

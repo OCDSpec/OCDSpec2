@@ -30,24 +30,35 @@
 #warning &quot;This project uses features only available in iOS SDK ___*___.0 and later.&quot;
 #endif
 </string>
-		<key>main.m:main:UIApplicationMain</key>
-		<string>@autoreleasepool {
-    return UIApplicationMain(argc, argv, nil, NSStringFromClass([OCDSpec2EntryPoint self]));
-}
-</string>
 		<key>main.m:specrunner</key>
 		<string>#import &lt;OCDSpec2/OCDSpec2.h&gt;
 
-@interface OCDSpec2EntryPoint : NSObject
+@interface OCDSpec2AppDelegate :NSObject &lt;UIApplicationDelegate&gt;
 @end
 
-@implementation OCDSpec2EntryPoint
+@implementation OCDSpec2AppDelegate
+@end
 
-- (void) applicationDidFinishLaunching:(UIApplication*)app {
-  exit(OCDSpec2RunAllTests());
+@interface OCDSpec2ApplicationRunner : UIApplication
+@end
+
+@implementation OCDSpec2ApplicationRunner
+
+-(id) init {
+  if (self = [super init]) {
+    if (OCDSpec2RunAllTests() &gt; 0) {
+      [NSException raise:NSGenericException format:@&quot;&quot;];
+    }
+  }
+  
+  return self;
 }
-
-@end</string>
+@end
+</string>
+		<key>main.m:main:UIApplicationMain</key>
+		<string>  @autoreleasepool {
+    return UIApplicationMain(argc, argv, NSStringFromClass([OCDSpec2ApplicationRunner class]), @&quot;OCDSpec2AppDelegate&quot;);
+  }</string>
 	</dict>
 	<key>Identifier</key>
 	<string>com.apple.dt.unit.cocoaTouchApplication</string>
@@ -66,37 +77,6 @@
 	</array>
 	<key>Options</key>
 	<array>
-		<dict>
-			<key>Default</key>
-			<string>true</string>
-			<key>Description</key>
-			<string>Whether a unit test bundle should be created</string>
-			<key>Identifier</key>
-			<string>includeUnitTests</string>
-			<key>Name</key>
-			<string>Include Unit Tests</string>
-			<key>SortOrder</key>
-			<integer>2</integer>
-			<key>Type</key>
-			<string>checkbox</string>
-			<key>Units</key>
-			<dict>
-				<key>true</key>
-				<array>
-					<dict>
-						<key>Components</key>
-						<array>
-							<dict>
-								<key>Identifier</key>
-								<string>com.apple.dt.unit.cocoaTouchApplicationUnitTestBundle</string>
-								<key>Name</key>
-								<string>___PACKAGENAME___Tests</string>
-							</dict>
-						</array>
-					</dict>
-				</array>
-			</dict>
-		</dict>
 		<dict>
 			<key>Default</key>
 			<string>Universal</string>

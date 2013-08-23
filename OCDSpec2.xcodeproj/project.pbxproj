@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1428639517C7FD8000066B3C /* OCDSLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 1428639317C7FD8000066B3C /* OCDSLog.h */; };
+		1428639617C7FD8000066B3C /* OCDSLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 1428639417C7FD8000066B3C /* OCDSLog.m */; };
 		14614E6F1774D9C0000AF471 /* ErrorReportingSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 14614E6E1774D9C0000AF471 /* ErrorReportingSpec.m */; };
 		14614E711774DAF0000AF471 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14614E701774DAF0000AF471 /* Default-568h@2x.png */; };
 		14614E731774DBFD000AF471 /* GatheringExamplesSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 14614E721774DBFD000AF471 /* GatheringExamplesSpec.m */; };
@@ -26,6 +28,11 @@
 		149894F61763F82B0036608B /* IntExpectationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 149894F51763F82B0036608B /* IntExpectationSpec.m */; };
 		149894F81763FDE60036608B /* BlockExpectationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 149894F71763FDE60036608B /* BlockExpectationSpec.m */; };
 		149894FA1763FED70036608B /* ArrayExpectationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 149894F91763FED70036608B /* ArrayExpectationSpec.m */; };
+		14B7B06A17BEBA6A001552CE /* OCDSDescriptionSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B7B06917BEBA6A001552CE /* OCDSDescriptionSpec.m */; };
+		14B7B06D17BEC316001552CE /* FakeLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B7B06C17BEC316001552CE /* FakeLogger.m */; };
+		14B7B06F17BECB37001552CE /* OCDSLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 14B7B06E17BECB37001552CE /* OCDSLogger.h */; };
+		14B7B07017BED2B4001552CE /* OCDSExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA415BB30D0003F22B6 /* OCDSExample.m */; };
+		14B7B07117BED2B8001552CE /* OCDSDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA215BB30D0003F22B6 /* OCDSDescription.m */; };
 		942AAEFD15BBB3E60006C241 /* OCDSContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA015BB30D0003F22B6 /* OCDSContext.m */; };
 		942AAEFE15BBB3E90006C241 /* OCDSDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA215BB30D0003F22B6 /* OCDSDescription.m */; };
 		942AAEFF15BBB3EB0006C241 /* OCDSExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA415BB30D0003F22B6 /* OCDSExample.m */; };
@@ -107,6 +114,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1428639317C7FD8000066B3C /* OCDSLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCDSLog.h; sourceTree = "<group>"; };
+		1428639417C7FD8000066B3C /* OCDSLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCDSLog.m; sourceTree = "<group>"; };
 		14614E6E1774D9C0000AF471 /* ErrorReportingSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErrorReportingSpec.m; sourceTree = "<group>"; };
 		14614E701774DAF0000AF471 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		14614E721774DBFD000AF471 /* GatheringExamplesSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GatheringExamplesSpec.m; sourceTree = "<group>"; };
@@ -129,6 +138,10 @@
 		149894F51763F82B0036608B /* IntExpectationSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntExpectationSpec.m; sourceTree = "<group>"; };
 		149894F71763FDE60036608B /* BlockExpectationSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockExpectationSpec.m; sourceTree = "<group>"; };
 		149894F91763FED70036608B /* ArrayExpectationSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayExpectationSpec.m; sourceTree = "<group>"; };
+		14B7B06917BEBA6A001552CE /* OCDSDescriptionSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCDSDescriptionSpec.m; sourceTree = "<group>"; };
+		14B7B06B17BEC316001552CE /* FakeLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FakeLogger.h; sourceTree = "<group>"; };
+		14B7B06C17BEC316001552CE /* FakeLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakeLogger.m; sourceTree = "<group>"; };
+		14B7B06E17BECB37001552CE /* OCDSLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCDSLogger.h; sourceTree = "<group>"; };
 		942AAEEC15BBB3760006C241 /* libOCDSpec2Mac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOCDSpec2Mac.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		942AAEF515BBB3760006C241 /* OCDSpec2Mac-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "OCDSpec2Mac-Prefix.pch"; path = "OCDSpec2/OCDSpec2Mac-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		944FBF4E15C168C100BF85FC /* OCDSpec2AcceptanceTest.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OCDSpec2AcceptanceTest.octest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -242,6 +255,8 @@
 		14614E791774E592000AF471 /* Fakes */ = {
 			isa = PBXGroup;
 			children = (
+				14B7B06B17BEC316001552CE /* FakeLogger.h */,
+				14B7B06C17BEC316001552CE /* FakeLogger.m */,
 				14614E7A1774F5D0000AF471 /* OCDSFakeFailure.h */,
 				14614E7B1774F5D0000AF471 /* OCDSFakeFailure.m */,
 				14614E7C1774F5D0000AF471 /* OCDSFakeFailureReporter.h */,
@@ -265,6 +280,7 @@
 				14614E721774DBFD000AF471 /* GatheringExamplesSpec.m */,
 				14614E741774E0C6000AF471 /* ContextMethodsSpec.m */,
 				14614E761774E2AD000AF471 /* RunningExamplesSpec.m */,
+				14B7B06917BEBA6A001552CE /* OCDSDescriptionSpec.m */,
 			);
 			path = OCDSpec2Specs;
 			sourceTree = "<group>";
@@ -410,6 +426,9 @@
 				947F6BDC15BC358F00C7CF3B /* OCDSArrayExpectation.m */,
 				9454C3E215C87C6500417FA7 /* OCDSBlockExpectation.h */,
 				9454C3E315C87C6500417FA7 /* OCDSBlockExpectation.m */,
+				14B7B06E17BECB37001552CE /* OCDSLogger.h */,
+				1428639317C7FD8000066B3C /* OCDSLog.h */,
+				1428639417C7FD8000066B3C /* OCDSLog.m */,
 				94A6BA6015BB2DE7003F22B6 /* Supporting Files */,
 			);
 			path = OCDSpec2;
@@ -449,8 +468,10 @@
 				94A6BABC15BB30D0003F22B6 /* OCDSExpectation.h in Headers */,
 				94A6BABF15BB30D0003F22B6 /* OCDSObjectExpectation.h in Headers */,
 				94A6BAC215BB30D0003F22B6 /* OCDSIntExpectation.h in Headers */,
+				1428639517C7FD8000066B3C /* OCDSLog.h in Headers */,
 				94A6BAC515BB30D0003F22B6 /* OCDSFloatExpectation.h in Headers */,
 				94A6BAC815BB30D0003F22B6 /* OCDSStringExpectation.h in Headers */,
+				14B7B06F17BECB37001552CE /* OCDSLogger.h in Headers */,
 				947F6BDD15BC358F00C7CF3B /* OCDSArrayExpectation.h in Headers */,
 				9454C3E415C87C6500417FA7 /* OCDSBlockExpectation.h in Headers */,
 			);
@@ -655,14 +676,18 @@
 				149894E71762D39E0036608B /* main.m in Sources */,
 				149894ED1762D3EA0036608B /* StringExpectationSpec.m in Sources */,
 				149894F21762DF6E0036608B /* FloatExpectationSpec.m in Sources */,
+				14B7B07117BED2B8001552CE /* OCDSDescription.m in Sources */,
 				149894F4176398D00036608B /* ObjectExpectationSpec.m in Sources */,
 				149894F61763F82B0036608B /* IntExpectationSpec.m in Sources */,
 				149894F81763FDE60036608B /* BlockExpectationSpec.m in Sources */,
+				14B7B06A17BEBA6A001552CE /* OCDSDescriptionSpec.m in Sources */,
 				149894FA1763FED70036608B /* ArrayExpectationSpec.m in Sources */,
+				14B7B06D17BEC316001552CE /* FakeLogger.m in Sources */,
 				14614E6F1774D9C0000AF471 /* ErrorReportingSpec.m in Sources */,
 				14614E731774DBFD000AF471 /* GatheringExamplesSpec.m in Sources */,
 				14614E751774E0C6000AF471 /* ContextMethodsSpec.m in Sources */,
 				14614E771774E2AD000AF471 /* RunningExamplesSpec.m in Sources */,
+				14B7B07017BED2B4001552CE /* OCDSExample.m in Sources */,
 				14614E7E1774F5D0000AF471 /* OCDSFakeFailure.m in Sources */,
 				14614E7F1774F5D0000AF471 /* OCDSFakeFailureReporter.m in Sources */,
 			);
@@ -744,6 +769,7 @@
 				94A6BABD15BB30D0003F22B6 /* OCDSExpectation.m in Sources */,
 				94A6BAC015BB30D0003F22B6 /* OCDSObjectExpectation.m in Sources */,
 				94A6BAC315BB30D0003F22B6 /* OCDSIntExpectation.m in Sources */,
+				1428639617C7FD8000066B3C /* OCDSLog.m in Sources */,
 				94A6BAC615BB30D0003F22B6 /* OCDSFloatExpectation.m in Sources */,
 				94A6BAC915BB30D0003F22B6 /* OCDSStringExpectation.m in Sources */,
 				947F6BDF15BC358F00C7CF3B /* OCDSArrayExpectation.m in Sources */,

@@ -23,18 +23,18 @@ int OCDSpec2RunAllTests() {
   int errorCount = 0;
   
   for (Class runnerClass in [self preludeClasses]) {
-    id<OCDSPrelude> runner = [[[runnerClass alloc] init] autorelease];
+    id<OCDSPrelude> runner = [[runnerClass new] autorelease];
     [runner run];
   }
   
   for (Class contextClass in [self contextClasses]) {
-    OCDSContext *ctx = [[[contextClass alloc] init] autorelease];
-    ctx.reportOutputFile = outputFile;
+    OCDSContext *context = [[contextClass new] autorelease];
+    context.reportOutputFile = outputFile;
     
-    [ctx gatherExamples];
-    [ctx runAllExamples];
+    [context gatherExamples];
+    [context runAllExamples];
     
-    errorCount += ctx.errorCount;
+    errorCount += context.errorCount;
   }
   
   if (errorCount == 0) {
@@ -95,7 +95,7 @@ int OCDSpec2RunAllTests() {
 
 - (id) init {
   if ((self = [super init])) {
-    self.topLevelDescription = [[[OCDSDescription alloc] init] autorelease];
+    self.topLevelDescription = [[OCDSDescription new] autorelease];
     self.topLevelDescription.name = @"Top level";
     
     self.currentDescription = self.topLevelDescription;
@@ -105,7 +105,7 @@ int OCDSpec2RunAllTests() {
 
 - (void(^)(NSString*, void(^)(void))) _functionForDescribeBlock {
   return [[^(NSString* name, void(^blk)(void)) {
-    OCDSDescription *desc = [[[OCDSDescription alloc] init] autorelease];
+    OCDSDescription *desc = [[OCDSDescription new] autorelease];
     desc.name = name;
     self.currentDescription.subDescriptions = [[NSArray arrayWithArray:self.currentDescription.subDescriptions] arrayByAddingObject:desc];
     
@@ -117,7 +117,7 @@ int OCDSpec2RunAllTests() {
 
 - (void(^)(NSString*, void(^)(void))) _functionForExampleBlockInFile:(char*)inFile atLine:(int)atLine {
   return [[^(NSString* name, void(^blk)(void)) {
-    OCDSExample *ex = [[[OCDSExample alloc] init] autorelease];
+    OCDSExample *ex = [[OCDSExample new] autorelease];
     ex.name = name;
     ex.block = ^{
       [[[OCDSBlockExpectation expectationInFile:inFile
@@ -156,7 +156,7 @@ int OCDSpec2RunAllTests() {
 }
 
 - (void) runAllExamples {
-  [self.topLevelDescription runAllExamplesWithBeforeBlocks:@[] afterBlocks:@[]];
+  [self.topLevelDescription runAll];
 }
 
 @end

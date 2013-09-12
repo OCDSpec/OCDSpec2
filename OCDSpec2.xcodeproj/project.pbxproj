@@ -111,6 +111,7 @@
 		94A6BAC615BB30D0003F22B6 /* OCDSFloatExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAAC15BB30D0003F22B6 /* OCDSFloatExpectation.m */; };
 		94A6BAC815BB30D0003F22B6 /* OCDSStringExpectation.h in Headers */ = {isa = PBXBuildFile; fileRef = 94A6BAAD15BB30D0003F22B6 /* OCDSStringExpectation.h */; };
 		94A6BAC915BB30D0003F22B6 /* OCDSStringExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAAE15BB30D0003F22B6 /* OCDSStringExpectation.m */; };
+		94AB6C1E17E20B2600438A40 /* OCDSLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 1428639417C7FD8000066B3C /* OCDSLog.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -707,6 +708,7 @@
 				942AAF0415BBB3F80006C241 /* OCDSStringExpectation.m in Sources */,
 				947F6BE115BC358F00C7CF3B /* OCDSArrayExpectation.m in Sources */,
 				9454C3E715C87C6500417FA7 /* OCDSBlockExpectation.m in Sources */,
+				94AB6C1E17E20B2600438A40 /* OCDSLog.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

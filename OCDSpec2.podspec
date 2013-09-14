@@ -43,7 +43,8 @@ Pod::Spec.new do |s|
                      "marosluuce" => "nathan@8thlight.com", 
                      "sdegutis" => "sbdegutis@gmail.com" }
 
-  s.source       = { :git => "https://github.com/paytonrules/OCDSpec2.git", :tag => "1.5.1" }
+  s.source       = { :git => "https://github.com/ericmeyer/OCDSpec2.git", :tag => "1.5.1" }
   s.source_files  = 'OCDSpec2', 'OCDSpec2/**/*.{h,m}'
+  s.resources = ""
   s.exclude_files = 'OCDSpec2/Exclude'
 end

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<dict>
-	<key>Ancestors</key>
-	<array>
-		<string>com.apple.dt.unit.objectiveCApplication</string>
-		<string>com.apple.dt.unit.iPhoneBase</string>
-		<string>com.apple.dt.unit.prefixable</string>
-	</array>
-	<key>Definitions</key>
-	<dict>
-		<key>___PACKAGENAME___-Info.plist:iPhone</key>
-		<string>&lt;key&gt;CFBundleDisplayName&lt;/key&gt;
+  <dict>
+    <key>Ancestors</key>
+    <array>
+      <string>com.apple.dt.unit.objectiveCApplication</string>
+      <string>com.apple.dt.unit.iPhoneBase</string>
+      <string>com.apple.dt.unit.prefixable</string>
+    </array>
+    <key>Definitions</key>
+    <dict>
+      <key>___PACKAGENAME___-Info.plist:iPhone</key>
+      <string>&lt;key&gt;CFBundleDisplayName&lt;/key&gt;
 &lt;string&gt;${PRODUCT_NAME}&lt;/string&gt;
 &lt;key&gt;CFBundleVersion&lt;/key&gt;
 &lt;string&gt;1.0&lt;/string&gt;
@@ -23,15 +23,15 @@
 &lt;array&gt;
 	&lt;string&gt;armv7&lt;/string&gt;
 &lt;/array&gt;</string>
-		<key>___PACKAGENAME___-Prefix.pch:Availability:iPhoneAvailability:*</key>
-		<string>#import &lt;Availability.h&gt;
+      <key>___PACKAGENAME___-Prefix.pch:Availability:iPhoneAvailability:*</key>
+      <string>#import &lt;Availability.h&gt;
 
 #ifndef __IPHONE____*____0
-#warning &quot;This project uses features only available in iOS SDK ___*___.0 and later.&quot;
+#warning "This project uses features only available in iOS SDK ___*___.0 and later."
 #endif
 </string>
-		<key>main.m:specrunner</key>
-		<string>#import &lt;OCDSpec2/OCDSpec2.h&gt;
+      <key>main.m:specrunner</key>
+      <string>#import &lt;OCDSpec2/OCDSpec2.h&gt;
 
 @interface OCDSpec2AppDelegate :NSObject &lt;UIApplicationDelegate&gt;
 @end
@@ -47,7 +47,7 @@
 -(id) init {
   if (self = [super init]) {
     if (OCDSpec2RunAllTests() &gt; 0) {
-      [NSException raise:NSGenericException format:@&quot;&quot;];
+      [NSException raise:NSGenericException format:@""];
     }
   }
   
@@ -55,155 +55,153 @@
 }
 @end
 </string>
-		<key>main.m:main:UIApplicationMain</key>
-		<string>  @autoreleasepool {
-    return UIApplicationMain(argc, argv, NSStringFromClass([OCDSpec2ApplicationRunner class]), @&quot;OCDSpec2AppDelegate&quot;);
+      <key>main.m:main:UIApplicationMain</key>
+      <string>  @autoreleasepool {
+    return UIApplicationMain(argc, argv, NSStringFromClass([OCDSpec2ApplicationRunner class]), @"OCDSpec2AppDelegate");
   }</string>
-	</dict>
-	<key>Identifier</key>
-	<string>com.apple.dt.unit.cocoaTouchApplication</string>
-	<key>Description</key>
-	<string>This template adds a OCDSpec2 runner to your iOS project.</string>
-	<key>Kind</key>
-	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
-	<key>Nodes</key>
-	<array>
-		<string>main.m:specrunner</string>
-		<string>main.m:main:UIApplicationMain</string>
-		<string>___PACKAGENAME___-Info.plist:iPhone</string>
-		<string>___PACKAGENAME___-Info.plist:NSMainNibFile</string>
-		<string>___PACKAGENAME___-Prefix.pch:objC:importFoundation</string>
-		<string>___PACKAGENAME___-Prefix.pch:Availability:iPhoneAvailability</string>
-	</array>
-	<key>Options</key>
-	<array>
-		<dict>
-			<key>Default</key>
-			<string>Universal</string>
-			<key>Description</key>
-			<string>Which device family to create a project for</string>
-			<key>Identifier</key>
-			<string>universalDeviceFamily</string>
-			<key>Name</key>
-			<string>Device Family</string>
-			<key>SortOrder</key>
-			<integer>1</integer>
-			<key>Type</key>
-			<string>popup</string>
-			<key>Units</key>
-			<dict>
-				<key>Universal</key>
-				<dict>
-					<key>Definitions</key>
-					<dict>
-						<key>*:implementation:shouldAutorotateToInterfaceOrientation:return</key>
-						<string>if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
+    </dict>
+    <key>Identifier</key>
+    <string>com.apple.dt.unit.cocoaTouchApplication</string>
+    <key>Description</key>
+    <string>This template adds a OCDSpec2 runner to your iOS project.</string>
+    <key>Kind</key>
+    <string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+    <key>Nodes</key>
+    <array>
+      <string>main.m:specrunner</string>
+      <string>main.m:main:UIApplicationMain</string>
+      <string>___PACKAGENAME___-Info.plist:iPhone</string>
+      <string>___PACKAGENAME___-Info.plist:NSMainNibFile</string>
+      <string>___PACKAGENAME___-Prefix.pch:objC:importFoundation</string>
+      <string>___PACKAGENAME___-Prefix.pch:Availability:iPhoneAvailability</string>
+    </array>
+    <key>Options</key>
+    <array>
+      <dict>
+        <key>Default</key>
+        <string>Universal</string>
+        <key>Description</key>
+        <string>Which device family to create a project for</string>
+        <key>Identifier</key>
+        <string>universalDeviceFamily</string>
+        <key>Name</key>
+        <string>Device Family</string>
+        <key>SortOrder</key>
+        <integer>1</integer>
+        <key>Type</key>
+        <string>popup</string>
+        <key>Units</key>
+        <dict>
+          <key>Universal</key>
+          <dict>
+            <key>Definitions</key>
+            <dict>
+              <key>*:implementation:shouldAutorotateToInterfaceOrientation:return</key>
+              <string>if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 } else {
     return YES;
 }</string>
-					</dict>
-					<key>Nodes</key>
-					<array>
-						<string>___PACKAGENAME___-Info.plist:UISupportedInterfaceOrientations~iPhone</string>
-						<string>___PACKAGENAME___-Info.plist:UISupportedInterfaceOrientations~iPad</string>
-					</array>
-					<key>Project</key>
-					<dict>
-						<key>SharedSettings</key>
-						<dict>
-							<key>TARGETED_DEVICE_FAMILY</key>
-							<string>1,2</string>
-						</dict>
-					</dict>
-				</dict>
-				<key>iPad</key>
-				<dict>
-					<key>Definitions</key>
-					<dict>
-						<key>*:implementation:shouldAutorotateToInterfaceOrientation:return</key>
-						<string>return YES;</string>
-					</dict>
-					<key>Nodes</key>
-					<array>
-						<string>___PACKAGENAME___-Info.plist:UISupportedInterfaceOrientations~iPad</string>
-					</array>
-					<key>Project</key>
-					<dict>
-						<key>SharedSettings</key>
-						<dict>
-							<key>TARGETED_DEVICE_FAMILY</key>
-							<string>2</string>
-						</dict>
-					</dict>
-				</dict>
-				<key>iPhone</key>
-				<dict>
-					<key>Definitions</key>
-					<dict>
-						<key>*:implementation:shouldAutorotateToInterfaceOrientation:return</key>
-						<string>return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);</string>
-					</dict>
-					<key>Nodes</key>
-					<array>
-						<string>___PACKAGENAME___-Info.plist:UISupportedInterfaceOrientations~iPhone</string>
-					</array>
-				</dict>
-			</dict>
-		</dict>
-	</array>
-	<key>Project</key>
-	<dict>
-		<key>Configurations</key>
-		<dict>
-			<key>Release</key>
-			<dict>
-				<key>OTHER_CFLAGS</key>
-				<string>-DNS_BLOCK_ASSERTIONS=1</string>
-			</dict>
-		</dict>
-		<key>SharedSettings</key>
-		<dict>
-			<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-			<string>iPhone Developer</string>
-		</dict>
-	</dict>
-	<key>Targets</key>
-	<array>
-		<dict>
-			<key>SharedSettings</key>
-			<dict>
-				<key>HEADER_SEARCH_PATHS</key>
-				<string>OCDSpec2</string>
-				<key>INFOPLIST_FILE</key>
-				<string></string>
-			</dict>
-			<key>BuildPhases</key>
-			<array>
-				<dict>
-					<key>Class</key>
-					<string>ShellScript</string>
-					<key>ShellPath</key>
-					<string>/bin/sh</string>
-					<key>ShellScript</key>
-					<string>#!/bin/bash
+            </dict>
+            <key>Nodes</key>
+            <array>
+              <string>___PACKAGENAME___-Info.plist:UISupportedInterfaceOrientations~iPhone</string>
+              <string>___PACKAGENAME___-Info.plist:UISupportedInterfaceOrientations~iPad</string>
+            </array>
+            <key>Project</key>
+            <dict>
+              <key>SharedSettings</key>
+              <dict>
+                <key>TARGETED_DEVICE_FAMILY</key>
+                <string>1,2</string>
+              </dict>
+            </dict>
+          </dict>
+          <key>iPad</key>
+          <dict>
+            <key>Definitions</key>
+            <dict>
+              <key>*:implementation:shouldAutorotateToInterfaceOrientation:return</key>
+              <string>return YES;</string>
+            </dict>
+            <key>Nodes</key>
+            <array>
+              <string>___PACKAGENAME___-Info.plist:UISupportedInterfaceOrientations~iPad</string>
+            </array>
+            <key>Project</key>
+            <dict>
+              <key>SharedSettings</key>
+              <dict>
+                <key>TARGETED_DEVICE_FAMILY</key>
+                <string>2</string>
+              </dict>
+            </dict>
+          </dict>
+          <key>iPhone</key>
+          <dict>
+            <key>Definitions</key>
+            <dict>
+              <key>*:implementation:shouldAutorotateToInterfaceOrientation:return</key>
+              <string>return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);</string>
+            </dict>
+            <key>Nodes</key>
+            <array>
+              <string>___PACKAGENAME___-Info.plist:UISupportedInterfaceOrientations~iPhone</string>
+            </array>
+          </dict>
+        </dict>
+      </dict>
+    </array>
+    <key>Project</key>
+    <dict>
+      <key>Configurations</key>
+      <dict>
+        <key>Release</key>
+        <dict>
+          <key>OTHER_CFLAGS</key>
+          <string>-DNS_BLOCK_ASSERTIONS=1</string>
+        </dict>
+      </dict>
+      <key>SharedSettings</key>
+      <dict>
+        <key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+        <string>iPhone Developer</string>
+      </dict>
+    </dict>
+    <key>Targets</key>
+    <array>
+      <dict>
+        <key>SharedSettings</key>
+        <dict>
+          <key>INFOPLIST_FILE</key>
+          <string/>
+        </dict>
+        <key>BuildPhases</key>
+        <array>
+          <dict>
+            <key>Class</key>
+            <string>ShellScript</string>
+            <key>ShellPath</key>
+            <string>/bin/sh</string>
+            <key>ShellScript</key>
+            <string>#!/bin/bash
 #  RunIPhoneUnitTest.sh
 #  Copyright 2008 Google Inc.
 #
-#  Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not
+#  Licensed under the Apache License, Version 2.0 (the "License"); you may not
 #  use this file except in compliance with the License.  You may obtain a copy
 #  of the License at
 #
 #  http://www.apache.org/licenses/LICENSE-2.0
 #
 #  Unless required by applicable law or agreed to in writing, software
-#  distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT
+#  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
 #  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  See the
 #  License for the specific language governing permissions and limitations under
 #  the License.
 #
-#  Runs all unittests through the iPhone simulator. We don&apos;t handle running them
-#  on the device. To run on the device just choose &quot;run&quot;.
+#  Runs all unittests through the iPhone simulator. We don't handle running them
+#  on the device. To run on the device just choose "run".
 
 set -o errexit
 set -o nounset
@@ -220,20 +218,20 @@ GTM_DISABLE_ZOMBIES=${GTM_DISABLE_ZOMBIES:=1}
 #   to disable zombies, otherwise you will get a lot of false positives.
 
 # GTM_DISABLE_TERMINATION
-#   Set to a non-zero value so that the app doesn&apos;t terminate when it&apos;s finished
+#   Set to a non-zero value so that the app doesn't terminate when it's finished
 #   running tests. This is useful when using it with external tools such
 #   as Instruments.
 
 # GTM_LEAKS_SYMBOLS_TO_IGNORE
 #   List of comma separated symbols that leaks should ignore. Mainly to control
-#   leaks in frameworks you don&apos;t have control over.
+#   leaks in frameworks you don't have control over.
 #   Search this file for GTM_LEAKS_SYMBOLS_TO_IGNORE to see examples.
 #   Please feel free to add other symbols as you find them but make sure to
 #   reference Radars or other bug systems so we can track them.
 
 # GTM_REMOVE_GCOV_DATA
 #   Before starting the test, remove any *.gcda files for the current run so
-#   you won&apos;t get failures when the source file has changed and the data can&apos;t
+#   you won't get failures when the source file has changed and the data can't
 #   be merged.
 #
 GTM_REMOVE_GCOV_DATA=${GTM_REMOVE_GCOV_DATA:=0}
@@ -251,37 +249,37 @@ GTM_DISABLE_USERDIR_SETUP=${GTM_DISABLE_USERDIR_SETUP:=0}
 #   with security.
 GTM_DISABLE_IPHONE_LAUNCH_DAEMONS=1 #${GTM_DISABLE_IPHONE_LAUNCH_DAEMONS:=0}
 
-ScriptDir=$(dirname &quot;$(echo $0 | sed -e &quot;s,^\([^/]\),$(pwd)/\1,&quot;)&quot;)
-ScriptName=$(basename &quot;$0&quot;)
-ThisScript=&quot;${ScriptDir}/${ScriptName}&quot;
+ScriptDir=$(dirname "$(echo $0 | sed -e "s,^\([^/]\),$(pwd)/\1,")")
+ScriptName=$(basename "$0")
+ThisScript="${ScriptDir}/${ScriptName}"
 
 GTMXcodeNote() {
     echo ${ThisScript}:${1}: note: GTM ${2}
 }
 
-if [ &quot;$PLATFORM_NAME&quot; == &quot;iphonesimulator&quot; ]; then
+if [ "$PLATFORM_NAME" == "iphonesimulator" ]; then
   # We kill the iPhone simulator because otherwise we run into issues where
   # the unittests fail becuase the simulator is currently running, and
-  # at this time the iPhone SDK won&apos;t allow two simulators running at the same
+  # at this time the iPhone SDK won't allow two simulators running at the same
   # time.
   set +e
-  /usr/bin/killall &quot;iPhone Simulator&quot;
+  /usr/bin/killall "iPhone Simulator"
   set -e
 
   if [ $GTM_REMOVE_GCOV_DATA -ne 0 ]; then
-    if [ &quot;${OBJECT_FILE_DIR}-${CURRENT_VARIANT}&quot; != &quot;-&quot; ]; then
-      if [ -d &quot;${OBJECT_FILE_DIR}-${CURRENT_VARIANT}&quot; ]; then
-        GTMXcodeNote ${LINENO} &quot;Removing any .gcda files&quot;
-        (cd &quot;${OBJECT_FILE_DIR}-${CURRENT_VARIANT}&quot; &amp;&amp; \
-            find . -type f -name &quot;*.gcda&quot; -print0 | xargs -0 rm -f )
+    if [ "${OBJECT_FILE_DIR}-${CURRENT_VARIANT}" != "-" ]; then
+      if [ -d "${OBJECT_FILE_DIR}-${CURRENT_VARIANT}" ]; then
+        GTMXcodeNote ${LINENO} "Removing any .gcda files"
+        (cd "${OBJECT_FILE_DIR}-${CURRENT_VARIANT}" &amp;&amp; \
+            find . -type f -name "*.gcda" -print0 | xargs -0 rm -f )
       fi
     fi
   fi
 
-  export DYLD_ROOT_PATH=&quot;$SDKROOT&quot;
-  export DYLD_FRAMEWORK_PATH=&quot;$CONFIGURATION_BUILD_DIR&quot;
-  export IPHONE_SIMULATOR_ROOT=&quot;$SDKROOT&quot;
-  export CFFIXED_USER_HOME=&quot;$TEMP_FILES_DIR/iPhone Simulator User Dir&quot;
+  export DYLD_ROOT_PATH="$SDKROOT"
+  export DYLD_FRAMEWORK_PATH="$CONFIGURATION_BUILD_DIR"
+  export IPHONE_SIMULATOR_ROOT="$SDKROOT"
+  export CFFIXED_USER_HOME="$TEMP_FILES_DIR/iPhone Simulator User Dir"
 
   # See http://developer.apple.com/technotes/tn2004/tn2124.html for an
   # explanation of these environment variables.
@@ -301,53 +299,53 @@ if [ &quot;$PLATFORM_NAME&quot; == &quot;iphonesimulator&quot; ]; then
   export OBJC_PRINT_REPLACED_METHODS=NO
 
   if [ $GTM_DISABLE_ZOMBIES -eq 0 ]; then
-    GTMXcodeNote ${LINENO} &quot;Enabling zombies&quot;
+    GTMXcodeNote ${LINENO} "Enabling zombies"
     export CFZombieLevel=3
     export NSZombieEnabled=YES
   fi
 
   if [ $GTM_DISABLE_USERDIR_SETUP -eq 0 ]; then
     # Cleanup user home directory
-    if [ -d &quot;$CFFIXED_USER_HOME&quot; ]; then
-      rm -rf &quot;$CFFIXED_USER_HOME&quot;
+    if [ -d "$CFFIXED_USER_HOME" ]; then
+      rm -rf "$CFFIXED_USER_HOME"
     fi
-    mkdir &quot;$CFFIXED_USER_HOME&quot;
-    mkdir &quot;$CFFIXED_USER_HOME/Documents&quot;
-    mkdir -p &quot;$CFFIXED_USER_HOME/Library/Caches&quot;
+    mkdir "$CFFIXED_USER_HOME"
+    mkdir "$CFFIXED_USER_HOME/Documents"
+    mkdir -p "$CFFIXED_USER_HOME/Library/Caches"
   fi
 
   # 6251475 iPhone simulator leaks @ CFHTTPCookieStore shutdown if
   #         CFFIXED_USER_HOME empty
-  GTM_LEAKS_SYMBOLS_TO_IGNORE=&quot;CFHTTPCookieStore&quot;
+  GTM_LEAKS_SYMBOLS_TO_IGNORE="CFHTTPCookieStore"
 
   if [ $GTM_DISABLE_IPHONE_LAUNCH_DAEMONS -eq 0 ]; then
     # If we want to test anything that interacts with the keychain, we need
     # securityd up and running. See RunIPhoneLaunchDaemons.sh for details.
-    launchctl submit -l RunIPhoneLaunchDaemons -- &quot;${ScriptDir}/RunIPhoneLaunchDaemons.sh&quot; $IPHONE_SIMULATOR_ROOT $CFFIXED_USER_HOME
+    launchctl submit -l RunIPhoneLaunchDaemons -- "${ScriptDir}/RunIPhoneLaunchDaemons.sh" $IPHONE_SIMULATOR_ROOT $CFFIXED_USER_HOME
     # No matter how we exit, we want to shut down our launchctl job.
-    trap &quot;launchctl remove RunIPhoneLaunchDaemons&quot; INT TERM EXIT
+    trap "launchctl remove RunIPhoneLaunchDaemons" INT TERM EXIT
   fi
 
   # Start our app.
-  &quot;$TARGET_BUILD_DIR/$EXECUTABLE_PATH&quot; -RegisterForSystemEvents
+  "$TARGET_BUILD_DIR/$EXECUTABLE_PATH" -RegisterForSystemEvents
 
 else
-  GTMXcodeNote ${LINENO} &quot;Skipping running of unittests for device build.&quot;
+  GTMXcodeNote ${LINENO} "Skipping running of unittests for device build."
 fi
 exit 0</string>
-				</dict>
-			</array>
-			<key>Frameworks</key>
-			<array>
-				<string>UIKit</string>
-				<string>Foundation</string>
-				<string>CoreGraphics</string>
-			</array>
-		</dict>
-	</array>
-	<key>Concrete</key>
-	<true/>
-	<key>TargetOnly</key>
-	<true/>
-</dict>
+          </dict>
+        </array>
+        <key>Frameworks</key>
+        <array>
+          <string>UIKit</string>
+          <string>Foundation</string>
+          <string>CoreGraphics</string>
+        </array>
+      </dict>
+    </array>
+    <key>Concrete</key>
+    <true/>
+    <key>TargetOnly</key>
+    <true/>
+  </dict>
 </plist>

@@ -1,40 +1,45 @@
-# OCDSpec2 1.4
+# OCDSpec2 1.5.1
 
-A testing library for Mac or iOS projects
+A testing library for Mac or iOS projects, for the obsessive compulsive, like me!
 
-## One-time setup before using OCDSpec2 in any project
+## Installation
 
-Clone the repo to the directory of your choice.
+OCDSpec is now on CocoaPods! This is makes it far simpler to get started.
 
-Inside the OCDSpec2 directory, run:
+### Install The Project Templates (one time installation)
+
+The simplest way to get started is to use the provided templates to create a seperate specs target. This requires a one-time install script.  Just run:
 
 ```bash
-./install_templates.sh       # installs the Xcode target and file templates you will be using
-./install_autocompletions.sh # installs the Xcode autocompletion files that make life so nice
+\curl https://raw.github.com/ericmeyer/OCDSpec2/master/install_templates.sh
 ```
 
-## Use OCDSpec2 in an iOS project
+This script does not require administrative permissions.  Optionally if you want autocompletion on XCode you can run:
 
-* In the root dir of your project, run:
-    * `git submodule add https://github.com/ericmeyer/OCDSpec2.git`
-* Add a new target to your project of type 'OCDSpec2 -> iOS Spec Runner'. This is your spec target.
-    * Drag the OCDSpec2 project file, found in the submodule you just cloned, into your project in Xcode.
-    * Drag the OCDSpec2 subproject's Product `libOCDSpec2.a` into your spec target's "Link Binary With Libraries" build phase.
-* Note: you can choose "Manage Schemes..." from the scheme dropdown and from there toggle the OCDSpec2 scheme to not be shown
+```bash
+\curl https://raw.github.com/ericmeyer/OCDSpec2/master/install_autocompletions.sh
+```
 
-## Use OCDSpec2 in a Mac project
+### Create the spec target
+OCDSpec has project templates for iOS and Mac files so you can add a target to your project using the appropriate test runner for your platform.  Finally add this to your podfile:
 
-* In the root dir of your project, run:
-    * `git submodule add https://github.com/ericmeyer/OCDSpec2.git`
-* Add a new target to your project of type 'OCDSpec2 -> Mac Spec Runner'. This is your spec target.
-    * Drag the OCDSpec2 project file, found in the submodule you just cloned, into your project in Xcode.
-    * Drag the OCDSpec2 subproject's Product `libOCDSpec2Mac.a` into your spec target's "Link Binary With Libraries" build phase.
-* Note: you can choose "Manage Schemes..." from the scheme dropdown and from there toggle the OCDSpec2 scheme to not be shown
+```ruby
+target :test do
+  link_with '<Your Spec Target Name>'
+  
+  pod 'OCDSpec2', :git => 'https://github.com/ericmeyer/OCDSpec2.git'
+end
+```
+
+Now when you build your spec target it will automatically run the tests and fail the build if any tests fail. I like to make my test target a dependency of my main applications target, so my tests fail the build. 
 
 ## Adding a spec to the project
 
-* Add a new 'OCDSpec2 -> Spec' file to your project
-* Make sure it's only in your spec target, not your main target
+If you ran the install template script it also installs a file template to make creating new specs simple.
+
+* Add a new 'OCDSpec2 -> Spec' file to your project.
+* Make sure it's only in your spec target, not your main target.
+* Any files you are going to test also need to be in your spec target.
 
 ## Running specs
 
@@ -52,7 +57,7 @@ Inside the OCDSpec2 directory, run:
     * Templates for easy creation of testing targets and spec files
     * Highlights any lines with failed expectations
 * Catches exceptions
-    * This means it's probably compatible with OCMock now
+    * This makes it compatible with OCMock
 * Pending
 
 ## Example spec
@@ -143,19 +148,11 @@ NSString* StubbedNibName(void) {
 @end
 ```
 
-## Upgrading
-
-To get the latest matchers, upgrade to the latest version:
-
-* Update the OCDSpec2 submodule in your project
-    * `cd OCDSpec2` from your main project directory
-    * `git checkout master`
-    * `git pull`
-    * Be sure to check this into git
-    * Make sure you actually understand how git submodules work, or you will totally mess things up and get very confused
-
 ## Change log
-
+* 1.5.1
+    * CocoaPods
+* 1.5
+    * Fixed the exit code for the latest iOS changes
 * 1.4
     * Added Pending() and PendingStr() which produce warnings instead of errors
 * 1.3
@@ -174,20 +171,9 @@ To get the latest matchers, upgrade to the latest version:
     * Did all the stuff
     * Wrote all the codez
 
-## To Do
-
-* Add ExpectUInt and ExpectUFloat matchers
-    * Maybe rename ExpectInt and ExpectFloat to ExpectSInt and ExpectSFloat
-        * Or not, cuz that's way ugly
-* Start versioning OCDSpec2 properly
-    * Figure out how to version a library first
-* Tell people about OCDSpec2
-    * Or maybe not?
-        * Secret lib! Yeah, this sounds exciting! Some James Bond stuff goin on here.
-
 ## Working on OCDSpec2 itself
 
-* Building the OCDSpec2 scheme will run all the unit and acceptance tests
+* Building the OCDSpec2 scheme will run all the unit tests and the acceptance test
 * Make sure you test everything you add
 * Make your tests better than my tests
 
@@ -195,13 +181,10 @@ To get the latest matchers, upgrade to the latest version:
 
 * Inspired by Eric Smith's [OCDSpec](https://github.com/paytonrules/OCDSpec).
 
-## Caveats
-
-* OCDSpec2 is only known to work with Xcode 4.3.3 for now.
 
 ## License
 
-Copyright (c) 2012 Eric Meyer
+Copyright (c) 2013 Eric Meyer
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 

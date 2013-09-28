@@ -1,14 +1,21 @@
 #import <Foundation/Foundation.h>
 
+#import "OCDSLogger.h"
+
 @interface OCDSDescription : NSObject
 
-@property (readwrite, retain) NSArray *subDescriptions;
-@property (readwrite, retain) NSString* name;
-@property (readwrite, retain) NSArray *examples;
+@property (strong, retain) NSArray *subDescriptions;
+@property (strong, retain) NSString *name;
+@property (strong, retain) NSArray *examples;
+@property (strong, retain) NSObject<OCDSLogger> *logger;
 
-@property (readwrite, copy) void (^beforeEachBlock)(void);
-@property (readwrite, copy) void (^afterEachBlock)(void);
+@property (copy) void (^beforeEachBlock)(void);
+@property (copy) void (^afterEachBlock)(void);
 
-- (void) runAllExamplesWithBeforeBlocks:(NSArray*)beforeBlocks afterBlocks:(NSArray*)afterBlocks;
+-(id) initWithLogger:(NSObject<OCDSLogger> *) logger;
+-(void) runAll;
+-(void) runAllExamplesWithBeforeBlocks:(NSArray *) beforeBlocks afterBlocks:(NSArray *) afterBlocks;
+
+-(NSString *) logMessage:(NSString *)exampleName;
 
 @end

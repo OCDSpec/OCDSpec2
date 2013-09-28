@@ -44,7 +44,7 @@ Pod::Spec.new do |s|
                      "sdegutis" => "sbdegutis@gmail.com" }
 
   s.source       = { :git => "https://github.com/OCDSpec/OCDSpec2/OCDSpec2.git", :tag => "1.5.1" }
-  s.source_files  = 'OCDSpec2', 'OCDSpec2/**/*.{h,m,}', 'install_autocompletions.sh', 'Templates/**'
+  s.source_files  = 'OCDSpec2', 'OCDSpec2/**/*.{h,m,}'
   s.resources = ""
   s.exclude_files = 'OCDSpec2/Exclude'
 end

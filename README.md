@@ -30,11 +30,19 @@ Finally add this to your podfile:
 target :test do
   link_with '<Your Spec Target Name>'
   
-  pod 'OCDSpec2', :git => 'https://github.com/ericmeyer/OCDSpec2.git'
+  pod 'OCDSpec2', :git => 'https://github.com/OCDSpec/OCDSpec2.git'
 end
 ```
 
-Now when you build your spec target it will automatically run the tests and fail the build if any tests fail. I like to make my test target a dependency of my main applications target, so my tests fail the build. 
+After this run a pod install.  Now when you build your spec target it will automatically run the tests and fail the build if any tests fail. I like to make my test target a dependency of my main applications target, so my tests fail the build. 
+
+### Creating your first spec
+
+To create a new spec use the template for a new Spec File, and add it to your spec target:
+
+<img src="https://www.evernote.com/shard/s6/sh/ac81682c-148f-48c6-a7cc-da7cdd8a0e70/f9ebebe1fb215bebe6d65bde75fa57eb/deep/0/Screenshot%209/28/13%2011:04%20AM.png"/>
+
+This will create a file with one failing test.
 
 ### Running specs
 
@@ -44,10 +52,10 @@ Now when you build your spec target it will automatically run the tests and fail
 If you set the spec target as a dependency of the main target you can just build the main one without switching schemes.
 
 ### Autocompletion for XCode
-Once the podfile is installed you can install XCode autocompletions if you like. This is only needed once on your machine, although you may want to re-run it when you update OCDSpec. Inside the OCDSpec2 directory you'll find a script:
+Once the podfile is installed you can install XCode autocompletions if you like. This is only needed once on your machine, although you may want to re-run it when you update OCDSpec. Simply run:
 
 ```bash
-\curl https://raw.github.com/OCDSpec/OCDSpec2/master/install_autocompletions.sh
+curl https://raw.github.com/OCDSpec/OCDSpec2/master/install_autocompletions.sh | bash
 ```
 ## Features
 

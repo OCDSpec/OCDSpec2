@@ -30,7 +30,7 @@ Finally add this to your podfile:
 target :test do
   link_with '<Your Spec Target Name>'
   
-  pod 'OCDSpec2', :git => 'https://github.com/OCDSpec/OCDSpec2.git'
+  pod 'OCDSpec2'
 end
 ```
 

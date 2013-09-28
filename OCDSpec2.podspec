@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
                   All that with a Jasmine/Rspec inspired syntax!
                   DESC
 
-  s.homepage     = "http://github.com/ericmeyer/OCDSpec2"
+  s.homepage     = "http://github.com/OCDSpec/OCDSpec2"
   s.license      = {:type => 'MIT', :text =><<-LICENSE
   The MIT License (MIT)
 
@@ -43,8 +43,8 @@ Pod::Spec.new do |s|
                      "marosluuce" => "nathan@8thlight.com", 
                      "sdegutis" => "sbdegutis@gmail.com" }
 
-  s.source       = { :git => "https://github.com/OCDSpec/OCDSpec2/OCDSpec2.git", :tag => "1.5.1" }
+  s.source       = { :git => "https://github.com/OCDSpec/OCDSpec2.git", :tag => "1.5.1" }
   s.source_files  = 'OCDSpec2', 'OCDSpec2/**/*.{h,m,}'
-  s.resources = ""
+#  s.resources = ""
   s.exclude_files = 'OCDSpec2/Exclude'
 end

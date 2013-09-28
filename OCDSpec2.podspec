@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   s.license      = {:type => 'MIT', :text =><<-LICENSE
   The MIT License (MIT)
 
-  Copyright (c) 2013 Eric Meyer, Eric Smith
+  Copyright (c) 2013 OCDSpec team
 
   Permission is hereby granted, free of charge, to any person obtaining a copy
   of this software and associated documentation files (the "Software"), to deal
@@ -43,8 +43,8 @@ Pod::Spec.new do |s|
                      "marosluuce" => "nathan@8thlight.com", 
                      "sdegutis" => "sbdegutis@gmail.com" }
 
-  s.source       = { :git => "https://github.com/ericmeyer/OCDSpec2.git", :tag => "1.5.1" }
-  s.source_files  = 'OCDSpec2', 'OCDSpec2/**/*.{h,m}'
+  s.source       = { :git => "https://github.com/OCDSpec/OCDSpec2/OCDSpec2.git", :tag => "1.5.1" }
+  s.source_files  = 'OCDSpec2', 'OCDSpec2/**/*.{h,m,}', 'install_autocompletions.sh', 'Templates/**'
   s.resources = ""
   s.exclude_files = 'OCDSpec2/Exclude'
 end

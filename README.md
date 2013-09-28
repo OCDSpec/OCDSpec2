@@ -2,7 +2,7 @@
 
 A testing library for Mac or iOS projects, for the obsessive compulsive, like me!
 
-## Installation
+## Installation and Setup
 
 OCDSpec is now on CocoaPods! This is makes it far simpler to get started.
 
@@ -11,17 +11,20 @@ OCDSpec is now on CocoaPods! This is makes it far simpler to get started.
 The simplest way to get started is to use the provided templates to create a seperate specs target. This requires a one-time install script.  Just run:
 
 ```bash
-\curl https://raw.github.com/ericmeyer/OCDSpec2/master/install_templates.sh
+curl -L https://raw.github.com/OCDSpec/OCDSpec2/master/install_templates.sh | bash
 ```
 
-This script does not require administrative permissions.  Optionally if you want autocompletion on XCode you can run:
-
-```bash
-\curl https://raw.github.com/ericmeyer/OCDSpec2/master/install_autocompletions.sh
-```
+This script does not require administrative permissions, and if it asks for them something is wrong.
 
 ### Create the spec target
-OCDSpec has project templates for iOS and Mac files so you can add a target to your project using the appropriate test runner for your platform.  Finally add this to your podfile:
+OCDSpec has project templates, for iOS and Mac so you can add a target to your project using the appropriate test runner for your platform. Create a new target and choose the OCDSpec Test Runner appropriate for your platform.
+
+<img src="https://www.evernote.com/shard/s6/sh/1dc8bc8c-8d78-49e8-9675-bd6c2ea3003f/e55a56f3e0b2aeb413ad23e0436767f8/deep/0/Screenshot%209/28/13%208:47%20AM.png" />
+
+You can name this target whatever you like, I usually name it Specs.
+
+### Podfile
+Finally add this to your podfile:
 
 ```ruby
 target :test do
@@ -33,19 +36,19 @@ end
 
 Now when you build your spec target it will automatically run the tests and fail the build if any tests fail. I like to make my test target a dependency of my main applications target, so my tests fail the build. 
 
-## Adding a spec to the project
-
-If you ran the install template script it also installs a file template to make creating new specs simple.
-
-* Add a new 'OCDSpec2 -> Spec' file to your project.
-* Make sure it's only in your spec target, not your main target.
-* Any files you are going to test also need to be in your spec target.
-
-## Running specs
+### Running specs
 
 * Choose the spec scheme
 * Build (Cmd+B)
 
+If you set the spec target as a dependency of the main target you can just build the main one without switching schemes.
+
+### Autocompletion for XCode
+Once the podfile is installed you can install XCode autocompletions if you like. This is only needed once on your machine, although you may want to re-run it when you update OCDSpec. Inside the OCDSpec2 directory you'll find a script:
+
+```bash
+\curl https://raw.github.com/OCDSpec/OCDSpec2/master/install_autocompletions.sh
+```
 ## Features
 
 * Describe and example blocks
@@ -184,7 +187,7 @@ NSString* StubbedNibName(void) {
 
 ## License
 
-Copyright (c) 2013 Eric Meyer
+Copyright (c) 2013 OCDSpec Team
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 

@@ -14,14 +14,14 @@ OCDSpec2Context(ArrayExpectationSpec) {
     
     It(@"passes when the array contains the element", ^{
       [[[OCDSArrayExpectation expectationInFile:"file1" line:2 failureReporter:reporter] withArray]
-       ([NSArray arrayWithObject:@"a"]) toContain: @"a"];
+       (@[@"a"]) toContain: @"a"];
       
       [ExpectInt(reporter.numberOfFailures) toBe:0];
     });
     
     It(@"fails when the array does not contain the element", ^{
       [[[OCDSArrayExpectation expectationInFile:"file1" line:2 failureReporter:reporter] withArray]
-       ([NSArray arrayWithObject:@"a"]) toContain: @"b"];
+       (@[@"a"]) toContain: @"b"];
       
       [ExpectInt(reporter.numberOfFailures) toBe:3];
       

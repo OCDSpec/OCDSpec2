@@ -105,7 +105,7 @@ OCDSpec2Context(ObjectExpectationSpec) {
     
     It(@"fails when object is not a member of the class", ^{
       [[[OCDSObjectExpectation expectationInFile:"file1" line:2 failureReporter:reporter] withObject]
-       ([NSNumber numberWithInt:2]) toBeMemberOfClass: [NSString self]];
+       (@2) toBeMemberOfClass: [NSString self]];
       NSString *report = [reporter findFailureMessageInFile:@"file1"
                                                      onLine:2];
       
@@ -148,7 +148,7 @@ OCDSpec2Context(ObjectExpectationSpec) {
     
     It(@"fails when object's class does not match desired class", ^{
       [[[OCDSObjectExpectation expectationInFile:"file1" line:2 failureReporter:reporter] withObject]
-       ([NSNumber numberWithInt:2]) toBeKindOfClass: [NSString self]];
+       (@2) toBeKindOfClass: [NSString self]];
       NSString *report = [reporter findFailureMessageInFile:@"file1"
                                                      onLine:2];
       

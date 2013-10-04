@@ -25,10 +25,10 @@ OCDSpec2Context(GatheringExamplesSpec) {
       
       [ExpectInt([context.topLevelDescription.subDescriptions count]) toBe: 1];
 
-      OCDSDescription *desc = [context.topLevelDescription.subDescriptions objectAtIndex:0];
+      OCDSDescription *desc = (context.topLevelDescription.subDescriptions)[0];
       [ExpectObj(desc.name) toBeEqualTo: @"hi"];
       
-      OCDSExample *example = [desc.examples objectAtIndex:0];
+      OCDSExample *example = (desc.examples)[0];
       [ExpectInt([desc.examples count]) toBe:1];
       
       [ExpectObj(example.name) toBeEqualTo:@"sup"];
@@ -42,7 +42,7 @@ OCDSpec2Context(GatheringExamplesSpec) {
     It(@"starts with no before block", ^{
       [context _functionForDescribeBlock](@"hi", ^{});
       
-      OCDSDescription *desc = [context.topLevelDescription.subDescriptions objectAtIndex:0];
+      OCDSDescription *desc = (context.topLevelDescription.subDescriptions)[0];
       
       [ExpectObj(desc.beforeEachBlock) toBeNil];
     });
@@ -50,7 +50,7 @@ OCDSpec2Context(GatheringExamplesSpec) {
     It(@"starts with no after block", ^{
       [context _functionForDescribeBlock](@"hi", ^{});
       
-      OCDSDescription *desc = [context.topLevelDescription.subDescriptions objectAtIndex:0];
+      OCDSDescription *desc = (context.topLevelDescription.subDescriptions)[0];
       
       [ExpectObj(desc.afterEachBlock) toBeNil];
     });
@@ -62,7 +62,7 @@ OCDSpec2Context(GatheringExamplesSpec) {
         [context _functionForBeforeEachBlock](beforeEachBlock);
       });
       
-      OCDSDescription *desc = [context.topLevelDescription.subDescriptions objectAtIndex:0];
+      OCDSDescription *desc = (context.topLevelDescription.subDescriptions)[0];
       [ExpectObj(desc.beforeEachBlock) toBe: beforeEachBlock];
     });
 
@@ -73,7 +73,7 @@ OCDSpec2Context(GatheringExamplesSpec) {
         [context _functionForAfterEachBlock](afterEachBlock);
       });
       
-      OCDSDescription *desc = [context.topLevelDescription.subDescriptions objectAtIndex:0];
+      OCDSDescription *desc = (context.topLevelDescription.subDescriptions)[0];
       [ExpectObj(desc.afterEachBlock) toBe: afterEachBlock];
     });
 

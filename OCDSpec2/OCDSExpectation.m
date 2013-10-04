@@ -7,7 +7,7 @@
          failureReporter:(id<OCDSFailureReporter>)reporter
 {
   OCDSExpectation *expectation = [self new];
-  expectation.file = [NSString stringWithUTF8String:someFile];
+  expectation.file = @(someFile);
   expectation.line = someLine;
   expectation.failureReporter = reporter;
   return expectation;

@@ -33,6 +33,7 @@
 		14B7B06F17BECB37001552CE /* OCDSLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 14B7B06E17BECB37001552CE /* OCDSLogger.h */; };
 		14B7B07017BED2B4001552CE /* OCDSExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA415BB30D0003F22B6 /* OCDSExample.m */; };
 		14B7B07117BED2B8001552CE /* OCDSDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA215BB30D0003F22B6 /* OCDSDescription.m */; };
+		14C9441E17FF3F8700578E2C /* OCDSLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 1428639417C7FD8000066B3C /* OCDSLog.m */; };
 		942AAEFD15BBB3E60006C241 /* OCDSContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA015BB30D0003F22B6 /* OCDSContext.m */; };
 		942AAEFE15BBB3E90006C241 /* OCDSDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA215BB30D0003F22B6 /* OCDSDescription.m */; };
 		942AAEFF15BBB3EB0006C241 /* OCDSExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA415BB30D0003F22B6 /* OCDSExample.m */; };
@@ -41,56 +42,15 @@
 		942AAF0215BBB3F30006C241 /* OCDSIntExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAAA15BB30D0003F22B6 /* OCDSIntExpectation.m */; };
 		942AAF0315BBB3F50006C241 /* OCDSFloatExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAAC15BB30D0003F22B6 /* OCDSFloatExpectation.m */; };
 		942AAF0415BBB3F80006C241 /* OCDSStringExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAAE15BB30D0003F22B6 /* OCDSStringExpectation.m */; };
-		944FBF4F15C168C100BF85FC /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A6BA7415BB3093003F22B6 /* SenTestingKit.framework */; };
-		944FBF5115C168C100BF85FC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 944FBF5015C168C100BF85FC /* Cocoa.framework */; };
-		944FBF5B15C168C100BF85FC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 944FBF5915C168C100BF85FC /* InfoPlist.strings */; };
-		944FBF5E15C168C100BF85FC /* OCDSpec2AcceptanceTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 944FBF5D15C168C100BF85FC /* OCDSpec2AcceptanceTest.m */; };
-		944FBF6C15C170C200BF85FC /* OCDSContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA015BB30D0003F22B6 /* OCDSContext.m */; };
-		944FBF6D15C170C200BF85FC /* OCDSDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA215BB30D0003F22B6 /* OCDSDescription.m */; };
-		944FBF6E15C170C200BF85FC /* OCDSExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA415BB30D0003F22B6 /* OCDSExample.m */; };
-		944FBF6F15C170C200BF85FC /* OCDSExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA615BB30D0003F22B6 /* OCDSExpectation.m */; };
-		944FBF7015C170C200BF85FC /* OCDSObjectExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA815BB30D0003F22B6 /* OCDSObjectExpectation.m */; };
-		944FBF7115C170C200BF85FC /* OCDSIntExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAAA15BB30D0003F22B6 /* OCDSIntExpectation.m */; };
-		944FBF7215C170C200BF85FC /* OCDSFloatExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAAC15BB30D0003F22B6 /* OCDSFloatExpectation.m */; };
-		944FBF7315C170C200BF85FC /* OCDSStringExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAAE15BB30D0003F22B6 /* OCDSStringExpectation.m */; };
-		944FBF7415C170C200BF85FC /* OCDSArrayExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 947F6BDC15BC358F00C7CF3B /* OCDSArrayExpectation.m */; };
-		944FBF7615C171BE00BF85FC /* AcceptanceTestSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 944FBF7515C171BE00BF85FC /* AcceptanceTestSpec.m */; };
-		9454C3E015C87C4800417FA7 /* TestBlockExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9454C3DF15C87C4800417FA7 /* TestBlockExpectation.m */; };
 		9454C3E415C87C6500417FA7 /* OCDSBlockExpectation.h in Headers */ = {isa = PBXBuildFile; fileRef = 9454C3E215C87C6500417FA7 /* OCDSBlockExpectation.h */; };
 		9454C3E515C87C6500417FA7 /* OCDSBlockExpectation.h in Headers */ = {isa = PBXBuildFile; fileRef = 9454C3E215C87C6500417FA7 /* OCDSBlockExpectation.h */; };
 		9454C3E615C87C6500417FA7 /* OCDSBlockExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9454C3E315C87C6500417FA7 /* OCDSBlockExpectation.m */; };
 		9454C3E715C87C6500417FA7 /* OCDSBlockExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9454C3E315C87C6500417FA7 /* OCDSBlockExpectation.m */; };
-		9454C3E815C87C6500417FA7 /* OCDSBlockExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9454C3E315C87C6500417FA7 /* OCDSBlockExpectation.m */; };
-		9454C3E915C87C6500417FA7 /* OCDSBlockExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9454C3E315C87C6500417FA7 /* OCDSBlockExpectation.m */; };
 		947F6BDD15BC358F00C7CF3B /* OCDSArrayExpectation.h in Headers */ = {isa = PBXBuildFile; fileRef = 947F6BDB15BC358F00C7CF3B /* OCDSArrayExpectation.h */; };
 		947F6BDE15BC358F00C7CF3B /* OCDSArrayExpectation.h in Headers */ = {isa = PBXBuildFile; fileRef = 947F6BDB15BC358F00C7CF3B /* OCDSArrayExpectation.h */; };
 		947F6BDF15BC358F00C7CF3B /* OCDSArrayExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 947F6BDC15BC358F00C7CF3B /* OCDSArrayExpectation.m */; };
 		947F6BE115BC358F00C7CF3B /* OCDSArrayExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 947F6BDC15BC358F00C7CF3B /* OCDSArrayExpectation.m */; };
-		947F6C2615BC39A200C7CF3B /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A6BA7415BB3093003F22B6 /* SenTestingKit.framework */; };
-		947F6C2D15BC39A200C7CF3B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 947F6C2B15BC39A200C7CF3B /* InfoPlist.strings */; };
-		947F6C3715BC39B800C7CF3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A6BA5D15BB2DE7003F22B6 /* Foundation.framework */; };
 		947F6C3815BC39D000C7CF3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A6BA5D15BB2DE7003F22B6 /* Foundation.framework */; };
-		947F6C4615BC3A2300C7CF3B /* SenTestCase+ReportingHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 947F6C3A15BC3A2300C7CF3B /* SenTestCase+ReportingHelper.m */; };
-		947F6C4715BC3A2300C7CF3B /* OCDSFakeFailureReporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 947F6C3C15BC3A2300C7CF3B /* OCDSFakeFailureReporter.m */; };
-		947F6C4815BC3A2300C7CF3B /* TestArrayExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 947F6C3D15BC3A2300C7CF3B /* TestArrayExpectation.m */; };
-		947F6C4915BC3A2300C7CF3B /* TestFloatExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 947F6C3E15BC3A2300C7CF3B /* TestFloatExpectation.m */; };
-		947F6C4A15BC3A2300C7CF3B /* TestGatheringExamples.m in Sources */ = {isa = PBXBuildFile; fileRef = 947F6C3F15BC3A2300C7CF3B /* TestGatheringExamples.m */; };
-		947F6C4B15BC3A2300C7CF3B /* TestIntExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 947F6C4015BC3A2300C7CF3B /* TestIntExpectation.m */; };
-		947F6C4C15BC3A2300C7CF3B /* TestObjectExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 947F6C4115BC3A2300C7CF3B /* TestObjectExpectation.m */; };
-		947F6C4D15BC3A2300C7CF3B /* TestReportingErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = 947F6C4215BC3A2300C7CF3B /* TestReportingErrors.m */; };
-		947F6C4E15BC3A2300C7CF3B /* TestRunningExamples.m in Sources */ = {isa = PBXBuildFile; fileRef = 947F6C4315BC3A2300C7CF3B /* TestRunningExamples.m */; };
-		947F6C4F15BC3A2300C7CF3B /* TestContextMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 947F6C4415BC3A2300C7CF3B /* TestContextMethods.m */; };
-		947F6C5015BC3A2300C7CF3B /* TestStringExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 947F6C4515BC3A2300C7CF3B /* TestStringExpectation.m */; };
-		947F6C5115BC3A3E00C7CF3B /* OCDSContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA015BB30D0003F22B6 /* OCDSContext.m */; };
-		947F6C5215BC3A4000C7CF3B /* OCDSDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA215BB30D0003F22B6 /* OCDSDescription.m */; };
-		947F6C5315BC3A4200C7CF3B /* OCDSExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA415BB30D0003F22B6 /* OCDSExample.m */; };
-		947F6C5415BC3A4500C7CF3B /* OCDSExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA615BB30D0003F22B6 /* OCDSExpectation.m */; };
-		947F6C5515BC3A4B00C7CF3B /* OCDSObjectExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA815BB30D0003F22B6 /* OCDSObjectExpectation.m */; };
-		947F6C5615BC3A4E00C7CF3B /* OCDSIntExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAAA15BB30D0003F22B6 /* OCDSIntExpectation.m */; };
-		947F6C5715BC3A5000C7CF3B /* OCDSFloatExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAAC15BB30D0003F22B6 /* OCDSFloatExpectation.m */; };
-		947F6C5815BC3A5200C7CF3B /* OCDSStringExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAAE15BB30D0003F22B6 /* OCDSStringExpectation.m */; };
-		947F6C5915BC3A5500C7CF3B /* OCDSArrayExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 947F6BDC15BC358F00C7CF3B /* OCDSArrayExpectation.m */; };
-		947F6C5C15BC3D4600C7CF3B /* OCDSFakeFailure.m in Sources */ = {isa = PBXBuildFile; fileRef = 947F6C5B15BC3D4600C7CF3B /* OCDSFakeFailure.m */; };
 		94A6BA5E15BB2DE7003F22B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A6BA5D15BB2DE7003F22B6 /* Foundation.framework */; };
 		94A6BAB015BB30D0003F22B6 /* OCDSpec2.h in Headers */ = {isa = PBXBuildFile; fileRef = 94A6BA9C15BB30D0003F22B6 /* OCDSpec2.h */; };
 		94A6BAB115BB30D0003F22B6 /* OCDSPrelude.h in Headers */ = {isa = PBXBuildFile; fileRef = 94A6BA9D15BB30D0003F22B6 /* OCDSPrelude.h */; };
@@ -144,40 +104,14 @@
 		14B7B06E17BECB37001552CE /* OCDSLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCDSLogger.h; sourceTree = "<group>"; };
 		942AAEEC15BBB3760006C241 /* libOCDSpec2Mac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOCDSpec2Mac.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		942AAEF515BBB3760006C241 /* OCDSpec2Mac-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "OCDSpec2Mac-Prefix.pch"; path = "OCDSpec2/OCDSpec2Mac-Prefix.pch"; sourceTree = SOURCE_ROOT; };
-		944FBF4E15C168C100BF85FC /* OCDSpec2AcceptanceTest.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OCDSpec2AcceptanceTest.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		944FBF5015C168C100BF85FC /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		944FBF5315C168C100BF85FC /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		944FBF5415C168C100BF85FC /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		944FBF5515C168C100BF85FC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		944FBF5815C168C100BF85FC /* OCDSpec2AcceptanceTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OCDSpec2AcceptanceTest-Info.plist"; sourceTree = "<group>"; };
-		944FBF5A15C168C100BF85FC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		944FBF5D15C168C100BF85FC /* OCDSpec2AcceptanceTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCDSpec2AcceptanceTest.m; sourceTree = "<group>"; };
-		944FBF5F15C168C100BF85FC /* OCDSpec2AcceptanceTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OCDSpec2AcceptanceTest-Prefix.pch"; sourceTree = "<group>"; };
-		944FBF7515C171BE00BF85FC /* AcceptanceTestSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AcceptanceTestSpec.m; sourceTree = "<group>"; };
-		9454C3DF15C87C4800417FA7 /* TestBlockExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestBlockExpectation.m; sourceTree = "<group>"; };
 		9454C3E215C87C6500417FA7 /* OCDSBlockExpectation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCDSBlockExpectation.h; sourceTree = "<group>"; };
 		9454C3E315C87C6500417FA7 /* OCDSBlockExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCDSBlockExpectation.m; sourceTree = "<group>"; };
 		947F6BDB15BC358F00C7CF3B /* OCDSArrayExpectation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCDSArrayExpectation.h; sourceTree = "<group>"; };
 		947F6BDC15BC358F00C7CF3B /* OCDSArrayExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCDSArrayExpectation.m; sourceTree = "<group>"; };
-		947F6C2515BC39A200C7CF3B /* OCDSpec2Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OCDSpec2Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		947F6C2A15BC39A200C7CF3B /* OCDSpec2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OCDSpec2Tests-Info.plist"; sourceTree = "<group>"; };
-		947F6C2C15BC39A200C7CF3B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		947F6C3115BC39A200C7CF3B /* OCDSpec2Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OCDSpec2Tests-Prefix.pch"; sourceTree = "<group>"; };
-		947F6C3915BC3A2300C7CF3B /* SenTestCase+ReportingHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SenTestCase+ReportingHelper.h"; sourceTree = "<group>"; };
-		947F6C3A15BC3A2300C7CF3B /* SenTestCase+ReportingHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SenTestCase+ReportingHelper.m"; sourceTree = "<group>"; };
-		947F6C3B15BC3A2300C7CF3B /* OCDSFakeFailureReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCDSFakeFailureReporter.h; sourceTree = "<group>"; };
-		947F6C3C15BC3A2300C7CF3B /* OCDSFakeFailureReporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCDSFakeFailureReporter.m; sourceTree = "<group>"; };
-		947F6C3D15BC3A2300C7CF3B /* TestArrayExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestArrayExpectation.m; sourceTree = "<group>"; };
-		947F6C3E15BC3A2300C7CF3B /* TestFloatExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestFloatExpectation.m; sourceTree = "<group>"; };
-		947F6C3F15BC3A2300C7CF3B /* TestGatheringExamples.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestGatheringExamples.m; sourceTree = "<group>"; };
-		947F6C4015BC3A2300C7CF3B /* TestIntExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestIntExpectation.m; sourceTree = "<group>"; };
-		947F6C4115BC3A2300C7CF3B /* TestObjectExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestObjectExpectation.m; sourceTree = "<group>"; };
-		947F6C4215BC3A2300C7CF3B /* TestReportingErrors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestReportingErrors.m; sourceTree = "<group>"; };
-		947F6C4315BC3A2300C7CF3B /* TestRunningExamples.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestRunningExamples.m; sourceTree = "<group>"; };
-		947F6C4415BC3A2300C7CF3B /* TestContextMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestContextMethods.m; sourceTree = "<group>"; };
-		947F6C4515BC3A2300C7CF3B /* TestStringExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestStringExpectation.m; sourceTree = "<group>"; };
-		947F6C5A15BC3D4600C7CF3B /* OCDSFakeFailure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCDSFakeFailure.h; sourceTree = "<group>"; };
-		947F6C5B15BC3D4600C7CF3B /* OCDSFakeFailure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCDSFakeFailure.m; sourceTree = "<group>"; };
 		94A6BA5A15BB2DE7003F22B6 /* libOCDSpec2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOCDSpec2.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		94A6BA5D15BB2DE7003F22B6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		94A6BA6115BB2DE7003F22B6 /* OCDSpec2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OCDSpec2-Prefix.pch"; sourceTree = "<group>"; };
@@ -220,24 +154,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				947F6C3815BC39D000C7CF3B /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		944FBF4A15C168C100BF85FC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				944FBF4F15C168C100BF85FC /* SenTestingKit.framework in Frameworks */,
-				944FBF5115C168C100BF85FC /* Cocoa.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		947F6C2115BC39A200C7CF3B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				947F6C2615BC39A200C7CF3B /* SenTestingKit.framework in Frameworks */,
-				947F6C3715BC39B800C7CF3B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,67 +222,11 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		944FBF5615C168C100BF85FC /* OCDSpec2AcceptanceTest */ = {
-			isa = PBXGroup;
-			children = (
-				944FBF7515C171BE00BF85FC /* AcceptanceTestSpec.m */,
-				944FBF5D15C168C100BF85FC /* OCDSpec2AcceptanceTest.m */,
-				944FBF5715C168C100BF85FC /* Supporting Files */,
-			);
-			path = OCDSpec2AcceptanceTest;
-			sourceTree = "<group>";
-		};
-		944FBF5715C168C100BF85FC /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				944FBF5815C168C100BF85FC /* OCDSpec2AcceptanceTest-Info.plist */,
-				944FBF5915C168C100BF85FC /* InfoPlist.strings */,
-				944FBF5F15C168C100BF85FC /* OCDSpec2AcceptanceTest-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		947F6C2815BC39A200C7CF3B /* OCDSpec2Tests */ = {
-			isa = PBXGroup;
-			children = (
-				947F6C3B15BC3A2300C7CF3B /* OCDSFakeFailureReporter.h */,
-				947F6C3C15BC3A2300C7CF3B /* OCDSFakeFailureReporter.m */,
-				947F6C5A15BC3D4600C7CF3B /* OCDSFakeFailure.h */,
-				947F6C5B15BC3D4600C7CF3B /* OCDSFakeFailure.m */,
-				947F6C3915BC3A2300C7CF3B /* SenTestCase+ReportingHelper.h */,
-				947F6C3A15BC3A2300C7CF3B /* SenTestCase+ReportingHelper.m */,
-				947F6C3D15BC3A2300C7CF3B /* TestArrayExpectation.m */,
-				947F6C3E15BC3A2300C7CF3B /* TestFloatExpectation.m */,
-				947F6C3F15BC3A2300C7CF3B /* TestGatheringExamples.m */,
-				947F6C4015BC3A2300C7CF3B /* TestIntExpectation.m */,
-				947F6C4115BC3A2300C7CF3B /* TestObjectExpectation.m */,
-				947F6C4515BC3A2300C7CF3B /* TestStringExpectation.m */,
-				9454C3DF15C87C4800417FA7 /* TestBlockExpectation.m */,
-				947F6C4215BC3A2300C7CF3B /* TestReportingErrors.m */,
-				947F6C4315BC3A2300C7CF3B /* TestRunningExamples.m */,
-				947F6C4415BC3A2300C7CF3B /* TestContextMethods.m */,
-				947F6C2915BC39A200C7CF3B /* Supporting Files */,
-			);
-			path = OCDSpec2Tests;
-			sourceTree = "<group>";
-		};
-		947F6C2915BC39A200C7CF3B /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				947F6C2A15BC39A200C7CF3B /* OCDSpec2Tests-Info.plist */,
-				947F6C2B15BC39A200C7CF3B /* InfoPlist.strings */,
-				947F6C3115BC39A200C7CF3B /* OCDSpec2Tests-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		94A6BA4F15BB2DE7003F22B6 = {
 			isa = PBXGroup;
 			children = (
 				14614E701774DAF0000AF471 /* Default-568h@2x.png */,
 				94A6BA5F15BB2DE7003F22B6 /* OCDSpec2 */,
-				947F6C2815BC39A200C7CF3B /* OCDSpec2Tests */,
-				944FBF5615C168C100BF85FC /* OCDSpec2AcceptanceTest */,
 				149894E01762D39E0036608B /* OCDSpec2Specs */,
 				94A6BA5C15BB2DE7003F22B6 /* Frameworks */,
 				94A6BA5B15BB2DE7003F22B6 /* Products */,
@@ -380,8 +240,6 @@
 			children = (
 				94A6BA5A15BB2DE7003F22B6 /* libOCDSpec2.a */,
 				942AAEEC15BBB3760006C241 /* libOCDSpec2Mac.a */,
-				947F6C2515BC39A200C7CF3B /* OCDSpec2Tests.octest */,
-				944FBF4E15C168C100BF85FC /* OCDSpec2AcceptanceTest.octest */,
 				149894DA1762D39E0036608B /* OCDSpec2Specs.app */,
 			);
 			name = Products;
@@ -515,42 +373,6 @@
 			productReference = 942AAEEC15BBB3760006C241 /* libOCDSpec2Mac.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		944FBF4D15C168C100BF85FC /* OCDSpec2AcceptanceTest */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 944FBF6215C168C100BF85FC /* Build configuration list for PBXNativeTarget "OCDSpec2AcceptanceTest" */;
-			buildPhases = (
-				944FBF4915C168C100BF85FC /* Sources */,
-				944FBF4A15C168C100BF85FC /* Frameworks */,
-				944FBF4B15C168C100BF85FC /* Resources */,
-				944FBF4C15C168C100BF85FC /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = OCDSpec2AcceptanceTest;
-			productName = OCDSpec2AcceptanceTest;
-			productReference = 944FBF4E15C168C100BF85FC /* OCDSpec2AcceptanceTest.octest */;
-			productType = "com.apple.product-type.bundle";
-		};
-		947F6C2415BC39A200C7CF3B /* OCDSpec2Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 947F6C3215BC39A200C7CF3B /* Build configuration list for PBXNativeTarget "OCDSpec2Tests" */;
-			buildPhases = (
-				947F6C2015BC39A200C7CF3B /* Sources */,
-				947F6C2115BC39A200C7CF3B /* Frameworks */,
-				947F6C2215BC39A200C7CF3B /* Resources */,
-				947F6C2315BC39A200C7CF3B /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = OCDSpec2Tests;
-			productName = OCDSpec2Tests;
-			productReference = 947F6C2515BC39A200C7CF3B /* OCDSpec2Tests.octest */;
-			productType = "com.apple.product-type.bundle";
-		};
 		94A6BA5915BB2DE7003F22B6 /* OCDSpec2 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 94A6BA6715BB2DE7003F22B6 /* Build configuration list for PBXNativeTarget "OCDSpec2" */;
@@ -591,8 +413,6 @@
 			targets = (
 				94A6BA5915BB2DE7003F22B6 /* OCDSpec2 */,
 				942AAEEB15BBB3760006C241 /* OCDSpec2Mac */,
-				947F6C2415BC39A200C7CF3B /* OCDSpec2Tests */,
-				944FBF4D15C168C100BF85FC /* OCDSpec2AcceptanceTest */,
 				149894D91762D39E0036608B /* OCDSpec2Specs */,
 			);
 		};
@@ -605,22 +425,6 @@
 			files = (
 				149894E51762D39E0036608B /* InfoPlist.strings in Resources */,
 				14614E711774DAF0000AF471 /* Default-568h@2x.png in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		944FBF4B15C168C100BF85FC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				944FBF5B15C168C100BF85FC /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		947F6C2215BC39A200C7CF3B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				947F6C2D15BC39A200C7CF3B /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -639,32 +443,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "#!/bin/bash\n#  RunIPhoneUnitTest.sh\n#  Copyright 2008 Google Inc.\n#\n#  Licensed under the Apache License, Version 2.0 (the \"License\"); you may not\n#  use this file except in compliance with the License.  You may obtain a copy\n#  of the License at\n#\n#  http://www.apache.org/licenses/LICENSE-2.0\n#\n#  Unless required by applicable law or agreed to in writing, software\n#  distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT\n#  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  See the\n#  License for the specific language governing permissions and limitations under\n#  the License.\n#\n#  Runs all unittests through the iPhone simulator. We don't handle running them\n#  on the device. To run on the device just choose \"run\".\n\nset -o errexit\nset -o nounset\nset -o verbose\n\n#  Controlling environment variables:\n# GTM_DISABLE_ZOMBIES -\n#   Set to a non-zero value to turn on zombie checks. You will probably\n#   want to turn this off if you enable leaks.\nGTM_DISABLE_ZOMBIES=${GTM_DISABLE_ZOMBIES:=1}\n\n# GTM_ENABLE_LEAKS -\n#   Set to a non-zero value to turn on the leaks check. You will probably want\n#   to disable zombies, otherwise you will get a lot of false positives.\n\n# GTM_DISABLE_TERMINATION\n#   Set to a non-zero value so that the app doesn't terminate when it's finished\n#   running tests. This is useful when using it with external tools such\n#   as Instruments.\n\n# GTM_LEAKS_SYMBOLS_TO_IGNORE\n#   List of comma separated symbols that leaks should ignore. Mainly to control\n#   leaks in frameworks you don't have control over.\n#   Search this file for GTM_LEAKS_SYMBOLS_TO_IGNORE to see examples.\n#   Please feel free to add other symbols as you find them but make sure to\n#   reference Radars or other bug systems so we can track them.\n\n# GTM_REMOVE_GCOV_DATA\n#   Before starting the test, remove any *.gcda files for the current run so\n#   you won't get failures when the source file has changed and the data can't\n#   be merged.\n#\nGTM_REMOVE_GCOV_DATA=${GTM_REMOVE_GCOV_DATA:=0}\n\n# GTM_DISABLE_USERDIR_SETUP\n#   Controls whether or not CFFIXED_USER_HOME is erased and set up from scratch\n#   for you each time the script is run. In some cases you may have a wrapper\n#   script calling this one that takes care of that for us so you can set up\n#   a certain user configuration.\nGTM_DISABLE_USERDIR_SETUP=${GTM_DISABLE_USERDIR_SETUP:=0}\n\n# GTM_DISABLE_IPHONE_LAUNCH_DAEMONS\n#   Controls whether or not we launch up the iPhone Launch Daemons before\n#   we start testing. You need Launch Daemons to test anything that interacts\n#   with security.\nGTM_DISABLE_IPHONE_LAUNCH_DAEMONS=1 #${GTM_DISABLE_IPHONE_LAUNCH_DAEMONS:=0}\n\nScriptDir=$(dirname \"$(echo $0 | sed -e \"s,^\\([^/]\\),$(pwd)/\\1,\")\")\nScriptName=$(basename \"$0\")\nThisScript=\"${ScriptDir}/${ScriptName}\"\n\nGTMXcodeNote() {\n    echo ${ThisScript}:${1}: note: GTM ${2}\n}\n\nif [ \"$PLATFORM_NAME\" == \"iphonesimulator\" ]; then\n  # We kill the iPhone simulator because otherwise we run into issues where\n  # the unittests fail becuase the simulator is currently running, and\n  # at this time the iPhone SDK won't allow two simulators running at the same\n  # time.\n  set +e\n  /usr/bin/killall \"iPhone Simulator\"\n  set -e\n\n  if [ $GTM_REMOVE_GCOV_DATA -ne 0 ]; then\n    if [ \"${OBJECT_FILE_DIR}-${CURRENT_VARIANT}\" != \"-\" ]; then\n      if [ -d \"${OBJECT_FILE_DIR}-${CURRENT_VARIANT}\" ]; then\n        GTMXcodeNote ${LINENO} \"Removing any .gcda files\"\n        (cd \"${OBJECT_FILE_DIR}-${CURRENT_VARIANT}\" && \\\n            find . -type f -name \"*.gcda\" -print0 | xargs -0 rm -f )\n      fi\n    fi\n  fi\n\n  export DYLD_ROOT_PATH=\"$SDKROOT\"\n  export DYLD_FRAMEWORK_PATH=\"$CONFIGURATION_BUILD_DIR\"\n  export IPHONE_SIMULATOR_ROOT=\"$SDKROOT\"\n  export CFFIXED_USER_HOME=\"$TEMP_FILES_DIR/iPhone Simulator User Dir\"\n\n  # See http://developer.apple.com/technotes/tn2004/tn2124.html for an\n  # explanation of these environment variables.\n\n  #export MallocScribble=YES\n  export MallocPreScribble=YES\n  #export MallocGuardEdges=YES\n  #export MallocStackLogging=YES\n  export NSAutoreleaseFreedObjectCheckEnabled=YES\n\n  # Turn on the mostly undocumented OBJC_DEBUG stuff.\n  export OBJC_DEBUG_FRAGILE_SUPERCLASSES=YES\n  export OBJC_DEBUG_UNLOAD=YES\n  # Turned off due to the amount of false positives from NS classes.\n  # export OBJC_DEBUG_FINALIZERS=YES\n  export OBJC_DEBUG_NIL_SYNC=YES\n  export OBJC_PRINT_REPLACED_METHODS=NO\n\n  if [ $GTM_DISABLE_ZOMBIES -eq 0 ]; then\n    GTMXcodeNote ${LINENO} \"Enabling zombies\"\n    export CFZombieLevel=3\n    export NSZombieEnabled=YES\n  fi\n\n  if [ $GTM_DISABLE_USERDIR_SETUP -eq 0 ]; then\n    # Cleanup user home directory\n    if [ -d \"$CFFIXED_USER_HOME\" ]; then\n      rm -rf \"$CFFIXED_USER_HOME\"\n    fi\n    mkdir \"$CFFIXED_USER_HOME\"\n    mkdir \"$CFFIXED_USER_HOME/Documents\"\n    mkdir -p \"$CFFIXED_USER_HOME/Library/Caches\"\n  fi\n\n  # 6251475 iPhone simulator leaks @ CFHTTPCookieStore shutdown if\n  #         CFFIXED_USER_HOME empty\n  GTM_LEAKS_SYMBOLS_TO_IGNORE=\"CFHTTPCookieStore\"\n\n  if [ $GTM_DISABLE_IPHONE_LAUNCH_DAEMONS -eq 0 ]; then\n    # If we want to test anything that interacts with the keychain, we need\n    # securityd up and running. See RunIPhoneLaunchDaemons.sh for details.\n    launchctl submit -l RunIPhoneLaunchDaemons -- \"${ScriptDir}/RunIPhoneLaunchDaemons.sh\" $IPHONE_SIMULATOR_ROOT $CFFIXED_USER_HOME\n    # No matter how we exit, we want to shut down our launchctl job.\n    trap \"launchctl remove RunIPhoneLaunchDaemons\" INT TERM EXIT\n  fi\n\n  # Start our app.\n  \"$TARGET_BUILD_DIR/$EXECUTABLE_PATH\" -RegisterForSystemEvents\n\nelse\n  GTMXcodeNote ${LINENO} \"Skipping running of unittests for device build.\"\nfi\nexit 0";
-		};
-		944FBF4C15C168C100BF85FC /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-		947F6C2315BC39A200C7CF3B /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 12;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -703,59 +481,11 @@
 				942AAF0015BBB3EE0006C241 /* OCDSExpectation.m in Sources */,
 				942AAF0115BBB3F00006C241 /* OCDSObjectExpectation.m in Sources */,
 				942AAF0215BBB3F30006C241 /* OCDSIntExpectation.m in Sources */,
+				14C9441E17FF3F8700578E2C /* OCDSLog.m in Sources */,
 				942AAF0315BBB3F50006C241 /* OCDSFloatExpectation.m in Sources */,
 				942AAF0415BBB3F80006C241 /* OCDSStringExpectation.m in Sources */,
 				947F6BE115BC358F00C7CF3B /* OCDSArrayExpectation.m in Sources */,
 				9454C3E715C87C6500417FA7 /* OCDSBlockExpectation.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		944FBF4915C168C100BF85FC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				944FBF5E15C168C100BF85FC /* OCDSpec2AcceptanceTest.m in Sources */,
-				944FBF6C15C170C200BF85FC /* OCDSContext.m in Sources */,
-				944FBF6D15C170C200BF85FC /* OCDSDescription.m in Sources */,
-				944FBF6E15C170C200BF85FC /* OCDSExample.m in Sources */,
-				944FBF6F15C170C200BF85FC /* OCDSExpectation.m in Sources */,
-				944FBF7015C170C200BF85FC /* OCDSObjectExpectation.m in Sources */,
-				944FBF7115C170C200BF85FC /* OCDSIntExpectation.m in Sources */,
-				944FBF7215C170C200BF85FC /* OCDSFloatExpectation.m in Sources */,
-				944FBF7315C170C200BF85FC /* OCDSStringExpectation.m in Sources */,
-				944FBF7415C170C200BF85FC /* OCDSArrayExpectation.m in Sources */,
-				944FBF7615C171BE00BF85FC /* AcceptanceTestSpec.m in Sources */,
-				9454C3E915C87C6500417FA7 /* OCDSBlockExpectation.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		947F6C2015BC39A200C7CF3B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				947F6C4615BC3A2300C7CF3B /* SenTestCase+ReportingHelper.m in Sources */,
-				947F6C4715BC3A2300C7CF3B /* OCDSFakeFailureReporter.m in Sources */,
-				947F6C4815BC3A2300C7CF3B /* TestArrayExpectation.m in Sources */,
-				947F6C4915BC3A2300C7CF3B /* TestFloatExpectation.m in Sources */,
-				947F6C4A15BC3A2300C7CF3B /* TestGatheringExamples.m in Sources */,
-				947F6C4B15BC3A2300C7CF3B /* TestIntExpectation.m in Sources */,
-				947F6C4C15BC3A2300C7CF3B /* TestObjectExpectation.m in Sources */,
-				947F6C4D15BC3A2300C7CF3B /* TestReportingErrors.m in Sources */,
-				947F6C4E15BC3A2300C7CF3B /* TestRunningExamples.m in Sources */,
-				947F6C4F15BC3A2300C7CF3B /* TestContextMethods.m in Sources */,
-				947F6C5015BC3A2300C7CF3B /* TestStringExpectation.m in Sources */,
-				947F6C5115BC3A3E00C7CF3B /* OCDSContext.m in Sources */,
-				947F6C5215BC3A4000C7CF3B /* OCDSDescription.m in Sources */,
-				947F6C5315BC3A4200C7CF3B /* OCDSExample.m in Sources */,
-				947F6C5415BC3A4500C7CF3B /* OCDSExpectation.m in Sources */,
-				947F6C5515BC3A4B00C7CF3B /* OCDSObjectExpectation.m in Sources */,
-				947F6C5615BC3A4E00C7CF3B /* OCDSIntExpectation.m in Sources */,
-				947F6C5715BC3A5000C7CF3B /* OCDSFloatExpectation.m in Sources */,
-				947F6C5815BC3A5200C7CF3B /* OCDSStringExpectation.m in Sources */,
-				947F6C5915BC3A5500C7CF3B /* OCDSArrayExpectation.m in Sources */,
-				947F6C5C15BC3D4600C7CF3B /* OCDSFakeFailure.m in Sources */,
-				9454C3E015C87C4800417FA7 /* TestBlockExpectation.m in Sources */,
-				9454C3E815C87C6500417FA7 /* OCDSBlockExpectation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -784,22 +514,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				149894E41762D39E0036608B /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		944FBF5915C168C100BF85FC /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				944FBF5A15C168C100BF85FC /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		947F6C2B15BC39A200C7CF3B /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				947F6C2C15BC39A200C7CF3B /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -882,90 +596,6 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-			};
-			name = Release;
-		};
-		944FBF6015C168C100BF85FC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "OCDSpec2AcceptanceTest/OCDSpec2AcceptanceTest-Prefix.pch";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				INFOPLIST_FILE = "OCDSpec2AcceptanceTest/OCDSpec2AcceptanceTest-Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				TEST_AFTER_BUILD = YES;
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		944FBF6115C168C100BF85FC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "OCDSpec2AcceptanceTest/OCDSpec2AcceptanceTest-Prefix.pch";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				INFOPLIST_FILE = "OCDSpec2AcceptanceTest/OCDSpec2AcceptanceTest-Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				TEST_AFTER_BUILD = YES;
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Release;
-		};
-		947F6C3315BC39A200C7CF3B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "OCDSpec2Tests/OCDSpec2Tests-Prefix.pch";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				INFOPLIST_FILE = "OCDSpec2Tests/OCDSpec2Tests-Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				TEST_AFTER_BUILD = YES;
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		947F6C3415BC39A200C7CF3B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				COMBINE_HIDPI_IMAGES = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "OCDSpec2Tests/OCDSpec2Tests-Prefix.pch";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				INFOPLIST_FILE = "OCDSpec2Tests/OCDSpec2Tests-Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				TEST_AFTER_BUILD = YES;
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};
@@ -1060,24 +690,6 @@
 			buildConfigurations = (
 				942AAEF915BBB3760006C241 /* Debug */,
 				942AAEFA15BBB3760006C241 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		944FBF6215C168C100BF85FC /* Build configuration list for PBXNativeTarget "OCDSpec2AcceptanceTest" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				944FBF6015C168C100BF85FC /* Debug */,
-				944FBF6115C168C100BF85FC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		947F6C3215BC39A200C7CF3B /* Build configuration list for PBXNativeTarget "OCDSpec2Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				947F6C3315BC39A200C7CF3B /* Debug */,
-				947F6C3415BC39A200C7CF3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

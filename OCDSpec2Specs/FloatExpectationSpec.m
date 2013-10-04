@@ -10,10 +10,6 @@ OCDSpec2Context(FloatExpectationSpec) {
     reporter = [OCDSFakeFailureReporter new];
   });
   
-  AfterEach(^{
-    [reporter release];
-  });
-  
   Describe(@"-toBeWithPrecision", ^{
     
     It(@"passes when two floats are equal", ^{

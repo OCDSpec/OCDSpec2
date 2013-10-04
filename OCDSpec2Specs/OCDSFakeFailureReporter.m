@@ -3,7 +3,7 @@
 @implementation OCDSFakeFailureReporter
 
 - (void) reportFailure:(NSString*)msg inFile:(NSString*)file atLine:(int)line {
-  OCDSFakeFailure *failure = [[[OCDSFakeFailure alloc] init] autorelease];
+  OCDSFakeFailure *failure = [OCDSFakeFailure new];
   
   failure.report = msg;
   failure.inFile = file;
@@ -13,7 +13,7 @@
 }
 
 - (void) reportWarning:(NSString*)msg inFile:(NSString*)file atLine:(int)line {
-  OCDSFakeFailure *failure = [[[OCDSFakeFailure alloc] init] autorelease];
+  OCDSFakeFailure *failure = [OCDSFakeFailure new];
   
   failure.report = msg;
   failure.inFile = file;

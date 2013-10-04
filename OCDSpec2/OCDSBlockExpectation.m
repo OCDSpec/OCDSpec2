@@ -3,10 +3,10 @@
 @implementation OCDSBlockExpectation
 
 - (OCDSBlockExpectation*(^)(void(^)(void))) withBlock {
-  return [[^OCDSBlockExpectation*(void(^b)(void)){
+  return [^OCDSBlockExpectation*(void(^b)(void)){
     self.block = b;
     return self;
-  } copy] autorelease];
+  } copy];
 }
 
 - (void) toNotRaiseException {

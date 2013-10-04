@@ -3,10 +3,10 @@
 @implementation OCDSStringExpectation
 
 - (OCDSStringExpectation*(^)(NSString*)) withString {
-  return [[^OCDSStringExpectation*(NSString *str){
+  return [^OCDSStringExpectation*(NSString *str){
     self.string = str;
     return self;
-  } copy] autorelease];
+  } copy];
 }
 
 - (void) toContain:(NSString*)substring {

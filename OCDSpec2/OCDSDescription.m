@@ -4,18 +4,6 @@
 
 @implementation OCDSDescription
 
--(void) dealloc {
-  self.subDescriptions = nil;
-  
-  self.name = nil;
-  self.examples = nil;
-  
-  self.beforeEachBlock = nil;
-  self.afterEachBlock = nil;
-  
-  [super dealloc];
-}
-
 -(id) init {
   return [self initWithLogger:[OCDSLog new]];
 }

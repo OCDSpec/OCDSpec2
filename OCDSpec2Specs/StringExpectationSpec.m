@@ -10,10 +10,6 @@ OCDSpec2Context(StringExpectationSpec) {
     reporter = [OCDSFakeFailureReporter new];
   });
   
-  AfterEach(^{
-    [reporter release];
-  });
-  
   Describe(@"-toContain", ^{
     
     It(@"passes when hello contains hell", ^{

@@ -7,7 +7,7 @@ OCDSpec2Context(GatheringExamplesSpec) {
   __block OCDSContext *context;
   
   BeforeEach(^{
-    context = [[[OCDSContext alloc] init] autorelease];
+    context = [OCDSContext new];
   });
   
   Describe(@"OCDSpec context", ^{

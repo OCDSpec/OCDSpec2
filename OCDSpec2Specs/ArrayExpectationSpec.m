@@ -10,10 +10,6 @@ OCDSpec2Context(ArrayExpectationSpec) {
     reporter = [OCDSFakeFailureReporter new];
   });
   
-  AfterEach(^{
-    [reporter release];
-  });
-  
   Describe(@"-toContain", ^{
     
     It(@"passes when the array contains the element", ^{

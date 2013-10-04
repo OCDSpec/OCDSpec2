@@ -10,10 +10,6 @@ OCDSpec2Context(BlockExpectationSpec) {
     reporter = [OCDSFakeFailureReporter new];
   });
   
-  AfterEach(^{
-    [reporter release];
-  });
-  
   Describe(@"-toNotRaiseException", ^{
     
     It(@"passes when the block does not raise an exception", ^{

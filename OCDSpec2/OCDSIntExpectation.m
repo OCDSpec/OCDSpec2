@@ -3,10 +3,10 @@
 @implementation OCDSIntExpectation
 
 - (OCDSIntExpectation*(^)(long long)) withInt {
-  return [[^OCDSIntExpectation*(long long num){
+  return [^OCDSIntExpectation*(long long num){
     self.number = num;
     return self;
-  } copy] autorelease];
+  } copy];
 }
 
 - (void) toBe:(long long)other {

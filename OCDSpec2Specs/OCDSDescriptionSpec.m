@@ -8,11 +8,11 @@ OCDSpec2Context(OCDSDescriptionSpec) {
   Describe(@"running examples", ^{
     
     It(@"logs all description names", ^{
-      FakeLogger *logger = [[FakeLogger new] autorelease];
-      OCDSDescription *description = [[[OCDSDescription alloc] initWithLogger:logger] autorelease];
+      FakeLogger *logger = [FakeLogger new];
+      OCDSDescription *description = [[OCDSDescription alloc] initWithLogger:logger];
       description.name = @"Test";
       
-      OCDSExample *example = [[OCDSExample new] autorelease];
+      OCDSExample *example = [OCDSExample new];
       example.block = ^{};
       example.name = @"My Example";
       description.examples = @[example];

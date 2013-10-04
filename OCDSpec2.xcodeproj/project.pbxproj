@@ -33,23 +33,23 @@
 		14B7B06F17BECB37001552CE /* OCDSLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 14B7B06E17BECB37001552CE /* OCDSLogger.h */; };
 		14B7B07017BED2B4001552CE /* OCDSExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA415BB30D0003F22B6 /* OCDSExample.m */; };
 		14B7B07117BED2B8001552CE /* OCDSDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA215BB30D0003F22B6 /* OCDSDescription.m */; };
-		14C9441E17FF3F8700578E2C /* OCDSLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 1428639417C7FD8000066B3C /* OCDSLog.m */; };
-		942AAEFD15BBB3E60006C241 /* OCDSContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA015BB30D0003F22B6 /* OCDSContext.m */; };
-		942AAEFE15BBB3E90006C241 /* OCDSDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA215BB30D0003F22B6 /* OCDSDescription.m */; };
-		942AAEFF15BBB3EB0006C241 /* OCDSExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA415BB30D0003F22B6 /* OCDSExample.m */; };
-		942AAF0015BBB3EE0006C241 /* OCDSExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA615BB30D0003F22B6 /* OCDSExpectation.m */; };
-		942AAF0115BBB3F00006C241 /* OCDSObjectExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA815BB30D0003F22B6 /* OCDSObjectExpectation.m */; };
-		942AAF0215BBB3F30006C241 /* OCDSIntExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAAA15BB30D0003F22B6 /* OCDSIntExpectation.m */; };
-		942AAF0315BBB3F50006C241 /* OCDSFloatExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAAC15BB30D0003F22B6 /* OCDSFloatExpectation.m */; };
-		942AAF0415BBB3F80006C241 /* OCDSStringExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAAE15BB30D0003F22B6 /* OCDSStringExpectation.m */; };
+		14C9441E17FF3F8700578E2C /* OCDSLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 1428639417C7FD8000066B3C /* OCDSLog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		942AAEFD15BBB3E60006C241 /* OCDSContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA015BB30D0003F22B6 /* OCDSContext.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		942AAEFE15BBB3E90006C241 /* OCDSDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA215BB30D0003F22B6 /* OCDSDescription.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		942AAEFF15BBB3EB0006C241 /* OCDSExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA415BB30D0003F22B6 /* OCDSExample.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		942AAF0015BBB3EE0006C241 /* OCDSExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA615BB30D0003F22B6 /* OCDSExpectation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		942AAF0115BBB3F00006C241 /* OCDSObjectExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA815BB30D0003F22B6 /* OCDSObjectExpectation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		942AAF0215BBB3F30006C241 /* OCDSIntExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAAA15BB30D0003F22B6 /* OCDSIntExpectation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		942AAF0315BBB3F50006C241 /* OCDSFloatExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAAC15BB30D0003F22B6 /* OCDSFloatExpectation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		942AAF0415BBB3F80006C241 /* OCDSStringExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAAE15BB30D0003F22B6 /* OCDSStringExpectation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		9454C3E415C87C6500417FA7 /* OCDSBlockExpectation.h in Headers */ = {isa = PBXBuildFile; fileRef = 9454C3E215C87C6500417FA7 /* OCDSBlockExpectation.h */; };
 		9454C3E515C87C6500417FA7 /* OCDSBlockExpectation.h in Headers */ = {isa = PBXBuildFile; fileRef = 9454C3E215C87C6500417FA7 /* OCDSBlockExpectation.h */; };
 		9454C3E615C87C6500417FA7 /* OCDSBlockExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9454C3E315C87C6500417FA7 /* OCDSBlockExpectation.m */; };
-		9454C3E715C87C6500417FA7 /* OCDSBlockExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9454C3E315C87C6500417FA7 /* OCDSBlockExpectation.m */; };
+		9454C3E715C87C6500417FA7 /* OCDSBlockExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9454C3E315C87C6500417FA7 /* OCDSBlockExpectation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		947F6BDD15BC358F00C7CF3B /* OCDSArrayExpectation.h in Headers */ = {isa = PBXBuildFile; fileRef = 947F6BDB15BC358F00C7CF3B /* OCDSArrayExpectation.h */; };
 		947F6BDE15BC358F00C7CF3B /* OCDSArrayExpectation.h in Headers */ = {isa = PBXBuildFile; fileRef = 947F6BDB15BC358F00C7CF3B /* OCDSArrayExpectation.h */; };
 		947F6BDF15BC358F00C7CF3B /* OCDSArrayExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 947F6BDC15BC358F00C7CF3B /* OCDSArrayExpectation.m */; };
-		947F6BE115BC358F00C7CF3B /* OCDSArrayExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 947F6BDC15BC358F00C7CF3B /* OCDSArrayExpectation.m */; };
+		947F6BE115BC358F00C7CF3B /* OCDSArrayExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 947F6BDC15BC358F00C7CF3B /* OCDSArrayExpectation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		947F6C3815BC39D000C7CF3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A6BA5D15BB2DE7003F22B6 /* Foundation.framework */; };
 		94A6BA5E15BB2DE7003F22B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A6BA5D15BB2DE7003F22B6 /* Foundation.framework */; };
 		94A6BAB015BB30D0003F22B6 /* OCDSpec2.h in Headers */ = {isa = PBXBuildFile; fileRef = 94A6BA9C15BB30D0003F22B6 /* OCDSpec2.h */; };
@@ -526,7 +526,7 @@
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -545,7 +545,7 @@
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -604,6 +604,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
@@ -632,6 +633,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;

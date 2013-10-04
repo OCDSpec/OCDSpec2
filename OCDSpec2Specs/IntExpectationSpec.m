@@ -10,10 +10,6 @@ OCDSpec2Context(IntExpectationSpec) {
     reporter = [OCDSFakeFailureReporter new];
   });
   
-  AfterEach(^{
-    [reporter release];
-  });
-  
   Describe(@"-toBe", ^{
     
     It(@"passes when two ints are equal", ^{

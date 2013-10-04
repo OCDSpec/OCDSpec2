@@ -3,10 +3,10 @@
 @implementation OCDSFloatExpectation
 
 - (OCDSFloatExpectation*(^)(double)) withFloat {
-  return [[^OCDSFloatExpectation*(double num){
+  return [^OCDSFloatExpectation*(double num){
     self.number = num;
     return self;
-  } copy] autorelease];
+  } copy];
 }
 
 - (void) toBe:(double)other withPrecision:(double)precision {

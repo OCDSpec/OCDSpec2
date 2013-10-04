@@ -3,10 +3,10 @@
 @implementation OCDSObjectExpectation
 
 - (OCDSObjectExpectation*(^)(id)) withObject {
-  return [[^OCDSObjectExpectation*(id obj){
+  return [^OCDSObjectExpectation*(id obj){
     self.object = obj;
     return self;
-  } copy] autorelease];
+  } copy];
 }
 
 - (void) pending {
@@ -14,9 +14,9 @@
 }
 
 - (void(^)(NSString*))pendingWithString {
-  return [[^(NSString* msg){
+  return [^(NSString* msg){
     [self reportWarning:[NSString stringWithFormat:@"Pending: %@", msg]];
-  } copy] autorelease];
+  } copy];
 }
 
 - (void) toBe:(id)other {

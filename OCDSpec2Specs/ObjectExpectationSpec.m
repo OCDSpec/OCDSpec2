@@ -10,10 +10,6 @@ OCDSpec2Context(ObjectExpectationSpec) {
     reporter = [OCDSFakeFailureReporter new];
   });
   
-  AfterEach(^{
-    [reporter release];
-  });
-  
   Describe(@"-toBeEqual", ^{
     
     It(@"passes when two objects are equal", ^{
@@ -37,7 +33,7 @@ OCDSpec2Context(ObjectExpectationSpec) {
   Describe(@"-toBe", ^{
     
     It(@"passes when two objects are the same object", ^{
-      id a = [[[NSObject alloc] init] autorelease];
+      id a = [NSObject new];
       
       [[[OCDSObjectExpectation expectationInFile:"file1" line:2 failureReporter:reporter] withObject]
        (a) toBe: a];

@@ -17,17 +17,17 @@ OCDSpec2Context(RunningExamplesSpec) {
     __block OCDSExample *example4;
 
     BeforeEach(^{
-      FakeLogger *logger = [[FakeLogger new] autorelease];
+      FakeLogger *logger = [FakeLogger new];
 
-      context = [[[OCDSContext alloc] init] autorelease];
-      desc1 = [[[OCDSDescription alloc] initWithLogger:logger] autorelease];
-      desc2 = [[[OCDSDescription alloc] initWithLogger:logger] autorelease];
+      context = [OCDSContext new];
+      desc1 = [[OCDSDescription alloc] initWithLogger:logger];
+      desc2 = [[OCDSDescription alloc] initWithLogger:logger];
       counter = [NSMutableString string];
 
-      example1 = [[OCDSExample new] autorelease];
-      example2 = [[OCDSExample new] autorelease];
-      example3 = [[OCDSExample new] autorelease];
-      example4 = [[OCDSExample new] autorelease];
+      example1 = [OCDSExample new];
+      example2 = [OCDSExample new];
+      example3 = [OCDSExample new];
+      example4 = [OCDSExample new];
 
       example1.block = ^{
         [counter appendString:@"1"];

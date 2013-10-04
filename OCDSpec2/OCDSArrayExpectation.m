@@ -3,10 +3,10 @@
 @implementation OCDSArrayExpectation
 
 - (OCDSArrayExpectation*(^)(NSArray*)) withArray {
-  return [[^OCDSArrayExpectation*(NSArray *a){
+  return [^OCDSArrayExpectation*(NSArray *a){
     self.array = a;
     return self;
-  } copy] autorelease];
+  } copy];
 }
 
 - (void) toContain:(id)obj {

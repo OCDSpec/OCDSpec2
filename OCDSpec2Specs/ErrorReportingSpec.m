@@ -7,21 +7,21 @@ OCDSpec2Context(ErrorReportingSpec) {
     It(@"reports to an output file", ^{
       NSPipe *pipe = [NSPipe pipe];
       
-      OCDSContext *context = [[[OCDSContext alloc] init] autorelease];
+      OCDSContext *context = [OCDSContext new];
       context.reportOutputFile = [pipe fileHandleForWriting];
       [context reportFailure:@"this is\n a test!" inFile:@"file1" atLine:73];
       
       [[pipe fileHandleForWriting] closeFile];
       
       NSFileHandle *handle = [pipe fileHandleForReading];
-      NSString *str = [[[NSString alloc] initWithData:[handle readDataToEndOfFile]
-                                             encoding:NSUTF8StringEncoding] autorelease];
+      NSString *str = [[NSString alloc] initWithData:[handle readDataToEndOfFile]
+                                             encoding:NSUTF8StringEncoding];
   
       [ExpectObj(str) toBeEqualTo: @"file1:73: error: this is\n a test!\n"];
     });
     
     It(@"keeps the error count", ^{
-      OCDSContext *context = [[[OCDSContext alloc] init] autorelease];
+      OCDSContext *context = [OCDSContext new];
       
       NSPipe *pipe = [NSPipe pipe];
       context.reportOutputFile = [pipe fileHandleForWriting];

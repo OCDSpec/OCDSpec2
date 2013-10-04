@@ -6,7 +6,7 @@
                     line:(int)someLine
          failureReporter:(id<OCDSFailureReporter>)reporter
 {
-  OCDSExpectation *expectation = [[[self alloc] init] autorelease];
+  OCDSExpectation *expectation = [self new];
   expectation.file = [NSString stringWithUTF8String:someFile];
   expectation.line = someLine;
   expectation.failureReporter = reporter;

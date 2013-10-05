@@ -1,8 +1,3 @@
 language: objective-c
 
-before_script: travis/before.sh
-script: build.sh
-
-branches:
-  only:
-    - travis
+script: travis/build.sh

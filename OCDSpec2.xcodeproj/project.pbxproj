@@ -107,7 +107,6 @@
 		14DAD2A21827F9DC00025C63 /* SpecExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecExpectation.m; sourceTree = "<group>"; };
 		942AAEEC15BBB3760006C241 /* libOCDSpec2Mac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOCDSpec2Mac.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		942AAEF515BBB3760006C241 /* OCDSpec2Mac-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "OCDSpec2Mac-Prefix.pch"; path = "OCDSpec2/OCDSpec2Mac-Prefix.pch"; sourceTree = SOURCE_ROOT; };
-		944FBF5015C168C100BF85FC /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		944FBF5315C168C100BF85FC /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		944FBF5415C168C100BF85FC /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		944FBF5515C168C100BF85FC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -118,7 +117,6 @@
 		94A6BA5A15BB2DE7003F22B6 /* libOCDSpec2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOCDSpec2.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		94A6BA5D15BB2DE7003F22B6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		94A6BA6115BB2DE7003F22B6 /* OCDSpec2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OCDSpec2-Prefix.pch"; sourceTree = "<group>"; };
-		94A6BA7415BB3093003F22B6 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		94A6BA9C15BB30D0003F22B6 /* OCDSpec2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCDSpec2.h; sourceTree = "<group>"; };
 		94A6BA9D15BB30D0003F22B6 /* OCDSPrelude.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCDSPrelude.h; sourceTree = "<group>"; };
 		94A6BA9E15BB30D0003F22B6 /* OCDSFailureReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCDSFailureReporter.h; sourceTree = "<group>"; };
@@ -262,8 +260,6 @@
 			isa = PBXGroup;
 			children = (
 				94A6BA5D15BB2DE7003F22B6 /* Foundation.framework */,
-				94A6BA7415BB3093003F22B6 /* SenTestingKit.framework */,
-				944FBF5015C168C100BF85FC /* Cocoa.framework */,
 				149894DB1762D39E0036608B /* UIKit.framework */,
 				149894DE1762D39E0036608B /* CoreGraphics.framework */,
 				944FBF5215C168C100BF85FC /* Other Frameworks */,
@@ -579,7 +575,8 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+					"\\\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\\\"",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -599,7 +596,8 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+					"\\\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\\\"",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -676,6 +674,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DSTROOT = /tmp/OCDSpec2.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OCDSpec2/OCDSpec2-Prefix.pch";
 				OCDSIP_INSTALL = YES;
@@ -688,6 +690,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DSTROOT = /tmp/OCDSpec2.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OCDSpec2/OCDSpec2-Prefix.pch";
 				OCDSIP_INSTALL = YES;

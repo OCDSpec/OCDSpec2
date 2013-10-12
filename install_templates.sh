@@ -3,7 +3,9 @@
 echo "Create template directory..."
 mkdir -p ~/Library/Developer/Xcode/Templates/
 echo "Get Templates..."
-wget https://github.com/OCDSpec/OCDSpec2/archive/master.zip -O $TMPDIR/master.zip
+cd $TMPDIR
+curl -LOk https://github.com/OCDSpec/OCDSpec2/archive/master.zip
+cd -
 unzip $TMPDIR/master.zip -d $TMPDIR
 echo "Copying template files..."
 cp -R $TMPDIR/OCDSpec2-master/Templates/ ~/Library/Developer/Xcode/Templates/

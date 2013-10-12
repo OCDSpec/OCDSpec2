@@ -2,7 +2,9 @@
 echo "Create snippet directory..."
 mkdir -p ~/Library/Developer/Xcode/UserData/CodeSnippets/
 echo "Get Snippets"
-wget https://github.com/OCDSpec/OCDSpec2/archive/master.zip -O $TMPDIR/master.zip
+cd $TMPDIR
+curl -LOk https://github.com/OCDSpec/OCDSpec2/archive/master.zip
+cd -
 unzip $TMPDIR/master.zip -d $TMPDIR
 echo "Copying snippet files..."
 cp -R $TMPDIR/OCDSpec2-master/CodeSnippets/ ~/Library/Developer/Xcode/UserData/CodeSnippets/

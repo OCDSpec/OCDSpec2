@@ -174,7 +174,7 @@
         <key>SharedSettings</key>
         <dict>
           <key>INFOPLIST_FILE</key>
-          <string/>
+          <string>___PACKAGENAME___/___PACKAGENAME___-Info.plist</string>
         </dict>
         <key>BuildPhases</key>
         <array>

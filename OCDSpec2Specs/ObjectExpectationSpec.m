@@ -167,16 +167,24 @@ OCDSpec2Context(ObjectExpectationSpec) {
       [ExpectObj(report) toBeEqualTo:@"Pending"];
     });
     
-  });
-  
-  Describe(@"-pendingWithString", ^{
-    
     It(@"warns that the test is pending with a string", ^{
       [[OCDSObjectExpectation expectationInFile:"file1" line:2 failureReporter:reporter] pendingWithString](@"todo = test me");
       NSString *report = [reporter findWarningMessageInFile:@"file1"
                                                      onLine:2];
       
       [ExpectObj(report) toBeEqualTo:@"Pending: todo = test me"];
+    });
+    
+    It(@"stops executing when it encounters pending", ^{
+      Pending();
+      
+      [ExpectBool(YES) toBeFalse];
+    });
+    
+    It(@"stops executing when it encounters pending with a string", ^{
+      PendingStr(@"Pending");
+      
+      [ExpectBool(YES) toBeFalse];
     });
     
   });

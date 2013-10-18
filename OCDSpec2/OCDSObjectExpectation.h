@@ -22,5 +22,5 @@
 
 #define ExpectObj [[OCDSObjectExpectation expectationInFile:__FILE__ line:__LINE__ failureReporter:self] withObject]
 
-#define Pending() [[OCDSObjectExpectation expectationInFile:__FILE__ line:__LINE__ failureReporter:self] pending]
-#define PendingStr [[OCDSObjectExpectation expectationInFile:__FILE__ line:__LINE__ failureReporter:self] pendingWithString]
+#define Pending() return [[OCDSObjectExpectation expectationInFile:__FILE__ line:__LINE__ failureReporter:self] pending]
+#define PendingStr return [[OCDSObjectExpectation expectationInFile:__FILE__ line:__LINE__ failureReporter:self] pendingWithString]

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "OCDSpec2"
-  s.version      = "1.6.0"
+  s.version      = "1.6.1"
   s.summary      = "Unit Testing for the obsessive compulsive."
 
   s.description  = <<-DESC
@@ -43,7 +43,7 @@ Pod::Spec.new do |s|
                      "marosluuce" => "nathan@8thlight.com", 
                      "sdegutis" => "sbdegutis@gmail.com" }
 
-  s.source       = { :git => "https://github.com/OCDSpec/OCDSpec2.git", :tag => "1.5.1" }
+  s.source       = { :git => "https://github.com/OCDSpec/OCDSpec2.git", :tag => "1.6.1" }
   s.source_files  = 'OCDSpec2', 'OCDSpec2/**/*.{h,m,}'
 #  s.resources = ""
   s.exclude_files = 'OCDSpec2/Exclude'

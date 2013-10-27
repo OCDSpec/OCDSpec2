@@ -8,6 +8,7 @@
 
 - (void) toContain:(id)obj;
 - (void) toHaveCount:(int)count;
+- (void) toBeEmpty;
 
 @end
 

@@ -92,5 +92,33 @@ OCDSpec2Context(ArrayExpectationSpec) {
     });
 
   });
+  
+  Describe(@"-toBeEmpty", ^{
+    
+    It(@"passes when the array is empty", ^{
+      [[[OCDSArrayExpectation expectationInFile:"file1" line:2 failureReporter: reporter] withArray]
+       (@[]) toBeEmpty];
+
+      [ExpectInt(reporter.numberOfFailures) toBe:0];
+    });
+
+    It(@"fails when the array is not empty", ^{
+      [[[OCDSArrayExpectation expectationInFile:"file1" line:2 failureReporter: reporter] withArray]
+       (@[@"a"]) toBeEmpty];
+      
+      NSString *report = [reporter findFailureMessageInFile:@"file1"
+                                                     onLine:2];
+      
+      report = [reporter findFailureMessageInFile:@"file1" onLine:2];
+      [ExpectObj(report) toBeEqualTo:@"Want empty array, got ("];
+      
+      report = [reporter findFailureMessageInFile:@"file1" onLine:3];
+      [ExpectObj(report) toBeEqualTo:@"    a"];
+      
+      report = [reporter findFailureMessageInFile:@"file1" onLine:4];
+      [ExpectObj(report) toBeEqualTo:@")"];
+    });
+
+  });
 
 }

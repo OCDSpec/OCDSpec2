@@ -25,4 +25,11 @@
   }
 }
 
+- (void) toBeEmpty {
+  if ([self.object count] != 0) {
+    [self reportFailure:[NSString stringWithFormat:@"Want empty array, got %@",
+                         self.object]];
+  }
+}
+
 @end

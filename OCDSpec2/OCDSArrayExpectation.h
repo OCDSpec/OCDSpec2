@@ -7,6 +7,7 @@
 - (OCDSArrayExpectation*(^)(NSArray*)) withArray;
 
 - (void) toContain:(id)obj;
+- (void) toHaveCount:(int)count;
 
 @end
 

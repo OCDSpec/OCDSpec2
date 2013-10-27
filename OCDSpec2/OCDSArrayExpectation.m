@@ -17,4 +17,12 @@
   }
 }
 
+- (void) toHaveCount:(int)count {
+  if ([self.object count] != count) {
+    [self reportFailure:[NSString stringWithFormat:@"Want count %d, got %i",
+                         count,
+                         (int)[self.object count]]];
+  }
+}
+
 @end

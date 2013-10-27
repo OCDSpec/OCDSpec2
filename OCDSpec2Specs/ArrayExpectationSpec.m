@@ -72,4 +72,25 @@ OCDSpec2Context(ArrayExpectationSpec) {
     
   });
   
+  Describe(@"-toHaveCount", ^{
+    
+    It(@"passes if the count is the same", ^{
+      [[[OCDSArrayExpectation expectationInFile:"file1" line:2 failureReporter:reporter] withArray]
+       (@[@"a", @"b", @"c"]) toHaveCount: 3];
+      
+      [ExpectInt(reporter.numberOfFailures) toBe:0];
+    });
+    
+    It(@"fails when the count does not match expected", ^{
+      [[[OCDSArrayExpectation expectationInFile:"file1" line:2 failureReporter:reporter] withArray]
+       (@[@"a", @"b", @"c"]) toHaveCount: 2];
+      
+      NSString *report = [reporter findFailureMessageInFile:@"file1"
+                                                     onLine:2];
+      
+      [ExpectObj(report) toBeEqualTo:@"Want count 2, got 3"];
+    });
+
+  });
+
 }

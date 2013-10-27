@@ -112,5 +112,21 @@ OCDSpec2Context(IntExpectationSpec) {
     });
       
   });
+
+  Describe(@"ExpectTrue", ^{
+    
+    It(@"passes on YES", ^{
+      ExpectTrue(YES);
+    });
+
+  });
+
+  Describe(@"ExpectFalse", ^{
+    
+    It(@"passes on NO", ^{
+      ExpectFalse(NO);
+    });
+    
+  });
   
 }

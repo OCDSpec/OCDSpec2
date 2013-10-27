@@ -4,24 +4,24 @@
 
 - (OCDSStringExpectation*(^)(NSString*)) withString {
   return [^OCDSStringExpectation*(NSString *str){
-    self.string = str;
+    self.object = str;
     return self;
   } copy];
 }
 
 - (void) toContain:(NSString*)substring {
-  if ([self.string rangeOfString:substring].location == NSNotFound) {
+  if ([self.object rangeOfString:substring].location == NSNotFound) {
     [self reportFailure:[NSString stringWithFormat:@"Want \"*%@*\", got \"%@\"",
                          substring,
-                         self.string]];
+                         self.object]];
   }
 }
 
 - (void) toStartWith:(NSString*)substring {
-    if ([self.string rangeOfString:substring].location != 0) {
+    if ([self.object rangeOfString:substring].location != 0) {
         [self reportFailure:[NSString stringWithFormat:@"Want \"%@*\", got \"%@\"",
                              substring,
-                             self.string]];
+                             self.object]];
     }
 }
 

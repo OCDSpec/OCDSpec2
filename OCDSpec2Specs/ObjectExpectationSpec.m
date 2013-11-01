@@ -10,7 +10,7 @@ OCDSpec2Context(ObjectExpectationSpec) {
     reporter = [OCDSFakeFailureReporter new];
   });
   
-  Describe(@"-toBeEqual", ^{
+  Describe(@"-toBeEqualTo", ^{
     
     It(@"passes when two objects are equal", ^{
       [[[OCDSObjectExpectation expectationInFile:"file1" line:2 failureReporter:reporter] withObject]

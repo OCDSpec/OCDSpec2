@@ -1,10 +1,8 @@
 #import <Foundation/Foundation.h>
 
-#import <OCDSpec2/OCDSExpectation.h>
+#import <OCDSpec2/OCDSObjectExpectation.h>
 
-@interface OCDSStringExpectation : OCDSExpectation
-
-@property (readwrite, assign) NSString* string;
+@interface OCDSStringExpectation : OCDSObjectExpectation
 
 - (OCDSStringExpectation*(^)(NSString*)) withString;
 

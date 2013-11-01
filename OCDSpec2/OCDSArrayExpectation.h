@@ -1,14 +1,14 @@
 #import <Foundation/Foundation.h>
 
-#import <OCDSpec2/OCDSExpectation.h>
+#import <OCDSpec2/OCDSObjectExpectation.h>
 
-@interface OCDSArrayExpectation : OCDSExpectation
-
-@property (readwrite, assign) NSArray* array;
+@interface OCDSArrayExpectation : OCDSObjectExpectation
 
 - (OCDSArrayExpectation*(^)(NSArray*)) withArray;
 
 - (void) toContain:(id)obj;
+- (void) toHaveCount:(int)count;
+- (void) toBeEmpty;
 
 @end
 

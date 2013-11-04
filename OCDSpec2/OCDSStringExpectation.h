@@ -11,4 +11,4 @@
 
 @end
 
-#define ExpectStr [[OCDSStringExpectation expectationInFile:__FILE__ line:__LINE__ failureReporter:self] withString]
+#define ExpectStr [[OCDSStringExpectation expectationInFile:__FILE__ line:__LINE__ failureReporter:Reporter] withString]

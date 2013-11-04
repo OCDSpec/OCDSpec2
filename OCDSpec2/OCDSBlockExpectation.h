@@ -12,4 +12,4 @@
 
 @end
 
-#define ExpectBlock [[OCDSBlockExpectation expectationInFile:__FILE__ line:__LINE__ failureReporter:self] withBlock]
+#define ExpectBlock [[OCDSBlockExpectation expectationInFile:__FILE__ line:__LINE__ failureReporter:Reporter] withBlock]

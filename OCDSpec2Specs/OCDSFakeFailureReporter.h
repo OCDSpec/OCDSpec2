@@ -9,7 +9,8 @@
 @property (assign) NSArray* warningReports;
 
 - (int) numberOfFailures;
-- (NSString *) findFailureMessageInFile:(NSString *)file onLine:(int)line;
-- (NSString *) findWarningMessageInFile:(NSString *)file onLine:(int)line;
+- (NSString *) findLastFailureMessageInFile:(NSString *)file;
+- (NSArray *) findLastFailureMessagesInFile:(NSString *)file count:(int)count;
+- (NSString *) findLastWarningMessageInFile:(NSString *)file;
 
 @end

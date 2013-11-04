@@ -34,6 +34,7 @@
 		14B7B07017BED2B4001552CE /* OCDSExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA415BB30D0003F22B6 /* OCDSExample.m */; };
 		14B7B07117BED2B8001552CE /* OCDSDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA215BB30D0003F22B6 /* OCDSDescription.m */; };
 		14C9441E17FF3F8700578E2C /* OCDSLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 1428639417C7FD8000066B3C /* OCDSLog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		14DAD2A31827F9DC00025C63 /* SpecExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 14DAD2A21827F9DC00025C63 /* SpecExpectation.m */; };
 		942AAEFD15BBB3E60006C241 /* OCDSContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA015BB30D0003F22B6 /* OCDSContext.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		942AAEFE15BBB3E90006C241 /* OCDSDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA215BB30D0003F22B6 /* OCDSDescription.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		942AAEFF15BBB3EB0006C241 /* OCDSExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A6BAA415BB30D0003F22B6 /* OCDSExample.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -102,6 +103,8 @@
 		14B7B06B17BEC316001552CE /* FakeLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FakeLogger.h; sourceTree = "<group>"; };
 		14B7B06C17BEC316001552CE /* FakeLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakeLogger.m; sourceTree = "<group>"; };
 		14B7B06E17BECB37001552CE /* OCDSLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCDSLogger.h; sourceTree = "<group>"; };
+		14DAD2A11827F9DC00025C63 /* SpecExpectation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecExpectation.h; sourceTree = "<group>"; };
+		14DAD2A21827F9DC00025C63 /* SpecExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecExpectation.m; sourceTree = "<group>"; };
 		942AAEEC15BBB3760006C241 /* libOCDSpec2Mac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOCDSpec2Mac.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		942AAEF515BBB3760006C241 /* OCDSpec2Mac-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "OCDSpec2Mac-Prefix.pch"; path = "OCDSpec2/OCDSpec2Mac-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		944FBF5015C168C100BF85FC /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
@@ -184,6 +187,7 @@
 		149894E01762D39E0036608B /* OCDSpec2Specs */ = {
 			isa = PBXGroup;
 			children = (
+				14DAD2A01827F9C000025C63 /* SpecExpectation */,
 				14614E791774E592000AF471 /* Fakes */,
 				149894E11762D39E0036608B /* Supporting Files */,
 				149894EC1762D3EA0036608B /* StringExpectationSpec.m */,
@@ -210,6 +214,15 @@
 				149894E81762D39E0036608B /* OCDSpec2Specs-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		14DAD2A01827F9C000025C63 /* SpecExpectation */ = {
+			isa = PBXGroup;
+			children = (
+				14DAD2A11827F9DC00025C63 /* SpecExpectation.h */,
+				14DAD2A21827F9DC00025C63 /* SpecExpectation.m */,
+			);
+			name = SpecExpectation;
 			sourceTree = "<group>";
 		};
 		944FBF5215C168C100BF85FC /* Other Frameworks */ = {
@@ -452,6 +465,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				149894E71762D39E0036608B /* main.m in Sources */,
+				14DAD2A31827F9DC00025C63 /* SpecExpectation.m in Sources */,
 				149894ED1762D3EA0036608B /* StringExpectationSpec.m in Sources */,
 				149894F21762DF6E0036608B /* FloatExpectationSpec.m in Sources */,
 				14B7B07117BED2B8001552CE /* OCDSDescription.m in Sources */,

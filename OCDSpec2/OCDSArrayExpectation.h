@@ -12,4 +12,4 @@
 
 @end
 
-#define ExpectArray [[OCDSArrayExpectation expectationInFile:__FILE__ line:__LINE__ failureReporter:self] withArray]
+#define ExpectArray [[OCDSArrayExpectation expectationInFile:__FILE__ line:__LINE__ failureReporter:Reporter] withArray]

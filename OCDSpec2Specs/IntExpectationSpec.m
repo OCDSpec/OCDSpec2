@@ -1,6 +1,11 @@
 #import <OCDSpec2/OCDSpec2.h>
 
 #import "OCDSFakeFailureReporter.h"
+#import "OCDSIntExpectation.h"
+#import "SpecExpectation.h"
+
+#undef Reporter
+#define Reporter reporter
 
 OCDSpec2Context(IntExpectationSpec) {
 
@@ -13,28 +18,21 @@ OCDSpec2Context(IntExpectationSpec) {
   Describe(@"-toBe", ^{
     
     It(@"passes when two ints are equal", ^{
-      [[[OCDSIntExpectation expectationInFile:"file1" line:2 failureReporter:reporter] withInt]
-       (1) toBe: 1];
+      [ExpectInt(1) toBe:1];
       
-      [ExpectInt(reporter.numberOfFailures) toBe:0];
+      ExpectErrorCount(0);
     });
     
     It(@"fails when two ints are not equal", ^{
-      [[[OCDSIntExpectation expectationInFile:"file1" line:2 failureReporter:reporter] withInt]
-       (2) toBe: 3];
-      NSString *report = [reporter findFailureMessageInFile:@"file1"
-                                                     onLine:2];
+      [ExpectInt(2) toBe:3];
       
-      [ExpectObj(report) toBeEqualTo:@"Want 3, got 2"];
+      ExpectLastErrorMessage(@"Want 3, got 2");
     });
     
     It(@"fails when two ints are equal but one is negative", ^{
-      [[[OCDSIntExpectation expectationInFile:"file1" line:2 failureReporter:reporter] withInt]
-       (-1) toBe: 1];
-      NSString *report = [reporter findFailureMessageInFile:@"file1"
-                                                     onLine:2];
-      
-      [ExpectObj(report) toBeEqualTo:@"Want 1, got -1"];
+      [ExpectInt(-1) toBe:1];
+
+      ExpectLastErrorMessage(@"Want 1, got -1");
     });
     
   });
@@ -42,19 +40,15 @@ OCDSpec2Context(IntExpectationSpec) {
   Describe(@"-toBeTrue", ^{
     
     It(@"passes when the value is true", ^{
-      [[[OCDSIntExpectation expectationInFile:"file1" line:2 failureReporter:reporter] withInt]
-       (YES) toBeTrue];
-      
-      [ExpectInt(reporter.numberOfFailures) toBe:0];
+      [ExpectInt(YES) toBeTrue];
+
+      ExpectErrorCount(0);
     });
     
     It(@"fails when the value is false", ^{
-      [[[OCDSIntExpectation expectationInFile:"file1" line:2 failureReporter:reporter] withInt]
-       (NO) toBeTrue];
-      NSString *report = [reporter findFailureMessageInFile:@"file1"
-                                                     onLine:2];
-      
-      [ExpectObj(report) toBeEqualTo:@"Want true, got false"];
+      [ExpectInt(NO) toBeTrue];
+
+      ExpectLastErrorMessage(@"Want true, got false");
     });
     
   });
@@ -62,19 +56,15 @@ OCDSpec2Context(IntExpectationSpec) {
   Describe(@"-toBeFalse", ^{
     
     It(@"passes when the value is false", ^{
-      [[[OCDSIntExpectation expectationInFile:"file1" line:2 failureReporter:reporter] withInt]
-       (NO) toBeFalse];
-      
-      [ExpectInt(reporter.numberOfFailures) toBe:0];
+      [ExpectInt(NO) toBeFalse];
+
+      ExpectErrorCount(0);
     });
     
     It(@"fails when the value is true", ^{
-      [[[OCDSIntExpectation expectationInFile:"file1" line:2 failureReporter:reporter] withInt]
-       (YES) toBeFalse];
-      NSString *report = [reporter findFailureMessageInFile:@"file1"
-                                                     onLine:2];
-      
-      [ExpectObj(report) toBeEqualTo:@"Want false, got true"];
+      [ExpectInt(YES) toBeFalse];
+
+      ExpectLastErrorMessage(@"Want false, got true");
     });
     
   });
@@ -82,33 +72,27 @@ OCDSpec2Context(IntExpectationSpec) {
   Describe(@"-toBeNotFalse", ^{
     
     It(@"passes when the value is true", ^{
-      [[[OCDSIntExpectation expectationInFile:"file1" line:2 failureReporter:reporter] withInt]
-       (YES) toNotBeFalse];
-      
-      [ExpectInt(reporter.numberOfFailures) toBe:0];
+      [ExpectInt(YES) toNotBeFalse];
+
+      ExpectErrorCount(0);
     });
     
     It(@"passes when the value is a positive int", ^{
-      [[[OCDSIntExpectation expectationInFile:"file1" line:2 failureReporter:reporter] withInt]
-       (3) toNotBeFalse];
+      [ExpectInt(3) toNotBeFalse];
       
-      [ExpectInt(reporter.numberOfFailures) toBe:0];
+      ExpectErrorCount(0);
     });
     
     It(@"passes when the value is a negative int", ^{
-      [[[OCDSIntExpectation expectationInFile:"file1" line:2 failureReporter:reporter] withInt]
-       (-3) toNotBeFalse];
+      [ExpectInt(-3) toNotBeFalse];
       
-      [ExpectInt(reporter.numberOfFailures) toBe:0];
+      ExpectErrorCount(0);
     });
     
     It(@"fails when the value is false", ^{
-      [[[OCDSIntExpectation expectationInFile:"file1" line:2 failureReporter:reporter] withInt]
-       (NO) toNotBeFalse];
-      NSString *report = [reporter findFailureMessageInFile:@"file1"
-                                                   onLine:2];
-    
-      [ExpectObj(report) toBeEqualTo:@"Want anything but false, got false"];
+      [ExpectInt(NO) toNotBeFalse];
+
+      ExpectLastErrorMessage(@"Want anything but false, got false");
     });
       
   });
@@ -117,6 +101,14 @@ OCDSpec2Context(IntExpectationSpec) {
     
     It(@"passes on YES", ^{
       ExpectTrue(YES);
+      
+      ExpectErrorCount(0);
+    });
+    
+    It(@"fails on NO", ^{
+      ExpectTrue(NO);
+      
+      ExpectLastErrorMessage(@"Want true, got false");
     });
 
   });
@@ -125,6 +117,8 @@ OCDSpec2Context(IntExpectationSpec) {
     
     It(@"passes on NO", ^{
       ExpectFalse(NO);
+      
+      ExpectErrorCount(0);
     });
     
   });

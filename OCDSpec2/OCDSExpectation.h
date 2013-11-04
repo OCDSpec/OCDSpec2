@@ -16,3 +16,5 @@
 - (void) reportWarning:(NSString*)message;
 
 @end
+
+#define Reporter self

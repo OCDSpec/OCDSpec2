@@ -12,4 +12,4 @@
 
 @end
 
-#define ExpectFloat [[OCDSFloatExpectation expectationInFile:__FILE__ line:__LINE__ failureReporter:self] withFloat]
+#define ExpectFloat [[OCDSFloatExpectation expectationInFile:__FILE__ line:__LINE__ failureReporter:Reporter] withFloat]

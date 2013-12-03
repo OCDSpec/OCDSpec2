@@ -1,6 +1,10 @@
 #import <OCDSpec2/OCDSpec2.h>
 
 #import "OCDSFakeFailureReporter.h"
+#import "SpecExpectation.h"
+
+#undef Reporter
+#define Reporter reporter
 
 OCDSpec2Context(StringExpectationSpec) {
 
@@ -13,19 +17,15 @@ OCDSpec2Context(StringExpectationSpec) {
   Describe(@"-toContain", ^{
 
     It(@"passes when hello contains hell", ^{
-      [[[OCDSStringExpectation expectationInFile:"file1" line:2 failureReporter:reporter] withString]
-       (@"hello") toContain: @"hell"];
+      [ExpectStr(@"hello") toContain:@"hell"];
 
-      [ExpectInt(reporter.numberOfFailures) toBe:0];
+      ExpectErrorCount(0);
     });
 
     It(@"fails when hello does not contain jello", ^{
-      [[[OCDSStringExpectation expectationInFile:"file1" line:2 failureReporter:reporter] withString]
-       (@"hello") toContain: @"jello"];
-      NSString *report = [reporter findFailureMessageInFile:@"file1"
-                                                     onLine:2];
+      [ExpectStr(@"hello") toContain:@"jello"];
 
-      [ExpectObj(report) toBeEqualTo:@"Want \"*jello*\", got \"hello\""];
+      ExpectLastErrorMessage(@"Want \"*jello*\", got \"hello\"");
     });
 
   });
@@ -33,19 +33,15 @@ OCDSpec2Context(StringExpectationSpec) {
   Describe(@"-toStartWith", ^{
 
     It(@"passes when hello starts with hell", ^{
-      [[[OCDSStringExpectation expectationInFile:"file1" line:2 failureReporter:reporter] withString]
-       (@"hello") toStartWith: @"hell"];
-
-      [ExpectInt(reporter.numberOfFailures) toBe:0];
+      [ExpectStr(@"hello") toStartWith:@"hell"];
+      
+      ExpectErrorCount(0);
     });
 
     It(@"fails when hello does not start with ell", ^{
-      [[[OCDSStringExpectation expectationInFile:"file1" line:2 failureReporter:reporter] withString]
-       (@"hello") toStartWith: @"ell"];
-      NSString *report = [reporter findFailureMessageInFile:@"file1"
-                                                     onLine:2];
+      [ExpectStr(@"hello") toStartWith:@"ell"];
 
-      [ExpectObj(report) toBeEqualTo:@"Want \"ell*\", got \"hello\""];
+      ExpectLastErrorMessage(@"Want \"ell*\", got \"hello\"");
     });
 
   });
@@ -53,19 +49,15 @@ OCDSpec2Context(StringExpectationSpec) {
   Describe(@"-toBeEqualTo", ^{
 
     It(@"passes when the strings are equal", ^{
-      [[[OCDSStringExpectation expectationInFile:"file1" line:2 failureReporter:reporter] withString]
-       (@"a") toBeEqualTo: @"a"];
-
-      [ExpectInt(reporter.numberOfFailures) toBe:0];
+      [ExpectStr(@"a") toContain:@"a"];
+      
+      ExpectErrorCount(0);
     });
 
     It(@"fails when the two strings are not equal", ^{
-      [[[OCDSStringExpectation expectationInFile:"file1" line:2 failureReporter:reporter] withString]
-       (@"a") toBeEqualTo: @"b"];
-      NSString *report = [reporter findFailureMessageInFile:@"file1"
-                                                     onLine:2];
+      [ExpectStr(@"a") toBeEqualTo:@"b"];
 
-      [ExpectObj(report) toBeEqualTo:@"Want b, got a"];
+      ExpectLastErrorMessage(@"Want b, got a");
     });
 
   });

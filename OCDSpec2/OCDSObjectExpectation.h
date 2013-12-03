@@ -20,7 +20,7 @@
 
 @end
 
-#define ExpectObj [[OCDSObjectExpectation expectationInFile:__FILE__ line:__LINE__ failureReporter:self] withObject]
+#define ExpectObj [[OCDSObjectExpectation expectationInFile:__FILE__ line:__LINE__ failureReporter:Reporter] withObject]
 
-#define Pending() return [[OCDSObjectExpectation expectationInFile:__FILE__ line:__LINE__ failureReporter:self] pending]
-#define PendingStr return [[OCDSObjectExpectation expectationInFile:__FILE__ line:__LINE__ failureReporter:self] pendingWithString]
+#define Pending() return [[OCDSObjectExpectation expectationInFile:__FILE__ line:__LINE__ failureReporter:Reporter] pending]
+#define PendingStr return [[OCDSObjectExpectation expectationInFile:__FILE__ line:__LINE__ failureReporter:Reporter] pendingWithString]

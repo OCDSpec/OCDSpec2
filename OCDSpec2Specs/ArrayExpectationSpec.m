@@ -1,6 +1,10 @@
 #import <OCDSpec2/OCDSpec2.h>
 
 #import "OCDSFakeFailureReporter.h"
+#import "SpecExpectation.h"
+
+#undef Reporter
+#define Reporter reporter
 
 OCDSpec2Context(ArrayExpectationSpec) {
   
@@ -13,28 +17,17 @@ OCDSpec2Context(ArrayExpectationSpec) {
   Describe(@"-toContain", ^{
     
     It(@"passes when the array contains the element", ^{
-      [[[OCDSArrayExpectation expectationInFile:"file1" line:2 failureReporter:reporter] withArray]
-       (@[@"a"]) toContain: @"a"];
+      [ExpectArray(@[@"a"]) toContain:@"a"];
       
-      [ExpectInt(reporter.numberOfFailures) toBe:0];
+      ExpectErrorCount(0);
     });
     
     It(@"fails when the array does not contain the element", ^{
-      [[[OCDSArrayExpectation expectationInFile:"file1" line:2 failureReporter:reporter] withArray]
-       (@[@"a"]) toContain: @"b"];
+      [ExpectArray(@[@"a"]) toContain:@"b"];
       
-      [ExpectInt(reporter.numberOfFailures) toBe:3];
+      NSArray *msgs = @[@"Want array (", @"    a", @") to contain b"];
       
-      NSString *report;
-      
-      report = [reporter findFailureMessageInFile:@"file1" onLine:2];
-      [ExpectObj(report) toBeEqualTo:@"Want array ("];
-      
-      report = [reporter findFailureMessageInFile:@"file1" onLine:3];
-      [ExpectObj(report) toBeEqualTo:@"    a"];
-      
-      report = [reporter findFailureMessageInFile:@"file1" onLine:4];
-      [ExpectObj(report) toBeEqualTo:@") to contain b"];
+      ExpectLastErrorMessages(msgs);
     });
     
   });
@@ -42,32 +35,17 @@ OCDSpec2Context(ArrayExpectationSpec) {
   Describe(@"-toBeEqualTo", ^{
     
     It(@"passes when two array are equal", ^{
-      [[[OCDSArrayExpectation expectationInFile:"file1" line:2 failureReporter:reporter] withArray]
-       (@[@"a"]) toBeEqualTo: @[@"a"]];
+      [ExpectArray(@[@"a"]) toBeEqualTo:@[@"a"]];
       
-      [ExpectInt(reporter.numberOfFailures) toBe:0];
+      ExpectErrorCount(0);
     });
     
     It(@"fails when two objects are not equal", ^{
-      [[[OCDSObjectExpectation expectationInFile:"file1" line:2 failureReporter:reporter] withObject]
-       (@[@"a"]) toBeEqualTo: @[@"b"]];
-      NSString *report = [reporter findFailureMessageInFile:@"file1"
-                                                     onLine:2];
+      [ExpectArray(@[@"a"]) toBeEqualTo:@[@"b"]];
       
-      report = [reporter findFailureMessageInFile:@"file1" onLine:2];
-      [ExpectObj(report) toBeEqualTo:@"Want ("];
+      NSArray *msgs = @[@"Want (", @"    b", @"), got (", @"    a", @")"];
       
-      report = [reporter findFailureMessageInFile:@"file1" onLine:3];
-      [ExpectObj(report) toBeEqualTo:@"    b"];
-      
-      report = [reporter findFailureMessageInFile:@"file1" onLine:4];
-      [ExpectObj(report) toBeEqualTo:@"), got ("];
-
-      report = [reporter findFailureMessageInFile:@"file1" onLine:5];
-      [ExpectObj(report) toBeEqualTo:@"    a"];
-
-      report = [reporter findFailureMessageInFile:@"file1" onLine:6];
-      [ExpectObj(report) toBeEqualTo:@")"];
+      ExpectLastErrorMessages(msgs);
     });
     
   });
@@ -75,20 +53,15 @@ OCDSpec2Context(ArrayExpectationSpec) {
   Describe(@"-toHaveCount", ^{
     
     It(@"passes if the count is the same", ^{
-      [[[OCDSArrayExpectation expectationInFile:"file1" line:2 failureReporter:reporter] withArray]
-       (@[@"a", @"b", @"c"]) toHaveCount: 3];
+      [ExpectArray(@[@"a", @"b", @"c"]) toHaveCount:3];
       
-      [ExpectInt(reporter.numberOfFailures) toBe:0];
+      ExpectErrorCount(0);
     });
     
     It(@"fails when the count does not match expected", ^{
-      [[[OCDSArrayExpectation expectationInFile:"file1" line:2 failureReporter:reporter] withArray]
-       (@[@"a", @"b", @"c"]) toHaveCount: 2];
-      
-      NSString *report = [reporter findFailureMessageInFile:@"file1"
-                                                     onLine:2];
-      
-      [ExpectObj(report) toBeEqualTo:@"Want count 2, got 3"];
+      [ExpectArray(@[@"a", @"b", @"c"]) toHaveCount:2];
+
+      ExpectLastErrorMessage(@"Want count 2, got 3");
     });
 
   });
@@ -96,27 +69,17 @@ OCDSpec2Context(ArrayExpectationSpec) {
   Describe(@"-toBeEmpty", ^{
     
     It(@"passes when the array is empty", ^{
-      [[[OCDSArrayExpectation expectationInFile:"file1" line:2 failureReporter: reporter] withArray]
-       (@[]) toBeEmpty];
-
-      [ExpectInt(reporter.numberOfFailures) toBe:0];
+      [ExpectArray(@[]) toBeEmpty];
+      
+      ExpectErrorCount(0);
     });
 
     It(@"fails when the array is not empty", ^{
-      [[[OCDSArrayExpectation expectationInFile:"file1" line:2 failureReporter: reporter] withArray]
-       (@[@"a"]) toBeEmpty];
+      [ExpectArray(@[@"a"]) toBeEmpty];
       
-      NSString *report = [reporter findFailureMessageInFile:@"file1"
-                                                     onLine:2];
+      NSArray *msgs = @[@"Want empty array, got (", @"    a", @")"];
       
-      report = [reporter findFailureMessageInFile:@"file1" onLine:2];
-      [ExpectObj(report) toBeEqualTo:@"Want empty array, got ("];
-      
-      report = [reporter findFailureMessageInFile:@"file1" onLine:3];
-      [ExpectObj(report) toBeEqualTo:@"    a"];
-      
-      report = [reporter findFailureMessageInFile:@"file1" onLine:4];
-      [ExpectObj(report) toBeEqualTo:@")"];
+      ExpectLastErrorMessages(msgs);
     });
 
   });

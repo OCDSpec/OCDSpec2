@@ -193,8 +193,8 @@ NSString* StubbedNibName(void) {
 ```bash
 cd <OCDSpec2 repo>
 
-./install_templates local
-./install_autocompletion local
+./install_templates.sh local
+./install_autocompletion.sh local
 ```
 
 ## Credits

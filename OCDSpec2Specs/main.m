@@ -1,17 +1,32 @@
-//
-//  main.m
-//  OCDSpec2Specs
-//
-//  Created by Nathan Walker on 6/7/13.
-//  Copyright (c) 2013 8th Light. All rights reserved.
-//
-
 #import <UIKit/UIKit.h>
 
 #import <OCDSpec2/OCDSpec2.h>
-int main(int argc, char *argv[])
+
+@interface OCDSpec2AppDelegate :NSObject <UIApplicationDelegate>
+@end
+
+@implementation OCDSpec2AppDelegate
+@end
+
+@interface OCDSpec2ApplicationRunner : UIApplication
+@end
+
+@implementation OCDSpec2ApplicationRunner
+
+-(id) init {
+  if (self = [super init]) {
+    if (OCDSpec2RunAllTests() > 0) {
+      [NSException raise:NSGenericException format:@""];
+    }
+  }
+  
+  return self;
+}
+@end
+
+int main(int argc, char * argv[])
 {
   @autoreleasepool {
-      return OCDSpec2RunAllTests();
+    return UIApplicationMain(argc, argv, NSStringFromClass([OCDSpec2ApplicationRunner class]), @"OCDSpec2AppDelegate");
   }
 }

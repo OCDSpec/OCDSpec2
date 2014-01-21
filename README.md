@@ -188,7 +188,7 @@ NSString* StubbedNibName(void) {
 * Make sure you test everything you add
 * Make your tests better than my tests
 
-## Installing Templates and Autocompletion Locally
+## Installing Templates and Autocompletion From Local Repo
 
 ```bash
 cd <OCDSpec2 repo>

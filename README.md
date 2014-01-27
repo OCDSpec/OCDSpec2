@@ -29,7 +29,7 @@ Finally add this to your podfile:
 ```ruby
 target :test do
   link_with '<Your Spec Target Name>'
-  
+
   pod 'OCDSpec2'
 end
 ```
@@ -187,6 +187,15 @@ NSString* StubbedNibName(void) {
 * Building the OCDSpec2 scheme will run all the unit tests and the acceptance test
 * Make sure you test everything you add
 * Make your tests better than my tests
+
+## Installing Templates and Autocompletion From Local Repo
+
+```bash
+cd <OCDSpec2 repo>
+
+./install_templates.sh local
+./install_autocompletion.sh local
+```
 
 ## Credits
 

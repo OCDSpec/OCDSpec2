@@ -2,3 +2,4 @@ language: objective-c
 xcode_project: OCDSpec2.xcodeproj
 xcode_scheme: OCDSpec2
 xcode_scheme: OCDSpec2Specs
+xcode_sdk: iphonesimulator

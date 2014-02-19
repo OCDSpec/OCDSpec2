@@ -1,6 +1,3 @@
 language: objective-c
-xcode_project: OCDSpec2.xcodeproj
-xcode_scheme: OCDSpec2
-xcode_scheme: OCDSpec2Mac
-xcode_scheme: OCDSpec2Specs
-xcode_sdk: iphonesimulator
+script: xctool -project OCDSpec2.xcodeproj -scheme OCDSpec2 -sdk iphonesimulator &&
+        xctool -project OCDSpec2.xcodeproj -scheme OCDSpec2Specs -sdk iphonesimulator

@@ -51,8 +51,8 @@ This will create a file with one failing test.
 
 If you set the spec target as a dependency of the main target you can just build the main one without switching schemes.
 
-### Autocompletion for XCode
-Once the podfile is installed you can install XCode autocompletions if you like. This is only needed once on your machine, although you may want to re-run it when you update OCDSpec. Simply run:
+### Autocompletion for Xcode
+Once the podfile is installed you can install Xcode autocompletions if you like. This is only needed once on your machine, although you may want to re-run it when you update OCDSpec. Simply run:
 
 ```bash
 curl https://raw.github.com/OCDSpec/OCDSpec2/master/install_autocompletions.sh | bash

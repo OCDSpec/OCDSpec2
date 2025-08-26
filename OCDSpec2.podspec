@@ -40,8 +40,7 @@ Pod::Spec.new do |s|
 }
   s.author       = { "paytonrules" => "esmith@8thlight.com",
                      "ericmeyer" => "emeyer@8thlight.com",
-                     "marosluuce" => "nathan@8thlight.com",
-                     "sdegutis" => "sbdegutis@gmail.com" }
+                     "marosluuce" => "nathan@8thlight.com" }
 
   s.source       = { :git => "https://github.com/OCDSpec/OCDSpec2.git", :tag => "1.7.0" }
   s.source_files  = 'OCDSpec2', 'OCDSpec2/**/*.{h,m,}'
